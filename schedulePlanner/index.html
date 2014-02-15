@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<!--<link rel="stylesheet" type="text/css" href="style/main.css"> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+<script>
+
+var answer = "";
+
+var newEvent = new Array();
+
+var newTime = new Array();
+
+
+
+var whichOne = function () {
+  var isAdd = document.getElementById("add").checked;
+  var isDelete = document.getElementById("delete").checked;
+  var isEdit = document.getElementById("edit").checked;
+  if (isAdd === true) {
+    answer = "add";
+    document.getElementById("message2").innerHTML = "Enter the event in the first input box and the event time in the second box";
+  } 
+  else if (isDelete === true) {
+    answer = "del";
+    document.getElementById("message2").innerHTML = "Enter the event you want to delete in the first box";
+  }
+  else if (isEdit === true) {
+    answer = "edit";
+    document.getElementById("message2").innerHTML = "Enter the event you want to edit in the first box, enter the new event in the second box, and enter the new time in the third box";
+  }
+  console.log(answer);
+};
+
+
+
+var addEvent = function (inputEvent,inputTime) {
+  newEvent.push(inputEvent)
+  newTime.push(inputTime)
+  var latestE = newEvent.length - 1;
+  var latestT = newTime.length - 1;
+  var x = (newEvent[latestE]);
+  var y = (newTime[latestT]);         
+  document.getElementById("message3").innerHTML = "Your event has been saved mi\'lord. " + newEvent[latestE] + " shall commence at " + newTime[latestT] + ".";      
+   document.getElementById("eventName").innerHTML = newEvent;
+   document.getElementById("eventTime").innerHTML = newTime;
+   document.getElementById("checkingArray").innerHTML = newEvent.length;
+}
+
+
+
+var delEvent = function (inputEvent) {
+  var findEvent = document.getElementById("input2").value;
+  var j = 10; /* newEvent.length; */
+  for (var i = 0; i<=j; i++) {
+    if (newEvent[i] === findEvent) {
+      newEvent.splice(i,1);
+      newTime.splice(i,1);
+      document.getElementById("message3").innerHTML = "Your event has been deleted";  
+    }
+  }
+  if (i === j) {
+    document.getElementById("message3").innerHTML = "This event was not found";         
+  }
+  document.getElementById("eventName").innerHTML = newEvent;
+  document.getElementById("eventTime").innerHTML = newEvent.length;
+}
+
+
+var getEditEvent = function () {
+
+}
+
+
+
+var editEvent = function () {
+  var editInput = document.getElementById("input2").value;
+  var k = 10; /* newEvent.length; */
+  for (var i = 0; i<=k; i++) {
+    if (newEvent[i] === editInput) {
+      var replaceEvent = document.getElementById("input3").value;
+      var replaceTime = document.getElementById("input4").value;
+      newEvent[i] = replaceEvent;
+      newTime[i] = replaceTime;
+      document.getElementById("message3").innerHTML = "Your event has been edited to " + replaceEvent + " at " + replaceTime;
+      if (i === 10) {
+        document.getElementById("message3").innerHTML = "This event was not found";
+      }
+    }
+  }
+}
+
+
+
+
+
+var uncheckRadio = function () {
+  document.getElementById("add").checked = false;
+  document.getElementById("delete").checked = false;
+  document.getElementById("edit").checked = false;
+  document.getElementById("eventName").innerHTML = newEvent;
+  document.getElementById("eventTime").innerHTML = newTime;
+  document.getElementById("checkingArray").innerHTML = newEvent.length;
+}
+
+
+
+var inputReady = function () {
+  var inputEvent = document.getElementById("input2").value;
+  var inputTime = document.getElementById("input3").value;
+  whichOne();
+  if (answer === "add") {
+    addEvent(inputEvent,inputTime);
+  } 
+  else if (answer === "del") {
+    delEvent(inputEvent);
+  } 
+  else if (answer === "edit") {
+    editEvent (inputEvent,inputTime)
+  }
+  uncheckRadio ();
+}
+
+
+</script>
+
+
+</head>
+
+<body>
+
+<!--
+<h2></h2>
+-->
+
+<div id="headerContainer">
+  <h3 id="headerTitle" style="float:left">Would you like to add, delete, or edit an event?</h3>
+  <ul class="nav nav-pills" style="float:right">
+      <li class="active"><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/index.html">Home</a></li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>
+      <ul class="dropdown-menu" role="menu">
+          <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/currencyExchange/index.html">Currency Exchange</a></li>
+          <li class="divider"></li>
+          <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/nameAgeReddit/index.html">Username, Age, Reddit</a></li>
+          <li class="divider"></li>
+        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/chooseAdventure/index.html">Choose Your Own Adventure</a></li>
+          <li class="divider"></li>
+        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/schedulePlanner/index.html">Schedule Planner</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Resume & CV</a></li>
+  </ul>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" id="add">
+      </span>
+      <input type="text" class="form-control" value="Add">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" id="delete">
+      </span>
+      <input type="text" class="form-control" value="Delete">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" id="edit">
+      </span>
+      <input type="text" class="form-control" value="Edit">
+    </div>
+  </div>
+</div><br>
+
+<button class="btn btn-default" type="button" onclick="whichOne()">Enter</button><br>
+
+
+<!--
+<form>
+  <label for="add">Add</label>
+  <input type="radio" id="add"><br>
+  <label for="delete">Delete</label>
+  <input type="radio" id="delete" value="Delete"><br>
+  <label for="edit">Edit</label>
+  <input type="radio" id="edit"><br>
+  <input type="button" onclick="whichOne()" value="Enter">
+</form>
+-->
+
+<div class="panel panel-default">
+  <div class="panel-body" id="message2">
+  </div>
+</div><br>
+
+<!--
+<h3 id="message2">mess2</h3>
+-->
+
+<input type="text" id="input2"><br>
+<input type="text" id="input3"><br>
+<input type="text" id="input4">
+<button class="btn btn-default" type="button" onclick="inputReady()">Enter</button>
+
+<!--
+<button type="button" onclick="inputReady()">Enter</button>
+-->
+
+<div class="jumbotron">
+<h3>Result</h3>
+<h4 id="message3"></h4>
+<h3>Events</h3>
+<p id="eventName">event</p>
+<h3>Event Times</h3>
+<p id="eventTime">time</p>
+<h3>Number of events</h3>
+<p id="checkingArray">checkin</p>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
