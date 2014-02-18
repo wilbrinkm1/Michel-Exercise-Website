@@ -6,6 +6,8 @@
 <!--<link rel="stylesheet" type="text/css" href="style/main.css"> -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
 
 
 <script>
@@ -17,7 +19,7 @@ var charName = "";
 var enterName = function () {
 	document.getElementById("narrator").innerHTML = "The battle was the last thing you remembered before you were knocked out cold by a barbarians cudgel. Youre lying on an animalskin bed inside a small shelter made of sticks and muddy foliage. There are three items in the room with you, a warchest, some clothes, and a roaring fire.";
 	document.getElementById("question").innerHTML = "Would you like to open the chest, look at the clothes, or approach the fire?";
-	var charName = document.getElementById("name").value;
+	charName = document.getElementById("name").value;
 }
 
 
@@ -27,12 +29,14 @@ function chestClothesFire(decision) {
 	var clothes = decision.search("clothes");
 	var fire = decision.search("fire");
 	if (chest >= 0) {
-    document.getElementById("narrator").innerHTML = "You open the chest to find a small dagger attached to a bell. As you lift it to ready for a fight, the bell rings and alerts 15,000 barabarian guards. They kill you.";
+    document.getElementById("narrator").style.color="#FF0000";
+    document.getElementById("narrator").innerHTML = "You open the chest to find a small dagger attached to a bell. As you lift it to ready for a fight, the bell rings and alerts 15,000 barbarian guards. They kill you.";
 	} else if (clothes >= 0) {
     document.getElementById("narrator").innerHTML = "You rummage through the clothes and find a barbarian uniform consisting of a deerskin cloak and a loinclothe made of hamsterfur. You rub some dirt on yourself and put on your best dumfaced barbarian impression and exit the shelter when you come across two barbarian guards. They ask you a question: What would you rather have, a cask full of ale or a really big axe";
 	document.getElementById("question").innerHTML = "Which would you choose?";
 	} else if (fire >= 0) {
-    document.getElementById("narrator").innerHTML = "You realize the only way to escape a camp full of enemies is to create a diversion. You take a torch from the fire and run through the camp, lighting up any tent you pass. The hysteria and panic distract the barbarians and you flee to your army's camp a hero. Congrats Sir" + charName + "!";
+    document.getElementById("narrator").style.color="#006600";
+    document.getElementById("narrator").innerHTML = "You realize the only way to escape a camp full of enemies is to create a diversion. You take a torch from the fire and run through the camp, lighting up any tent you pass. The hysteria and panic distract the barbarians and you flee to your army's camp a hero. Congrats Sir " + charName + "!";
 	}
 }
 
@@ -43,9 +47,11 @@ function aleOrAxe(decision) {
     var drink = decision.search("drink");
     var axe = decision.search("axe");
     if (ale >= 0 || drink >= 0) {
+    document.getElementById("narrator").style.color="#FF0000";
     document.getElementById("narrator").innerHTML = "You tell the guards, \"Well, after a battle like that I could use a drink!\". The barbarians take out their axes and kill you. Apparently these are Mormon barbarians so they knew you weren't one of them.";
     } 
     else if (axe >= 0) {
+    document.getElementById("narrator").style.color="#006600";
     document.getElementById("narrator").innerHTML = "The barbarian guards smile. \"You must be one of us!\" they say and you are able to escape the camp to freedom. Congrats Sir " + charName + "!";       
     }
 }
@@ -72,21 +78,6 @@ function inputButton () {
 
 
 
-<!--
-<p>Please tell us your name Sir Knight</p>
-<input type="text" id="name">
-<input type="button" onclick="enterName()" value="Enter">
-
-
-<h2 id="narrator">Read story here</h2>
-
-<h3 id="question">Next quest here</h3>
-
-<input type="text" id="answer">
-
-<button type="button" onclick="inputButton()">Enter</button>
--->
-
 
 
 <div id="headerContainer">
@@ -96,13 +87,13 @@ function inputButton () {
       <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>
       <ul class="dropdown-menu" role="menu">
-          <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/currencyExchange/index.html">Currency Exchange</a></li>
+          <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/currencyExchange.html">Currency Exchange</a></li>
           <li class="divider"></li>
-          <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/nameAgeReddit/index.html">Username, Age, Reddit</a></li>
+          <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/nameAgeReddit.html">Username, Age, Reddit</a></li>
           <li class="divider"></li>
-        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/chooseAdventure/index.html">Choose Your Own Adventure</a></li>
+        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/chooseAdventure.html">Choose Your Own Adventure</a></li>
           <li class="divider"></li>
-        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/schedulePlanner/index.html">Schedule Planner</a></li>
+        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/schedulePlanner.html">Schedule Planner</a></li>
         </ul>
       </li>
       <li><a href="#">Resume & CV</a></li>

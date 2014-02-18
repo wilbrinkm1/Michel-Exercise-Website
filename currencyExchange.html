@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<!--<link rel="stylesheet" type="text/css" href="style/main.css"> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+<script>
+
+
+function whichOneIn(inDol, inPes, inEur) {
+  if (inDol === true) {
+    return "dollar";
+} else if (inPes === true) {
+    return "peso";
+} else if (inEur === true) {
+    return "euro";
+}
+}
+
+function whichOneOut(outDol, outPes, outEur) {
+  if (outDol === true) {
+    return "dollar";
+} else if (outPes === true) {
+    return "peso";
+} else if (outEur === true) {
+    return "euro";
+}
+}
+
+
+
+function exchange(inCurrency, outCurrency) {
+    if (inCurrency === "dollar" && outCurrency === "peso") {
+        var r = 44.63;
+        return r;
+    } else if (inCurrency === "dollar" && outCurrency === "euro") {
+        var r = 0.73;
+        return r;
+    } else if (inCurrency === "peso" && outCurrency === "dollar") {
+        var r = 0.02;
+        return r;
+    } else if (inCurrency === "peso" && outCurrency === "euro") {
+        var r = 0.02;
+        return r;
+    } else if (inCurrency === "euro" && outCurrency === "peso") {
+        var r = 60.92;
+        return r;
+    } else if (inCurrency === "euro" && outCurrency === "dollar") {
+        var r = 1.37;
+        return r;
+    }
+}
+
+
+
+function showAmount () {
+var inDol = document.getElementById("dol").checked;
+var inPes = document.getElementById("pes").checked;
+var inEur = document.getElementById("eur").checked;
+var outDol = document.getElementById("dol2").checked;
+var outPes = document.getElementById("pes2").checked;
+var outEur = document.getElementById("eur2").checked;
+var inCurrency = whichOneIn(inDol, inPes, inEur);
+var outCurrency = whichOneOut(outDol, outPes, outEur);
+var foreignExchange = exchange(inCurrency,outCurrency);
+var cashAmt = document.getElementById("amount").value;
+var calc = (cashAmt * foreignExchange);
+document.getElementById("finalAmount").innerHTML= calc;
+}
+
+</script>
+
+
+
+</head>
+
+<body>
+
+
+<div>
+  <h1 style="float:left">What currency are you exchanging?</h1>
+    <ul class="nav nav-pills" style="float:right">
+      <li class="active"><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/index.html">Home</a></li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>
+      <ul class="dropdown-menu" role="menu">
+          <li><a href="currencyExchange.html">Currency Exchange</a></li>
+          <li class="divider"></li>
+          <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/nameAgeReddit.html">Username, Age, Reddit</a></li>
+          <li class="divider"></li>
+        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/chooseAdventure.html">Choose Your Own Adventure</a></li>
+          <li class="divider"></li>
+        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/schedulePlanner.html">Schedule Planner</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Resume & CV</a></li>
+  </ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div id="currencyContainer" style="height: 300px; width: 99%; border-style: solid; border-color: #ff0000; display: block;">
+  <div id="currencyPics" style="float: right; height: 190px; width: 460px; display: inline-block;">
+    <img src="mediaFolder/philippinePeso.jpg">
+    <img src="mediaFolder/usDollar.jpg">
+    <img src="mediaFolder/euEuro.jpg">
+  </div>
+  <div id="inputContainer" style="float: left; display: inline-block; width: 838px;"> 
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <input type="radio" id="dol">
+          </span>
+          <input type="text" class="form-control" value="US Dollar">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <input type="radio" id="pes">
+          </span>
+          <input type="text" class="form-control" value="Philippine Peso">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <input type="radio" id="eur">
+          </span>
+          <input type="text" class="form-control" value="EU Euro">
+        </div>
+      </div>
+    </div><br>
+
+
+
+    <div>
+      <h1>What currency do you want?</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <input type="radio" id="dol2">
+          </span>
+          <input type="text" class="form-control" value="US Dollar">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <input type="radio" id="pes2">
+          </span>
+          <input type="text" class="form-control" value="Philippine Peso">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <input type="radio" id="eur2">
+          </span>
+          <input type="text" class="form-control" value="EU Euro">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h4></h4>
+
+<div>
+  <form role="form" style="display: block;">
+    <div class="form-group">
+      <label for="amount" style="font-size: 30px; display:block;">How much?</label>
+      <input type="text" class="form-control" id="amount" placeholder="Enter amount to be exchanged" style="width:838px;">
+    </div>
+  </form>
+</div>
+
+<button class="btn btn-default" type="button" onclick="showAmount()">Enter</button><br>
+<br>
+<br>
+<div class="panel panel-default">
+  <div class="panel-body" id="finalAmount">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

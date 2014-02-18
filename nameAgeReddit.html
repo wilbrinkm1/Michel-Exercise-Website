@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<!--<link rel="stylesheet" type="text/css" href="style/main.css"> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="headerContainer">
+  <h3 id="headerTitle" style="float:left">Enter your user name, age, and reddit name in the below text boxes.</h3>
+  <ul class="nav nav-pills" style="float:right">
+      <li class="active"><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/index.html">Home</a></li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>
+      <ul class="dropdown-menu" role="menu">
+          <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/currencyExchange.html">Currency Exchange</a></li>
+          <li class="divider"></li>
+          <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/nameAgeReddit.html">Username, Age, Reddit</a></li>
+          <li class="divider"></li>
+        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/chooseAdventure.html">Choose Your Own Adventure</a></li>
+          <li class="divider"></li>
+        <li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/schedulePlanner.html">Schedule Planner</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Resume & CV</a></li>
+  </ul>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form role="form">
+  <div class="form-group">
+    <label for="uname">User Name</label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter User Name">
+  </div>
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="text" class="form-control" id="age" placeholder="Enter Your Age">
+  </div>
+  <div class="form-group">
+    <label for="rname">Reddit Name</label>
+    <input type="text" class="form-control" id="rname" placeholder="Enter Your Reddit Name">
+  </div>
+ <button type="button" onclick="inputInfo()">Input Info</button>
+</form>
+
+
+
+
+
+
+<p id="answer"></p>
+
+<script> 
+
+function inputInfo() {
+	var userName=document.getElementById("uname").value;
+	var age=document.getElementById("age").value;
+	var redditName=document.getElementById("rname").value;
+	document.getElementById("answer").innerHTML = "Your name is " + userName + ", you are " + age + " years old, and your username is " + redditName +".";
+
+}
+</script>
+
+
+
+</body>
+</html>
