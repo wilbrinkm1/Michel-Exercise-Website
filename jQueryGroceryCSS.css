@@ -1,0 +1,83 @@
+
+#navIndex{
+	display: inline;
+	height: 100px;
+	width: 150px;
+	background-color: purple;
+	float: left;
+}
+
+
+
+#navHTML {
+	display: inline;
+	height: 100px;
+	width: 150px;
+	background-color: #00008B;
+	float: left;
+}
+
+#navCSS {
+	display: inline;
+	height: 100px;
+	width: 150px;
+	background-color: #DC143C;
+	float: left;
+}
+
+#navJS {
+	display: inline;
+	height: 100px;
+	width: 150px;
+	background-color: #228B22;
+	float: left;
+}
+
+.formatTextInNavDivs {
+	font-size: 16px;
+	font-family: Verdana;
+	color: #FFD700;
+	text-align: center;
+}
+
+#sidebar {
+	position: relative;
+	padding: 25px;
+	float: left;
+	width: 100%;
+	display: block;
+
+}
+
+#lists {
+	float: left;
+	height: 700px;
+	width: 25%;
+}
+
+ #gorceries {
+ 	display: inline;
+ 	position: fixed;
+	height: 90%;
+	width: 65%;
+	background-color: #228B22;
+	float: right;
+}
+
+.pageTitle {
+	font-size: 24px;
+	font-family: serif;
+	float: right;
+}
+
+.exampleImage {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid white;
+	height: 240px;
+	width: 320px;
+}
+
+
+
+

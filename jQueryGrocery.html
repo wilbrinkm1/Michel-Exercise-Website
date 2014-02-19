@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="jQueryGroceryCSS.css">
+
+<!--<link rel="stylesheet" type="text/css" href="style/main.css"> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>     
+
+$(document).ready(function(){
+	$("#ahiTuna").click(function(){
+		$("#groceryList").append("<li>Ahi Tuna</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#mahiMahi").click(function(){
+		$("#groceryList").append("<li>Mahi Mahi</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#salmon").click(function(){
+		$("#groceryList").append("<li>Salmon</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#shrimp").click(function(){
+		$("#groceryList").append("<li>Shrimp</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#trout").click(function(){
+		$("#groceryList").append("<li>Trout</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#bananas").click(function(){
+		$("#groceryList").append("<li>Bananas</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#apples").click(function(){
+		$("#groceryList").append("<li>Apples</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#cherryTomato").click(function(){
+		$("#groceryList").append("<li>Cherry Tomato</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#carrot").click(function(){
+		$("#groceryList").append("<li>Baby Carrots</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#kiwi").click(function(){
+		$("#groceryList").append("<li>Kiwi</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#bacon").click(function(){
+		$("#groceryList").append("<li>Bacon</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#chicken").click(function(){
+		$("#groceryList").append("<li>Chicken</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#swiss").click(function(){
+		$("#groceryList").append("<li>Swiss Cheese</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#hotdog").click(function(){
+		$("#groceryList").append("<li>Hotdogs</li>");
+	});
+});
+
+$(document).ready(function(){
+	$("#brie").click(function(){
+		$("#groceryList").append("<li>Brie Cheese</li>");
+	});
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<div id="headerContainer" style="display: block;">
+	<h1 id="headerTitle" style="float:left; font-type: serif; font-style: italic;">Grocery List Maker</h1>
+	<ul class="nav nav-pills" style="float:right; padding-top: 25px; padding-bottom: 20px;">
+  		<li class="active"><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/index.html">Home</a></li>
+  		<li class="dropdown">
+	  		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>
+				<ul class="dropdown-menu" role="menu">
+	    			<li><a href="currencyExchange.html">Currency Exchange</a></li>
+	    			<li class="divider"></li>
+	    			<li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/nameAgeReddit.html">Username, Age, Reddit</a></li>
+	    			<li class="divider"></li>
+					<li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/chooseAdventure.html">Choose Your Own Adventure</a></li>
+	    			<li class="divider"></li>
+					<li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/schedulePlanner.html">Schedule Planner</a></li>
+					<li class="divider"></li>
+					<li><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/jQueryGrocery.html">Grocery List</a></li>
+	  			</ul>
+  		</li>
+  		<li><a href="#">Resume and CV</a></li>
+	</ul>
+</div>
+<br>
+
+
+<div id="sidebar">
+	<div id="lists">
+		<ul>
+			<li>Grocery List
+				<ul id="groceryList">
+  					<li></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="gorceries">
+		<h2 id="firstEntry">Click on a product to add to your grocery list. If you want more than one of each, input the number in the following input box first, then click the product.</h2>
+		Quantity: <input type="text" name="quantity">
+		<br>
+		<table border="1px">
+        	<thead>
+        	<tr>
+        	<th colspan="5">Seafood</th>
+        	<tr>
+            	<td><img src="mediaFolder/ahiTuna.jpg" id="ahiTuna"/></td>
+            	<td><img src="mediaFolder/mahiMahi.jpg" id="mahiMahi"/></td>
+            	<td><img src="mediaFolder/salmon.jpg" id="salmon"/></td>
+               	<td><img src="mediaFolder/shrimp.jpg" id="shrimp"/></td>
+            	<td><img src="mediaFolder/trout.jpg" id="trout"/></td>
+        	</tr>
+        	<tr>
+        	<th colspan="5">Fruits and Vegetables</th>
+        	<tr>
+        		<td><img src="mediaFolder/bananas.jpg" id="bananas"/></td>
+        		<td><img src="mediaFolder/apples.jpg" id="apples"/></td>
+        		<td><img src="mediaFolder/cherryTomato.jpg" id="cherryTomato"/></td>
+        		<td><img src="mediaFolder/babyCarrots.jpg" id="carrot"/></td>
+        		<td><img src="mediaFolder/kiwi.jpg" id="kiwi"/></td>
+        	</tr>
+        	<tr>
+        	<th colspan="5">Meat and Cheese</th>
+        	<tr>
+        		<td><img src="mediaFolder/bacon.jpg" id="bacon"/></td>
+        		<td><img src="mediaFolder/chicken.jpg" id="chicken"/></td>
+        		<td><img src="mediaFolder/swissCheese.jpg" id="swiss"/></td>
+        		<td><img src="mediaFolder/hotdog.jpg" id="hotdog"/></td>
+        		<td><img src="mediaFolder/brie.jpg" id="brie"/></td>	
+  			</tr>
+    	</table>
+	</div>
+</div>
+
+
+
+</body>
+
+</html>
