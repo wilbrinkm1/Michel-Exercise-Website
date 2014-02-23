@@ -1,0 +1,36 @@
+p {
+
+}
+
+.welcome {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #4CCF53),
+		color-stop(1, #051C1F)
+	);
+	background-image: -o-linear-gradient(bottom, #4CCF53 0%, #051C1F 100%);
+	background-image: -moz-linear-gradient(bottom, #4CCF53 0%, #051C1F 100%);
+	background-image: -webkit-linear-gradient(bottom, #4CCF53 0%, #051C1F 100%);
+	background-image: -ms-linear-gradient(bottom, #4CCF53 0%, #051C1F 100%);
+	background-image: linear-gradient(to bottom, #4CCF53 0%, #051C1F 100%);
+	text-align: center;
+	color: white;
+
+}
+
+.mw-name {
+	font-family:  'Inika', serif;
+	color: white;
+	padding: 30px;
+	font-size: 62px;
+
+}
+
+.mw-intro {
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 21px;
+	font-family: 'Alegreya Sans', sans-serif;
+}

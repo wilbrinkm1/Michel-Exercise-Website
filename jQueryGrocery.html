@@ -95,16 +95,36 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#hotdog").click(function(){
-		$("#groceryList").append("<li>Hotdogs</li>");
+		var e = $('<li>Hotdog</li>');
+		e.attr('id', 'hotdogList');
+		$("#groceryList").append(e);
 	});
 });
 
 $(document).ready(function(){
 	$("#brie").click(function(){
-		$("#groceryList").append("<li>Brie Cheese</li>");
+		var quantity = $("#quantity").val();
+		var e = "<li>Brie " + (quantity) + " </li>";
+		e.attr('id', 'brieList');
+		$("#groceryList").append(e);
 	});
 });
 
+$(document).ready(function(){
+	$("#brieList").click(function(){
+		$("#brieList").remove();
+	});
+});
+
+
+/*
+
+		$("#brieList").append(quantity);
+
+
+var e = $('<div style="display:block; float:left;width:'+width+'px; height:'+height+'px; margin-top:'+positionY+'px;margin-left:'+positionX+'px;border:1px dashed #CCCCCC;"></div>');
+e.attr('id', 'myid');
+$('#box').append(e); */
 
 </script>
 
@@ -150,7 +170,7 @@ $(document).ready(function(){
 	</div>
 	<div id="gorceries">
 		<h2 id="firstEntry">Click on a product to add to your grocery list. If you want more than one of each, input the number in the following input box first, then click the product.</h2>
-		Quantity: <input type="text" name="quantity">
+		Quantity: <input type="text" id="quantity">
 		<br>
 		<table border="1px">
         	<thead>
