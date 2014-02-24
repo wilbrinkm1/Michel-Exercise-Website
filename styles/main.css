@@ -17,15 +17,17 @@ p {
 	background-image: linear-gradient(to bottom, #4CCF53 0%, #051C1F 100%);
 	text-align: center;
 	color: white;
+	padding-top: 80px;
+	padding-bottom: 80px;
 
 }
 
 .mw-name {
 	font-family:  'Inika', serif;
 	color: white;
-	padding: 30px;
 	font-size: 62px;
-
+	margin-top:0px;
+	margin-bottom: 25px;
 }
 
 .mw-intro {
@@ -33,6 +35,7 @@ p {
 	padding-right: 5%;
 	font-size: 21px;
 	font-family: 'Alegreya Sans', sans-serif;
+	margin-bottom: 0px;
 }
 
 .tryin {
@@ -44,7 +47,7 @@ p {
 
 .home-box-content {
 	text-align: center;
-	
+
 }
 
 .footer-text {
@@ -55,4 +58,10 @@ p {
 	text-align: center;
 	color: white;
 
+}
+
+.my-app-button {
+	width: 200px;
+	height: 63px;
+	margin-top: 25px;
 }
