@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-<!--<link rel="stylesheet" type="text/css" href="style/main.css"> -->
+<link rel="stylesheet" type="text/css" href="styles/main.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
@@ -135,29 +135,36 @@ var inputReady = function () {
 
 <body>
 
-<!--
-<h2></h2>
--->
 
-<div id="headerContainer">
-  <h3 id="headerTitle" style="float:left">Would you like to add, delete, or edit an event?</h3>
-  <ul class="nav nav-pills" style="float:right">
-      <li class="active"><a href="http://localhost/~michelwilbrink/michelExerciseWebsite/index.html">Home</a></li>
-      <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<b class="caret"></b></a>
-      <ul class="dropdown-menu" role="menu">
-          <li><a href="currencyExchange.html">Currency Exchange</a></li>
-          <li class="divider"></li>
-          <li><a href="nameAgeReddit.html">Username, Age, Reddit</a></li>
-          <li class="divider"></li>
-        <li><a href="chooseAdventure.html">Choose Your Own Adventure</a></li>
-          <li class="divider"></li>
-        <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+
+<div class="row" style="height:50px;">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Programs</a></li>
+          <li><a href="currencyExchange.html">Currency Exchange</a></li>              
+          <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
+          <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+          <li><a href="nameAgeReddit.html">User Name Display</a></li>
+          <li><a href="jQueryGrocery.html">Grocery List made with jQuery</a></li>
         </ul>
-      </li>
-      <li><a href="#">Resume & CV</a></li>
-  </ul>
+      </div>
+    </div>
+  </nav>
 </div>
+
+
+<h3 id="headerTitle" style="float:left">Would you like to add, delete, or edit an event?</h3>
 
 <br>
 <br>
@@ -201,50 +208,35 @@ var inputReady = function () {
 <button class="btn btn-default" type="button" onclick="whichOne()">Enter</button><br>
 
 
-<!--
-<form>
-  <label for="add">Add</label>
-  <input type="radio" id="add"><br>
-  <label for="delete">Delete</label>
-  <input type="radio" id="delete" value="Delete"><br>
-  <label for="edit">Edit</label>
-  <input type="radio" id="edit"><br>
-  <input type="button" onclick="whichOne()" value="Enter">
-</form>
--->
-
 <div class="panel panel-default">
   <div class="panel-body" id="message2">
   </div>
 </div><br>
 
-<!--
-<h3 id="message2">mess2</h3>
--->
 
 <input type="text" id="input2"><br>
 <input type="text" id="input3"><br>
 <input type="text" id="input4">
 <button class="btn btn-default" type="button" onclick="inputReady()">Enter</button>
 
-<!--
-<button type="button" onclick="inputReady()">Enter</button>
--->
 
 <div class="jumbotron">
-<h3>Result</h3>
-<h4 id="message3"></h4>
-<h3>Events</h3>
-<p id="eventName">event</p>
-<h3>Event Times</h3>
-<p id="eventTime">time</p>
-<h3>Number of events</h3>
-<p id="checkingArray">checkin</p>
-
+  <h3>Result</h3>
+  <h4 id="message3"></h4>
+  <h3>Events</h3>
+  <p id="eventName">event</p>
+  <h3>Event Times</h3>
+  <p id="eventTime">time</p>
+  <h3>Number of events</h3>
+  <p id="checkingArray">checkin</p>
 </div>
 
 
-
+<div class="well well-lg" style="background-color:black; margin-top: 50px;">
+  <h2 class="footer-text">Michel Wilbrink</h2>
+  <p class="footer-text"> 4 Apple Tree Court, Livingston NJ</p>
+  <p class="footer-text"> Copyright 2014</p>
+</div>
 
 
 

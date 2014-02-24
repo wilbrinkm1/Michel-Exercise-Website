@@ -34,3 +34,25 @@ p {
 	font-size: 21px;
 	font-family: 'Alegreya Sans', sans-serif;
 }
+
+.tryin {
+	background-color: #4CCF53;
+	border-style: solid;
+	border-color: white;
+	height: 400px;
+}
+
+.home-box-content {
+	text-align: center;
+	
+}
+
+.footer-text {
+	font-family: Times New Roman;
+	font-type: serif;
+	font-style: italic;
+	font-size: 10pt;
+	text-align: center;
+	color: white;
+
+}
