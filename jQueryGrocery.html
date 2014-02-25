@@ -15,106 +15,218 @@
 
 <script>     
 
+
 $(document).ready(function(){
 	$("#ahiTuna").click(function(){
-		$("#groceryList").append("<li>Ahi Tuna</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Ahi Tuna (" + (quantity) + ") </li>");
+		e.attr('id', 'ahiTunaList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#ahiTunaList").click(function(){
+				$("#ahiTunaList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#mahiMahi").click(function(){
-		$("#groceryList").append("<li>Mahi Mahi</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Mahi Mahi (" + (quantity) + ") </li>");
+		e.attr('id', 'mahiMahiList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#mahiMahiList").click(function(){
+				$("#mahiMahiList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#salmon").click(function(){
-		$("#groceryList").append("<li>Salmon</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Salmon (" + (quantity) + ") </li>");
+		e.attr('id', 'salmonList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#salmonList").click(function(){
+				$("#salmonList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#shrimp").click(function(){
-		$("#groceryList").append("<li>Shrimp</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Shrimp (" + (quantity) + ") </li>");
+		e.attr('id', 'shrimpList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#shrimpList").click(function(){
+				$("#shrimpList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#trout").click(function(){
-		$("#groceryList").append("<li>Trout</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Trout (" + (quantity) + ") </li>");
+		e.attr('id', 'troutList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#troutList").click(function(){
+				$("#troutList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#bananas").click(function(){
-		$("#groceryList").append("<li>Bananas</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Bananas (" + (quantity) + ") </li>");
+		e.attr('id', 'bananasList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#bananasList").click(function(){
+				$("#bananasList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#apples").click(function(){
-		$("#groceryList").append("<li>Apples</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Apples (" + (quantity) + ") </li>");
+		e.attr('id', 'applesList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#applesList").click(function(){
+				$("#applesList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#cherryTomato").click(function(){
-		$("#groceryList").append("<li>Cherry Tomato</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Cherry Tomato (" + (quantity) + ") </li>");
+		e.attr('id', 'cherryTomatoList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#cherryTomatoList").click(function(){
+				$("#cherryTomatoList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#carrot").click(function(){
-		$("#groceryList").append("<li>Baby Carrots</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Carrots (" + (quantity) + ") </li>");
+		e.attr('id', 'carrotList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#carrotList").click(function(){
+				$("#carrotList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#kiwi").click(function(){
-		$("#groceryList").append("<li>Kiwi</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Kiwi (" + (quantity) + ") </li>");
+		e.attr('id', 'kiwiList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#kiwiList").click(function(){
+				$("#kiwiList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#bacon").click(function(){
-		$("#groceryList").append("<li>Bacon</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Bacon (" + (quantity) + ") </li>");
+		e.attr('id', 'baconList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#baconList").click(function(){
+				$("#baconList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#chicken").click(function(){
-		$("#groceryList").append("<li>Chicken</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Chicken (" + (quantity) + ") </li>");
+		e.attr('id', 'chickenList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#chickenList").click(function(){
+				$("#chickenList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#swiss").click(function(){
-		$("#groceryList").append("<li>Swiss Cheese</li>");
+		var quantity = $("#quantity").val();
+		var e = $("<li>Swiss Cheese(" + (quantity) + ") </li>");
+		e.attr('id', 'swissList');
+		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#swissList").click(function(){
+				$("#swissList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#hotdog").click(function(){
-		var e = $('<li>Hotdog</li>');
+		var quantity = $("#quantity").val();
+		var e = $("<li>Hotdog (" + (quantity) + ") </li>");
 		e.attr('id', 'hotdogList');
 		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#hotdogList").click(function(){
+				$("#hotdogList").remove();
+			});
+		});
 	});
 });
 
 $(document).ready(function(){
 	$("#brie").click(function(){
 		var quantity = $("#quantity").val();
-		var e = "<li>Brie " + (quantity) + " </li>";
+		var e = $("<li>Brie (" + (quantity) + ") </li>");
 		e.attr('id', 'brieList');
 		$("#groceryList").append(e);
+		$(document).ready(function(){
+			$("#brieList").click(function(){
+				$("#brieList").remove();
+			});
+		});
 	});
 });
 
-$(document).ready(function(){
-	$("#brieList").click(function(){
-		$("#brieList").remove();
-	});
-});
+
 
 
 /*
@@ -165,24 +277,31 @@ $('#box').append(e); */
 
 
 
-<div id="sidebar">
+<div id="groceryContainer">
 	<div id="lists">
 		<ul>
 			<li>Grocery List
 				<ul id="groceryList">
-  					<li></li>
+  					
 				</ul>
 			</li>
 		</ul>
 	</div>
-	<div id="gorceries">
-		<h2 id="firstEntry">Click on a product to add to your grocery list. If you want more than one of each, input the number in the following input box first, then click the product.</h2>
-		Quantity: <input type="text" id="quantity">
-		<br>
-		<table border="1px">
+	<div id="groceries">
+		<h2 class="firstEntry">Click on a product to add to your grocery list. If you want more than one of each, input the number in the following input box first, then click the product. If you'd like to delete an item, click on the item in the list.</h2>
+		<div class="firstEntry">
+  			<form role="form" style="display: block;">
+   			<div class="form-group">
+     		<label for="amount" style="font-size: 20px; display:block;">Quantity</label>
+     		<input type="text" class="form-control" id="quantity" placeholder="Enter quantity here">
+   			</div>
+  			</form>
+		</div>
+		<div class="itemContainer">
+		<table >
         	<thead>
         	<tr>
-        	<th colspan="5">Seafood</th>
+        	<th colspan="5" class="itemHeader">Seafood</th>
         	<tr>
             	<td><img src="mediaFolder/ahiTuna.jpg" id="ahiTuna"/></td>
             	<td><img src="mediaFolder/mahiMahi.jpg" id="mahiMahi"/></td>
@@ -191,7 +310,7 @@ $('#box').append(e); */
             	<td><img src="mediaFolder/trout.jpg" id="trout"/></td>
         	</tr>
         	<tr>
-        	<th colspan="5">Fruits and Vegetables</th>
+        	<th colspan="5" class="itemHeader">Fruits and Vegetables</th>
         	<tr>
         		<td><img src="mediaFolder/bananas.jpg" id="bananas"/></td>
         		<td><img src="mediaFolder/apples.jpg" id="apples"/></td>
@@ -200,7 +319,7 @@ $('#box').append(e); */
         		<td><img src="mediaFolder/kiwi.jpg" id="kiwi"/></td>
         	</tr>
         	<tr>
-        	<th colspan="5">Meat and Cheese</th>
+        	<th colspan="5" class="itemHeader">Meat and Cheese</th>
         	<tr>
         		<td><img src="mediaFolder/bacon.jpg" id="bacon"/></td>
         		<td><img src="mediaFolder/chicken.jpg" id="chicken"/></td>
@@ -209,6 +328,7 @@ $('#box').append(e); */
         		<td><img src="mediaFolder/brie.jpg" id="brie"/></td>	
   			</tr>
     	</table>
+    	</div>
 	</div>
 </div>
 

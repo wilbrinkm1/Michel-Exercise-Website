@@ -1,67 +1,29 @@
-
-#navIndex{
-	display: inline;
-	height: 100px;
-	width: 150px;
-	background-color: purple;
-	float: left;
-}
-
-
-
-#navHTML {
-	display: inline;
-	height: 100px;
-	width: 150px;
-	background-color: #00008B;
-	float: left;
-}
-
-#navCSS {
-	display: inline;
-	height: 100px;
-	width: 150px;
-	background-color: #DC143C;
-	float: left;
-}
-
-#navJS {
-	display: inline;
-	height: 100px;
-	width: 150px;
-	background-color: #228B22;
-	float: left;
-}
-
-.formatTextInNavDivs {
-	font-size: 16px;
-	font-family: Verdana;
-	color: #FFD700;
-	text-align: center;
-}
-
-#sidebar {
+#groceryContainer {
 	position: relative;
 	padding: 25px;
 	float: left;
 	width: 100%;
 	display: block;
-
 }
 
 #lists {
 	float: left;
 	height: 700px;
-	width: 25%;
+	width: 20%;
 }
 
- #gorceries {
+ #groceries {
  	display: inline;
- 	position: fixed;
 	height: 90%;
-	width: 65%;
+	width: 76%;
 	background-color: #228B22;
 	float: right;
+}
+
+#quantity {
+	width: 250px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .pageTitle {
@@ -70,14 +32,21 @@
 	float: right;
 }
 
-.exampleImage {
-	margin: 5px;
-	padding: 5px;
-	border: 1px solid white;
-	height: 240px;
-	width: 320px;
+.firstEntry {
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+	font-size: 24px;
 }
 
+.itemHeader {
+	font-size: 20px;
+	color: #87CEFA;
+	text-align: center;
+}
 
-
+.itemContainer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
