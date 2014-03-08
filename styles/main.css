@@ -37,10 +37,10 @@
 }
 
 .tryin {
-	background-color: #4CCF53;
 	border-style: solid;
-	border-color: white;
-	height: 400px;
+	border-color: #FF0000;
+	height: 100px;
+	width: 300px;
 }
 
 .home-box-content {

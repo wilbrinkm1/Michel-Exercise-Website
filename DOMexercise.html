@@ -14,16 +14,39 @@
 
 
 
-<script>     
+<script>
 
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
 
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}     
+
+/* function to get player name 
 $(document).ready(function(){
   $("#firstPlayer").click(function(){
-    var x = document.getElementById('availablePlayersCol').getElementsByTagName('li')[0];
+    var x = document.getElementById('availablePlayersCol').getElementsByTagName('li')[1].firstChild;
     document.getElementById("player").innerHTML = x;
   };
 };
 
+
+
+$(document).ready(function(){
+
+}
+*/
 
 </script>
 
@@ -62,25 +85,35 @@ $(document).ready(function(){
 <div class="row">
   <div class="col-md-4 footballColumns">Available Players
     <ul class="list-group" id="availablePlayersCol">
-      <li class="list-group-item" id="firstPlayer">Michael Vick</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Morbi leo risus</li>
-      <li class="list-group-item">Porta ac consectetur ac</li>
-      <li class="list-group-item">Vestibulum at eros</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Michael Vick</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Jamaal Charles</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Lesean McCoy</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Adrian Peterson</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Tom Brady</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Demarius Thomas</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Calvin Johnson</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Marshawn Lynch</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Reggie Bush</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Dez Bryant</li>
+      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Mark Sanchez (jk, anybody but him. Row 13, Seat L, you're in!)</li>
     </ul>
   </div>
   <div class="col-md-4 footballColumns">Your Mock Draft
     <ul class="list-group yourMockDraftCol">
-      <li class="list-group-item"><span class="badge">1</span>Cras justo odio</li>
-      <li class="list-group-item"><span class="badge">2</span>Dapibus ac facilisis in</li>
-      <li class="list-group-item"><span class="badge">3</span>Morbi leo risus</li>
-      <li class="list-group-item"><span class="badge">4</span>Porta ac consectetur ac</li>
-      <li class="list-group-item"><span class="badge">5</span>Vestibulum at eros</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)"><span class="badge" style="float:left">1</span>First Pick</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">2</span>Second Pick</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">3</span>Third Pick</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">4</span>Fourth Pick</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">5</span>Fifth Pick</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">6</span>Sixth Pick</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">7</span>Seventh Pick</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">8</span>Eighth Pick</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">9</span>Ninth Pick</li>
+      <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">10</span>Tenth Pick</li>
     </ul>
   </div>
   <div class="col-md-4 footballColumns">Change/Add Draft Pick
-    <h4 class="getFootballInputs">Click on a name in the Available Players column or the Your Mock Draft column to select a player</h4>
-    <p id="player"></p>
+    <h4 class="getFootballInputs">Click and drag a player from the Available Player column to the desired Draft Pick position.</h4>
     <h4 class"getFootballInputs">Click on a draft position number in the Your Draft Picks column. This is where your new draft pick will be placed.</h4>
     <p id="draftPick"></p>
     <div class="btn-group">
@@ -89,6 +122,7 @@ $(document).ready(function(){
   </div>
 </div>
 
+<div class="tryin" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 
 </body>
