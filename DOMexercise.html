@@ -23,13 +23,17 @@ ev.preventDefault();
 
 function drag(ev)
 {
+console.log(ev.target.id);
 ev.dataTransfer.setData("Text",ev.target.id);
+console.log(ev.dataTransfer.getData("Text"));
 }
 
 function drop(ev)
 {
+console.log(ev.target);
 ev.preventDefault();
 var data=ev.dataTransfer.getData("Text");
+console.log(data);
 ev.target.appendChild(document.getElementById(data));
 }     
 
@@ -85,12 +89,12 @@ $(document).ready(function(){
 <div class="row">
   <div class="col-md-4 footballColumns">Available Players
     <ul class="list-group" id="availablePlayersCol">
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Michael Vick</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Jamaal Charles</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Lesean McCoy</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Adrian Peterson</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Tom Brady</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Demarius Thomas</li>
+      <li class="list-group-item" id="vick" draggable="true" ondragstart="drag(event)">Michael Vick</li>
+      <li class="list-group-item" id="charles" draggable="true" ondragstart="drag(event)">Jamaal Charles</li>
+      <li class="list-group-item" id="mccoy" draggable="true" ondragstart="drag(event)">Lesean McCoy</li>
+      <li class="list-group-item" id="peterson" draggable="true" ondragstart="drag(event)">Adrian Peterson</li>
+      <li class="list-group-item" id="brady" draggable="true" ondragstart="drag(event)">Tom Brady</li>
+      <li class="list-group-item" id="thomas" draggable="true" ondragstart="drag(event)">Demarius Thomas</li>
       <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Calvin Johnson</li>
       <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Marshawn Lynch</li>
       <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Reggie Bush</li>
