@@ -80,8 +80,12 @@
 	width: auto;
 }
 
-#footballHeader {
+.footballHeader {
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 1em;
+}
+
+.takenPlayersCol {
+	min-height: 5em;	
 }

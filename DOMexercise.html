@@ -16,38 +16,66 @@
 
 <script>
 
-function allowDrop(ev)
-{
-ev.preventDefault();
+var takenArray = [];
+
+
+function allowDrop(ev) {
+  ev.preventDefault();
 }
 
-function drag(ev)
-{
-console.log(ev.target.id);
-ev.dataTransfer.setData("Text",ev.target.id);
-console.log(ev.dataTransfer.getData("Text"));
+function drag(ev) {
+  console.log(ev.target.id);
+  ev.dataTransfer.setData("Text",ev.target.id);
+  console.log(ev.dataTransfer.getData("Text"));
 }
 
 function drop(ev)
 {
+  console.log(ev.target);
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("Text");
+  console.log(data);
+  ev.target.appendChild(document.getElementById(data));
+}     
+
+function takeOutPlayers(ev) {
+  $(".takenPlayers").remove();
+  var data = ev.dataTransfer.getData("Text");
+    console.log("data:",data);
+  takenArray.push(data);
+    console.log("takenArray unsorted:",takenArray);
+  takenArray.sort();
+    console.log("takenArray sorted:",takenArray);
+  takenCount = takenArray.length;
+    console.log(takenCount);
+  for (var i = 0; i < takenCount; i++) {
+    takenListItem = $("<li>"+(takenArray[i])+"</li>");
+    takenListItem.attr('class','takenPlayers');
+    $("#takenList").append(takenListItem);
+      console.log(takenListItem);
+  } 
+}
+
+/* 
+
+takenPlayers function steps:
+
+1. the drag function has the text that you are dropping.
+2. You are taking the text and putting it into the array. 
+3. sort the array alphabetically (nested for loops) then put the sorted list items into li tags (which are created using jQuery and for loop)
+
+
+
+takenPlayers    
 console.log(ev.target);
 ev.preventDefault();
 var data=ev.dataTransfer.getData("Text");
 console.log(data);
-ev.target.appendChild(document.getElementById(data));
-}     
-
-/* function to get player name 
-$(document).ready(function(){
-  $("#firstPlayer").click(function(){
-    var x = document.getElementById('availablePlayersCol').getElementsByTagName('li')[1].firstChild;
-    document.getElementById("player").innerHTML = x;
-  };
-};
 
 
 
-$(document).ready(function(){
+
+
 
 }
 */
@@ -84,7 +112,10 @@ $(document).ready(function(){
   </nav>
 </div>
 
-<h1 id="footballHeader">Fantasy Football Draft App</h1>
+<h1 class="footballHeader">Fantasy Football Draft App</h1>
+
+<h4 class="footballHeader">Click and drag a player from the Available Player column to the desired Draft Pick position. If a player has been drafted by another owner, drag the player to the Taken Players column.</h4>
+
 
 <div class="row">
   <div class="col-md-4 footballColumns">Available Players
@@ -95,11 +126,11 @@ $(document).ready(function(){
       <li class="list-group-item" id="peterson" draggable="true" ondragstart="drag(event)">Adrian Peterson</li>
       <li class="list-group-item" id="brady" draggable="true" ondragstart="drag(event)">Tom Brady</li>
       <li class="list-group-item" id="thomas" draggable="true" ondragstart="drag(event)">Demarius Thomas</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Calvin Johnson</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Marshawn Lynch</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Reggie Bush</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Dez Bryant</li>
-      <li class="list-group-item" id="firstPlayer" draggable="true" ondragstart="drag(event)">Mark Sanchez (jk, anybody but him. Row 13, Seat L, you're in!)</li>
+      <li class="list-group-item" id="cjohnson" draggable="true" ondragstart="drag(event)">Calvin Johnson</li>
+      <li class="list-group-item" id="lynch" draggable="true" ondragstart="drag(event)">Marshawn Lynch</li>
+      <li class="list-group-item" id="bush" draggable="true" ondragstart="drag(event)">Reggie Bush</li>
+      <li class="list-group-item" id="bryant" draggable="true" ondragstart="drag(event)">Dez Bryant</li>
+      <li class="list-group-item" id="sanchez" draggable="true" ondragstart="drag(event)">Mark Sanchez (jk, anybody but him. Row 13, Seat L, you're in!)</li>
     </ul>
   </div>
   <div class="col-md-4 footballColumns">Your Mock Draft
@@ -116,17 +147,11 @@ $(document).ready(function(){
       <li class="list-group-item" ondrop="drop(event)" ondragover="allowDrop(event)"><span class="badge" style="float:left">10</span>Tenth Pick</li>
     </ul>
   </div>
-  <div class="col-md-4 footballColumns">Change/Add Draft Pick
-    <h4 class="getFootballInputs">Click and drag a player from the Available Player column to the desired Draft Pick position.</h4>
-    <h4 class"getFootballInputs">Click on a draft position number in the Your Draft Picks column. This is where your new draft pick will be placed.</h4>
-    <p id="draftPick"></p>
-    <div class="btn-group">
-      <button type="button" class="btn btn-default footballAddChange">Add/Change Draft Pick</button>
-    </div>
+  <div class="col-md-4 footballColumns takenPlayersCol" ondrop="takeOutPlayers(event)" ondragover="allowDrop(event)">Taken Players  
+    <ul id="takenList">
+    </ul>
   </div>
 </div>
-
-<div class="tryin" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 
 </body>
