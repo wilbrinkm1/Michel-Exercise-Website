@@ -56,29 +56,13 @@ function takeOutPlayers(ev) {
   } 
 }
 
-/* 
-
-takenPlayers function steps:
-
-1. the drag function has the text that you are dropping.
-2. You are taking the text and putting it into the array. 
-3. sort the array alphabetically (nested for loops) then put the sorted list items into li tags (which are created using jQuery and for loop)
-
-
-
-takenPlayers    
-console.log(ev.target);
-ev.preventDefault();
-var data=ev.dataTransfer.getData("Text");
-console.log(data);
 
 
 
 
 
 
-}
-*/
+
 
 </script>
 
@@ -102,24 +86,33 @@ console.log(data);
         <ul class="nav navbar-nav">
           <li><a href="http://www.linkedin.com/in/michelwilbrink">LinkedIn</a></li> 
           <li><a href="currencyExchange.html">Currency Exchange</a></li>              
-          <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
+          <li><a href="jQueryGrocery.html">Grocery List</a></li>
+          <li><a href="fantasyFootball.html">Fantasy Football</a></li>
           <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+          <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
           <li><a href="nameAgeReddit.html">User Name Display</a></li>
-          <li><a href="jQueryGrocery.html">Grocery List made with jQuery</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </div>
 
+<div class="nflLogo1">
+  <img src="mediaFolder/nflLogoTilted.jpg">
+</div>
+
 <h1 class="footballHeader">Fantasy Football Draft App</h1>
 
-<h4 class="footballHeader">Click and drag a player from the Available Player column to the desired Draft Pick position. If a player has been drafted by another owner, drag the player to the Taken Players column.</h4>
+<div class="nflLogo2">
+  <img src="mediaFolder/nflTeams.gif">
+</div>
+
+<h4 class="footballInstruct">Click and drag a player from the Available Player column to the desired Draft Pick position. If a player has been drafted by another owner, drag the player to the Taken Players column.</h4>
 
 
 <div class="row">
   <div class="col-md-4 footballColumns">Available Players
-    <ul class="list-group" id="availablePlayersCol">
+    <ul class="list-group availablePlayersCol">
       <li class="list-group-item" id="vick" draggable="true" ondragstart="drag(event)">Michael Vick</li>
       <li class="list-group-item" id="charles" draggable="true" ondragstart="drag(event)">Jamaal Charles</li>
       <li class="list-group-item" id="mccoy" draggable="true" ondragstart="drag(event)">Lesean McCoy</li>
@@ -130,7 +123,6 @@ console.log(data);
       <li class="list-group-item" id="lynch" draggable="true" ondragstart="drag(event)">Marshawn Lynch</li>
       <li class="list-group-item" id="bush" draggable="true" ondragstart="drag(event)">Reggie Bush</li>
       <li class="list-group-item" id="bryant" draggable="true" ondragstart="drag(event)">Dez Bryant</li>
-      <li class="list-group-item" id="sanchez" draggable="true" ondragstart="drag(event)">Mark Sanchez (jk, anybody but him. Row 13, Seat L, you're in!)</li>
     </ul>
   </div>
   <div class="col-md-4 footballColumns">Your Mock Draft
