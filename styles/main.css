@@ -114,3 +114,15 @@
 	clear: right;
 	margin-right: 0.5em;
 }
+
+.schedule-row-length {
+	width: 26%;
+}
+
+.fixedd {
+	position: fixed;
+}
+
+.hidden {
+	display: none;
+}

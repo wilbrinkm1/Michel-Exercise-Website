@@ -8,7 +8,30 @@
 
 </head>
 
-<body>
+<script> 
+
+var password = function () {
+  alert("You will have to enter your name and password (pw: letMeIn) before this page loads");
+}
+
+$(document).ready(function(){
+  $("#nextStage").click(function(){
+    $("div").removeClass("hidden");  
+    $("#password").addClass("hidden");
+  });
+});
+
+
+function inputInfo() {
+  var userName=document.getElementById("uname").value;
+  var age=document.getElementById("age").value;
+  var redditName=document.getElementById("rname").value;
+  document.getElementById("answer").innerHTML = "Your name is " + userName + ", you are " + age + " years old, and your username is " + redditName +".";
+
+}
+</script>
+
+<body onload="password()">
 
 <div class="row" style="height:50px;">
   <nav class="navbar navbar-default" role="navigation">
@@ -37,48 +60,44 @@
   </nav>
 </div>
 
-
-
-<h3 id="headerTitle" style="float:left">Enter your user name, age, and reddit name in the below text boxes.</h3>
-<br>
-<br>
-<br>
-
-
-<form role="form">
-  <div class="form-group">
-    <label for="uname">User Name</label>
-    <input type="text" class="form-control" id="uname" placeholder="Enter User Name">
-  </div>
-  <div class="form-group">
-    <label for="age">Age</label>
-    <input type="text" class="form-control" id="age" placeholder="Enter Your Age">
-  </div>
-  <div class="form-group">
-    <label for="rname">Reddit Name</label>
-    <input type="text" class="form-control" id="rname" placeholder="Enter Your Reddit Name">
-  </div>
- <button type="button" onclick="inputInfo()">Input Info</button>
-</form>
-
-<p id="answer"></p>
-
-<div class="well well-lg" style="background-color:black; margin-top: 50px;">
-  <h2 class="footer-text">Michel Wilbrink</h2>
-  <p class="footer-text"> 4 Apple Tree Court, Livingston NJ</p>
-  <p class="footer-text"> Copyright 2014</p>
+<div id="password">
+  <h3>Enter your name and password in the first and second box, respectively.</h3>
+  <input type="text" value="Name">
+  <input type="text" value="Password">
+  <p id="nextStage">Enter</p>
 </div>
 
-<script> 
+<div class="hidden">
+  <h3 id="headerTitle" style="float:left">Enter your user name, age, and reddit name in the below text boxes.</h3>
+  <br>
+  <br>
+  <br>
 
-function inputInfo() {
-	var userName=document.getElementById("uname").value;
-	var age=document.getElementById("age").value;
-	var redditName=document.getElementById("rname").value;
-	document.getElementById("answer").innerHTML = "Your name is " + userName + ", you are " + age + " years old, and your username is " + redditName +".";
 
-}
-</script>
+  <form role="form" id="formGroup">
+    <div class="form-group">
+      <label for="uname">User Name</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter User Name">
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" id="age" placeholder="Enter Your Age">
+    </div>
+    <div class="form-group">
+      <label for="rname">Reddit Name</label>
+      <input type="text" class="form-control" id="rname" placeholder="Enter Your Reddit Name">
+    </div>
+   <button type="button" onclick="inputInfo()">Input Info</button>
+  </form>
+
+  <p id="answer"></p>
+
+  <div class="well well-lg" style="background-color:black; margin-top: 50px;">
+    <h2 class="footer-text">Michel Wilbrink</h2>
+    <p class="footer-text"> 4 Apple Tree Court, Livingston NJ</p>
+    <p class="footer-text"> Copyright 2014</p>
+  </div>
+</div>
 
 
 
