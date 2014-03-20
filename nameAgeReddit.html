@@ -16,8 +16,17 @@ var password = function () {
 
 $(document).ready(function(){
   $("#nextStage").click(function(){
-    $("div").removeClass("hidden");  
-    $("#password").addClass("hidden");
+    var passwordVar = document.getElementById("passwordInput").value;
+    console.log("passwordVar");
+    var pwCheck = "letMein";
+    $(document).ready(function(){
+      if (passwordVar === pwCheck) {
+         $("div").removeClass("hidden");  
+         $("#passwordSection").addClass("hidden");
+      } else {
+          alert("You will have to enter your name and password (pw: letMeIn) before this page loads");     
+      }
+    }
   });
 });
 
@@ -60,10 +69,10 @@ function inputInfo() {
   </nav>
 </div>
 
-<div id="password">
+<div id="passwordSection">
   <h3>Enter your name and password in the first and second box, respectively.</h3>
   <input type="text" value="Name">
-  <input type="text" value="Password">
+  <input id="passwordInput" type="text">
   <p id="nextStage">Enter</p>
 </div>
 
