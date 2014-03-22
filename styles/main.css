@@ -126,3 +126,8 @@
 .hidden {
 	display: none;
 }
+
+.wallSongHeader {
+	font-family: 'Gilda Display', serif;
+	font-size: 24px;
+}
