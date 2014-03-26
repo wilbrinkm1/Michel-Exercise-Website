@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/rememoirCSS.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+<div class="loginLogoContainer">
+
+</div>
+
+
+
+
+
+
+
+</body>
+

@@ -1,0 +1,26 @@
+.loginLogoContainer {
+	width: 100%;
+	height: 340px;
+	background-color: #D8FFFF;
+}
+
+.divideBanner {
+	width: 100%;
+	height: 70px;
+	background-color: blue;
+}
+
+.logo {
+	display: inline-block;
+	margin-top: 
+}
+
+.loginBox {
+	display: inline-block;
+	width: 20%;
+	height: 235px;
+	border-style: solid;
+	border-color: blue;
+	float: right;
+	margin-right: 8%;
+}
