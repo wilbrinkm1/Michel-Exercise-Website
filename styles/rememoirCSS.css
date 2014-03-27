@@ -24,3 +24,43 @@
 	float: right;
 	margin-right: 8%;
 }
+
+.col-xs-1 {
+  width: 8.333333333333332%;
+
+}
+
+.borderSolid {
+	border-style: solid;
+	border-color: green;
+	height: 100px;
+}  
+
+.something {
+	margin: ;
+}
+
+.inputMargins {
+	margin: 25px 20px 25px 20px;
+
+}
+
+.loginButton {
+	display: inline-block;
+	width: 8.333333333333332%;
+}
+
+
+
+
+
+
+/* Responsive design css */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+} 
