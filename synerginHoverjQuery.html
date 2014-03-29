@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="synerginHoverjQuery.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!--
+		$("#img1").html("<img src=" + (mediaFolder/usDollar.jpg) + ">"); 
+		$("#img1").html("<img src=" + "mediaFolder/usDollar.jpg" + ">");
+		$("#img1").attr("img src=", "mediaFolder/usDollar.jpg");
+		$("#img1").attr("img src", "mediaFolder/usDollar.jpg");
+-->
+
+<script>
+
+/* onclick of peso, img count and top count go up by 1. 
+or maybe we want to use two booleans, one to check the clickCount, one to check the topCount
+
+Things we want it to do:
+When clicked, img stays what it hovered into, locks it
+Create a boolean that toggles on onclick, 
+when next img is clicked, that img is toggle on, while everything else is toggle off. in on position, img stays, on off position, img can switch. 
+
+	if (clickCountImg1 == clickCountImg2) {
+			clickCountImg1 = clickCountImg1 + 1;
+			topCount = topCount + 1;
+		} else {
+			clickCountImg2 = clickCountImg2 +1;
+		}
+		console.log("clickCountImg1:" + clickCountImg1);
+		console.log("topCount:" + topCount);
+		console.log("clickCountImg2:" + clickCountImg2);
+
+								For loop finds which array item is locked (=true).
+
+
+  If true, set img attr to corresponding img array 		
+
+  	if (locked[i] = true) {
+				$("#img1").attr("src", imageA);
+			} else {
+				$("#img1").attr("src", imageB);
+	
+
+		for (var i = 0; i < 2; i++) {
+
+var clickCountImg1 = 1;
+var clickCountImg2 = 1;
+var topCount = 1;
+
+for (var i = 0; i < 1; i++) {
+
+
+		if (locked[0] == true) {											
+			$("#img0").attr("src",imageB[0]);
+		} else {
+
+
+		if (locked[1] == true) {											
+			$("#img1").attr("src",imageA[1]);
+		} else {
+
+
+
+			}*/
+
+
+var locked = new Array ();
+	locked[0] = false;
+	locked[1] = false;
+
+var imageA = new Array ();
+	imageA[0] = "mediaFolder/philippinePeso.jpg";
+	imageA[1] = "mediaFolder/apples.jpg";
+
+var imageB = new Array ();
+	imageB[0] = "mediaFolder/usDollar.jpg";
+	imageB[1] = "mediaFolder/bananas.jpg";
+
+
+
+$(document).ready(function(){
+	$("#img0").click(function(){
+		for (var i = 0; i <= 1; i++) {
+			locked[i] = false;
+		}
+		locked[0] = true;
+		$("#img0").attr("src",imageB[0])
+		$("#img1").attr("src",imageA[1]); 
+		$("#infoText").text("Hello world!");
+	
+	});
+});
+
+$(document).ready(function(){
+	$("#img0").hover(function(){												
+		$("#img0").attr("src",imageB[0]);
+	},function(){
+		$(document).ready(function(){
+			if (locked[0] == true) {
+				$("#img0").attr("src", imageB[0]);
+			} else {
+			    $("#img0").attr("src",imageA[0]);
+			}
+		});
+	});
+});
+
+
+
+$(document).ready(function(){
+	$("#img1").click(function(){
+		for (var i = 0; i <= 1; i++) {
+			locked[i] = false;
+		}
+		locked[1] = true;
+		$("#img1").attr("src",imageB[1])
+		$("#img0").attr("src",imageA[0]); 
+		$("#infoText").text("Hello world 2!");
+	
+	});
+});
+
+$(document).ready(function(){
+	$("#img1").hover(function(){												
+			$("#img1").attr("src",imageB[1]);
+	},function(){
+		$(document).ready(function(){
+			if (locked[1] == true) {
+				$("#img1").attr("src", imageB[1]);
+			} else {
+			    $("#img1").attr("src",imageA[1]);
+			}
+		});
+	});
+});
+
+</script>
+
+
+</head>
+<body>
+
+
+<div id="box1">
+	<img src="mediaFolder/philippinePeso.jpg" id="img0">
+</div>
+<div id="box2">
+	<img src="mediaFolder/apples.jpg" id="img1">
+</div>
+<div id="box3">
+	<img src="mediaFolder/philippinePeso.jpg" id="img2">
+</div>
+
+<div id="infoBox">
+	<h4 id="infoText"></h4>
+</div>
+
+
+
+
+
+</body>
+</html>
