@@ -7,7 +7,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 
-
 <script>
 
 /* These object keys are the properties of each object index. So..
@@ -72,9 +71,8 @@ $(document).ready(function(){
 		$("#img3").attr("src",blockInfo[3].imageOff); 
 		$("#img4").attr("src",blockInfo[4].imageOff);
 		$("#img5").attr("src",blockInfo[5].imageOff);
-		$("#numberCell").text("00")
-		$("#greenTitle").text("greenTitle00")
-		$("#infoText").text("whiteParagraph00");	
+		$("#infoText").text("Hello world 0!");
+	
 	});
 
 	$("#img0").hover(function(){												
@@ -104,9 +102,8 @@ $(document).ready(function(){
 		$("#img3").attr("src",blockInfo[3].imageOff); 
 		$("#img4").attr("src",blockInfo[4].imageOff);
 		$("#img5").attr("src",blockInfo[5].imageOff); 
-		$("#numberCell").text("01")
-		$("#greenTitle").text("greenTitle01")
-		$("#infoText").text("whiteParagraph01");
+		$("#infoText").text("Hello world 1!");
+	
 	});
 
 	$("#img1").hover(function(){												
@@ -137,9 +134,7 @@ $(document).ready(function(){
 		$("#img3").attr("src",blockInfo[3].imageOff);
 		$("#img4").attr("src",blockInfo[4].imageOff);
 		$("#img5").attr("src",blockInfo[5].imageOff);
-		$("#numberCell").text("02")
-		$("#greenTitle").text("greenTitle02")
-		$("#infoText").text("whiteParagraph02");
+		$("#infoText").text("Hello world 2!");
 	});
 
 	$("#img2").hover(function(){												
@@ -170,9 +165,7 @@ $(document).ready(function(){
 		$("#img3").attr("src",blockInfo[3].imageOn); 
 		$("#img4").attr("src",blockInfo[4].imageOff);
 		$("#img5").attr("src",blockInfo[5].imageOff);
-		$("#numberCell").text("03")
-		$("#greenTitle").text("greenTitle03")
-		$("#infoText").text("whiteParagraph03");
+		$("#infoText").text("Hello world 3!");
 	});
 
 	$("#img3").hover(function(){												
@@ -202,9 +195,8 @@ $(document).ready(function(){
 		$("#img3").attr("src",blockInfo[3].imageOff); 
 		$("#img4").attr("src",blockInfo[4].imageOn);
 		$("#img5").attr("src",blockInfo[5].imageOff);
-		$("#numberCell").text("04")
-		$("#greenTitle").text("greenTitle04")
-		$("#infoText").text("whiteParagraph04");	
+		$("#infoText").text("Hello world 4!");
+	
 	});
 
 	$("#img4").hover(function(){												
@@ -234,9 +226,8 @@ $(document).ready(function(){
 		$("#img3").attr("src",blockInfo[3].imageOff); 
 		$("#img4").attr("src",blockInfo[4].imageOff);
 		$("#img5").attr("src",blockInfo[5].imageOn);
-		$("#numberCell").text("05")
-		$("#greenTitle").text("greenTitle05")
-		$("#infoText").text("whiteParagraph05");	
+		$("#infoText").text("Hello world 5!");
+	
 	});
 
 	$("#img5").hover(function(){												
@@ -255,184 +246,36 @@ $(document).ready(function(){
 </script>
 
 
-<style>
-
-* {
-	position: relative;
-}
-
-.space {
-	padding-right:15px; 
-	padding-bottom:15px;
-}
-
-
-
-.block-container {
-	width: 887.5px;
-	height: auto;
-/*	height: 259px;
-	max-height: 259px; */
-	background-color: #5C5C5C;
-	padding: 7.5px 7.5px 7.5px 7.5px;
-}
-
-.spacing {
-	padding: 7.5px 7.5px 7.5px 7.5px;
-}
-
-.display-block {
-	display: block;
-}
-
-.display-inline-block {
-	display: inline-block;
-}
-
-.info-box {
-	width: 420px;
-	height: 221px;
-	background-color: black;
-	display: inline-block;
-	margin-top: 7.5px;
-	margin-right: 7.5px;
-	padding: 7.5px 7.5px 7.5px 7.5px;
-	border-radius: 25px;
-	float: right;
-}
-
-#numberCell {
-	display: inline-block;
-	font-size: 44px;
-	font-weight: 900;
-	margin-top: 5px;
-	margin-left: 5px;
-	margin-bottom: 5px;
-	padding-right: 10px;
-	color: white;
-	width: 35px;
-	height: auto;
-}
-
-#greenTitle {
-	display: inline-table;
-	color: #00FF00;
-	margin-top: -20px;
-	padding-left: 10px;
-	max-width: 360px; 
-	max-height: 40px;
-	overflow: hidden;
-}
-
-#infoText {
-	margin-left: 5px;
-}
-
-</style> 
-	
-
-
 </head>
+
+
 <body>
-
-
-<div class="block-container">
-	<div style="display: inline-block;">
-		<a href="#" title="tooltip0"><img src="mediaFolder/synergin/block0on" id="img0" class="spacing"></a>
-		<a href="#" title="tooltip1"><img src="mediaFolder/synergin/block1off" id="img1" class="spacing"></a>
-		<a href="#" title="tooltip2"><img src="mediaFolder/synergin/block2off" id="img2" class="spacing" style="padding-right: 0px;"></a>
-		<br>
-		<a href="#" title="tooltip3"><img src="mediaFolder/synergin/block3off" id="img3" class="spacing"></a>
-		<a href="#" title="tooltip4"><img src="mediaFolder/synergin/block4off" id="img4" class="spacing"></a>
-		<a href="#" title="tooltip5"><img src="mediaFolder/synergin/block5off" id="img5" class="spacing" style="padding-right: 0px;"></a>
-	</div>
-	<div class="info-box">
-		<h1 id="numberCell" class="numberCellClass">01</h1>
-		<p id="greenTitle">Green Title af asdf adsf asdasdf adsf asdf asdf asdf asdf asdf asdf asdf asdf adsf asdf asdf adsf adf asdf asdf adf asdf </p>
-		<p id="infoText" style="color:white;">01 asdf asdf adsf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf </p>
-	</div>
-</div>
-
-
-
-
-
 
 <!-- These are the 6 blocks/images. Except the first block, they all start in the "off" position. The hover and click function above will tell it how to behave.
 
 To edit the tooltip message for each, change the text between the quotes after title=.
 
 The styles can be ignored as the will likely change when implemented to the Wordpress site. 
-
-<<<<<<<<<<<<<<<<<
-<div style="display: inline-block; width: 31%; height">
-		<tr>
-			class="space"><a href="#" title="tooltip0"><img src="mediaFolder/synergin/block0on" id="img0"></a></td>
-			<td class="space"><a href="#" title="tooltip1"><img src="mediaFolder/synergin/block1off" id="img1"></a></td>
-			<td class="space"><a href="#" title="tooltip2"><img src="mediaFolder/synergin/block2off" id="img2"></a></td>
-		</tr>
-		<tr>
-			<td class="space"><a href="#" title="tooltip3"><img src="mediaFolder/synergin/block3off" id="img3"></a></td>
-			<td class="space"><a href="#" title="tooltip4"><img src="mediaFolder/synergin/block4off" id="img4"></a></td>
-			<td class="space"><a href="#" title="tooltip5"><img src="mediaFolder/synergin/block5off" id="img5"></a></td>
-		</tr>
-
-</div>
->>>>>>>>>>>>>>>
-
-This is the 7th block where text will pop in once one of the 6 blocks are clicked. See the comment above the first click and hover function on how to change the text that will pop up upon clicking the img 
-
-
-<<<<<<<<<<<<<<
-<div style="width:40%; height:235px; background-color: black; display:inline-block; margin-top: 0px; margin-bottom: 21px; border-radius: 25px;">
-	<div>
-	<table>
-		<tr>
-			<td id="numberCell" style="font-size: 48px; color: #00FF00;  font-weight: 900; padding-left: 5px; padding-right: 5px">01</td>
-			<td id="greenTitle" style="font-size: 14px; color: #00FF00; width: 85%; padding-right: 5px">Green Ttle</td>
-		</tr>
-	</table>
-	</div>
-	<div>
-		<p id="infoText" style="font-size: 12px; color: white; padding-left: 5px; padding-right: 5px; width: 65%; display: inline-block;">dsfa adf adf asdf asdf asdf f asdf asdf asdf asdf asdf asdf asdf adsf asdf asdf asdf asdf asdf asdf </p>
-	</div> 
-</div>
->>>>>>>>>>>>>>
-	
-	<p id="infoText" style="font-size: 12px; color: white; width: 95%; padding-left: 5px; padding-right: 5px">I'm alread here zijawl;efj;aowiejf;oijwa e;oifj ;owaij efo;iawje ;ofijw a;oeif jaw;oie jf;owai ejf;owa ijef;oi wajef;oi wajf; oia wje;fo ijw;oi efj;wo ifj;a owijf o;aiw j</p> -->
-
-
-<!-- pics are 127px x 108px
-
-
-	
-	<span style="display: inline-block;"><h1 id="numberCell" style="color: white; width: 15%; display: inline-block;">10</h1></span>
-		<span style="display: inline-block;"><h3 id="greenTitle" style="color: white; width: 85%; display: inline-block;">Green Title dfljsdf sfjf sfdlksdjf sdfsfj sdf sdfj lf  flkjdsf  sfdjlsk fl lk jfa f alfj alsj flajs fj asflsdj f</h3></span>
-
-
-
-<style>
-.space{ padding-right:15px; padding-bottom:15px;}
-
-</style> 
-<div style="display: inline-block">
-<table>
-<tr>
- <td class="space"> <a href="#" title="tooltip0"><img src="img/people-hover.png" id="img0"></a> </td>
- <td class="space"> <a href="#" title="tooltip1"><img src="img/tool.png" id="img1"></a> </td>
- <td class="space"> <a href="#" title="tooltip2"><img src="img/infinite.png" id="img2"></a> </td>
-</tr>
-
-<tr> 
-    <td class="space"> <a href="#" title="tooltip3"><img src="img/tablet.png" id="img3"></a> </td>
- <td class="space"> <a href="#" title="tooltip4"><img src="img/graph.png" id="img4"></a> </td>
- <td class="space"> <a href="#" title="tooltip5"><img src="img/arrow.png" id="img5"></a> </td>
-  </tr>
-
-</table>
-</div>
-
 -->
+
+<div style="display: inline-block">
+	<a href="#" title="tooltip0"><img src="mediaFolder/synergin/block0on" id="img0"></a>
+	<a href="#" title="tooltip1"><img src="mediaFolder/synergin/block1off" id="img1"></a>
+	<a href="#" title="tooltip2"><img src="mediaFolder/synergin/block2off" id="img2"></a>
+	<a href="#" title="tooltip3"><img src="mediaFolder/synergin/block3off" id="img3"></a>
+	<a href="#" title="tooltip4"><img src="mediaFolder/synergin/block4off" id="img4"></a>
+	<a href="#" title="tooltip5"><img src="mediaFolder/synergin/block5off" id="img5"></a>
+</div>
+
+<!-- This is the 7th block where text will pop in once one of the 6 blocks are clicked. See the comment above the first click and hover function on how to change the text that will pop up upon clicking the img -->
+
+<div style="width:10%; height:95px; border-style:solid; border-color:black;">
+	<h4 id="infoText">Hey</h4>
+</div>
+
+
+
+
 
 </body>
 </html>
