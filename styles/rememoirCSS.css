@@ -1,7 +1,6 @@
 .loginLogoContainer {
 	width: 100%;
 	height: 340px;
-	background-color: #D8FFFF;
 }
 
 .divideBanner {
@@ -11,7 +10,8 @@
 
 .logo {
 	display: inline-block;
-	margin-top: 
+	margin-top: 1%;
+	margin-left: 4%;
 }
 
 .loginBox {
@@ -21,7 +21,9 @@
 	border-style: solid;
 	border-color: blue;
 	float: right;
-	margin-right: 8%;
+	margin-right: 4%;
+	margin-top: 1%;
+
 }
 
 .col-xs-1 {
@@ -40,16 +42,46 @@
 }	
 
 .inputMargins {
-	margin: 25px 20px 25px 20px;
+	width: 300px;
+	margin: 25px auto 0px auto;
 
 }
 
-.loginButton {
+.login-button {
 	display: inline-block;
-	width: 8.333333333333332%;
+	width: 15%;
+	margin-right: 37.678px;
+	margin-top: 25px; 
+	float: right;
 }
 
+.site-Container {
+	width: 100%;
+	height: 4000px;
+	background-color: black;
+}
 
+.sign-up {
+	display: inline-block;
+	margin-left: 37.678px;
+	margin-top: 25px;
+
+
+}
+
+.forget-something {
+	display: block;
+	text-align: center;
+	margin: 25px auto 0px auto;
+}
+
+.login-navbar {
+	height: 5%;
+	width: 100%;
+	background-color: #CCFFFF;
+	border-style: solid;
+	border-color: green;
+}
 
 
 

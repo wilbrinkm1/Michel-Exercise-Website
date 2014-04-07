@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+<script>
+
+var fades = function () {
+	$(document).ready(function(){
+		$("#firstPic").fadeOut();
+		setTimeout(function(){
+			$("#firstPic").attr("src","mediaFolder/bananas.jpg");
+			$("#firstPic").fadeIn("slow");
+		},1000);
+	});
+}
+
+
+</script>
+
+<style>
+
+
+#container {
+	height: 350px;
+	width: 300px;
+	display: block;
+	z-index: 1;
+}
+
+#firstPic {
+	display: block;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#transform {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#words {
+	z-index: 2;
+	text-align: center;
+	top: 10px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+<div id="container">
+	<h1 id="words">Am I in the right place?</h1>
+	<img src="mediaFolder/kiwi.jpg" id="firstPic" align="middle">
+	<button type="button" id="transform" onclick="fades()">Do it</button>
+</div>
+
+
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Click on the link to see the slide effect.</p>
+    <a href="#pagetwo" data-transition="slide">Slide to Page Two</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Click on the link to go back. <b>Note</b>: fade is default.</p>
+    <a href="#pageone">Go to Page One</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+
+
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="mediaFolder/salmon.jpg" alt="salmon">
+      <div class="carousel-caption">
+        This is salmon
+      </div>
+      <img src="mediaFolder/tomato.jpg" alt="tomato">
+      <div class="carousel-caption">
+        This is tomato
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
