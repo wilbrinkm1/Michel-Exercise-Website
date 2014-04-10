@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ <script src="https://code.jquery.com/jquery.js"></script>
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+
+
+/* When slecting USD from the currency dropdown, can it call a click function which will then set prices to USD?
+   OR would we check it through the DOM? 
+$(document).ready(function(){
+	$("#USD").click(function(){
+		console.log(USD);
+	});
+});
+*/
+
+
+
+
+
+
+</script>
+
+
+<style>
+
+.header-container {
+	margin-left: 3%;
+	margin-right: 3%;
+	width: 94%;
+	height:8.9%;
+	background-color: #B5FFFF;
+}
+
+.login-register {
+
+	display: inline-block;
+	width: 48%;
+	height: 26px;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+.currency-choice {
+	display: inline-block;
+	width: 48%;
+	height: 22px;
+	margin-top: 15px;
+	margin-right: 25px;
+	float: right;
+}
+
+.currency-dropdown {
+	width: 83px;
+	height: 27px;
+	padding-right: 0px;
+	float: right;
+	border: none;
+	font-size: 17px
+}
+
+.currency-label {
+	padding-right: 9px;
+	float: right;	
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	height: auto;
+	width: auto;
+}
+
+.head-logo {
+	width: 100%;
+}
+
+.harmony-logo {
+	margin-top: 15px;
+	margin-right: 33.4%;
+	margin-left: 33.4%;
+	width: 33.2%;
+	height: 127px;
+	margin-bottom: 38px;
+}
+
+.searchDiv {
+	width: 20%;
+}
+
+#loginLink {
+	width: 75px;
+	height: 14px;
+	display: inline;
+	border-right-style: solid;
+	border-width: thin;
+	border-right-color: #929292;
+	padding-right: 35px;
+	font-size: 18px;
+	font-style: normal;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+
+}
+
+#registerLink {
+	width: 75px;
+	height: 14px;
+	display: inline;
+	padding-left: 35px;
+	padding-right: 15px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+}
+
+#searchOption {
+	height: 45px;
+	width: 100%;
+}
+
+</style>
+
+</head>
+
+
+<!-- When I change the color to #F1F1F1, it doesn't apply. Why? -->
+<body style="background-color: #929292; width: 100%; height: 3251px; margin: 0 0 0 0; opacity: 0.5; z-index: 2;" background="mediaFolder/grid.png">
+
+<div class="header-container" style: "z-index: 1;">
+	<div class="login-register">
+		<!-- My ul tag automatically adds a 40px padding-left, from -webkit-padding-start: 40px; Why? For now, the added style works-->
+		<ul style="margin: 0 0 0 0; padding: 0 0 0 0; display: inline;">
+			<li id="loginLink"><a href="#">Login</a></li>
+			<li id="registerLink"><a href="#">Register</a></li>
+		<ul>
+	</div>
+	<div class="currency-choice">
+		<select id="currencies" class="currency-dropdown">
+			<option id="USD" class="floatR" value="USD">USD</option>
+  			<option id="EUR" class="floatR" value="EUR">EUR</option>
+  			<option id="GDP" class="floatR" value="GDP">GBP</option>
+  			<option id="PHP" class="floatR" value="PHP">PHP</option>
+		</select>
+		<label for="currencies" class="currency-label">Currency - </label>
+	</div>
+	<div class="header-logo">
+		<img src="mediaFolder/harmonyMedia/harmonyLogo.png" class="harmony-logo">
+	</div>
+	<div class="searchDiv">
+		<input id="searchOption" type="text" x-webkit-speech="" placeholder="Search">
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
