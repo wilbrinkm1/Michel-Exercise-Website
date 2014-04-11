@@ -7,6 +7,11 @@
  <script src="https://code.jquery.com/jquery.js"></script>
  <script src="bootstrap/js/bootstrap.min.js"></script>
 
+<!-- TO DO:
+
+- Make sure all fonts are Roboto
+
+-->
 
 <script>
 
@@ -30,12 +35,20 @@ $(document).ready(function(){
 
 <style>
 
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
 .header-container {
-	margin-left: 3%;
-	margin-right: 3%;
-	width: 94%;
+	margin-left: 3.1%;
+	margin-right: 3.1%;
+	width: 93.8%;
 	height:8.9%;
-	background-color: #B5FFFF;
+	background-color: white; /* #B5FFFF */
 }
 
 .login-register {
@@ -58,37 +71,61 @@ $(document).ready(function(){
 
 .currency-dropdown {
 	width: 83px;
-	height: 27px;
+	height: 24px;
 	padding-right: 0px;
 	float: right;
 	border: none;
-	font-size: 17px
+	font-size: 16px;
+	text-align: right;
 }
 
 .currency-label {
 	padding-right: 9px;
 	float: right;	
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 	height: auto;
 	width: auto;
 }
 
-.head-logo {
+.header-logo {
 	width: 100%;
+	height: 181px;
 }
 
 .harmony-logo {
-	margin-top: 15px;
+	margin-top: 0px;
 	margin-right: 33.4%;
 	margin-left: 33.4%;
 	width: 33.2%;
-	height: 127px;
-	margin-bottom: 38px;
+	height: auto;
+	margin-bottom: 20px;
 }
 
 .searchDiv {
-	width: 20%;
+	width: 19.9%;
+	height: 67px;
+	display: inline-block;
+	border-left-style: solid;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-width: thin;
+	border-color: #CCCCCC;
+
+}
+
+.search-icon {
+	display: inline;
+	float: left;
+	width: 55px;
+	height: 55px;
+	margin-top: 4.5px;
+	margin-bottom: 8.5px;
+	margin-left: 12px;
+}
+
+.navvy {
+	display: inline;
 }
 
 #loginLink {
@@ -98,8 +135,8 @@ $(document).ready(function(){
 	border-right-style: solid;
 	border-width: thin;
 	border-right-color: #929292;
-	padding-right: 35px;
-	font-size: 18px;
+	padding-right: 32px;
+	font-size: 16px;
 	font-style: normal;
 	font-family: 'Roboto', sans-serif;
 	color: black;
@@ -110,16 +147,23 @@ $(document).ready(function(){
 	width: 75px;
 	height: 14px;
 	display: inline;
-	padding-left: 35px;
+	padding-left: 30.666px;
 	padding-right: 15px;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 	color: black;
 }
 
 #searchOption {
-	height: 45px;
-	width: 100%;
+	height: 50px;
+	width: 177px;
+	display: inline;
+	border-style: none;
+	padding-left: 5px;
+	margin-top: 4.5px;
+	float: left;
+	font-size: 16px;
+	font-family: sans-serif;
 }
 
 </style>
@@ -127,8 +171,9 @@ $(document).ready(function(){
 </head>
 
 
-<!-- When I change the color to #F1F1F1, it doesn't apply. Why? -->
-<body style="background-color: #929292; width: 100%; height: 3251px; margin: 0 0 0 0; opacity: 0.5; z-index: 2;" background="mediaFolder/grid.png">
+<!-- When I change the color to #F1F1F1, it doesn't apply. Why? 
+opacity: 0.5; z-index: 2;" background="mediaFolder/grid.png">-->
+<body style="background-color: #929292; width: 100%; height: 3251px; margin: 0 0 0 0;">
 
 <div class="header-container" style: "z-index: 1;">
 	<div class="login-register">
@@ -136,7 +181,7 @@ $(document).ready(function(){
 		<ul style="margin: 0 0 0 0; padding: 0 0 0 0; display: inline;">
 			<li id="loginLink"><a href="#">Login</a></li>
 			<li id="registerLink"><a href="#">Register</a></li>
-		<ul>
+		</ul>
 	</div>
 	<div class="currency-choice">
 		<select id="currencies" class="currency-dropdown">
@@ -151,10 +196,38 @@ $(document).ready(function(){
 		<img src="mediaFolder/harmonyMedia/harmonyLogo.png" class="harmony-logo">
 	</div>
 	<div class="searchDiv">
-		<input id="searchOption" type="text" x-webkit-speech="" placeholder="Search">
+		<img src="mediaFolder/harmonyMedia/searchIcon.png" class="search-icon">
+		<input id="searchOption" x-webkit-speech="" type="text" placeholder="Search">
 	</div>
-</div>
+	<nav class="navvy">
+		<ul>
+			<li class="home-link"><a href="#">HOME</a></li>
+			<li><a href="#">SHOP</a>
+				<ul>
+					<li><a href="#">Photoshop</a></li>
+					<li><a href="#">Illustrator</a></li>
+					<li><a href="#">Web Design</a></li>
+					<li><a href="#">Photoshop</a></li>
+					<li><a href="#">Illustrator</a></li>
+					<li><a href="#">Web Design</a></li>
+				</ul>
+			</li>
+			<li><a href="#">SALE</a>
+				<ul>
+					<li><a href="#">Web Design</a></li>
+					<li><a href="#">User Experience</a></li>
+					<li><a href="#">Web Design</a></li>
+				</ul>
+			</li>
+			<li><a href="#">BLOG</a></li>
+			<li><a href="#">CONTACT US</a></li>
+		</ul>
+	</nav>
 
+
+		</ul>
+	</nav>
+</div>
 
 
 
