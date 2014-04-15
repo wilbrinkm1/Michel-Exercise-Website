@@ -119,9 +119,6 @@
 	width: 26%;
 }
 
-.fixedd {
-	position: fixed;
-}
 
 .hidden {
 	display: none;
@@ -135,6 +132,14 @@
 #map {
 	height: 100%;
 	margin:0;
+}
+
+
+/* currencyExchange css */
+
+.currency-size {
+	width: 32.609%;
+
 }
 
 
