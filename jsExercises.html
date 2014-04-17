@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <script src="js/michelExerciseWebsite.js"></script>
+  <script src="js/jsExercises.js"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
 
 
@@ -15,7 +15,6 @@ There are comments before each js block indicating which application the js belo
 
 
 <script> 
-
 
 
 /* Return Absolute Value Function */
@@ -56,38 +55,66 @@ var absolute = function () {
   </nav>
 </div>
 
-<!-- 
-<div class="hidden"> -->
-  <h2>Define and use variables in the DOM</h2>
-  <h3 id="headerTitle" style="float:left">Enter your user name, age, and reddit name in the below text boxes.</h3>
-  <br>
-  <br>
-  <br>
 
+<h2 class="exerciseTitle">Define and use variables in the DOM</h2>
 
-  <form role="form" id="formGroup">
-    <div class="form-group">
-      <label for="uname">User Name</label>
-      <input type="text" class="form-control" id="uname" placeholder="Enter User Name">
-    </div>
-    <div class="form-group">
-      <label for="age">Age</label>
-      <input type="text" class="form-control" id="age" placeholder="Enter Your Age">
-    </div>
-    <div class="form-group">
-      <label for="rname">Reddit Name</label>
-      <input type="text" class="form-control" id="rname" placeholder="Enter Your Reddit Name">
-    </div>
-   <button type="button" onclick="inputInfo()">Input Info</button>
-  </form>
+<h3 id="headerTitle" style="float:left">Enter your user name, age, and reddit name in the below text boxes.</h3>
+<br>
+<br>
+<br>
 
-  <p id="answer"></p>
-
-  <div class="well well-lg" style="background-color:black; margin-top: 50px;">
-    <h2 class="footer-text">Michel Wilbrink</h2>
-    <p class="footer-text"> 4 Apple Tree Court, Livingston NJ</p>
-    <p class="footer-text"> Copyright 2014</p>
+<form role="form" id="formGroup">
+  <div class="form-group">
+    <label for="uname">User Name</label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter User Name">
   </div>
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="text" class="form-control" id="age" placeholder="Enter Your Age">
+  </div>
+  <div class="form-group">
+    <label for="rname">Reddit Name</label>
+    <input type="text" class="form-control" id="rname" placeholder="Enter Your Reddit Name">
+  </div>
+ <button type="button" onclick="inputInfo()">Input Info</button>
+</form>
+
+<p id="answer"></p>
+
+
+
+
+<h2 class="exerciseTitle">Return Absolute Value Function</h2>
+
+<h3>Write a function called absolute, which returns the absolute value of the number it is given as its argument. The absolute value of a negative number is the positive version of that same number, and the absolute value of a positive number (or zero) is that number itself.</h3>
+
+<form role="form" style="display: block;">
+  <div class="form-group">
+      <label for="amount" style="font-size: 1em; display:block;">Enter number</label>
+        <input type="text" class="form-control" id="absoluteParameter" placeholder="Enter number" style="width:20%;">
+    </div>
+</form>
+<button type="button" onclick="absolute()">Show absolute value</button>
+<h3 id="absoluteAnswer"></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="well well-lg" style="background-color:black; margin-top: 50px;">
+  <h2 class="footer-text">Michel Wilbrink</h2>
+  <p class="footer-text"> 4 Apple Tree Court, Livingston NJ</p>
+  <p class="footer-text"> Copyright 2014</p>
+</div>
 
 
 

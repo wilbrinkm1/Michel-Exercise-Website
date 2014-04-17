@@ -1,4 +1,10 @@
 
+/* To search for corresponding CSS files of each html page, do a Find on the name of the html file. */
+
+
+
+/* CSS for index.html  */
+
 
 .welcome {
 	background-image: -webkit-gradient(
@@ -66,6 +72,48 @@
 	margin-top: 25px;
 }
 
+
+
+/* CSS for fantasyFootball.html */
+
+
+.nflLogo1 {
+	width: 12%;
+	display: inline-block;
+	float: left;
+	clear: both;
+	margin-left: 2%;
+}
+
+.nflLogo2 {
+	width: 12%;
+	display: inline-block;
+	float: right;
+	clear: right;
+	margin-right: 2%;
+}
+
+.footballHeader {
+	text-align: center;
+	width: 70%;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+/*	margin-left: 7.5em;
+	margin-right: 7em; */
+	display: inline-block;
+}
+
+.footballInstruct {
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Gilda Display', serif;
+	width: 40%;
+	display: block;
+	margin-bottom: 5%;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
 .footballColumns {
 	border-style: solid;
 	border-width: 1px;
@@ -79,46 +127,27 @@
 .yourMockDraftCol {
 	width: auto;
 }
-
-.footballHeader {
-	text-align: center;
-	margin-top: 1em;
-	margin-bottom: 0.5em;
-	margin-left: 7.5em;
-	margin-right: 7em;
-	display: inline-block;
-}
-
-.footballInstruct {
-	text-align: center;
-	width: 500px;
-	display: block;
-	margin-left: 30%;
-	margin-right: 30%;
-}
-
 .takenPlayersCol {
+	width: 33%;
 	min-height: 455px;	
+
 }
 
-.nflLogo1 {
-	display: inline-block;
-	float: left;
-	clear: both;
-	margin-left: 0.5em;
-}
+/*
+@media (max-width: 767px) {
+  .visible-sm.visible-xs {
+    display: block !important;
+  }
+*/
 
-.nflLogo2 {
-	display: inline-block;
-	float: right;
-	clear: right;
-	margin-right: 0.5em;
-}
+
+
+/* CSS for schedulePlanner.html */
+
 
 .schedule-row-length {
 	width: 26%;
 }
-
 
 .hidden {
 	display: none;
@@ -135,7 +164,8 @@
 }
 
 
-/* currencyExchange css */
+
+/* CSS for currencyExchange.html */
 
 .currency-size {
 	width: 32.609%;
@@ -143,7 +173,18 @@
 }
 
 
-/* embedly.html css */
+/* CSS for jsExercises.html */
+
+
+.exerciseTitle {
+	font-size: 2.5em;
+	font-family: 'Gilda Display', serif;
+	margin-top: 5%;
+}
+
+
+
+/* CSS for embedly.html */
 
 
 .displayInlineBlock {
