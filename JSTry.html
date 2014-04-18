@@ -14,6 +14,26 @@
 
 <script type="text/javascript">
 
+
+/* 
+From Ch. 3 of Eloquent Javascript
+
+
+function makeAddFunction(amount) {
+  function add(number) {
+    return number + amount;
+  }
+  return add;
+}
+
+var addTwo = makeAddFunction(2);
+var addFive = makeAddFunction(5);
+console.log(addTwo(1) + addFive(1));
+
+/* 
+
+From http://www.digital-web.com/articles/scope_in_javascript/
+
   var deep_thought = new BigComputer(42);
   var the_meaning = deep_thought.ask_question(); 
 
@@ -35,11 +55,34 @@ function test_this() {
   }
   var i_wonder_what_this_is = test_this(); 
 
+*/
+
+var range = function (goal) {
+  for (var count = 1; count <= goal; count++) {
+    document.getElementById("answer").innerHTML = "The numbers within the range are:";  
+    console.log(count);
+    $(document).ready(function(){
+      var e = $("<li>" + (count) + "</li>");
+      $("#groceryList").append(e);
+    });
+  }
+}
+  
+
+
 </script>
 
 <body>
 
-<button type="button" onclick="showAll()">Show all</button>
+<button type="button" onclick="range(3)">Enter</button>
+
+<h3 id="answer">Answer:</h3>
+
+<ul id="groceryList">
+            
+</ul>
+
+<!-- <button type="button" onclick="showAll()">Show all</button> -->
 
 
 
