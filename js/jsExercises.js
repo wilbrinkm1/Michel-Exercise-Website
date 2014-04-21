@@ -23,6 +23,29 @@ var absolute = function () {
 
 
 
+/* Return a Range */
+
+var range = function () {
+  var goal = document.getElementById("goal").value;
+  for (var count = 0; count <= goal; count++) {
+    document.getElementById("answer").innerHTML = "The numbers within the range are:";  
+    console.log(count);
+    $(document).ready(function(){
+      var e = $("<li>" + (count) + "</li>");
+      $("#rangeList").append(e);
+    });
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 							/*		THROWN OUT JS/PREVIOUS TRIES	 */

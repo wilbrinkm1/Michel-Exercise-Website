@@ -15,18 +15,18 @@
 
 <script>
 
-var count = 99;
+var countWallSong = 99;
 
 
 function singSong() {
-  var countLess = count - 1;
-  document.getElementById("songLyrics").innerHTML = "" + count + " bottles of beer on a wall, " + count + " bottles of beer! You take one down, pass it to Dan," + countLess " bottles of beer on the wall.";
-  count = count - 1;
-  t=setTimeout(function(){singSong()},5000);
+  var countLess = countWallSong - 1;
+  document.getElementById("songLyrics").innerHTML = countWallSong + " bottles off beer on the wall" + countWallSong + " bottles of beer! You take one down, pass it to Dan," + countLess + " bottles of beer on the wall.";
+  countWallSong = countWallSong - 1;
+  t = setTimeout(function(){singSong()},5000);
 }
 
-var stopSong = function () {
-  clearTimeout(singSong);
+function stopSong() {
+  clearTimeout(t);
 }
 
 </script>
@@ -66,12 +66,14 @@ var stopSong = function () {
 
 <h1 class="wallSongHeader">Let's Sing a Song...!</h1>
 
+<h3>Click the first button to start the song. Click the second button to stop the song.</h3>
+
 <div class="jumbotron">
   <h2 id="songLyrics"></h2>
-  <a class="btn btn-primary btn-lg" role="button" onclick="singSong()">Learn more</a>
+  <a class="btn btn-primary btn-lg" role="button" onclick="singSong()">Start song</a>
 </div>
 
-<a class="btn btn-primary btn-lg" role="button" onclick="stopSong()">Learn more</a>
+<a class="btn btn-primary btn-lg" role="button" onclick="stopSong()">Stop song</a>
 
 </body>
 

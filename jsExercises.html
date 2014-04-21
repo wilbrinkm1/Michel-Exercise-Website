@@ -56,6 +56,7 @@ var absolute = function () {
 </div>
 
 
+
 <h2 class="exerciseTitle">Define and use variables in the DOM</h2>
 
 <h3 id="headerTitle" style="float:left">Enter your user name, age, and reddit name in the below text boxes.</h3>
@@ -83,7 +84,6 @@ var absolute = function () {
 
 
 
-
 <h2 class="exerciseTitle">Return Absolute Value Function</h2>
 
 <h3>Write a function called absolute, which returns the absolute value of the number it is given as its argument. The absolute value of a negative number is the positive version of that same number, and the absolute value of a positive number (or zero) is that number itself.</h3>
@@ -99,10 +99,35 @@ var absolute = function () {
 
 
 
+<h2 class="exerciseTitle">Return a Range</h2>
+
+<h3>Enter a positive number and click the Range button. The program returns a list of numbers from 0 up to and including the given number.</h3>
+
+<div class="form-group">
+  <label for="goal">Input positive number</label>
+  <input type="text" class="form-control" id="goal" placeholder="">
+</div>
+
+<button type="button" onclick="range()">Enter</button>
+
+<h3 id="answer">Answer:</h3>
+
+<ul id="rangeList">
+            
+</ul>
 
 
 
+<h2 class="exerciseTitle">Let's Sing a Song...!</h2>
 
+<h3>Click the first button to start the song. Click the second button to stop the song.</h3>
+
+<div class="jumbotron">
+  <h2 id="songLyrics"></h2>
+  <a class="btn btn-primary btn-lg" role="button" onclick="singSong()">Start song</a>
+</div>
+
+<a class="btn btn-primary btn-lg" role="button" onclick="stopSong()">Stop song</a>
 
 
 

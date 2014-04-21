@@ -3,11 +3,18 @@
 
 
 
-/* CSS for index.html  */
+/* CSS for index.html  968 <= is ok, under that needs to collapse.*/
 
+/*
+.nav-button-width {
+	width: auto;
+}
+*/
 
 .welcome {
-	background-image: -webkit-gradient(
+	 
+
+	/* background-image: -webkit-gradient(
 		linear,
 		left top,
 		left bottom,
@@ -23,37 +30,52 @@
 	color: white;
 	padding-top: 80px;
 	padding-bottom: 80px;
+	*/
+}
 
+.home-intro-div {
+	display: inline-block;
+	width: 45%;
 }
 
 .mw-name {
+	font-family: 'Alegreya Sans', sans-serif;
+	color: black;
+	font-size: 4.2em;
+	width: 80%;
+	margin: 3% 0% 0.1% 5%;
+
+}
+
+.job-title {
+	margin: 0% 0% 1.5% 20%;
+	font-size: 1em;
 	font-family: 'Gilda Display', serif;
-	color: white;
-	font-size: 62px;
-	margin-top:0px;
-	margin-bottom: 25px;
 }
 
 .mw-intro {
-	padding-left: 5%;
+	display: block;
+	width: 80%;
+	float: left;
+	margin-bottom: 0%;
+	margin-left: 5%;
 	padding-right: 5%;
-	font-size: 21px;
+	text-align: justify;
+	font-size: 1.7em;
 	font-family: 'Alegreya Sans', sans-serif;
-	margin-bottom: 0px;
+	
 }
 
-.tryin {
-	border-style: solid;
-	border-color: #FF0000;
-	height: 100px;
-	width: 300px;
+.webDev-png {
+	display: inline-block;
+	float: right;
+	width: 20%;
 }
 
 .home-box-content {
 	text-align: center;
 	padding-top: 55px;
-	padding-left: 40px;
-	padding-right: 40px;
+	width: 80%;
 }
 
 .footer-text {
@@ -200,7 +222,17 @@
 
 
 
+/*
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 21px;
+  }
+}
+
+like an if statement, if the min-width is true then the CSS between the braces are executed.
 
 
+The minimum width of this window (screen resolution) for this CSS to be honored has to be 768 or higher. 
 
 

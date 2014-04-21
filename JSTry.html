@@ -15,6 +15,7 @@
 <script type="text/javascript">
 
 
+
 /* 
 From Ch. 3 of Eloquent Javascript
 
@@ -29,6 +30,8 @@ function makeAddFunction(amount) {
 var addTwo = makeAddFunction(2);
 var addFive = makeAddFunction(5);
 console.log(addTwo(1) + addFive(1));
+
+
 
 /* 
 
@@ -55,35 +58,68 @@ function test_this() {
   }
   var i_wonder_what_this_is = test_this(); 
 
-*/
 
-var range = function (goal) {
-  for (var count = 1; count <= goal; count++) {
+
+/* Return a Range 
+
+var range = function () {
+  var goal = document.getElementById("goal").value;
+  for (var count = 0; count <= goal; count++) {
     document.getElementById("answer").innerHTML = "The numbers within the range are:";  
     console.log(count);
     $(document).ready(function(){
       var e = $("<li>" + (count) + "</li>");
-      $("#groceryList").append(e);
+      $("#rangeList").append(e);
     });
   }
 }
   
-
+*/
 
 </script>
 
 <body>
 
-<button type="button" onclick="range(3)">Enter</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<h2 class="exerciseTitle">Return a Range</h2>
+
+<h3>Enter a positive number and click the Range button. The program returns a list of numbers from 0 up to and including the given number.</h3>
+
+<div class="form-group">
+  <label for="goal">Input positive number</label>
+  <input type="text" class="form-control" id="goal" placeholder="">
+</div>
+
+<button type="button" onclick="range()">Enter</button>
 
 <h3 id="answer">Answer:</h3>
 
-<ul id="groceryList">
+<ul id="rangeList">
             
 </ul>
 
-<!-- <button type="button" onclick="showAll()">Show all</button> -->
+  -->
 
+</body>
 
-
+</html>
 
