@@ -39,6 +39,20 @@ var range = function () {
 
 
 
+/* Let's Sing a Song...! */
+
+var countWallSong = 99;
+
+function singSong() {
+  var countLess = countWallSong - 1;
+  document.getElementById("songLyrics").innerHTML = countWallSong + " bottles off beer on the wall" + countWallSong + " bottles of beer! You take one down, pass it to Dan," + countLess + " bottles of beer on the wall.";
+  countWallSong = countWallSong - 1;
+  t = setTimeout(function(){singSong()},5000);
+}
+
+function stopSong() {
+  clearTimeout(t);
+}
 
 
 

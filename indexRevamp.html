@@ -16,6 +16,11 @@
 <script>
 
 
+$(document).ready(function() {
+   
+   $("#quadLogos").fadeIn(4000);
+   $("#quadLogos").css("display","inline-block"); 
+});
 
 
 </script>
@@ -32,7 +37,7 @@ ul > li > a {
 
 <body>
 
-<nav class="navbar navbar-default" role="navigation" >
+<nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -121,40 +126,51 @@ ul > li > a {
   </nav>
 
 -->
-
-<div class="home-intro-div">
-  <h1 class="mw-name">Michel Wilbrink</h1>
-  <p class="job-title">Front-end Developer</p>
-  <p class="mw-intro">Hi and welcome. What started as a 6 months trip to the Philippine Islands turned into a 6 month mission towards learning the intriguing skill that is programming.</p>
-  <div class="btn-group">
-    <button type="button" a href="#" class="btn btn-primary btn-lg my-app-button dropdown-toggle"  style="display: block;" data-toggle="dropdown" >My Apps</button>
-    <ul class="dropdown-menu">
-      <li><a href="currencyExchange.html">Currency Exchange</a></li>
-      <li class="divider"></li>
-      <li><a href="jQueryGrocery.html">Grocery List</a></li>
-      <li class="divider"></li>
-      <li><a href="fantasyFootball.html">Fantasy Football</a></li>
-      <li class="divider"></li>
-      <li><a href="schedulePlanner.html">Schedule Planner</a></li>
-      <li class="divider"></li>
-      <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
-      <li class="divider"></li>
-      <li><a href="nameAgeReddit.html">User Name Display</a></li>      
-    </ul>
+<div class="row">
+  <div class="col-md-7" style="padding-left: 6%;">
+    <h1 class="col-md-12 mw-name">Michel Wilbrink</h1>
+    <div class"row">
+      <p class="col-md-12 job-title">Front-end Developer</p>
+    </div> 
+    <div class"row">
+      <p class="col-md-12 mw-intro">Hi and welcome. I have dedicated the last seven months learning  HTML5/CSS3, JavaScript/jQuery, Bootstrap, and version control (GitHub). My brother, a front-end engineer, offered me in-depth training and guidance, which I have enthusiastically embraced.  I was convinced that effective programmers could be made from vigorous, spartan self-study, and I committed myself towards a new, challenging career. I am looking to gain real world experience and to make positive contributions to a project as soon as possible.</p> 
+    </div>
+  </div>
+  <div class="col-md-5 quad-logos-png" id="quadLogos">
+    <img src="mediaFolder/quad_logos.png" class="col-md-11">
   </div>
 </div>
 
-<img src="mediaFolder/quad_logos.png" class="webDev-png">
 
+
+<!--  <div class="row">
+   
+    <p class="col-sm-4 job-title">Front-end Developer</p> 
+
+    <p class="mw-intro">Hi and welcome. I have dedicated the last seven months learning  HTML5/CSS3, JavaScript/jQuery, Bootstrap, and version control (GitHub). My brother, a front-end engineer, offered me in-depth training and guidance, which I have enthusiastically embraced.  I was convinced that effective programmers could be made from vigorous, spartan self-study, and I committed myself towards a new, challenging career. I am looking to gain real world experience and to make positive contributions to a project as soon as possible. </p>
+ <div class="btn-group col-sm-12" style="display: block; padding-left: 29%; padding-right: 29%;">
+      <button type="button" a href="#" class="btn btn-primary btn-lg col-sm-5 my-app-button dropdown-toggle" data-toggle="dropdown">My Apps</button>
+      <ul class="dropdown-menu">
+        <li><a href="currencyExchange.html">Currency Exchange</a></li>
+        <li class="divider"></li>
+        <li><a href="jQueryGrocery.html">Grocery List</a></li>
+        <li class="divider"></li>
+        <li><a href="fantasyFootball.html">Fantasy Football</a></li>
+        <li class="divider"></li>
+        <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+        <li class="divider"></li>
+        <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
+        <li class="divider"></li>
+        <li><a href="nameAgeReddit.html">User Name Display</a></li>      
+      </ul>
+    </div> -->
+  
+<!--
 <div class="well well-lg" style="background-color:black; margin-top: 50px;">
-
-
-
-<p class="footer-text">Michel Wilbrink</p>
-<p class="footer-text">4 Apple Tree Court</p>
-<p class="footer-text"> Copyright 2014</p>
+  <p class="footer-text">Michel Wilbrink</p>
+  <p class="footer-text">4 Apple Tree Court</p>
+  <p class="footer-text"> Copyright 2014</p>
 </div>
-
 
 
 <div style="display: block; clear: both;">
@@ -181,9 +197,10 @@ ul > li > a {
   </div>
 </div>
 
-<!--
 
 -->
 
 
 </body>
+
+</html>
