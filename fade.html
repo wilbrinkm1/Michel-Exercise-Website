@@ -19,7 +19,7 @@ var fades = function () {
 	$(document).ready(function(){
 		$("#firstPic").fadeOut();
 		setTimeout(function(){
-			$("#firstPic").attr("src","mediaFolder/bananas.jpg");
+			$("#firstPic").attr("src","mediaFolder/groceryImgs/bananas.png");
 			$("#firstPic").fadeIn("slow");
 		},1000);
 	});
@@ -31,25 +31,15 @@ var fades = function () {
 <style>
 
 
-#container {
-	height: 350px;
-	width: 300px;
-	display: block;
-	z-index: 1;
-}
 
 #firstPic {
 	display: block;
-	z-index: 1;
-	margin-left: auto;
-	margin-right: auto;
+
 }
 
 
 #transform {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 
@@ -68,16 +58,90 @@ var fades = function () {
 <body>
 
 
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="indexRevamp.html">Home</a>
+      <a class="navbar-brand" href="http://www.linkedin.com/in/michelwilbrink">LinkedIn</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Applications<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+            <li class="divider"></li>
+            <li><a href="jQueryGrocery.html">Grocery List</a></li>
+            <li class="divider"></li>
+            <li><a href="synerginHoverjQuery.html">Hover Button App</a></li>
+            <li class="divider"></li>
+            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
+            <li class="divider"></li>
+            <li><a href="currencyExchange.html">Currency Exchange</a></li>
+            <li class="divider"></li>
+            <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">JS Exercises <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="jsExercises.html">Collections of Javascript Exercises</a></li>
+            <li class="divider"></li>
+            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
+            <li class="divider"></li>
+            <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+            <li class="divider"></li>
+            <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
+            <li class="divider"></li>
+            <li><a href="fade.html">jQuery Fade</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">HTML/CSS Designs<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="synerginHoverjQuery.html">Hover Buttons App</a></li>
+            <li class="divider"></li>
+            <li><a href="index.html">Previous Website Versions</a></li>
+            <li class="divider"></li>
+            <li><a href="rememoirLogin.html">Rememoir Log-in Page</a></li>
+            <li class="divider"></li>
+            <li><a href="synerginSplashPage.html">Video Splash Page</a></li>
+            <li class="divider"></li>
+            <li><a href="embedly.html">Using Embedly</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
-
-<div id="container">
-	<h1 id="words">Am I in the right place?</h1>
-	<img src="mediaFolder/kiwi.jpg" id="firstPic" align="middle">
-	<button type="button" id="transform" onclick="fades()">Do it</button>
+<div class="container">
+  <div class="row">
+  	<h1 id="words">Click the button to fade out the image and fade in the next image.</h1>
+  </div>
+  <div class="row">
+    <img src="mediaFolder/groceryImgs/kiwi.png" id="firstPic" class="col-md-4">
+	</div>
+  <div class="row" style="display: block;">
+    <button type="button" id="transform" onclick="fades()">Click</button>
+  </div>
 </div>
 
 
+
+
+<!--      Previous code to try Bootstrap's carousel element 
 
 <div data-role="page" id="pageone">
   <div data-role="header">
@@ -114,14 +178,14 @@ var fades = function () {
 
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
+
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
+
   <div class="carousel-inner">
     <div class="item active">
       <img src="mediaFolder/salmon.jpg" alt="salmon">
@@ -136,7 +200,7 @@ var fades = function () {
     
   </div>
 
-  <!-- Controls -->
+
   <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
@@ -146,6 +210,7 @@ var fades = function () {
 </div>
 
 
+-->
 
 
 

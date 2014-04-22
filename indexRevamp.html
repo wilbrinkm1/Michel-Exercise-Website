@@ -18,8 +18,9 @@
 
 $(document).ready(function() {
    
-   $("#quadLogos").fadeIn(4000);
-   $("#quadLogos").css("display","inline-block"); 
+   $("#quadLogos").fadeIn(3000);
+   $("#mWilbrink").fadeIn(4500);
+ /*  $("#quadLogos").css("display","inline-block"); */
 });
 
 
@@ -37,9 +38,10 @@ ul > li > a {
 
 <body>
 
+
+
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -47,20 +49,33 @@ ul > li > a {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="navbar-brand" href="indexRevamp.html">Home</a>
       <a class="navbar-brand" href="http://www.linkedin.com/in/michelwilbrink">LinkedIn</a>
     </div>
 
     
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-  <!--       <li><a href="jQueryGrocery.html">Grocery List Maker</a></li>   -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Applications<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="currencyExchange.html">Currency Exchange</a></li>
+            <li><a href="schedulePlanner.html">Schedule Planner</a></li>
             <li class="divider"></li>
             <li><a href="jQueryGrocery.html">Grocery List</a></li>
+            <li class="divider"></li>
+            <li><a href="synerginHoverjQuery.html">Hover Button App</a></li>
+            <li class="divider"></li>
+            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
+            <li class="divider"></li>
+            <li><a href="currencyExchange.html">Currency Exchange</a></li>
+            <li class="divider"></li>
+            <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">JS Exercises <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="jsExercises.html">Collections of Javascript Exercises</a></li>
             <li class="divider"></li>
             <li><a href="fantasyFootball.html">Fantasy Football</a></li>
             <li class="divider"></li>
@@ -68,80 +83,103 @@ ul > li > a {
             <li class="divider"></li>
             <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
             <li class="divider"></li>
-            <li><a href="nameAgeReddit.html">User Name Display</a></li>      
+            <li><a href="fade.html">jQuery Fade</a></li>
+            <li class="divider"></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">HTML/CSS Designs<b class="caret"></b></a>
           <ul class="dropdown-menu">
+            <li><a href="synerginHoverjQuery.html">Hover Buttons App</a></li>
+            <li class="divider"></li>
+            <li><a href="index.html">Previous Website Versions</a></li>
+            <li class="divider"></li>
             <li><a href="rememoirLogin.html">Rememoir Log-in Page</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
             <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="synerginSplashPage.html">Video Splash Page</a></li>
             <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="embedly.html">Using Embedly</a></li>
+            <li class="divider"></li>
           </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">JS Exercises <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        </li>  
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 
 <!--
 
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header" style="width:15%; display: inline-block;">
-        <a class="navbar-brand" href="index.html">Home</a>
-        <a class="navbar-brand" style="display: inline-block;" href="http://www.linkedin.com/in/michelwilbrink">LinkedIn</a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="width: 80%;">
-        <ul class="nav navbar-nav" style="width: 90%;">
-          <li class="nav-button-width"><a href="http://www.linkedin.com/in/michelwilbrink" style="font-size: 0.8em;">LinkedIn</a></li> 
-          <li class="nav-button-width"><a href="jQueryGrocery.html" style="width: auto">Grocery List</a></li>
-          <li class="nav-button-width"><a href="fantasyFootball.html" style="width: auto">Fantasy Football</a></li>
-          <li class="nav-button-width"><a href="schedulePlanner.html" style="width: auto">Schedule Planner</a></li>
-          <li class="nav-button-width"><a href="chooseAdventure.html" style="width: auto">Choose Your Adventure</a></li>
-          <li class="nav-button-width"><a href="nameAgeReddit.html" style="width: auto">User Name Display</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
 -->
-<div class="row">
-  <div class="col-md-7" style="padding-left: 6%;">
-    <h1 class="col-md-12 mw-name">Michel Wilbrink</h1>
-    <div class"row">
-      <p class="col-md-12 job-title">Front-end Developer</p>
-    </div> 
-    <div class"row">
-      <p class="col-md-12 mw-intro">Hi and welcome. I have dedicated the last seven months learning  HTML5/CSS3, JavaScript/jQuery, Bootstrap, and version control (GitHub). My brother, a front-end engineer, offered me in-depth training and guidance, which I have enthusiastically embraced.  I was convinced that effective programmers could be made from vigorous, spartan self-study, and I committed myself towards a new, challenging career. I am looking to gain real world experience and to make positive contributions to a project as soon as possible.</p> 
+<div class="container-fluid">
+  <div class="row" style="padding-left: 6%;">
+    <div class="col-md-8">
+      <h1 class="col-md-12 mw-name" id="mWilbrink">Michel Wilbrink</h1>
+      <div class"row">
+        <p class="col-md-12 job-title">Front-end Developer</p>
+      </div> 
+      <div class="row col-md-12">
+        <p class="col-md-12 mw-intro">Hi and welcome. I have dedicated the last seven months learning  HTML5/CSS3, JavaScript/jQuery, Bootstrap, and version control (GitHub). My brother, a front-end engineer, offered me in-depth training and guidance, which I have enthusiastically embraced.  I was convinced that effective programmers could be made from vigorous, spartan self-study, and I committed myself towards a new, challenging career. I am looking to gain real world experience and to make positive contributions to a project as soon as possible.</p> 
+      </div>
+      <div class="row col-md-12">
+        <div class="col-md-12">
+          <div class="btn-group" style="margin-bottom: 5%;">
+            <button type="button" a href="#" class="btn btn-primary btn-lg dropdown-toggle my-app-button" data-toggle="dropdown">My Apps</button>
+            <ul class="dropdown-menu">
+            <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+            <li class="divider"></li>
+            <li><a href="jQueryGrocery.html">Grocery List</a></li>
+            <li class="divider"></li>
+            <li><a href="synerginHoverjQuery.html">Hover Button App</a></li>
+            <li class="divider"></li>
+            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
+            <li class="divider"></li>
+            <li><a href="currencyExchange.html">Currency Exchange</a></li>
+            <li class="divider"></li>
+            <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>     
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 quad-logos-png" id="quadLogos" style="padding-right: 6%;">
+      <img src="mediaFolder/quad_logos.png" class="col-md-12">
     </div>
   </div>
-  <div class="col-md-5 quad-logos-png" id="quadLogos">
-    <img src="mediaFolder/quad_logos.png" class="col-md-11">
+</div>
+
+<div class="row col-md-12" style="background-color:black; margin-top: 50px;">
+  <div class="col-md-12">
+    <img src="mediaFolder/logoCollage.png" class="col-md-12">
+  </div>
+</div>
+
+<div class="container.fluid">
+  <div class="row">
+    <div class="col-md-4 home-box-content" style="display: inline-block;">
+      <img src="mediaFolder/webDev.png" class="img-responsive col-md-12" style="padding: 0% 20% 2% 20%;">
+      <h3>Skills acquired</h3>
+      <p>These pages were created using HTML, CSS, Javascript, jQuery and Bootstrap (so far)</p>
+    </div>
+    <div class="col-md-4 home-box-content" style="display: inline-block;">
+      <img src="mediaFolder/macDesk.png" class="img-responsive col-md-12" style="padding: 0% 20% 2% 20%;">
+      <h3>The right attitude</h3>
+      <p>I am an ambitious learner with a positive attitude and reliable work ethic. Kindly visit my LinkedIn account to view my resume. </p>
+    </div>
+    <div class="col-md-4 home-box-content" style="display: inline-block;">
+      <img src="mediaFolder/laptop.png" class="img-responsive col-md-12" style="padding: 0% 20% 2% 20%;">
+      <h3>Greater goals</h3>
+      <p>I look forward to expanding my knowledge, particularly of frameworks such as Ember, Angular, and Ruby</p>
+    </div>
   </div>
 </div>
 
 
+<div class="well well-lg welcome" style="margin-top: 50px;">
+  <p class="footer-text">Michel Wilbrink</p>
+  <p class="footer-text">4 Apple Tree Court</p>
+  <p class="footer-text">Copyright 2014</p>
+</div>
 
 <!--  <div class="row">
    
@@ -166,11 +204,6 @@ ul > li > a {
     </div> -->
   
 <!--
-<div class="well well-lg" style="background-color:black; margin-top: 50px;">
-  <p class="footer-text">Michel Wilbrink</p>
-  <p class="footer-text">4 Apple Tree Court</p>
-  <p class="footer-text"> Copyright 2014</p>
-</div>
 
 
 <div style="display: block; clear: both;">

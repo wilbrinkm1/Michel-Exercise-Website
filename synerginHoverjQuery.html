@@ -2,10 +2,10 @@
 <html>
 <head>
 <!-- scripts to use jQuery in this html. -->
+<link rel="stylesheet" type="text/css" href="synerginHoverjQuery.css">
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 
 
 <script>
@@ -17,33 +17,33 @@
 
 var blockInfo = [
 	{
-		imageOn: "mediaFolder/synergin/block0on", 
-		imageOff: "mediaFolder/synergin/block0off",
+		imageOn: "mediaFolder/synergin/block0on.png", 
+		imageOff: "mediaFolder/synergin/block0off.png",
 		isLocked: true
 	},
 	{
-		imageOn: "mediaFolder/synergin/block1on", 
-		imageOff: "mediaFolder/synergin/block1off",
+		imageOn: "mediaFolder/synergin/block1on.png", 
+		imageOff: "mediaFolder/synergin/block1off.png",
 		isLocked: false
 	},
 	{
-		imageOn: "mediaFolder/synergin/block2on", 
-		imageOff: "mediaFolder/synergin/block2off",
+		imageOn: "mediaFolder/synergin/block2on.png", 
+		imageOff: "mediaFolder/synergin/block2off.png",
 		isLocked: false
 	},
 	{
-		imageOn: "mediaFolder/synergin/block3on", 
-		imageOff: "mediaFolder/synergin/block3off",
+		imageOn: "mediaFolder/synergin/block3on.png", 
+		imageOff: "mediaFolder/synergin/block3off.png",
 		isLocked: false
 	},
 	{
-		imageOn: "mediaFolder/synergin/block4on", 
-		imageOff: "mediaFolder/synergin/block4off",
+		imageOn: "mediaFolder/synergin/block4on.png", 
+		imageOff: "mediaFolder/synergin/block4off.png",
 		isLocked: false
 	},
 	{
-		imageOn: "mediaFolder/synergin/block5on", 
-		imageOff: "mediaFolder/synergin/block5off",
+		imageOn: "mediaFolder/synergin/block5on.png", 
+		imageOff: "mediaFolder/synergin/block5off.png",
 		isLocked: false
 	}
 ]
@@ -72,8 +72,8 @@ $(document).ready(function(){
 		$("#img3").attr("src",blockInfo[3].imageOff); 
 		$("#img4").attr("src",blockInfo[4].imageOff);
 		$("#img5").attr("src",blockInfo[5].imageOff);
-		$("#numberCell").text("00");
-		$("#greenTitle").text("greenTitle00");
+		$("#numberCell").text("00")
+		$("#greenTitle").text("greenTitle00")
 		$("#infoText").text("whiteParagraph00");	
 	});
 
@@ -335,16 +335,17 @@ $(document).ready(function(){
 </head>
 <body>
 
+ 
 
 <div class="block-container">
 	<div style="display: inline-block;">
-		<a href="#" title="tooltip0"><img src="mediaFolder/synergin/block0on" id="img0" class="spacing"></a>
-		<a href="#" title="tooltip1"><img src="mediaFolder/synergin/block1off" id="img1" class="spacing"></a>
-		<a href="#" title="tooltip2"><img src="mediaFolder/synergin/block2off" id="img2" class="spacing" style="padding-right: 0px;"></a>
+		<a href="#" title="tooltip0"><img src="mediaFolder/synergin/block0on.png" id="img0" class="spacing"></a>
+		<a href="#" title="tooltip1"><img src="mediaFolder/synergin/block1off.png" id="img1" class="spacing"></a>
+		<a href="#" title="tooltip2"><img src="mediaFolder/synergin/block2off.png" id="img2" class="spacing" style="padding-right: 0px;"></a>
 		<br>
-		<a href="#" title="tooltip3"><img src="mediaFolder/synergin/block3off" id="img3" class="spacing"></a>
-		<a href="#" title="tooltip4"><img src="mediaFolder/synergin/block4off" id="img4" class="spacing"></a>
-		<a href="#" title="tooltip5"><img src="mediaFolder/synergin/block5off" id="img5" class="spacing" style="padding-right: 0px;"></a>
+		<a href="#" title="tooltip3"><img src="mediaFolder/synergin/block3off.png" id="img3" class="spacing"></a>
+		<a href="#" title="tooltip4"><img src="mediaFolder/synergin/block4off.png" id="img4" class="spacing"></a>
+		<a href="#" title="tooltip5"><img src="mediaFolder/synergin/block5off.png" id="img5" class="spacing" style="padding-right: 0px;"></a>
 	</div>
 	<div class="info-box">
 		<h1 id="numberCell" class="numberCellClass">01</h1>
@@ -355,6 +356,7 @@ $(document).ready(function(){
 
 
 
+     <a href="indexRevamp.html">Home</a>
 
 
 
