@@ -14,14 +14,39 @@
 
 
 <script>
-
+/* fades in the header name Michel Wilbrink and the four icons pngs. */
 
 $(document).ready(function() {
    
    $("#quadLogos").fadeIn(3000);
    $("#mWilbrink").fadeIn(4500);
  /*  $("#quadLogos").css("display","inline-block"); */
+
+
+/* Fade in during scroll script from http://jsfiddle.net/tcloninger/e5qaD/*/
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},5000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
 });
+
 
 
 </script>
@@ -30,6 +55,11 @@ $(document).ready(function() {
 
 ul > li > a {
   font-size: 0.9em;
+}
+
+.hideme
+{
+    opacity:0;
 }
 
 </style>
@@ -157,17 +187,17 @@ ul > li > a {
 <div class="container.fluid">
   <div class="row">
     <div class="col-md-4 home-box-content" style="display: inline-block;">
-      <img src="mediaFolder/webDev.png" class="img-responsive col-md-12" style="padding: 0% 20% 2% 20%;">
+      <img src="mediaFolder/webDev.png" class="img-responsive col-md-12 hideme" style="padding: 0% 20% 2% 20%;">
       <h3>Skills acquired</h3>
       <p>These pages were created using HTML, CSS, Javascript, jQuery and Bootstrap (so far)</p>
     </div>
     <div class="col-md-4 home-box-content" style="display: inline-block;">
-      <img src="mediaFolder/macDesk.png" class="img-responsive col-md-12" style="padding: 0% 20% 2% 20%;">
+      <img src="mediaFolder/macDesk.png" class="img-responsive col-md-12 hideme" style="padding: 0% 20% 2% 20%;">
       <h3>The right attitude</h3>
       <p>I am an ambitious learner with a positive attitude and reliable work ethic. Kindly visit my LinkedIn account to view my resume. </p>
     </div>
     <div class="col-md-4 home-box-content" style="display: inline-block;">
-      <img src="mediaFolder/laptop.png" class="img-responsive col-md-12" style="padding: 0% 20% 2% 20%;">
+      <img src="mediaFolder/laptop.png" class="img-responsive col-md-12 hideme" style="padding: 0% 20% 2% 20%;">
       <h3>Greater goals</h3>
       <p>I look forward to expanding my knowledge, particularly of frameworks such as Ember, Angular, and Ruby</p>
     </div>
