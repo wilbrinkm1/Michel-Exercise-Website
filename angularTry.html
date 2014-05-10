@@ -30,6 +30,18 @@ angular.module('ngReddit').controller('myController', function($scope) {
 });
 
 
+/* http://www.angularjstutorial.com/ example */
+
+angular.module('myApp', [])
+    .config(function ($routeProvider) {
+        $routeProvider
+        .when('/', {template: '<div>This is the default div</div>'})
+        .when('/todolist', {templateURL: '/partials/todolist.html'})
+});
+
+
+
+
 </script>
 
 </head>
@@ -63,6 +75,17 @@ angular.module('ngReddit').controller('myController', function($scope) {
 </form>
 
 <p id="answer">Your name is {{userName}}, you are {{age}}, and your Reddit name is {{redditName}}</p>
+
+
+
+<!-- http://www.angularjstutorial.com/ example -->
+
+<div ng-app="myApp">
+    <div ng-view></div>
+</div>
+
+<a ng-href src="/">This is our main page</a>
+<a hg-href src="/todolist">This is our todolist page link</a>
 
 
 </body>
