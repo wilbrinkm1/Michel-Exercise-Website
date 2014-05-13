@@ -55,7 +55,16 @@ This sets all the blocks, except block[0], to their "off" position (block#off) u
 
 /* img0 click and hover. Upon clicking img0, it's isLocked property becomes true while all others become false. Whenever the user hovers over an img#, this boolean is checked. True imgs will stay on the "on" image while false imgs can toggle between "on" and "off" during hovers.
 
-Upon clicking any img#, it populates the h4 tag ("#infoText"). To change the message, edit whats in between the quotes in the line code: $("#infoText").text("Placed text you want here")
+Upon clicking any img#, it populates the p tag ("#greenTitle"). To change the message, edit whats in between the quotes in the line code.
+Like this:
+$("#greenTItle").text("Placed text you want here")
+
+
+Upon clicking any img#, it populates the p tag ("#infoText"). To change the message, edit whats in between the quotes in the line code.
+Like this:
+$("#infoText").text("Placed text you want here")
+
+
 */
 
 $(document).ready(function(){
@@ -255,28 +264,29 @@ $(document).ready(function(){
 
 <style>
 
-* {
-	position: relative;
-}
 
-.space {
-	padding-right:15px; 
-	padding-bottom:15px;
-}
 
 
 
 .block-container {
-	width: 887.5px;
-	height: auto;
+	width: 100%; /* 887.5px; */
+	height: 325px;
 /*	height: 259px;
 	max-height: 259px; */
 	background-color: #5C5C5C;
-	padding: 7.5px 7.5px 7.5px 7.5px;
+/*	padding: 7.5px 7.5px 7.5px 7.5px; */
+}
+
+.six-boxes-container {
+	width: 45%;
+	height: 100%;
 }
 
 .spacing {
-	padding: 7.5px 7.5px 7.5px 7.5px;
+	float: left;
+	width: 30%;
+	height: 44%;
+	padding: 1.5% 1.5% 1.5% 1.5%; /* 7.5px 7.5px 7.5px 7.5px; */
 }
 
 .display-block {
@@ -288,42 +298,52 @@ $(document).ready(function(){
 }
 
 .info-box {
-	width: 420px;
-	height: 221px;
+	width: 49%; /* 420px; */
+	height: 85%;
 	background-color: black;
 	display: inline-block;
-	margin-top: 7.5px;
-	margin-right: 7.5px;
-	padding: 7.5px 7.5px 7.5px 7.5px;
+/*	margin-top: 1%; /* 7.5px; */
+/*	margin-right: 1%; /* 7.5px; */
+	margin: 1% 1% 1% 1%;
+	padding: 1% 1% 1% 1%; /* 7.5px 7.5px 7.5px 7.5px; */
 	border-radius: 25px;
 	float: right;
 }
 
 #numberCell {
 	display: inline-block;
-	font-size: 44px;
+	float: left;
+	font-size: 3em;
 	font-weight: 900;
-	margin-top: 5px;
-	margin-left: 5px;
-	margin-bottom: 5px;
-	padding-right: 10px;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+	margin-right: 1%;
 	color: white;
-	width: 35px;
-	height: auto;
+	width: 11.2%; /* 35px; */
 }
 
 #greenTitle {
 	display: inline-table;
+	float: left;
+	width: 85%;
+	font-size: 2em;
 	color: #00FF00;
-	margin-top: -20px;
-	padding-left: 10px;
-	max-width: 360px; 
-	max-height: 40px;
-	overflow: hidden;
+	margin-top: 1%;
+	margin-bottom: 33px;
+	margin-right: 1%;
+	margin-left: 1%;
+
 }
 
 #infoText {
-	margin-left: 5px;
+	display: block;
+	color: white;
+	height: 40%;
+	font-size: 1em;
+	margin-left: 1%;
+	margin-right: 1%;
+/*	margin-bottom: 22%; */
 }
 
 </style> 
@@ -333,106 +353,25 @@ $(document).ready(function(){
 </head>
 <body>
 
- 
+ <!-- Note: Change the title to what you want your tooltip message to be -->
 
-<div class="block-container">
-	<div style="display: inline-block;">
-		<a href="#" title="tooltip0"><img src="mediaFolder/synergin/block0on.png" id="img0" class="spacing"></a>
-		<a href="#" title="tooltip1"><img src="mediaFolder/synergin/block1off.png" id="img1" class="spacing"></a>
-		<a href="#" title="tooltip2"><img src="mediaFolder/synergin/block2off.png" id="img2" class="spacing" style="padding-right: 0px;"></a>
-		<br>
-		<a href="#" title="tooltip3"><img src="mediaFolder/synergin/block3off.png" id="img3" class="spacing"></a>
-		<a href="#" title="tooltip4"><img src="mediaFolder/synergin/block4off.png" id="img4" class="spacing"></a>
-		<a href="#" title="tooltip5"><img src="mediaFolder/synergin/block5off.png" id="img5" class="spacing" style="padding-right: 0px;"></a>
+<div class="block-container display-inline-block">
+	<div class="six-boxes-container display-inline-block"> 
+		<a href="#" title="tooltip0MessageHere"><img src="mediaFolder/synergin/block0on.png" id="img0" class="spacing"></a>
+		<a href="#" title="tooltip1MessageHere"><img src="mediaFolder/synergin/block1off.png" id="img1" class="spacing"></a>
+		<a href="#" title="tooltip2MessageHere"><img src="mediaFolder/synergin/block2off.png" id="img2" class="spacing"></a>
+		<a href="#" title="tooltip3MessageHere"><img src="mediaFolder/synergin/block3off.png" id="img3" class="spacing" style="display: block;" ></a>
+		<a href="#" title="tooltip4MessageHere"><img src="mediaFolder/synergin/block4off.png" id="img4" class="spacing"></a>
+		<a href="#" title="tooltip5MessageHere"><img src="mediaFolder/synergin/block5off.png" id="img5" class="spacing"></a>
 	</div>
 	<div class="info-box">
 		<h1 id="numberCell" class="numberCellClass">01</h1>
-		<p id="greenTitle">Green Title af asdf adsf asdasdf adsf asdf asdf asdf asdf asdf asdf asdf asdf adsf asdf asdf adsf adf asdf asdf adf asdf </p>
-		<p id="infoText" style="color:white;">01 asdf asdf adsf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf </p>
+		<p id="greenTitle">Green Title af asdf adsf  asdf adsf asdf asdf adsf adf asdf asdf adf asdf </p>
+		<p id="infoText">Asdf asdf adsf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf.</p>
 	</div>
 </div>
 
 
-
-     <a href="indexRevamp.html">Home</a>
-
-
-
-<!-- These are the 6 blocks/images. Except the first block, they all start in the "off" position. The hover and click function above will tell it how to behave.
-
-To edit the tooltip message for each, change the text between the quotes after title=.
-
-The styles can be ignored as the will likely change when implemented to the Wordpress site. 
-
-<<<<<<<<<<<<<<<<<
-<div style="display: inline-block; width: 31%; height">
-		<tr>
-			class="space"><a href="#" title="tooltip0"><img src="mediaFolder/synergin/block0on" id="img0"></a></td>
-			<td class="space"><a href="#" title="tooltip1"><img src="mediaFolder/synergin/block1off" id="img1"></a></td>
-			<td class="space"><a href="#" title="tooltip2"><img src="mediaFolder/synergin/block2off" id="img2"></a></td>
-		</tr>
-		<tr>
-			<td class="space"><a href="#" title="tooltip3"><img src="mediaFolder/synergin/block3off" id="img3"></a></td>
-			<td class="space"><a href="#" title="tooltip4"><img src="mediaFolder/synergin/block4off" id="img4"></a></td>
-			<td class="space"><a href="#" title="tooltip5"><img src="mediaFolder/synergin/block5off" id="img5"></a></td>
-		</tr>
-
-</div>
->>>>>>>>>>>>>>>
-
-This is the 7th block where text will pop in once one of the 6 blocks are clicked. See the comment above the first click and hover function on how to change the text that will pop up upon clicking the img 
-
-
-<<<<<<<<<<<<<<
-<div style="width:40%; height:235px; background-color: black; display:inline-block; margin-top: 0px; margin-bottom: 21px; border-radius: 25px;">
-	<div>
-	<table>
-		<tr>
-			<td id="numberCell" style="font-size: 48px; color: #00FF00;  font-weight: 900; padding-left: 5px; padding-right: 5px">01</td>
-			<td id="greenTitle" style="font-size: 14px; color: #00FF00; width: 85%; padding-right: 5px">Green Ttle</td>
-		</tr>
-	</table>
-	</div>
-	<div>
-		<p id="infoText" style="font-size: 12px; color: white; padding-left: 5px; padding-right: 5px; width: 65%; display: inline-block;">dsfa adf adf asdf asdf asdf f asdf asdf asdf asdf asdf asdf asdf adsf asdf asdf asdf asdf asdf asdf </p>
-	</div> 
-</div>
->>>>>>>>>>>>>>
-	
-	<p id="infoText" style="font-size: 12px; color: white; width: 95%; padding-left: 5px; padding-right: 5px">I'm alread here zijawl;efj;aowiejf;oijwa e;oifj ;owaij efo;iawje ;ofijw a;oeif jaw;oie jf;owai ejf;owa ijef;oi wajef;oi wajf; oia wje;fo ijw;oi efj;wo ifj;a owijf o;aiw j</p> -->
-
-
-<!-- pics are 127px x 108px
-
-
-	
-	<span style="display: inline-block;"><h1 id="numberCell" style="color: white; width: 15%; display: inline-block;">10</h1></span>
-		<span style="display: inline-block;"><h3 id="greenTitle" style="color: white; width: 85%; display: inline-block;">Green Title dfljsdf sfjf sfdlksdjf sdfsfj sdf sdfj lf  flkjdsf  sfdjlsk fl lk jfa f alfj alsj flajs fj asflsdj f</h3></span>
-
-
-
-<style>
-.space{ padding-right:15px; padding-bottom:15px;}
-
-</style> 
-<div style="display: inline-block">
-<table>
-<tr>
- <td class="space"> <a href="#" title="tooltip0"><img src="img/people-hover.png" id="img0"></a> </td>
- <td class="space"> <a href="#" title="tooltip1"><img src="img/tool.png" id="img1"></a> </td>
- <td class="space"> <a href="#" title="tooltip2"><img src="img/infinite.png" id="img2"></a> </td>
-</tr>
-
-<tr> 
-    <td class="space"> <a href="#" title="tooltip3"><img src="img/tablet.png" id="img3"></a> </td>
- <td class="space"> <a href="#" title="tooltip4"><img src="img/graph.png" id="img4"></a> </td>
- <td class="space"> <a href="#" title="tooltip5"><img src="img/arrow.png" id="img5"></a> </td>
-  </tr>
-
-</table>
-</div>
-
--->
 
 </body>
 </html>
