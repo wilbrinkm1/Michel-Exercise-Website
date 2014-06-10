@@ -1,0 +1,730 @@
+
+/* 
+
+This is the CSS for the classes found in the navbar for michelwilbrink.com pages
+
+Sourced by: 
+  indexRenew.html
+
+*/
+ul > li > a {
+  font-size: 16px;
+
+
+
+}
+
+li a {
+  text-decoration: none;
+}
+
+nav div a {
+  text-decoration: none;  
+}
+
+
+/* ===================================================================================================================== */
+
+/* This is the CSS to for box-shadowing and sets navbar to class fixed when scrolling downpage. */
+
+#menu {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #426d9c), color-stop(40%, #0f67a1), color-stop(100%, #1384d1));
+  background: -moz-linear-gradient(top, #426d9c, #0f67a1, #1384d1);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  line-height: 50px;
+  width: 100%;
+}
+
+/* Don't really need because we just set the nav div to .fixed 
+.default {
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 15px 40px #222;
+  -webkit-box-shadow: 0px 15px 40px #222;
+  -moz-box-shadow: 0px 15px 40px #222;
+}
+*/
+
+.right-align {
+  padding-right: 5%;
+}
+
+
+.fixed {
+    z-index: 3; 
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0px 15px 40px #222;
+    -webkit-box-shadow: 0px 15px 40px #222;
+    -moz-box-shadow: 0px 15px 40px #222;
+}
+
+
+/* .fixed {
+position: fixed;
+height: 50px;
+box-shadow: 0px 15px 40px #222;
+-webkit-box-shadow: 0px 15px 40px #222;
+-moz-box-shadow: 0px 15px 40px #222;
+} */
+
+.same-line {
+  /* position: relative; */
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================================================================== */
+
+/* All .navbar lines are copied from Lines 4322-4347 from bootstrap.css */
+
+.navbar {                       
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.navbar:before,
+.navbar:after {
+  display: table;
+  content: " ";
+}
+
+.navbar:after {
+  clear: both;
+}
+
+.navbar:before,
+.navbar:after {
+  display: table;
+  content: " ";
+}
+
+.navbar:after {
+  clear: both;
+}
+
+
+/* ===================================================================================================================== */
+
+/* .navbar-default | 4704-4770 */
+
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+  color: #777777;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-text {
+  color: #777777;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #777777;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333333;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555555;
+  background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #dddddd;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555555;
+  background-color: #e7e7e7;
+}
+
+/* 4795-4801 */
+.navbar-default .navbar-link {
+  color: #777777;
+}
+
+.navbar-default .navbar-link:hover {
+  color: #333333;
+}
+
+/* ===================================================================================================================== */
+
+/* .navbar-header | 4355-4373 */
+
+
+.navbar-header:before,
+.navbar-header:after {
+  display: table;
+  content: " ";
+}
+
+.navbar-header:after {
+  clear: both;
+}
+
+.navbar-header:before,
+.navbar-header:after {
+  display: table;
+  content: " ";
+}
+
+.navbar-header:after {
+  clear: both;
+}
+
+/* 4438-4442 */
+
+.container > .navbar-header,
+.container > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.navbar-header {
+  display: inline-block;
+  width: 40%;
+  padding-left: 4%;
+  margin-right: 0%;
+
+}
+
+/* ===================================================================================================================== */
+
+/* .navbar-toggle | 4507-4529 */
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+/* 4846-4857 reference the navbar-toggle selector through navbar-inverse. Since our navbar doesn't use the navbar-inverse class,
+   it was not included here, but noted. */
+
+
+/* ===================================================================================================================== */
+
+/* .sr-only | 377-386 */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+/* ===================================================================================================================== */
+
+/* icon-bar | contained in other selectors */
+
+
+/* 4855-4857 reference the icon-bar selector through navbar-inverse. Since our navbar doesn't use the navbar-inverse class,
+   it was not included here, but noted. */
+
+
+/* ===================================================================================================================== */
+
+/* navbar-brand | 4489-4499 */
+
+.navbar-brand {
+  float: left;
+  padding: 15px 15px 15px 5%;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+}
+
+
+
+/* 4808-4816 reference the navbar-toggle selector through navbar-inverse. Since our navbar doesn't use the navbar-inverse class,
+   it was not included here, but noted. */
+
+
+/* ===================================================================================================================== */
+
+/* collapse | 2666-2668 */
+
+.collapse {
+  display: none;
+}
+
+/* Unsure if I should include: 
+
+.collapse.in {
+  display: block;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+          transition: height 0.35s ease;
+}
+*/
+
+
+/* ===================================================================================================================== */
+
+/* navbar-collapse | 4381-4413 */
+
+.navbar-collapse {
+  max-height: 340px;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-overflow-scrolling: touch;
+}
+
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.navbar-collapse:after {
+  clear: both;
+}
+
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.navbar-collapse:after {
+  clear: both;
+}
+
+.navbar-collapse.in {
+  overflow-y: auto;
+}
+
+/* 4895 references the navbar-collapse selector through navbar-inverse. Since our navbar doesn't use the navbar-inverse class,
+   it was not included here, but noted. */
+
+/* ===================================================================================================================== */
+
+/* .nav | 4071-4142 */
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+
+.nav:after {
+  clear: both;
+}
+
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+
+.nav:after {
+  clear: both;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.nav > li.disabled > a {
+  color: #999999;
+}
+
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #428bca;
+}
+
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.nav > li > a > img {
+  max-width: none;
+}
+
+
+/* ===================================================================================================================== */
+
+/* navbar-nav | 4538-4546 */
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+/* 4657-4672 */
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.navbar-nav.pull-right > li > .dropdown-menu,
+.navbar-nav > li > .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+/* 4823-4870 references the navbar-nav selector through navbar-inverse. Since our navbar doesn't use the navbar-inverse class,
+   it was not included here, but noted. */
+
+
+/* ===================================================================================================================== */
+
+
+/* navbar-right | all are referenced with media queries, go to bootstrapJustMediaQuery.css */
+
+
+/* ===================================================================================================================== */
+
+/* dropdown | 3515-2517 */
+
+.dropdown {
+  position: relative;
+}
+
+/* 3627-3639 */
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid;
+  content: "";
+}
+
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+
+/* 4188-4191 */
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+/* 4267-4270 */
+.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+
+/* ===================================================================================================================== */
+
+/* dropdown-toggle | Need to search, references though a lot of unused selectors */
+
+/* 3519-3521 */
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+
+/* ===================================================================================================================== */
+
+/* caret | 3504-3513 */
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+
+/* ===================================================================================================================== */
+
+/* dropdown-menu | 3523-3599 */
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+
+
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #428bca;
+  outline: 0;
+}
+
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #999999;
+}
+
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+/* 3622-3639 */
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid;
+  content: "";
+}
+
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+
+/* 4657-4672 */
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.navbar-nav.pull-right > li > .dropdown-menu,
+.navbar-nav > li > .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+
+
+/* ===================================================================================================================== */
+
+
+/* ===================================================================================================================== */
+
+
+/* ===================================================================================================================== */
+
+
+/* This following code is copied from style.css | 64-72
+   [file path: Sites/tryOut/Fixed-Position-Top-Menu-Bar-with-jQuery-CSS3-nagging-menu/style.css]
+
+
+.fixed {
+position: fixed;
+top: -5px;
+left: 0;
+width: 100%;
+box-shadow: 0 0 40px #222;
+-webkit-box-shadow: 0 0 40px #222;
+-moz-box-shadow: 0 0 40px #222;
+}
+
+
+*/
+
+
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+

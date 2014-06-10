@@ -1,0 +1,136 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: 16px;
+}
+
+
+@media (min-width: 1280px) {
+	#container {
+		width: 1280px;
+		height: 2000px;
+	}
+}
+	
+@media (min-width: 700px) {
+	.navbar-toggle {
+		display: none;
+	}
+}
+
+
+/* iPhone 4 portrait 640x960 */
+@media (max-width: 640px) and (orientation: portrait) {	
+	#container {
+		width: 640px;
+		height: 1000px;
+	}
+
+	.landing-div {
+	width: 640px;
+	height: 290px;
+	display: block;
+	margin: 50px 0px 0px 0px;
+	}
+
+	.intro-div {
+		display: block;
+		width: 640px; /*100%*/
+		height: 910px; /* change to give space for logos-div on same page */
+	}
+
+	.mw-name {
+		display: inline-block;
+		width: 640px;
+		text-align: center;	
+		font-family: 'Alegreya Sans', sans-serif;
+		color: orange;
+		font-size: 3.5em;
+		/* margin: 70px 0% 15px 76.656px; */
+	}
+
+	.job-title {
+		display: none;
+		font-size: 16px;
+	}
+
+	.mw-intro {
+		display: block;
+		width: 486.6px;
+		margin: 0px 76.656px 15px 76.656px;
+		text-align: justify;
+		font-size: 1.35em;
+		font-family: 'Alegreya Sans', sans-serif;
+	}
+
+	.logos-div {
+	width: 486.6px;
+	height: 620px;
+	display: block;
+	float: right;
+	}
+
+	.html-logo {
+		display: inline-block;
+		width: 140px;
+		height: 140px;
+		float: left;
+		margin: 15px 15px 15px 76.656px;
+	}
+
+	.css-logo {
+		display: inline-block;
+		width: 140px;
+		height: 140px;
+		float: left;
+		margin: 15px 15px 15px 76.656px;	
+	}
+
+	.javascript-logo {
+		display: inline-block;
+		width: 140px;
+		height: 140px;
+		float: left;
+		margin: 15px 76.656px 15px 0px;	
+	}
+
+	.wordpress-logo {
+		display: inline-block;
+		width: 140px;
+		height: 140px;
+		float: left;
+		margin: 15px 76.656px 15px 0px;	
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+	.quad-logos-png {
+		display: none;
+	}
+
+}
