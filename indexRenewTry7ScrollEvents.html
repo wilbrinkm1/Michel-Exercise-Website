@@ -29,10 +29,13 @@ function gotoServices(elID) {
     el.scrollIntoView(true);
 }
 
+
+
 $(document).ready(function() {
     $("#container").scroll(function() {
         var s = $("#container").scrollTop();
-        $("#under").css("-webkit-transform","translateY("+(s/2)+"px)");
+        $("#under").css("-webkit-transform","translateY("+(s/1.3)+"px)");
+
         /* $("#parallaxZ3").css("-webkit-transform","translateY("+(s/4)+"px)"); */
     })
 })
@@ -488,6 +491,7 @@ body {
 				<img src="mediaFolder/javascriptLogo.png-large" id="javascriptLogo" class="javascript-logo"/>
 				<img src="mediaFolder/wordpressLogo.png" id="wordpressLogo" class="wordpress-logo"/>
 			</div>
+		<!-- <div id="trigger"></div> -->
 		</div>
 		<div id="" class="elevator-div">Three Column Elevator Pitch</div>
 		<div id="" class="under-div-placeholder">Something Else</div>
