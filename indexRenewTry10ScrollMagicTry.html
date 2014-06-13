@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="js/scrollMagic/ScrollMagic-master/js/_dependent/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/scrollMagic/ScrollMagic-master/js/_dependent/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/scrollMagic/ScrollMagic-master/js/_examples/general.js"></script>
+<script type="text/javascript" src="js/scrollMagic/ScrollMagic-master/js/_examples/highlight.pack.js"></script>
+<script type="text/javascript" src="js/scrollMagic/ScrollMagic-master/js/_examples/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="js/scrollMagic/ScrollMagic-master/js/jquery.scrollmagic.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/scrollMagic/ScrollMagic-master/js/jquery.scrollmagic.debug.js"></script> 
+
+
+<script>
+
+$(document).ready(function($) {
+        htmlLogo = document.getElementById("htmlLogo"),
+        cssLogo = document.getElementById("cssLogo"),
+        javascriptLogo = document.getElementById("javascriptLogo"),
+        wordpressLogo = document.getElementById("wordpressLogo");
+	
+	//The last parameter with value of .25 is the stagger amount. Try changing it to 1 see how it impacts the animation.
+    TweenMax.staggerTo([htmlLogo, cssLogo, javascriptLogo, wordpressLogo], 1,  {scale:0.2, opacity:1}, 0.5);            
+});
+</script>
+	
+
+
+<style>
+
+.div-size {
+	width: 90%;
+	height: 800px;
+	margin: 0px 10% 50px 0px;
+}
+
+.filler {
+	background-image: url('mediaFolder/indexRenewMedia/skulls.png');
+	background-repeat:repeat;
+}
+
+.istanbul {
+	background-image: url('mediaFolder/indexRenewMedia/turkish-sunset.jpg');
+}
+
+.trigger-class {
+	height: 3px;
+	width: 11px;
+	position:relative;
+	background-color: black;
+}
+
+#pop {
+	width: 120px;
+	height: 70px;
+	background-color: orange;
+}
+
+.redrock {
+	background-image: url('mediaFolder/indexRenewMedia/red-mountain.jpg');
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+.html-logo {
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	float: left;
+	margin: 70px 30px 15px 0px;
+	opacity: 0;
+}
+
+.css-logo {
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	float: left;
+	margin: 70px 30px 15px 0px;	
+	opacity: 0;
+}
+
+.javascript-logo {
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	float: left;
+	margin: 70px 30px 15px 0px;	
+	opacity: 0;
+}
+
+.wordpress-logo {
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	float: left;
+	opacity: 0;
+	margin: 70px 30px 15px 0px;	
+}
+
+</style>
+</head>
+<body>
+
+<script>
+	var controller;
+	$(document).ready(function($) {
+		// init controller
+		controller = new ScrollMagic();
+	});
+</script>
+
+<div class="filler div-size">
+	<img src="mediaFolder/htmlLogo.png" id="htmlLogo" class="html-logo"/>
+	<img src="mediaFolder/cssLogo.png" id="cssLogo" class="css-logo"/>
+	<img src="mediaFolder/javascriptLogo.png-large" id="javascriptLogo" class="javascript-logo"/>
+	<img src="mediaFolder/wordpressLogo.png" id="wordpressLogo" class="wordpress-logo"/>
+</div>
+<div class="istanbul div-size"></div>
+<div id="triggerId" class="trigger-class"></div>
+<div id="pop"></div>
+<script>
+	$(document).ready(function($) {
+		// build tween
+		var tween = TweenLite.to(pop, 0.3, {backgroundColor: "blue", scale: 5, left: 175});
+
+		// build scene
+		var scene = new ScrollScene({triggerElement: "#triggerId", duration: 120})
+			.setTween(tween)
+			.addTo(controller);
+			
+			scene.addIndicators();
+	});
+</script>
+
+<div class="redrock div-size"></div>
+<div class="filler div-size"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
