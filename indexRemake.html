@@ -91,7 +91,7 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.from(micaCaption, 0.00001, {opacity: 0, left:"100px"});
+	var tween = TweenLite.from(micaCaption, 0.00001, {opacity: 0, left:"200px"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
@@ -105,7 +105,7 @@ $(document).ready(function($) {
 	// build tween
 	var tween = TweenLite.from(elevatorDiv, 1, {width: 2, left: 600});
 	// build scene
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerWidth", duration: 670})
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerWidth", duration: 470})
 		.setTween(tween)
 		.addTo(controller);	
 		scene.addIndicators();
@@ -115,7 +115,18 @@ $(document).ready(function($) {
 	// build tween
 	var tween = TweenLite.from(elevatorDiv, 1, {height: 1});
 	// build scene
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 270})
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 130})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+});
+
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.from(preziDiv, 1, {marginTop: 450});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 130})
 		.setTween(tween)
 		.addTo(controller);	
 		scene.addIndicators();
@@ -123,19 +134,9 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.from(elevatorDiv, 1, {marginTop: 450});
+	var tween = TweenLite.from(elevatorPitch, 1, {opacity: 0});
 	// build scene
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 270})
-		.setTween(tween)
-		.addTo(controller);	
-		scene.addIndicators();
-});
-
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.from(elevatorThird, 1, {opacity: 0});
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerContent", duration: 270})
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerContent", duration: 130})
 		.setTween(tween)
 		.addTo(controller);	
 		scene.addIndicators();
@@ -169,7 +170,6 @@ body {
 }
 
 #toolsTrigger {
-	z-index: 2;
 	width: 45px;
 	margin-top: 800px;
 	position: absolute;
@@ -180,14 +180,13 @@ body {
 }
 
 #iconTrigger1 {
-	z-index: 2;
 	width: 45px;
 	margin-top: 900px;
 	position: absolute;
 }
 
 #synerginTrigger {
-	margin-top: 2800px;
+	margin-top: 2900px;
 	position: absolute;
 	
 }
@@ -198,17 +197,17 @@ body {
 }
 
 #elevatorTriggerHeight{
-	margin-top: 3600px;
+	margin-top: 3800px;
 	position: absolute;
 }
 
 #elevatorTriggerContent{
-	margin-top: 3730px;
+	margin-top: 3900px;
 	position: absolute;
 }
 
 .trigger-class {
-	z-index: 2;
+	z-index: -2;
 	height: 6px;
 	width: 45px;
 	background-color: orange;
@@ -246,9 +245,9 @@ body {
 
 
 #leftIcons {
-	width: 300px;
-	height: 800px;
-	margin: 100px 0px 0px 50px;
+	width: 450px;
+	height: 1350px;
+	margin: 20px 0px 0px 0px;
 	position: relative;	
 	top: 0px;
 	float: left;
@@ -262,9 +261,9 @@ body {
 }
 
 #rightIcons {
-	width: 300px;
-	height: 800px;
-	margin: 100px 50px 0px 0px;
+	width: 450px;
+	height: 1350px;
+	margin: 20px 0px 0px 0px;
 	position: relative;	
 	top: 0px;
 	float: right;
@@ -285,30 +284,39 @@ body {
 
 #elevatorDiv { 
 	width: 1280px; 
-	height: 700px;
+	height: 801px;
 	background-color: white;
 	position: relative;
 	display: block;
 	margin: 2850px 0px 0px 0px;"
 }
 
+.elevatorPitch {
+	width: 1280px;
+	height: 800px;
+}
+/*
 .team-header {
     width: 100%; 
     display: block;
     text-align: center; 
-    /*margin: 100px, 0px, 50px, 0px;*/
+    margin: 100px, 0px, 50px, 0px;
     padding-top: 60px;
     font-size: 3em;
     margin-bottom: 60px;
 }
+*/
+
 
 .elevator-third {
 	display: inline-block;
 	opacity: 1;
     width: 28%;
-    height: 600px;
-    margin: 30px, 30px, 30px, 0px;
-    margin-left: 55px;
+    
+    height: 740px;
+    padding-top: 200px;
+    margin: 0px, 31px, 31px, 0px;
+    margin-left: 45px;
 }
         
 .elevator-pic {
@@ -319,25 +327,17 @@ body {
 }
 
 .elevator-title {
-	width: 100%;
 	margin: 15px 0px 15px 0px;
-	font-size: 23pt;
+	font-size: 18pt;
+	width: 100%;
 	text-align: center;
 }
          
 .elevator-text {
     display: inline-block;
     text-align: center;
-    font-size: 18px
-}
-
-#preziDiv {
-	width: 1280px;
-	height: 500px;
-	background-color: black;
-	position: relative;
-	display: block;
-	margin: 0px 0px 0px 0px;
+    font-size: 16px;
+    width: 100%;
 }
 
 #accordian a {
@@ -358,7 +358,8 @@ body {
 	font-family: 'Alegreya Sans', sans-serif;
 	color: black;
 	font-size: 4.2em;
-	margin: 70px 33% 5px 33%;
+	padding: 70px 0px 0px 0px;
+	margin: 0px 33% 5px 33%;
 }
 
 .job-title {
@@ -378,7 +379,6 @@ body {
 	padding: 20px 0px 20px 0px;
 
 }
-
 
 .html-logo {
 	display: block;
@@ -403,32 +403,47 @@ body {
 	width: 161px;
 	height: 140px;
 	float: left;
-	margin: 0px 15px 8px 28%;	
+	margin: 0px 15px 8px 385px;	
 	opacity: 1;
 }
 
 .team-caption {
 	color: white;
-	margin: 500px 0px 2px 200px;
-	width: 250px;
+	margin: 500px 0px 2px 400px;
+	width: 550px;
 	height: auto;
 	background-color: black;
 	font-size: 2em;
+	z-index: -1;
+	position: absolute;
 }
 
 #micaCaption {
+	float: right;
+	margin: 0px 25px 0px 900px;
 	display: inline-block;
 	color: white;
-	margin: 0px 100px 2px 50px;
-	width: 150px;
+	width: 100%;
 	height: auto;
 	background-color: black;
 	opacity: 1;
 	font-size: 2em;
+	z-index: -1;
+	position: absolute;
+
+}
+
+#preziDiv {
+	width: 1280px;
+	height: 800px;
+	background-color: black;
+	position: relative;
+	display: block;
+	margin: 0px 0px 0px 0px;
 }
 
 .embedded-prezi {
-	margin: 50px 50px 50px 300px;
+	margin: 0px 80px 0px 80px;
 }
 
 </style>
@@ -451,7 +466,7 @@ body {
 <!-- main container -->
 
 <div id="synerginFixedPic">
-	<p id="synerginCaption" class="team-caption">Currently coding with Synergin</p>
+	<p id="synerginCaption" class="team-caption">Currently coding with Synergin team as well as other projects.</p>
 	<p id="micaCaption">Hey, that's me!</p>
 </div>
 
@@ -465,7 +480,7 @@ body {
 	<img src="mediaFolder/indexRemakeMedia/cssLogo.png" id="cssLogo" class="css-logo"/>
 	<p class="mw-intro">Hi and welcome. I'm Michel and I use a variety of web tools and programming proficiencies to breathe life into your designs. Promote yourself, your business, or your craft with a creative, professional website.
 	</p>
-   	<a href="#" class="button glow" style="margin-left: 35%; margin-right: 2%;"><i class="fa fa-github"></i>Github</a>
+   	<a href="#" class="button glow" style="margin-left: 35%; margin-right: 2%;"><i class="fa fa-github"></i>My Github</a>
 	<span class="button-dropdown glow" data-buttons="dropdown">
 	    <a href="#" class="button glow">Portfolio</a>
 	    <ul class="button-dropdown-menu-above" style="display: none;">
@@ -474,8 +489,6 @@ body {
 	        <li class="button-dropdown-divider"><a href="#">Option 3</a></li>
 	    </ul>
 	</span>
-    
-
     <a href="#" class="button glow" style="margin-left: 2%;">Linked In</a>
 </div>
 
@@ -483,7 +496,7 @@ body {
 
 
 <div class="tools-proficiencies">
-	<img src="mediaFolder/logoCollagePart1.png" id="leftIcons"/>
+	<img src="mediaFolder/indexRemakeMedia/left-icons.png" id="leftIcons"/>
 	<div class="tools-list">
 		<p>HTML5</p>
 		<p>CSS3</p>
@@ -498,66 +511,52 @@ body {
 		<p style="font-size: 14px; font-style: italic; margin: 5px 0px 15px 0px;">(Two Way Binding)</p>
 		<p>Greensock Platform</p>
 		<p>Trello</p>	
-		<p>Dropbox</p>
-		<p>Gmail / Google+</p>
-		<p>Githu</p>
+		<p>Gmail / Google+ / Dropbox</p>
 	</div>
-	<img src="mediaFolder/logoCollagePart1.png" id="rightIcons"/>
+	<img src="mediaFolder/indexRemakeMedia/right-icons.png" id="rightIcons"/>
 </div>
 
 <div id="elevatorDiv">
-    <div class="elevator-third" id="elevatorThird">
+	<span id="elevatorPitch">
+    <div class="elevator-third">
         <img src="mediaFolder/indexRemakeMedia/trello.png" class="elevator-pic">
         <h4 class="elevator-title">Continuous Coverage</h4>        
         <p class="elevator-text">Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace keep all our near and long term goals in focus.
         </p>
     </div>
-    <div class="elevator-third" id="elevatorThird" style="padding-top: 60px;">
+    <div class="elevator-third">
         <img src="mediaFolder/indexRemakeMedia/elevatorPicMica.jpg" class="elevator-pic">
-        <h4 class="elevator-title">One Project. One Vision. One guy</h4>
-        <p class="elevator-text">Working directly with one person allows for a more streamline workflow. While you describe your design, I can immediately offer input and technical guidance to more effectively bring your ideas to the screen.
+        <h4 class="elevator-title"> One Project. One Vision. One guy.</h4>
+        <p class="elevator-text" style="margin-bot: 0px;">Working directly with one person allows for a more streamline workflow, where I can offer technical guidance to more effectively bring your ideas to the screen.
         </p>
     </div>
-    <div class="elevator-third" id="elevatorThird">
+    <div class="elevator-third">
         <img src="mediaFolder/indexRemakeMedia/html-vs-wordpress.jpg" class="elevator-pic" style="border-style: solid;">
         <h4 class="elevator-title">Coding flexibility</h4>
         <p class="elevator-text">Being able to use Wordpress or code pure HTML+CSS+JS provides a flexible approach to the project's needs and budget.
         </p>
     </div>
+    </span>
 </div>
 
 
 <div id="preziDiv">
-	<iframe class="embedded-prezi" src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
-</div> <!-- This is the prezi div -->
-
+	<iframe class="embedded-prezi" src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="1100" height="800" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen>
+	</iframe>
+</div> 
+<!--
 <div id="accordian" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px" >
 	<a href=''><span>Born here</span><img src="mediaFolder/turkish-sunset.jpg"/></a>
 	<a><span>Raised and Educated Here</span><img src="mediaFolder/indexRemakeMedia/holland.jpg"/></a>
 	<a><span>Bartended Here :)</span><img src="mediaFolder/red-mountain.jpg"/></a>
 	<a><span>Working Here</span><img src="mediaFolder/waterfall-night.jpg"/></a>
 </div>
+ 
+-->
 
 
 
 
 
-<!-- Elevator Div writings
-
--Flexible coding approach
-- Continuous Coverage: Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace
-keep all our near and long term goals in focus. Image: Trellow Screenshot? With Skype window in it?
-- One Project. One Vision. One guy: Working directly with one person allows for a more streamline workflow. While you describe your design, I can immediately offer input and technical guidance to more effectively bring your ideas to the screen. Image: You, Portait Pics
-- Coding flexibility: Being able to use Wordpress or code pure HTML+CSS+JS provides a flexible approach to the project's needs and budget. 
-
-
-
-
-
-Old code:
-<div class="filler div-size"></div>
-<div class="filler div-size" style="display: block;"></div>
-
- -->
 </body>
 </html>
