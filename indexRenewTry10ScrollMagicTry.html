@@ -22,7 +22,7 @@ $(document).ready(function($) {
         wordpressLogo = document.getElementById("wordpressLogo");
 	
 	//The last parameter with value of .25 is the stagger amount. Try changing it to 1 see how it impacts the animation.
-    TweenMax.staggerTo([htmlLogo, cssLogo, javascriptLogo, wordpressLogo], 1,  {scale:0.2, opacity:1}, 0.5);            
+    TweenMax.staggerFrom([htmlLogo, cssLogo, javascriptLogo, wordpressLogo], 1,  {scale:1.6, opacity:0}, 0.5);            
 });
 </script>
 	
@@ -70,7 +70,7 @@ $(document).ready(function($) {
 	height: 140px;
 	float: left;
 	margin: 70px 30px 15px 0px;
-	opacity: 0;
+	opacity: 1;
 }
 
 .css-logo {
@@ -79,7 +79,7 @@ $(document).ready(function($) {
 	height: 140px;
 	float: left;
 	margin: 70px 30px 15px 0px;	
-	opacity: 0;
+	opacity: 1;
 }
 
 .javascript-logo {
@@ -88,7 +88,7 @@ $(document).ready(function($) {
 	height: 140px;
 	float: left;
 	margin: 70px 30px 15px 0px;	
-	opacity: 0;
+	opacity: 1;
 }
 
 .wordpress-logo {
@@ -96,7 +96,7 @@ $(document).ready(function($) {
 	width: 140px;
 	height: 140px;
 	float: left;
-	opacity: 0;
+	opacity: 1;
 	margin: 70px 30px 15px 0px;	
 }
 

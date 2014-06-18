@@ -4,8 +4,6 @@
 
 
 <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="styles/buttons.css">
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/TweenMax.min.js"></script>
@@ -17,30 +15,14 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.debug.js"></script> 
 <script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/plugins/ScrollToPlugin.min.js"></script>
-<script type="text/javascript" src="js/accordian/jquery-1.10.0.min.js"></script>
-<script type="text/javascript" src="js/accordian/jquery-ui-1.10.3.custom.min.js"></script>
-<script type="text/javascript" src="js/accordian/jquery.accordionImageMenu.min.js"></script>
-<script type="text/javascript" src="js/buttons.js"></script>
 
 <script>
-
 
 var controller;
 $(document).ready(function($) {
 	// init controller
 	controller = new ScrollMagic();
 });
-
-$(document).ready(function($) {
-        htmlLogo = document.getElementById("htmlLogo"),
-        cssLogo = document.getElementById("cssLogo"),
-        javascriptLogo = document.getElementById("javascriptLogo"),
-	
-	//The last parameter with value of .25 is the stagger amount. Try changing it to 1 see how it impacts the animation.
-    TweenMax.staggerFrom([htmlLogo, cssLogo, javascriptLogo], 1,  {scale:1.6, opacity:0}, 0.5);        
-});
-
-
 
 $(document).ready(function($) {
 	// build tween 		
@@ -89,23 +71,12 @@ $(document).ready(function($) {
 		scene.addIndicators();
 });	
 
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.from(micaCaption, 0.00001, {opacity: 0, left:"100px"});
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
-		.setTween(tween)
-		.addTo(controller);
-		scene.addIndicators();
-});	
-
 // Reveals elevator
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.from(elevatorDiv, 1, {width: 2, left: 600});
+	var tween = TweenLite.from(elevatorDiv, 1, {width: 20, left: 600});
 	// build scene
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerWidth", duration: 670})
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerWidth", duration: 270})
 		.setTween(tween)
 		.addTo(controller);	
 		scene.addIndicators();
@@ -123,16 +94,6 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.from(elevatorDiv, 1, {marginTop: 450});
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 270})
-		.setTween(tween)
-		.addTo(controller);	
-		scene.addIndicators();
-});
-
-$(document).ready(function($) {
-	// build tween
 	var tween = TweenLite.from(elevatorThird, 1, {opacity: 0});
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#elevatorTriggerContent", duration: 270})
@@ -141,19 +102,17 @@ $(document).ready(function($) {
 		scene.addIndicators();
 });
 
-$(document).ready(function() {
-	
-		jQuery('#accordian').AccordionImageMenu({
-		  'border' : 1,
-		  'openItem':0,
-		  'duration': 400,
-		  'openDim': 728,
-		  'closeDim': 318.8,
-		  'effect': 'easeOutQuint',
-		  'height':800 
-		});	
-		
-	});
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.to(synerginFixedPic, 1, {backgroundImage: "url('mediaFolder/indexRemakeMedia/mica1280x701.jpg')");
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#hideFixedPicTrigger"})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+});
+
+
 
 </script>
 
@@ -203,7 +162,12 @@ body {
 }
 
 #elevatorTriggerContent{
-	margin-top: 3730px;
+	margin-top: 3690px;
+	position: absolute;
+}
+
+#hideFixedPicTrigger{
+	margin-top: 4600px;
 	position: absolute;
 }
 
@@ -281,6 +245,7 @@ body {
 	padding: 0px;
 	position: fixed;
 	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
+	
 }
 
 #elevatorDiv { 
@@ -331,105 +296,14 @@ body {
     font-size: 18px
 }
 
-#preziDiv {
-	width: 1280px;
-	height: 500px;
-	background-color: black;
-	position: relative;
-	display: block;
-	margin: 0px 0px 0px 0px;
+
+
+#horizontalContainer {
+	width: 3740px;
+	height: 800px;
+	background-color: silver;
 }
 
-#accordian a {
-	display: inline;
-	padding: 0px;
-	margin: 0px;
-}
-
-#accordian a img {
-	border-style: none;
-	display: inline;
-	padding: 0px;
-	margin: 0px;
-}
-
-.mw-name {
-	display: block;
-	font-family: 'Alegreya Sans', sans-serif;
-	color: black;
-	font-size: 4.2em;
-	margin: 70px 33% 5px 33%;
-}
-
-.job-title {
-	font-size: 0.8em;
-	font-style: italic;
-	font-family: 'Alegreya Sans', sans-serif;
-	display: block;
-	margin: 5px 40% 15px 40%;
-}
-
-.mw-intro {
-	display: block;
-	text-align: center;
-	font-size: 1.35em;
-	font-family: 'Alegreya Sans', sans-serif;
-	margin: 50px 25% 20px 25%;
-	padding: 20px 0px 20px 0px;
-
-}
-
-
-.html-logo {
-	display: block;
-	width: 140px;
-	height: 140px;
-	float: left;
-	margin: 0px 15px 15px 15px;
-	opacity: 1;
-}
-
-.css-logo {
-	display: inline-block;
-	width: 140px;
-	height: 140px;
-	float: left;
-	margin: 0px 25% 15px 15px;	
-	opacity: 1;
-}
-
-.javascript-logo {
-	display: inline-block;
-	width: 161px;
-	height: 140px;
-	float: left;
-	margin: 0px 15px 8px 28%;	
-	opacity: 1;
-}
-
-.team-caption {
-	color: white;
-	margin: 500px 0px 2px 200px;
-	width: 250px;
-	height: auto;
-	background-color: black;
-	font-size: 2em;
-}
-
-#micaCaption {
-	display: inline-block;
-	color: white;
-	margin: 0px 100px 2px 50px;
-	width: 150px;
-	height: auto;
-	background-color: black;
-	opacity: 1;
-	font-size: 2em;
-}
-
-.embedded-prezi {
-	margin: 50px 50px 50px 300px;
-}
 
 </style>
 </head>
@@ -438,46 +312,18 @@ body {
 <!-- Triggers -->
 <div id="toolsTrigger" class="trigger-class">Tools trigger</div>
 <div id="iconTrigger1" class="trigger-class">Icon trigger</div>
-<!-- <div id="synerginCaptionTrigger" class="trigger-class">Syn Caption Trigger</div> -->
 <div id="synerginTrigger" class="trigger-class">Synergin trigger</div>
-<!-- <div id="thatsMeCaptionTrigger" class="trigger-class">That's me caption</div> -->
 <div id="elevatorTriggerWidth" class="trigger-class">Elevator trigger Width</div>
 <div id="elevatorTriggerHeight" class="trigger-class">Elevator trigger Height</div>
-<div id="elevatorTriggerContent" class="trigger-class">Elevator trigger Content</div>
-<!-- <div id="" class="trigger-class">Change to bottom fixed pic</div> -->
-
+<div id="elevatorTriggerContent" class="trigger-class">Elevator trigger Height</div>
+<div id="hideFixedPicTrigger" class="trigger-class">Hide Fixed Pic</div>
 
 
 <!-- main container -->
 
-<div id="synerginFixedPic">
-	<p id="synerginCaption" class="team-caption">Currently coding with Synergin</p>
-	<p id="micaCaption">Hey, that's me!</p>
-</div>
+<div id="synerginFixedPic"></div>
 
-
-
-<div style="width: 1280px; height: 800px; display: block; background-color: white;">
-	<h1 class="mw-name">Michel Wilbrink</h1>
-	<h2 class="job-title">Front End Code Herder and Web Designer</h2>	
-	<img src="mediaFolder/indexRemakeMedia/javascriptLogo.png" id="javascriptLogo" class="javascript-logo"/>
-	<img src="mediaFolder/indexRemakeMedia/htmlLogo.png" id="htmlLogo" class="html-logo"/>
-	<img src="mediaFolder/indexRemakeMedia/cssLogo.png" id="cssLogo" class="css-logo"/>
-	<p class="mw-intro">Hi and welcome. I'm Michel and I use a variety of web tools and programming proficiencies to breathe life into your designs. Promote yourself, your business, or your craft with a creative, professional website.
-	</p>
-   	<a href="#" class="button glow" style="margin-left: 35%; margin-right: 2%;"><i class="fa fa-github"></i>Github</a>
-	<span class="button-dropdown glow" data-buttons="dropdown">
-	    <a href="#" class="button glow">Portfolio</a>
-	    <ul class="button-dropdown-menu-above" style="display: none;">
-	        <li><a href="#">Option 1</a></li>
-	        <li><a href="#">Option 2</a></li>
-	        <li class="button-dropdown-divider"><a href="#">Option 3</a></li>
-	    </ul>
-	</span>
-    
-
-    <a href="#" class="button glow" style="margin-left: 2%;">Linked In</a>
-</div>
+<div style="width: 1280px; display: block; border-top-style: solid; border-bottom-style: solid; z-index: 0; background-color: white;"><p style="font-size: 14.5em; margin: 190px 50px 190px 50px; color: black;">Landing Div</p></div>
 
 
 
@@ -485,7 +331,7 @@ body {
 <div class="tools-proficiencies">
 	<img src="mediaFolder/logoCollagePart1.png" id="leftIcons"/>
 	<div class="tools-list">
-		<p>HTML5</p>
+		<p>FHTML5</p>
 		<p>CSS3</p>
 		<p>Javascript</p>
 		<p>jQuery</p>
@@ -527,32 +373,18 @@ body {
 </div>
 
 
-<div id="preziDiv">
-	<iframe class="embedded-prezi" src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
-</div> <!-- This is the prezi div -->
 
-<div id="accordian" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px" >
-	<a href=''><span>Born here</span><img src="mediaFolder/turkish-sunset.jpg"/></a>
-	<a><span>Raised and Educated Here</span><img src="mediaFolder/indexRemakeMedia/holland.jpg"/></a>
-	<a><span>Bartended Here :)</span><img src="mediaFolder/red-mountain.jpg"/></a>
-	<a><span>Working Here</span><img src="mediaFolder/waterfall-night.jpg"/></a>
-</div>
+
+<div style="width: 1280px; height: 700px; background-color: blue; position: relative; display: block; margin: 0px 0px 0px 0px;"></div> <!-- This is the prezi div -->
 
 
 
 
 
-<!-- Elevator Div writings
-
--Flexible coding approach
-- Continuous Coverage: Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace
-keep all our near and long term goals in focus. Image: Trellow Screenshot? With Skype window in it?
-- One Project. One Vision. One guy: Working directly with one person allows for a more streamline workflow. While you describe your design, I can immediately offer input and technical guidance to more effectively bring your ideas to the screen. Image: You, Portait Pics
-- Coding flexibility: Being able to use Wordpress or code pure HTML+CSS+JS provides a flexible approach to the project's needs and budget. 
 
 
 
-
+<!--
 
 Old code:
 <div class="filler div-size"></div>
