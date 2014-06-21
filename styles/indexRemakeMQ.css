@@ -1,0 +1,45 @@
+@media (max-width: 1280px) {
+
+	body {
+		width: 1280px;
+	}
+
+	#toolsTrigger {
+		margin-top: 57.885%; /* 800px */
+	}
+
+	#iconTrigger1 {
+	margin-top: 64%; /* 900px; */
+	}
+
+	#synerginTrigger {
+	margin-top: 230%; /* 2900px; */
+	}
+
+	#elevatorTriggerWidth{
+	margin-top: 250%; /* 3100px; */
+	}
+
+	#elevatorTriggerHeight{
+	margin-top: 265%;
+	}
+
+	#elevatorTriggerContent{
+	margin-top: 285%;
+	}
+
+	.javascript-logo {
+	height: 138px;
+	}
+}
+
+@media (max-width: 320px) and (orientation: portrait) {	
+
+	body {
+		width: 320px;
+	}
+
+	.javascript-logo {
+	height: 34px;
+	}
+}

@@ -1,0 +1,113 @@
+@-webkit-keyframes title {
+  /* line 12, ../scss/main.scss */
+  from {
+    color: #EEE;
+    margin-top: -220px;
+  }
+
+  /* line 16, ../scss/main.scss */
+  to {
+    color: #333;
+    margin-top: 0px;
+  }
+}
+
+/* line 35, ../scss/main.scss */
+.clear {
+  clear: both;
+}
+
+/* line 37, ../scss/main.scss */
+body {
+  padding: 60px 0px 0px 0px;
+  margin: 0px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+/* line 45, ../scss/main.scss */
+nav {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  background: #FFF;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+}
+/* line 55, ../scss/main.scss */
+nav ul {
+  width: 900px;
+  margin: 0px auto;
+  padding: 0px;
+  list-style-type: none;
+}
+/* line 63, ../scss/main.scss */
+nav ul li {
+  -webkit-transition: border 0.2s;
+  -moz-transition: border 0.2s;
+  -o-transition: border 0.2s;
+  transition: border 0.2s;
+  float: left;
+  margin-bottom: -3px;
+}
+/* line 68, ../scss/main.scss */
+nav ul li.selected {
+  border-bottom: 10px solid #d30d15;
+}
+/* line 72, ../scss/main.scss */
+nav ul li.home {
+  padding: 10px;
+}
+/* line 75, ../scss/main.scss */
+nav ul li.home a {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  display: block;
+  line-height: 40px;
+  width: 40px;
+  background: #d30d15;
+  color: #FFF;
+  font-family: "Cherry Swash", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  padding: 0px;
+}
+/* line 90, ../scss/main.scss */
+nav ul a {
+  float: left;
+  text-decoration: none;
+  padding: 20px 15px;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+
+@media only screen and (max-width: 480px) {
+ 
+}

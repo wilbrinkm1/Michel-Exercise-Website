@@ -17,9 +17,6 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.debug.js"></script> 
 <script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/plugins/ScrollToPlugin.min.js"></script>
-<script type="text/javascript" src="js/accordian/jquery-1.10.0.min.js"></script>
-<script type="text/javascript" src="js/accordian/jquery-ui-1.10.3.custom.min.js"></script>
-<script type="text/javascript" src="js/accordian/jquery.accordionImageMenu.min.js"></script>
 <script type="text/javascript" src="js/buttons.js"></script>
 
 <script>
@@ -142,20 +139,6 @@ $(document).ready(function($) {
 		scene.addIndicators();
 });
 
-$(document).ready(function() {
-	
-		jQuery('#accordian').AccordionImageMenu({
-		  'border' : 1,
-		  'openItem':0,
-		  'duration': 400,
-		  'openDim': 728,
-		  'closeDim': 318.8,
-		  'effect': 'easeOutQuint',
-		  'height':800 
-		});	
-		
-	});
-
 </script>
 
 
@@ -214,145 +197,6 @@ body {
 	font-size: 6px;
 }
 
-.div-size {
-	width: 1280px;
-	height: 800px;
-	margin: 0px 0px 0px 0px;
-}
-
-.tools-proficiencies {
-	width: 1280px;
-	background-color: white;
-	color: white;
-	text-align: center;
-	font-size: 3em;
-	position: absolute;
-}
-
-.filler {
-	background-image: url('mediaFolder/indexRenewMedia/skulls.png');
-	background-repeat:repeat;
-}
-
-.tools-proficiencies > p {
-	width: 100%;
-	text-align: center;
-	margin: 20px auto 20px auto;
-	color: white;
-	font-size: 2.5em;
-
-}
-
-
-#leftIcons {
-	width: 450px;
-	height: 1350px;
-	margin: 20px 0px 0px 0px;
-	position: relative;	
-	top: 0px;
-	float: left;
-	display: inline-block;
-	opacity: 1;
-}
-
-.tools-list {
-	width: 330px;
-	display: inline-block;
-}
-
-#rightIcons {
-	width: 450px;
-	height: 1350px;
-	margin: 20px 0px 0px 0px;
-	position: relative;	
-	top: 0px;
-	float: right;
-	display: inline-block;
-	opacity: 1;
-}
-
-#synerginFixedPic {
-	z-index: -1;
-	width: 1280px;
-	height: 800px;
-	top: 0px;
-	margin: 0px 0px 0px 0px;
-	padding: 0px;
-	position: fixed;
-	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
-}
-
-#elevatorDiv { 
-	width: 1280px; 
-	height: 801px;
-	background-color: white;
-	position: relative;
-	display: block;
-	margin: 2850px 0px 0px 0px;"
-}
-
-.elevatorPitch {
-	width: 1280px;
-	height: 800px;
-}
-/*
-.team-header {
-    width: 100%; 
-    display: block;
-    text-align: center; 
-    margin: 100px, 0px, 50px, 0px;
-    padding-top: 60px;
-    font-size: 3em;
-    margin-bottom: 60px;
-}
-*/
-
-
-.elevator-third {
-	display: inline-block;
-	opacity: 1;
-    width: 28%;
-    
-    height: 740px;
-    padding-top: 200px;
-    margin: 0px, 31px, 31px, 0px;
-    margin-left: 45px;
-}
-        
-.elevator-pic {
-    width: 100%;
-    height: 250px;
-    padding: 70px, 30px, 30px, 0px;
-    border-style: solid;
-}
-
-.elevator-title {
-	margin: 15px 0px 15px 0px;
-	font-size: 18pt;
-	width: 100%;
-	text-align: center;
-}
-         
-.elevator-text {
-    display: inline-block;
-    text-align: center;
-    font-size: 16px;
-    width: 100%;
-}
-
-#accordian a {
-	display: inline;
-	padding: 0px;
-	margin: 0px;
-}
-
-#accordian a img {
-	border-style: none;
-	display: inline;
-	padding: 0px;
-	margin: 0px;
-}
-
 .mw-name {
 	display: block;
 	font-family: 'Alegreya Sans', sans-serif;
@@ -407,6 +251,62 @@ body {
 	opacity: 1;
 }
 
+.tools-proficiencies {
+	width: 1280px;
+	background-color: white;
+	color: white;
+	text-align: center;
+	font-size: 3em;
+	position: absolute;
+}
+
+.tools-proficiencies > p {
+	width: 100%;
+	text-align: center;
+	margin: 20px auto 20px auto;
+	color: white;
+	font-size: 2.5em;
+}
+
+
+#leftIcons {
+	width: 450px;
+	height: 1350px;
+	margin: 20px 0px 0px 0px;
+	position: relative;	
+	top: 0px;
+	float: left;
+	display: inline-block;
+	opacity: 1;
+}
+
+#rightIcons {
+	width: 450px;
+	height: 1350px;
+	margin: 20px 0px 0px 0px;
+	position: relative;	
+	top: 0px;
+	float: right;
+	display: inline-block;
+	opacity: 1;
+}
+
+.tools-list {
+	width: 330px;
+	display: inline-block;
+}
+
+#synerginFixedPic {
+	z-index: -1;
+	width: 1280px;
+	height: 800px;
+	top: 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	position: fixed;
+	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
+}
+
 .team-caption {
 	color: white;
 	margin: 500px 0px 2px 400px;
@@ -433,6 +333,51 @@ body {
 
 }
 
+#elevatorDiv { 
+	width: 1280px; 
+	height: 801px;
+	background-color: white;
+	position: relative;
+	display: block;
+	margin: 2850px 0px 0px 0px;"
+}
+
+.elevatorPitch {
+	width: 1280px;
+	height: 800px;
+}
+
+.elevator-third {
+	display: inline-block;
+	opacity: 1;
+    width: 28%;   
+    height: 740px;
+    padding-top: 200px;
+    margin: 0px, 31px, 31px, 0px;
+    margin-left: 45px;
+}
+        
+.elevator-pic {
+    width: 100%;
+    height: 250px;
+    padding: 70px, 30px, 30px, 0px;
+    border-style: solid;
+}
+
+.elevator-title {
+	margin: 15px 0px 15px 0px;
+	font-size: 18pt;
+	width: 100%;
+	text-align: center;
+}
+         
+.elevator-text {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+}
+
 #preziDiv {
 	width: 1280px;
 	height: 800px;
@@ -453,25 +398,21 @@ body {
 <!-- Triggers -->
 <div id="toolsTrigger" class="trigger-class">Tools trigger</div>
 <div id="iconTrigger1" class="trigger-class">Icon trigger</div>
-<!-- <div id="synerginCaptionTrigger" class="trigger-class">Syn Caption Trigger</div> -->
 <div id="synerginTrigger" class="trigger-class">Synergin trigger</div>
-<!-- <div id="thatsMeCaptionTrigger" class="trigger-class">That's me caption</div> -->
 <div id="elevatorTriggerWidth" class="trigger-class">Elevator trigger Width</div>
 <div id="elevatorTriggerHeight" class="trigger-class">Elevator trigger Height</div>
 <div id="elevatorTriggerContent" class="trigger-class">Elevator trigger Content</div>
-<!-- <div id="" class="trigger-class">Change to bottom fixed pic</div> -->
 
 
 
-<!-- main container -->
-
+<!-- Fixed Synergin pic -->
 <div id="synerginFixedPic">
 	<p id="synerginCaption" class="team-caption">Currently coding with Synergin team as well as other projects.</p>
 	<p id="micaCaption">Hey, that's me!</p>
 </div>
 
 
-
+<!-- main container -->
 <div style="width: 1280px; height: 800px; display: block; background-color: white;">
 	<h1 class="mw-name">Michel Wilbrink</h1>
 	<h2 class="job-title">Front End Code Herder and Web Designer</h2>	
@@ -480,20 +421,21 @@ body {
 	<img src="mediaFolder/indexRemakeMedia/cssLogo.png" id="cssLogo" class="css-logo"/>
 	<p class="mw-intro">Hi and welcome. I'm Michel and I use a variety of web tools and programming proficiencies to breathe life into your designs. Promote yourself, your business, or your craft with a creative, professional website.
 	</p>
-   	<a href="#" class="button glow" style="margin-left: 35%; margin-right: 2%;"><i class="fa fa-github"></i>My Github</a>
+   	<a href="https://github.com/wilbrinkm1" class="button glow" style="margin-left: 35%; margin-right: 2%;"><i class="fa fa-github"></i>My Github</a>
 	<span class="button-dropdown glow" data-buttons="dropdown">
 	    <a href="#" class="button glow">Portfolio</a>
 	    <ul class="button-dropdown-menu-above" style="display: none;">
-	        <li><a href="#">Option 1</a></li>
-	        <li><a href="#">Option 2</a></li>
-	        <li class="button-dropdown-divider"><a href="#">Option 3</a></li>
+	        <li><a href="derekPlusFolder/indexTry5AddScrollNav.html">Printing Plus Website</a></li>
+	        <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+	        <li><a href="currencyExchange.html">Currency Calculator</a></li>
+	        <li><a href="uniqueBoxRestyled.html">Hover Button App</a></li>
+	        <li><a href="jsExercises.html">JS Exercises</a></li>
+	        <li><a href="chooseAdventure.html">Choose Your Own Adventure</a></li>
+	        <li><a href="#"></a></li>
 	    </ul>
 	</span>
-    <a href="#" class="button glow" style="margin-left: 2%;">Linked In</a>
+    <a href="http://www.linkedin.com/in/michelwilbrink" class="button glow" style="margin-left: 2%;">Linked In</a>
 </div>
-
-
-
 
 <div class="tools-proficiencies">
 	<img src="mediaFolder/indexRemakeMedia/left-icons.png" id="leftIcons"/>
@@ -539,21 +481,9 @@ body {
     </span>
 </div>
 
-
 <div id="preziDiv">
-	<iframe class="embedded-prezi" src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="1100" height="800" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen>
-	</iframe>
+	<iframe src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="825" height="600" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 </div> 
-<!--
-<div id="accordian" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px" >
-	<a href=''><span>Born here</span><img src="mediaFolder/turkish-sunset.jpg"/></a>
-	<a><span>Raised and Educated Here</span><img src="mediaFolder/indexRemakeMedia/holland.jpg"/></a>
-	<a><span>Bartended Here :)</span><img src="mediaFolder/red-mountain.jpg"/></a>
-	<a><span>Working Here</span><img src="mediaFolder/waterfall-night.jpg"/></a>
-</div>
- 
--->
-
 
 
 
