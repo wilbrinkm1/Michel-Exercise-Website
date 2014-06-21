@@ -1,0 +1,33 @@
+.louis {
+  color: blue;
+}
+
+@media (min-width: 1200px) {
+  .louis {
+    color: gray;
+  }
+}
+
+@media (min-width: 1024px) {
+  .louis {
+    color: pink;
+  }
+}
+
+@media (min-width: 768px) {
+  .louis {
+    color: orange;
+  }
+}
+
+@media (min-width: 568px) {
+  .louis {
+    color: green;
+  }
+}
+
+@media (min-width: 320px) {
+  .louis {
+    color: red;
+  }
+}
