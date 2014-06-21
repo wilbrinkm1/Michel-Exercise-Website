@@ -1,3 +1,50 @@
+
+@media (max-width: 321px) {	
+
+	body {
+		width: 320px;
+	}
+
+	.mw-name {
+	font-size: 2.7em;
+	padding: 0% 0px 0px 0px;
+	margin: 0px 5% 5px 5%;
+	}
+
+	.job-title {
+	font-size: 0.8em;
+	margin: 5px 23% 15px 23%;
+	}
+
+	.mw-intro {
+	font-size: 1.15em;
+	margin: 1% 10% 2% 10%;
+	padding: 0% 0px 0% 0px;
+	}
+
+	.javascript-logo {
+	height: 34px;
+	}
+
+	.button-container {
+	display: block;
+	width: 80%;
+	margin: 2% 10% 0% 10%;
+	padding-bottom: 2%;
+	}
+
+	#synerginFixedPic {
+	z-index: -1;
+	width: 320px;
+	overflow-x: hidden;
+	top: 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	position: fixed;
+	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
+	}
+}
+
 @media (max-width: 1281px) and (min-width: 1201px) {
 
 	body {
@@ -72,54 +119,3 @@
 	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
 }
 
-@media (max-width: 321px) {	
-
-	body {
-		width: 320px;
-	}
-
-	.mw-name {
-	font-size: 2.7em;
-	padding: 0% 0px 0px 0px;
-	margin: 0px 5% 5px 5%;
-	}
-
-	.job-title {
-	font-size: 0.8em;
-	margin: 5px 23% 15px 23%;
-	}
-
-	.mw-intro {
-	font-size: 1.15em;
-	margin: 1% 10% 2% 10%;
-	padding: 0% 0px 0% 0px;
-	}
-
-	.javascript-logo {
-	height: 34px;
-	}
-
-	.button-container {
-	display: block;
-	width: 80%;
-	margin: 2% 10% 0% 10%;
-	padding-bottom: 2%;
-	}
-
-
-
-
-
-
-
-	#synerginFixedPic {
-	z-index: -1;
-	width: 320px;
-	overflow-x: hidden;
-	top: 0px;
-	margin: 0px 0px 0px 0px;
-	padding: 0px;
-	position: fixed;
-	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
-	}
-}
