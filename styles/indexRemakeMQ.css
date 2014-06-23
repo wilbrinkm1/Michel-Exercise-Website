@@ -1,54 +1,10 @@
 
-@media (max-width: 321px) {	
+																									/* 1200+ px */
+
+@media (min-width: 1199px) {
 
 	body {
-		width: 320px;
-	}
-
-	.mw-name {
-	font-size: 2.7em;
-	padding: 0% 0px 0px 0px;
-	margin: 0px 5% 5px 5%;
-	}
-
-	.job-title {
-	font-size: 0.8em;
-	margin: 5px 23% 15px 23%;
-	}
-
-	.mw-intro {
-	font-size: 1.15em;
-	margin: 1% 10% 2% 10%;
-	padding: 0% 0px 0% 0px;
-	}
-
-	.javascript-logo {
-	height: 34px;
-	}
-
-	.button-container {
-	display: block;
-	width: 80%;
-	margin: 2% 10% 0% 10%;
-	padding-bottom: 2%;
-	}
-
-	#synerginFixedPic {
-	z-index: -1;
-	width: 320px;
-	overflow-x: hidden;
-	top: 0px;
-	margin: 0px 0px 0px 0px;
-	padding: 0px;
-	position: fixed;
-	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
-	}
-}
-
-@media (max-width: 1281px) and (min-width: 1201px) {
-
-	body {
-		width: 1280px;
+		width: 100%;
 	}
 
 	#toolsTrigger {
@@ -56,23 +12,53 @@
 	}
 
 	#iconTrigger1 {
-	margin-top: 64%; /* 900px; */
+		margin-top: 64%; /* 900px; */
 	}
 
 	#synerginTrigger {
-	margin-top: 230%; /* 2900px; */
+		margin-top: 230%; /* 2900px; */
 	}
 
 	#elevatorTriggerWidth{
-	margin-top: 250%; /* 3100px; */
+		margin-top: 250%; /* 3100px; */
 	}
 
 	#elevatorTriggerHeight{
-	margin-top: 265%;
+		margin-top: 265%;
+	}
+																									/* 1200+ px */
+	#elevatorTriggerContent{
+		margin-top: 285%;
 	}
 
-	#elevatorTriggerContent{
-	margin-top: 285%;
+	#synerginFixedPic {
+		width: 100%;
+		height: 700px;
+	}
+
+
+	#micaCaption {
+		float: right;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 70%;
+		display: block;
+		color: white;
+		width: 100%;
+		height: auto;
+		background-color: black;
+		opacity: 1;
+		font-size: 2em;
+		z-index: -1;
+		position: absolute;
+	}
+
+	#synMobile {
+		display: none;
+	}
+
+
+	.landing-div {
+		width: 1280px;
 	}
 
 	.mw-name {
@@ -85,37 +71,698 @@
 	}
 
 	.job-title {
-	font-size: 0.8em;
-	margin: 5px 40% 15px 40%;
+		font-size: 0.8em;
+		margin: 5px 40% 15px 40%;
+	}
+																										/* 1200+ px */
+	.javascript-logo {
+		width: 11.3%;
+		display: inline-block;
+		height: 138px;
+		margin: 0px 1% 3% 32%;	
 	}
 
+	.html-logo {
+		display: inline-block;
+		width: 9.5%;
+		float: left;
+		margin: 0px 1% 3% 1%;
+		opacity: 1;
+	}
+
+	.css-logo {
+		display: inline-block;
+		width: 9.5%;
+		float: left;
+		margin: 0px 25% 3% 1.5%;	
+		opacity: 1;
+	}	
+	
 	.mw-intro {
-	font-size: 1.35em;
-	margin: 1% 24% 2% 24%;
-	padding: 1% 0px 1% 0px;
+		font-size: 1.35em;
+		margin: 1% 24% 2% 24%;
+		padding: 1% 0px 1% 0px;
 	}
 
 	.button-container {
-	display: block;
-	width: 32%;
-	margin: 2% 33.25% 0% 34.75%;
-	padding-bottom: 11.8%;
+		width: 32%;
+		margin: 2% 33.25% 0% 34.75%;
+		padding-bottom: 11.8%;
+	}
+																									/* 1200+ px */
+
+	.git-button {
+		display: inline-block;
+		margin: 1% 6% 1% 1%;
+	}
+
+	.portfolio-button {
+		display: inline-block;
+	}
+
+	.linkedin-button {
+		display: inline-block;
+		margin: 1% 1% 1% 6%;
+	}
+
+	.tools-proficiencies {
+		width: 100%;
+		background-color: white;
+	}	
+
+	.tools-header {
+		width: 50%; 
+		margin: 1% auto 0% auto; 
+		font-size: 2.2em
+	}
+
+	.tools-list > p {
+		margin: 20px 0 20px auto;
+		font-size: 2.2em;
+	}
+
+	#elevatorDiv { 
+		width: 1280px; 
+		height: 600px;
+		margin: 2850px 0px 0px 0px;
+	}
+																									/* 1200+ px */
+	.elevatorPitch {
+		width: 1280px;
+	}
+
+	.elevator-third {
+		display: inline-block;
+		opacity: 1;
+	    width: 33%;   
+	    padding-top: 5%;
+	    margin: 0px 0% 0% 0px;
+	}
+
+	.elevator-pic1 {
+	    width: 80%;
+	    height: 25%;
+	    margin: 5% 0% 2% 14%;
+	}
+
+	.elevator-pic2 {
+	    width: 80%;
+	    height: 25%;
+	    margin: 5% 12% 2% 10%;
+	}
+
+	.elevator-pic3 {
+	    width: 80%;
+	    height: 25%;
+	    margin: 5% 10% 2% 4%;
+	}
+
+	.elevator-title {
+		margin: 2% 0% 2% 0%;
+		font-size: 18pt;
+		width: 90%;
+		text-align: center;
+	}
+
+	.title1 {
+		margin-left: 10%;
+    }  
+
+    .title2 {
+    	margin-left: 6%;
+	}
+																									/* 1200+ px */
+	.text2 {
+		margin-left: 10.5%;
+	}
+
+	.text3 {
+		width: 75%; 
+		margin-left: 8%;
+	}
+	
+	.elevator-text {
+	    display: inline-block;
+	    text-align: center;
+	    font-size: 1.2em;
+	    width: 79%;
+	    height: auto;
+	    margin: 0% 0% 0% 14%;
+	    /*padding: 0% 5% 0% 5%;*/
+	}
+
+	#preziDiv {
+		display: block;
+		width: 1280px;
+		height: 800px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	.embedded-prezi {
+		margin: 5% 20% 0px 20%;
+	}
+}
+
+																									/* 1024px */
+@media (min-width: 1123px) and (max-width: 1190px) {
+	
+	body {
+		width: 1024px;
+		font-size: 16px;
+
+	}
+
+	#toolsTrigger {
+		display: none;
+	}
+
+	#iconTrigger1 {
+		display: none;
+	}
+
+	#synerginTrigger {
+		display: none;
+	}
+
+	#elevatorTriggerWidth{
+		display: none;
+	}
+
+	#elevatorTriggerHeight{
+		display: none;
+	}
+
+	#elevatorTriggerContent{
+		display: none;
+	}
+	
+	#synerginFixedPic {
+		display: none;
+	}
+
+	#synMobile {
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0px 0px 0px 0px;
+		padding: 0px;
+		position: fixed;
+		width: 100%;
+	}
+
+	.syn-caption {
+		color: white;
+		margin: 0% 0% 0% 0%;
+		width: 100%;	
+		height: auto;
+		text-align: center;
+		background-color: black;
+		font-size: 2em;
+		z-index: -1;
+		position: absolute;
+		opacity: 1;	
+	}
+
+	.syn-mobile {
+		width: 1024px;
+		height: 100%;
+		z-index: -1;
+	}
+
+
+	#micaCaption {
+		display: none;
+	}
+																									/* 1024px */
+	.landing-div {
+		width: 100%;
+	}
+
+	.mw-name {
+		width: 100%;
+		font-size: 2.0em;
+		padding: 0% 0% 0% 0%;
+		margin: 0px 0% 0% 0%;
+	}
+
+	.job-title {
+		font-size: 0.8em;
+		margin: 5px 23% 15px 23%;
 	}
 
 	.javascript-logo {
-	height: 138px;
+		margin: 0px 1% 0% 18%;	
+		display: inline-block;		
+	}
+
+	.html-logo {
+		display: inline-block;
+		width: 9.5%;
+		float: left;
+		margin: 0px 1% 5% 1%;
+		opacity: 1;
+	}	
+
+	.css-logo {
+		display: inline-block;
+		width: 9.5%;
+		float: left;
+		margin: 0px 32% 5% 1.5%;	
+		opacity: 1;
+	}	
+
+	.mw-intro {
+		display: block;
+		width: 90%;
+		font-size: 1.25em;
+		margin: 1% 5% 2% 5%;
+		padding: 0% 0% 0% 0%;
+	}
+																									/* 1024px */
+	.button-container {
+		width: 48%;
+		margin: 2% 30.25% 0% 31.75%;
+		padding-bottom: 11.8%;
+	}
+
+	.git-button {
+		display: inline-block;
+		margin: 1% 6% 1% 1%;
+	}
+
+	.portfolio-button {
+		display: inline-block;
+	}
+
+	.linkedin-button {
+		display: inline-block;
+		margin: 1% 1% 1% 6%;
+	}
+
+
+	.tools-proficiencies {
+		background-color: black;
+	}
+
+	.tools-header {
+		width: 100%; 
+		margin: 1% 0% 0% 0%; 
+		font-size: 1.2em;
+	}
+
+	.tools-list > p {
+		margin: 15px 0 15px 0px;
+		font-size: 1.0em;
+	}
+
+	#leftIcons {
+		width: 36%;
+		height: 100%;
+		margin: 0% 0% 0% 0%;
+		padding-top: 0%;
+		position: relative;	
+		top: 0%;
+		float: left;
+		display: inline-block;
+		opacity: 1;
+	}
+
+	#rightIcons {
+		width: 36%;
+		height: 100%;
+		margin: 0% 0% 0% 0%;
+		padding-top: 0%;
+		position: relative;	
+		top: 0%;
+		float: right;
+		display: inline-block;
+		opacity: 1;
+	}
+
+	/* #micaCaption {
+		float: right;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 20%;
+		display: block;
+		color: white;
+		width: 100%;
+		height: auto;
+		background-color: black;
+		opacity: 1;
+		font-size: 2em;
+		z-index: -1;
+		position: absolute;
+	} /*
+																									/* 1024px */
+	#elevatorDiv { 
+		width: 1024px; 
+		margin: 3650px 0px 0px 0px;
+	}
+
+	.elevatorPitch {
+		width: 1024px;
+		margin: 0%;
+		padding: 0%;
+	}
+
+	.elevator-pic1 {
+		display: block;
+	    width: 70%;
+	    margin: 2% 15% 2% 15%;
+	    border-style: solid;
+	}
+
+	.elevator-pic2 {
+		display: block;
+	    width: 70%;
+	    height: 25%;
+	    margin: 2% 15% 2% 15%;
+	    border-style: solid;
+	}
+																									/* 1024px */
+	.elevator-pic3 {
+		display: block;
+	    width: 70%;
+	    height: 25%;
+	    margin: 2% 15% 2% 15%;
+	    border-style: solid;
+	}
+
+	.elevator-title {
+		display: block;
+		margin: 1% 0% 2% 0%;
+		padding: 0% auto 0% auto;
+		font-size: 1.4em;
+		width: 100%;
+	}
+         
+	.elevator-text {
+	    display: block;
+	    font-size: 1.2em;
+	    width: 80%;
+	    height: auto;
+	    margin: 0% 0% 7% 0%;
+	    padding: 0% 10% 0% 10%;
+	}
+
+	#preziDiv {
+		display: none;
+	}
+
+	.embedded-prezi {
+		display: none;
 	}
 }
+																									/* 768px 
+@media (min-width: 768px) {
+  
+}*/
+																									/* 568px 
+@media (min-width: 568px) {
+  .louis {
+    color: green;
+  }
+}
+*/
 
+
+
+
+																									/* 320px */
+@media (max-width: 1024px) {
+
+	body {
+		width: 100%;
+	}
+
+	#toolsTrigger {
+		display: none;
+	}
+
+	#iconTrigger1 {
+		display: none;
+	}
+
+	#synerginTrigger {
+		display: none;
+	}
+
+	#elevatorTriggerWidth{
+		display: none;
+	}
+
+	#elevatorTriggerHeight{
+		display: none;
+	}
+
+	#elevatorTriggerContent{
+		display: none;
+	}
+	
 	#synerginFixedPic {
-	z-index: -1;
-	width: 1280px;
-	height: 100%;
-	overflow-x: hidden;
-	top: 0px;
-	margin: 0px 0px 0px 0px;
-	padding: 0px;
-	position: fixed;
-	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
+		display: none
+	}
+																									/* 320px */
+	#micaCaption {
+		display: none;
+	}
+
+	#synMobile {
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0px 0px 0px 0px;
+		padding: 0px;
+		position: fixed;
+	}
+
+	.syn-caption {
+		color: white;
+		margin: 0% 0% 0% 0%;
+		width: 100%;	
+		height: auto;
+		text-align: center;
+		background-color: black;
+		font-size: 1.3em;
+		z-index: -1;
+		position: absolute;
+		opacity: 1;	
+	}
+
+	.syn-mobile {
+		width: 100%;
+		height: 60%;
+	}
+
+	.landing-div {
+		width: 100%;
+	}
+
+	.mw-name {
+		width: 100%;
+		font-size: 2.2em;
+		padding: 0% 0% 0% 0%;
+		margin: 0px 0% 0% 0%;
+	}
+
+	.job-title {
+		font-size: 0.8em;
+		margin: 5px 23% 15px 23%;
+	}
+
+	.mw-intro {
+		font-size: 1.15em;
+		margin: 1% 10% 2% 10%;
+		padding: 0% 0px 0% 0px;
+	}
+
+	.javascript-logo {
+		width: 11.3%;
+		display: inline-block;
+		height: 0.9%;
+		margin: 0px 1% 1% 32%;	
+	}
+
+	.html-logo {
+		display: inline-block;
+		width: 9.5%;
+		float: left;
+		margin: 0px 1% 3% 1%;
+		opacity: 1;
+	}
+
+	.css-logo {
+		display: inline-block;
+		width: 9.5%;
+		float: left;
+		margin: 0px 25% 3% 1.5%;	
+		opacity: 1;
+	}	
+																									/* 320px */
+	.button-container {
+		width: 90%;
+		margin: 2% 5% 0% 5%;
+		padding-bottom: 2%;
+	}
+
+	.git-button {
+		display: block;
+		width: 80%;
+		margin: 0% 10% 4.5% 10%;
+		padding: 0% 0% 0% 0%;
+	}
+
+	.portfolio-button {
+		display: block;
+		width: 80%;
+		margin: 0% 10% 4.5% 10%;
+		padding: 0% 0% 0% 0%;
+	}
+
+	.button-container > span > a {
+		width: 78%;
+	}
+
+	.linkedin-button {
+		display: block;
+		width: 80%;
+		margin: 0% 10% 4.5% 10%;
+		padding: 0% 0% 0% 0%;
+	}
+
+	.tools-proficiencies {
+		background-color: black;
+	}
+
+	.tools-header {
+		width: 100%; 
+		margin: 1% 0% 0% 0%; 
+		font-size: 1.2em;
+	}
+																									/* 320px */
+	.tools-list > p {
+		margin: 15px 0 15px auto;
+		font-size: 1.0em;
+	}
+
+	#leftIcons {
+		width: 36%;
+		height: 100%;
+		margin: 0% 0% 0% 0%;
+		padding-top: 10%;
+		position: relative;	
+		top: 0%;
+		float: left;
+		display: inline-block;
+		opacity: 1;
+	}
+
+	#rightIcons {
+		width: 36%;
+		margin: 0% 0% 0% 0%;
+		padding-top: 10%;
+		position: relative;	
+		top: 0%;
+		float: right;
+		display: inline-block;
+		opacity: 1;
+	}
+																									/* 320px */
+/*
+	#micaCaption {
+		float: right;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 20%;
+		display: block;
+		color: white;
+		width: 100%;
+		height: auto;
+		background-color: black;
+		opacity: 1;
+		font-size: 2em;
+		z-index: -1;
+		position: absolute;
+	}
+*/
+
+	#elevatorDiv { 
+		width: 100%; 
+		margin: 1300px 0px 0px 0px;
+		height: auto;
+	}
+
+	.elevatorPitch {
+		width: 100%;
+		height: auto;
+	}
+
+	.elevator-pic1 {
+		display: block;
+	    width: 70%;
+	    height: 25%;
+	    margin: 2% 15% 2% 15%;
+	    border-style: solid;
+	}
+
+	.elevator-pic2 {
+		display: block;
+	    width: 70%;
+	    height: 25%;
+	    margin: 2% 15% 2% 15%;
+	    border-style: solid;
+	}
+
+	.elevator-pic3 {
+		display: block;
+	    width: 70%;
+	    height: 25%;
+	    margin: 2% 15% 2% 15%;
+	    border-style: solid;
+	}
+																									/* 320px */
+	.elevator-title {
+		display: block;
+		margin: 1% 0% 2% 0%;
+		padding: 0% auto 0% auto;
+		font-size: 1.4em;
+		width: 100%;
+	}
+         
+	.elevator-text {
+	    display: block;
+	    font-size: 1.2em;
+	    width: 80%;
+	    height: auto;
+	    margin: 0% 0% 7% 0%;
+	    padding: 0% 10% 0% 10%;
+	}
+
+	#preziDiv {
+		display: none;
+	}
+
+	.embedded-prezi {
+		display: none;
+	}
+
 }
 
+@media (min-width: 1023px) and (max-width: 1190px) {
+
+	.mw-name {
+		font-size: 35pt;
+	}
+
+	.javascript-logo {
+		height: 35px;
+	}
+
+	.button-container > span > a {
+		width: 80%;
+	}
+}

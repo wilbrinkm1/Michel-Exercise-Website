@@ -2,11 +2,13 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width">
 
-<link rel="stylesheet" href="styles/indexRemakeMQ.css">
+<link rel="stylesheet" href="styles/buttons.css">
+
 <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="styles/buttons.css">
+<link rel="stylesheet" href="styles/indexRemakeMQ.css">
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/TweenMax.min.js"></script>
@@ -16,7 +18,7 @@
 <script type="text/javascript" src="js/ScrollMagic-master/js/_examples/modernizr.custom.min.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
-<script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.debug.js"></script> 
+<script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.debug.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/plugins/ScrollToPlugin.min.js"></script>
 <script type="text/javascript" src="js/buttons.js"></script>
 
@@ -54,7 +56,7 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 	// build tween 		
-	var tween = TweenLite.from(leftIcons, 1, {opacity: 0, right:"20%"});
+	var tween = TweenLite.from(leftIcons, 1, {opacity: 0, left:"4%"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#iconTrigger1", duration: 250})
@@ -66,7 +68,7 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 	// build tween 		
-	var tween = TweenLite.from(rightIcons, 1, {opacity: 0, left:"20%"});
+	var tween = TweenLite.from(rightIcons, 1, {opacity: 0, right:"4%"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#iconTrigger1", duration: 150})
@@ -89,7 +91,7 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.from(micaCaption, 0.00001, {opacity: 0, left:"20%"});
+	var tween = TweenLite.from(micaCaption, 0.00001, {opacity: 0, top:"5%"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
@@ -100,7 +102,7 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.to(teamCaption, 1, {opacity: 0, right:"20%"});
+	var tween = TweenLite.to(teamCaption, 1, {opacity: 0, top:"-5%"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
@@ -109,16 +111,16 @@ $(document).ready(function($) {
 		scene.addIndicators();
 });	
 
-// Reveals elevator
+/* Reveals elevator
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.from(elevatorDiv, 1, {width: 2, left: 600});
+	var tween = TweenLite.from(elevatorDiv, 1, {width: 2, left: 10});
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#elevatorTriggerWidth", duration: 110})
 		.setTween(tween)
 		.addTo(controller);	
 		scene.addIndicators();
-});
+}); */
 
 $(document).ready(function($) {
 	// build tween
@@ -159,24 +161,57 @@ $(document).ready(function($) {
 body {
 	margin: 0px;
 	padding: 0px;
-	font-size: 16px;
 	font-family: 'Alegreya Sans', sans-serif;
 	overflow-x: hidden;
 }
 
+body > div {
+	overflow-x: hidden;
+}
+
+.ScrollScreenIndicators {
+	opacity: 0;
+	float: left;
+}
+
+.hook {
+	opacity: 0;
+	float: left;
+}
+
+.start {
+	opacity: 0;
+	float: left;
+}
+
+.end {
+	opacity: 0;
+	float: left;
+}
+
 #toolsTrigger {
+	position: absolute;
+
 }
 
 #iconTrigger1 {
+	position: absolute;
+
 }
 
 #synerginTrigger {
+	position: absolute;
+
 }
 
 #elevatorTriggerWidth{
+	position: absolute;
+
 }
 
 #elevatorTriggerHeight{
+	position: absolute;
+
 }
 
 #elevatorTriggerContent{
@@ -185,15 +220,49 @@ body {
 
 .trigger-class {
 	z-index: -2;
-	height: 6px;
-	width: 45px;
+	height: 1px;
+	width: 1px;
 	background-color: orange;
 	font-size: 6px;
 	position: absolute;
 }
 
-.landing-div {
+#synerginFixedPic {
+	z-index: -1;
+	overflow-x: hidden;
+	top: 0px;
+	left: 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	position: fixed;
+	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
+}
+
+#teamCaption {
+	color: white;
+	margin: 0% 0% 0% 0%;
+	width: 100%;	
+	height: auto;
+	text-align: center;
+	background-color: black;
+	font-size: 2em;
+	z-index: -1;
+	position: absolute;
+	opacity: 1;
+}
+
+#micaCaption {
+	margin: 0% 0% 0% 0%;
 	width: 100%;
+	height: auto;
+	opacity: 1;
+	font-size: 2em;
+	z-index: -1;
+	position: absolute;
+}
+
+
+.landing-div {
 	display: block;
 	background-color: white;
 }
@@ -202,6 +271,7 @@ body {
 	display: block;
 	font-family: 'Alegreya Sans', sans-serif;
 	color: black;
+	text-align: center;
 }
 
 .job-title {
@@ -211,6 +281,26 @@ body {
 	text-align: center;
 }
 
+.javascript-logo {
+	float: left;
+	opacity: 1;
+}
+
+.html-logo {
+	display: inline-block;
+	width: 9.5%;
+	float: left;
+	opacity: 1;
+}
+
+.css-logo {
+	width: 9.5%;
+	float: left;
+	opacity: 1;
+}
+
+
+
 .mw-intro {
 	display: block;
 	text-align: center;
@@ -219,51 +309,31 @@ body {
 
 .button-container {
 	display: block;
-	width: 32%;
-	margin: 2% 33.25% 0% 34.75%;
-	padding-bottom: 11.8%;
+}
+/*
+.git-button {
+	padding: 0% 0% 0% 0%;
 }
 
-.html-logo {
-	display: block;
-	width: 9.5%;
-	float: left;
-	margin: 0px 1% 3% 1%;
-	opacity: 1;
-}
 
-.css-logo {
-	display: inline-block;
-	width: 9.5%;
-	float: left;
-	margin: 0px 25% 3% 1.5%;	
-	opacity: 1;
-}
+.portfolio-button {
 
-.javascript-logo {
-	display: inline-block;
-	width: 11.3%;
-	float: left;
-	margin: 0px 1% 3% 32%;	
-	opacity: 1;
-}
+} 
+
+.linkedin-button {
+
+}*/
 
 .tools-proficiencies {
 	width: 100%;
 	margin: 0%;
-	background-color: white;
 	color: white;
 	text-align: center;
-	font-size: 3em;
 	position: absolute;
 }
 
-.tools-proficiencies > p {
-	width: 100%;
-	text-align: center;
-	margin: 20px auto 20px auto;
-	color: white;
-	font-size: 2.5em;
+.tools-header {
+	text-align: center; 
 }
 
 #leftIcons {
@@ -288,71 +358,30 @@ body {
 }
 
 .tools-list {
-	width: 15%;
+	width: 25%;
 	display: inline-block;
 }
 
-#synerginFixedPic {
-	z-index: -1;
-	overflow-x: hidden;
-	top: 0px;
-	margin: 0px 0px 0px 0px;
-	padding: 0px;
-	position: fixed;
-	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
-}
-
-#teamCaption {
-	color: white;
-	margin: 0% 0% 0% 0%;
-	width: 100%;	
-	height: auto;
-	text-align: center;
-	background-color: black;
-	font-size: 2em;
-	z-index: -1;
-	position: absolute;
-	opacity: 1;
-}
-
-#micaCaption {
-	float: right;
-	margin: 0px 5% 0px 70%;
-	padding: 0% 0% 0% 1%;
-	display: block;
-	color: white;
+.tools-proficiencies > p {
 	width: 100%;
-	height: auto;
-	background-color: black;
-	opacity: 1;
-	font-size: 2em;
-	z-index: -1;
-	position: absolute;
-
+	text-align: center;
+	color: white;
 }
+
 
 #elevatorDiv { 
-	width: 1280px; 
-	height: 600px;
 	background-color: white;
 	position: relative;
 	display: block;
-	margin: 2850px 0px 0px 0px;
 }
 
 .elevatorPitch {
 	display: inline-block;
 	margin: 0%;
 	padding: 0%;
-	width: 1280px;
 }
 
 .elevator-third {
-	display: inline-block;
-	opacity: 1;
-    width: 33%;   
-    padding-top: 5%;
-    margin: 0px 0% 0% 0px;
 }
         
 /*.elevator-pic {
@@ -363,55 +392,37 @@ body {
 }*/
 
 .elevator-pic1 {
-    width: 80%;
-    height: 25%;
-    margin: 5% 0% 2% 14%;
     border-style: solid;
 }
 
 .elevator-pic2 {
-    width: 80%;
-    height: 25%;
-    margin: 5% 12% 2% 10%;
     border-style: solid;
 }
 
 .elevator-pic3 {
-    width: 80%;
-    height: 25%;
-    margin: 5% 10% 2% 4%;
     border-style: solid;
 }
 
 .elevator-title {
-	margin: 2% 0% 2% 0%;
-	font-size: 18pt;
-	width: 90%;
 	text-align: center;
 }
          
 .elevator-text {
-    display: inline-block;
     text-align: center;
     font-size: 1.2em;
-    width: 79%;
-    height: auto;
-    margin: 0% 0% 0% 14%;
     /*padding: 0% 5% 0% 5%;*/
 }
 
 #preziDiv {
-	width: 1280px;
-	height: 800px;
 	background-color: black;
 	position: relative;
-	display: block;
 	margin: 0px 0px 0px 0px;
 }
 
+/*
 .embedded-prezi {
-	margin: 5% 20% 0px 20%;
 }
+*/
 
 </style>
 </head>
@@ -427,10 +438,15 @@ body {
 
 
 
-<!-- Fixed Synergin pic -->
+<!-- Fixed Synergin pic for desktop-->
 <div id="synerginFixedPic">
 	<p id="teamCaption">Currently coding with the Synergin team as well as other projects.</p>
 	<p id="micaCaption">Hey, that's me!</p>
+</div>
+
+<div id="synMobile">
+	<img class="syn-mobile" src="mediaFolder/indexRemakeMedia/teamusa-1024.jpg"/>
+	<p class="syn-caption">Currently coding with the Synergin team, as well as other projects. I'm on the right.</p>
 </div>
 
 
@@ -444,24 +460,24 @@ body {
 	<p class="mw-intro">Hi and welcome. I'm Michel and I use a variety of web tools and programming proficiencies to breathe life into your designs. Promote yourself, your business, or your craft with a creative, professional website.
 	</p>
 	<div class="button-container">
-   	<a href="https://github.com/wilbrinkm1" class="button glow" style="display: inline-block; margin: 1% 6% 1% 1%;"><i class="fa fa-github"></i>My Github</a>
-	<span style="display: inline-block;" class="button-dropdown glow" data-buttons="dropdown">
-	    <a href="#" class="button glow" style="display: inline-block;">Portfolio</a>
-	    <ul class="button-dropdown-menu-above" style="display: none;">
-	        <li><a href="derekPlusFolder/indexTry5AddScrollNav.html">Printing Plus Website</a></li>
-	        <li><a href="schedulePlanner.html">Schedule Planner</a></li>
-	        <li><a href="currencyExchange.html">Currency Calculator</a></li>
-	        <li><a href="uniqueBoxRestyled.html">Hover Button App</a></li>
-	        <li><a href="jsExercises.html">JS Exercises</a></li>
-	        <li><a href="chooseAdventure.html">Choose Your Own Adventure</a></li>
-	    </ul>
-	</span>
-    <a href="http://www.linkedin.com/in/michelwilbrink" class="button glow" style="display: inline-block; margin: 1% 1% 1% 6%;">Linked In</a>
+	   	<a href="https://github.com/wilbrinkm1" class="button glow git-button"><i class="fa fa-github"></i>My Github</a>
+		<span style="display: inline-block;" class="button-dropdown glow portfolio-button" data-buttons="dropdown">
+		    <a href="#" class="button glow">Portfolio</a>
+		    <ul class="button-dropdown-menu-above" style="display: none;">
+		        <li><a href="derekPlusFolder/indexTry5AddScrollNav.html">Printing Plus Website</a></li>
+		        <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+		        <li><a href="currencyExchange.html">Currency Calculator</a></li>
+		        <li><a href="uniqueBoxRestyled.html">Hover Button App</a></li>
+		        <li><a href="jsExercises.html">JS Exercises</a></li>
+		        <li><a href="chooseAdventure.html">Choose Your Own Adventure</a></li>
+		    </ul>
+		</span>
+	    <a href="http://www.linkedin.com/in/michelwilbrink" class="button glow linkedin-button">Linked In</a>
 	</div>
 </div>
 
 <div class="tools-proficiencies">
-	<p style="width: 50%; text-align: center; margin: 1% auto 0% auto; font-size: 1.5em;">Tools & Proficiencies</p>
+	<p class="tools-header">Tools & Proficiencies</p>
 	<img src="mediaFolder/indexRemakeMedia/left-icons.png" id="leftIcons"/>
 	<div class="tools-list">
 		<p>HTML5</p>
@@ -469,12 +485,12 @@ body {
 		<p>Javascript</p>
 		<p>jQuery</p>
 		<p style="margin-bot: 5px; -webkit-margin-after: 5px;">Wordpress</p>
-		<p style="font-size: 14px; font-style: italic; margin: 5px 0px 15px 0px;">(Divi Theme)</p>
+		<p style="font-size: 0.7em; font-style: italic; margin: 5px 0px 15px 0px;">(Divi Theme)</p>
 		<p>Photoshop</p>
 		<p>Github</p>	
 		<p>Bootstrap</p>
 		<p style="margin-bot: 5px; -webkit-margin-after: 5px;">AngularJS</p>
-		<p style="font-size: 14px; font-style: italic; margin: 5px 0px 15px 0px;">(Two Way Binding)</p>
+		<p style="font-size: 0.7em; font-style: italic; margin: 5px 0px 15px 0px;">(Two Way Binding)</p>
 		<p>Greensock Platform</p>
 		<p>Trello</p>	
 		<p>Gmail Skype Dropbox</p>
@@ -486,20 +502,20 @@ body {
 	<div id="elevatorPitch">
     <div class="elevator-third">
         <img src="mediaFolder/indexRemakeMedia/trello.png" class="elevator-pic1">
-        <h4 class="elevator-title" style="margin-left: 10%;">Continuous Coverage</h4>        
+        <h4 class="elevator-title">Continuous Coverage</h4>        
         <p class="elevator-text">Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace keep all our near and long term goals in focus.
         </p>
     </div>
     <div class="elevator-third">
         <img src="mediaFolder/indexRemakeMedia/elevatorPicMica.jpg" class="elevator-pic2">
-        <h4 class="elevator-title" style="margin-left: 6%;"> One Project. One Vision. One guy.</h4>
-        <p class="elevator-text" style="margin-left: 10.5%;">Working directly with one person allows for a more streamline workflow, offering technical guidance to more effectively bring your ideas to the screen.
+        <h4 class="elevator-title"> One Project. One Vision. One guy.</h4>
+        <p class="elevator-text text2">Working directly with one person allows for a more streamline workflow, offering technical guidance to more effectively bring your ideas to the screen.
         </p>
     </div>
     <div class="elevator-third">
         <img src="mediaFolder/indexRemakeMedia/html-vs-wordpress.jpg" class="elevator-pic3">
         <h4 class="elevator-title">Coding flexibility</h4>
-        <p class="elevator-text" style="width: 75%; margin-left: 8%;">Being able to use Wordpress or code in pure HTML + CSS + Javascript provides a flexible approach to the project's needs and budget.
+        <p class="elevator-text text3">Being able to use Wordpress or code in pure HTML + CSS + Javascript provides a flexible approach to the project's needs and budget.
         </p>
     </div>
     </div>
