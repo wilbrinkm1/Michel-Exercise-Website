@@ -80,7 +80,7 @@ $(document).ready(function($) {
 // Changes fixed pic from group shot to mica shot
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.to(synerginFixedPic, 0.00001, {backgroundImage: "url('mediaFolder/indexRemakeMedia/mica1280x701.jpg')"});
+	var tween = TweenLite.to(synerginFixedPic, 0.00001, {backgroundImage: "url('http://162.243.103.157/assets/mica-assets/mica1280x701.jpg')"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#synerginTrigger"})
@@ -189,37 +189,9 @@ body > div {
 	float: left;
 }
 
-#toolsTrigger {
-	position: absolute;
-
-}
-
-#iconTrigger1 {
-	position: absolute;
-
-}
-
-#synerginTrigger {
-	position: absolute;
-
-}
-
-#elevatorTriggerWidth{
-	position: absolute;
-
-}
-
-#elevatorTriggerHeight{
-	position: absolute;
-
-}
-
-#elevatorTriggerContent{
-	position: absolute;
-}
 
 .trigger-class {
-	z-index: -2;
+	z-index: 12;
 	height: 1px;
 	width: 1px;
 	background-color: orange;
@@ -227,39 +199,13 @@ body > div {
 	position: absolute;
 }
 
+/*
 #synerginFixedPic {
-	z-index: -1;
-	overflow-x: hidden;
-	top: 0px;
-	left: 0px;
-	margin: 0px 0px 0px 0px;
-	padding: 0px;
-	position: fixed;
-	background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
-}
+} 
 
 #teamCaption {
-	color: white;
-	margin: 0% 0% 0% 0%;
-	width: 100%;	
-	height: auto;
-	text-align: center;
-	background-color: black;
-	font-size: 2em;
-	z-index: -1;
-	position: absolute;
-	opacity: 1;
 }
-
-#micaCaption {
-	margin: 0% 0% 0% 0%;
-	width: 100%;
-	height: auto;
-	opacity: 1;
-	font-size: 2em;
-	z-index: -1;
-	position: absolute;
-}
+*/
 
 
 .landing-div {
@@ -282,7 +228,6 @@ body > div {
 }
 
 .javascript-logo {
-	float: left;
 	opacity: 1;
 }
 
@@ -291,15 +236,16 @@ body > div {
 	width: 9.5%;
 	float: left;
 	opacity: 1;
+	margin: 0% 1% 3% 1%;
 }
 
 .css-logo {
+	display: inline-block;
 	width: 9.5%;
 	float: left;
 	opacity: 1;
+	margin: 0% 25% 3% 1.5%;
 }
-
-
 
 .mw-intro {
 	display: block;
@@ -310,18 +256,17 @@ body > div {
 .button-container {
 	display: block;
 }
-/*
-.git-button {
-	padding: 0% 0% 0% 0%;
+
+/*.git-button {
 }
 
-
 .portfolio-button {
-
-} 
+	display: inline-block;
+}
 
 .linkedin-button {
-
+	display: inline-block;
+	margin: 1% 1% 1% 6%;
 }*/
 
 .tools-proficiencies {
@@ -334,6 +279,8 @@ body > div {
 
 .tools-header {
 	text-align: center; 
+	width: 100%; 
+	margin: 1% 0% 0% 0%; 
 }
 
 #leftIcons {
@@ -360,9 +307,10 @@ body > div {
 .tools-list {
 	width: 25%;
 	display: inline-block;
+	margin: 3% 0% 3% 0%;
 }
 
-.tools-proficiencies > p {
+.tools-list > p {
 	width: 100%;
 	text-align: center;
 	color: white;
@@ -372,7 +320,7 @@ body > div {
 #elevatorDiv { 
 	background-color: white;
 	position: relative;
-	display: block;
+	display: block;	
 }
 
 .elevatorPitch {
@@ -445,7 +393,7 @@ body > div {
 </div>
 
 <div id="synMobile">
-	<img class="syn-mobile" src="mediaFolder/indexRemakeMedia/teamusa-1024.jpg"/>
+	<img class="syn-mobile" src="http://162.243.103.157/assets/mica-assets/teamusa-1024.jpg"/>
 	<p class="syn-caption">Currently coding with the Synergin team, as well as other projects. I'm on the right.</p>
 </div>
 
@@ -484,16 +432,17 @@ body > div {
 		<p>CSS3</p>
 		<p>Javascript</p>
 		<p>jQuery</p>
-		<p style="margin-bot: 5px; -webkit-margin-after: 5px;">Wordpress</p>
-		<p style="font-size: 0.7em; font-style: italic; margin: 5px 0px 15px 0px;">(Divi Theme)</p>
 		<p>Photoshop</p>
 		<p>Github</p>	
 		<p>Bootstrap</p>
-		<p style="margin-bot: 5px; -webkit-margin-after: 5px;">AngularJS</p>
-		<p style="font-size: 0.7em; font-style: italic; margin: 5px 0px 15px 0px;">(Two Way Binding)</p>
-		<p>Greensock Platform</p>
+		<p>Greensock AP</p>
 		<p>Trello</p>	
-		<p>Gmail Skype Dropbox</p>
+		<p>Prezi</p>
+		<p>Gmail Skype</p>
+		<p id="ngwp">Wordpress</p>
+		<p id="ngwpsub">(Divi Theme)</p>
+		<p id="ngwp">AngularJS</p>
+		<p id="ngwpsub">(Two Way Binding)</p>
 	</div>
 	<img src="mediaFolder/indexRemakeMedia/right-icons.png" id="rightIcons"/>
 </div>
@@ -520,12 +469,12 @@ body > div {
     </div>
     </div>
 </div>
-
+<!--
 <div id="preziDiv">
 	<iframe class="embedded-prezi" src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="825" height="600" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 </div> 
 
-
+-->
 
 
 </body>

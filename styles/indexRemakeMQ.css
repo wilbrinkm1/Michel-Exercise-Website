@@ -1,7 +1,5 @@
-
+@media (min-width: 1199px) and (max-width: 1365px) {
 																									/* 1200+ px */
-
-@media (min-width: 1199px) {
 
 	body {
 		width: 100%;
@@ -33,9 +31,29 @@
 
 	#synerginFixedPic {
 		width: 100%;
-		height: 700px;
+		height: 100%; 
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg');
 	}
 
+	#teamCaption {
+		color: white;
+		margin: 0% 0% 0% 0%;
+		width: 100%;	
+		height: auto;
+		text-align: center;
+		background-color: black;
+		font-size: 2em;
+		z-index: -1;
+		position: absolute;
+		opacity: 1;
+	}
 
 	#micaCaption {
 		float: right;
@@ -56,37 +74,35 @@
 		display: none;
 	}
 
-
 	.landing-div {
-		width: 1280px;
+		width: 100%;
 	}
 
 	.mw-name {
-	display: block;
-	font-family: 'Alegreya Sans', sans-serif;
-	color: black;
-    font-size: 4.2em;
-	padding: 5% 0px 0px 0px;
-	margin: 0px 33% 5px 33%;
-	}
+	    font-size: 4.2em;
+		padding: 5% 0% 0% 0%;
+		margin: 0% 33% 0% 33%;
+	} 
 
 	.job-title {
 		font-size: 0.8em;
-		margin: 5px 40% 15px 40%;
+		margin: 0% 40% 0% 40%;
+		padding: 0% 0% 1.5% 0%;
 	}
 																										/* 1200+ px */
 	.javascript-logo {
+		float: left;
 		width: 11.3%;
 		display: inline-block;
 		height: 138px;
-		margin: 0px 1% 3% 32%;	
+		margin: 0% 1% 3% 32%;	
 	}
 
 	.html-logo {
 		display: inline-block;
 		width: 9.5%;
 		float: left;
-		margin: 0px 1% 3% 1%;
+		margin: 0% 1% 3% 1%;
 		opacity: 1;
 	}
 
@@ -101,7 +117,7 @@
 	.mw-intro {
 		font-size: 1.35em;
 		margin: 1% 24% 2% 24%;
-		padding: 1% 0px 1% 0px;
+		padding: 1% 0% 1% 0%;
 	}
 
 	.button-container {
@@ -126,19 +142,27 @@
 	}
 
 	.tools-proficiencies {
-		width: 100%;
 		background-color: white;
 	}	
 
 	.tools-header {
-		width: 50%; 
-		margin: 1% auto 0% auto; 
-		font-size: 2.2em
+		font-size: 2.6em
 	}
 
 	.tools-list > p {
-		margin: 20px 0 20px auto;
-		font-size: 2.2em;
+		margin: 11% 0 11% auto;
+		font-size: 1.9em;
+	}
+
+	.ngwp {
+		margin-bot: 5px; 
+		-webkit-margin-after: 5px;
+	}
+
+	.ngwpsub {
+		font-size: 0.7em; 
+		font-style: italic; 
+		margin: 5px 0px 15px 0px;
 	}
 
 	#elevatorDiv { 
@@ -156,7 +180,7 @@
 		opacity: 1;
 	    width: 33%;   
 	    padding-top: 5%;
-	    margin: 0px 0% 0% 0px;
+	    margin: 0% 0% 0% 0%;
 	}
 
 	.elevator-pic1 {
@@ -213,23 +237,22 @@
 
 	#preziDiv {
 		display: block;
-		width: 1280px;
+		width: 100%;
 		height: 800px;
 		margin: 0px 0px 0px 0px;
 	}
 
 	.embedded-prezi {
-		margin: 5% 20% 0px 20%;
+		margin: 5% 20% 0% 20%;
 	}
 }
 
 																									/* 1024px */
-@media (min-width: 1123px) and (max-width: 1190px) {
+@media (min-width: 760px) and (max-width: 1190px) {
 	
 	body {
-		width: 1024px;
-		font-size: 16px;
-
+		width: 100%;
+		font-size: 16pt;
 	}
 
 	#toolsTrigger {
@@ -238,10 +261,12 @@
 
 	#iconTrigger1 {
 		display: none;
+		/* margin-top: 65%; */
 	}
 
 	#synerginTrigger {
-		display: none;
+		display: block;
+		margin-top: 197%
 	}
 
 	#elevatorTriggerWidth{
@@ -257,12 +282,50 @@
 	}
 	
 	#synerginFixedPic {
-		display: none;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg');	
+		background-size: 100% 100%;
+	}
+
+	#teamCaption {
+		color: white;
+		margin: 0% 0% 0% 0%;
+		width: 100%;	
+		height: auto;
+		text-align: center;
+		background-color: black;
+		font-size: 1.5em;
+		z-index: 1;
+		position: absolute;
+		opacity: 1;
+	}
+
+	#micaCaption {
+		float: right;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 70%;
+		display: block;
+		color: white;
+		width: 100%;
+		height: auto;
+		background-color: black;
+		opacity: 1;
+		font-size: 1.5em;
+		z-index: 1;
+		position: absolute;
 	}
 
 	#synMobile {
+		display: none;
 		z-index: -1;
-		overflow-x: hidden;
 		top: 0px;
 		left: 0px;
 		margin: 0px 0px 0px 0px;
@@ -270,7 +333,14 @@
 		position: fixed;
 		width: 100%;
 	}
-
+	
+	.syn-mobile {
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		/* right: 500px; */
+	}
+	
 	.syn-caption {
 		color: white;
 		margin: 0% 0% 0% 0%;
@@ -283,44 +353,40 @@
 		position: absolute;
 		opacity: 1;	
 	}
-
-	.syn-mobile {
-		width: 1024px;
-		height: 100%;
-		z-index: -1;
-	}
-
-
-	#micaCaption {
-		display: none;
-	}
 																									/* 1024px */
 	.landing-div {
 		width: 100%;
+		z-index: 3;
+		top: 0px;
+		left: 0px;
 	}
 
 	.mw-name {
 		width: 100%;
-		font-size: 2.0em;
+		font-size: 3.2em;
 		padding: 0% 0% 0% 0%;
-		margin: 0px 0% 0% 0%;
+		margin: 5% 0% 0% 0%;
 	}
 
 	.job-title {
+		width: 100%;
 		font-size: 0.8em;
-		margin: 5px 23% 15px 23%;
+		margin: 0% 0% 4% 0%;
 	}
 
 	.javascript-logo {
-		margin: 0px 1% 0% 18%;	
-		display: inline-block;		
+		margin: 0px 1% 0% 33%;	
+		float: left;
+		width: 10.5%;
+		display: inline-block;
+		height: 0.4%;		
 	}
 
 	.html-logo {
 		display: inline-block;
 		width: 9.5%;
 		float: left;
-		margin: 0px 1% 5% 1%;
+		margin: 0% 1% 5% 1%;
 		opacity: 1;
 	}	
 
@@ -328,52 +394,75 @@
 		display: inline-block;
 		width: 9.5%;
 		float: left;
-		margin: 0px 32% 5% 1.5%;	
+		margin: 0% 43% 5% 1.5%;	
 		opacity: 1;
 	}	
 
 	.mw-intro {
 		display: block;
 		width: 90%;
-		font-size: 1.25em;
-		margin: 1% 5% 2% 5%;
-		padding: 0% 0% 0% 0%;
+		font-size: 1.1em;
+		margin: 1% 0% 3.5% 0%;
+		padding: 0% 5% 0% 5%;
+		clear: both;
 	}
 																									/* 1024px */
 	.button-container {
-		width: 48%;
-		margin: 2% 30.25% 0% 31.75%;
-		padding-bottom: 11.8%;
+		width: 100%;
+		/*margin: 2% 18% 0% 18%;*/
+		padding-bottom: 13%;
 	}
 
+	/*	
+	.button-container > span > a {
+		
+	} */
+
 	.git-button {
+		float: left;
 		display: inline-block;
-		margin: 1% 6% 1% 1%;
+		margin: 1% 6% 1% 23%;
 	}
 
 	.portfolio-button {
+		float: left;
 		display: inline-block;
+		margin: 1% 6% 1% 0%;
 	}
 
 	.linkedin-button {
+		float: left;
 		display: inline-block;
-		margin: 1% 1% 1% 6%;
+		margin: 1% 1% 1% 0%;
 	}
 
 
 	.tools-proficiencies {
 		background-color: black;
+		z-index: 3;
 	}
 
 	.tools-header {
 		width: 100%; 
 		margin: 1% 0% 0% 0%; 
-		font-size: 1.2em;
+		font-size: 2.5em;
 	}
 
 	.tools-list > p {
-		margin: 15px 0 15px 0px;
-		font-size: 1.0em;
+		padding: 0% 0% 3.6% 0%;
+		font-size: 1.3em;
+	}
+
+	#ngwp {
+		margin: 0% 0% 0% 0%; 
+		-webkit-margin-after: 0.02%;
+		font-size: 1.3em;
+	}
+
+	#ngwpsub {
+		font-size: 0.7em; 
+		font-style: italic; 
+		margin: 0% 0px 1.55% 0px;
 	}
 
 	#leftIcons {
@@ -416,20 +505,21 @@
 	} /*
 																									/* 1024px */
 	#elevatorDiv { 
-		width: 1024px; 
-		margin: 3650px 0px 0px 0px;
+		display: block;
+		width: 100%; 
+		margin: 240% 0% 0% 0%;
 	}
 
 	.elevatorPitch {
-		width: 1024px;
+		width: 100%;
 		margin: 0%;
 		padding: 0%;
 	}
 
 	.elevator-pic1 {
 		display: block;
-	    width: 70%;
-	    margin: 2% 15% 2% 15%;
+	    width: 60%;
+	    margin: 5% 20% 2% 20%;
 	    border-style: solid;
 	}
 
@@ -453,7 +543,7 @@
 		display: block;
 		margin: 1% 0% 2% 0%;
 		padding: 0% auto 0% auto;
-		font-size: 1.4em;
+		font-size: 1.7em;
 		width: 100%;
 	}
          
@@ -467,7 +557,7 @@
 	}
 
 	#preziDiv {
-		display: none;
+
 	}
 
 	.embedded-prezi {
@@ -490,7 +580,7 @@
 
 
 																									/* 320px */
-@media (max-width: 1024px) {
+@media (max-width: 320px) {
 
 	body {
 		width: 100%;
@@ -584,10 +674,10 @@
 	.javascript-logo {
 		width: 11.3%;
 		display: inline-block;
-		height: 0.9%;
+		height: 0.8%;
 		margin: 0px 1% 1% 32%;	
 	}
-
+/*
 	.html-logo {
 		display: inline-block;
 		width: 9.5%;
@@ -603,7 +693,7 @@
 		margin: 0px 25% 3% 1.5%;	
 		opacity: 1;
 	}	
-																									/* 320px */
+*/																									/* 320px */
 	.button-container {
 		width: 90%;
 		margin: 2% 5% 0% 5%;
@@ -640,8 +730,6 @@
 	}
 
 	.tools-header {
-		width: 100%; 
-		margin: 1% 0% 0% 0%; 
 		font-size: 1.2em;
 	}
 																									/* 320px */
@@ -750,19 +838,4 @@
 		display: none;
 	}
 
-}
-
-@media (min-width: 1023px) and (max-width: 1190px) {
-
-	.mw-name {
-		font-size: 35pt;
-	}
-
-	.javascript-logo {
-		height: 35px;
-	}
-
-	.button-container > span > a {
-		width: 80%;
-	}
 }
