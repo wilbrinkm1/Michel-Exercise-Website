@@ -151,7 +151,7 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.to(portfolioDiv, 1, {marginTop: 0});
+	var tween = TweenLite.from(portfolioDiv, 1, {marginTop: 200});
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 90})
 		.setTween(tween)
@@ -254,8 +254,7 @@ body > div {
 	position: absolute;
 }
 
-#galleryDivMarginTrigger {
-}
+
 
 /*
 
@@ -351,7 +350,6 @@ body > div {
 
 #leftIcons {
 	width: 36%;
-	height: 100%;
 	margin: 0% 0% 0% 0%;
 	position: relative;	
 	top: 0%;
@@ -386,7 +384,7 @@ body > div {
 #elevatorDiv { 
 	background-color: white;
 	position: relative;
-	display: block;	
+	/* display: block;	 */
 }
 
 .elevatorPitch {
@@ -394,11 +392,11 @@ body > div {
 	margin: 0%;
 	padding: 0%;
 }
-
+/*
 .elevator-third {
 }
         
-/*.elevator-pic {
+.elevator-pic {
     width: 90%;
     height: 250px;
     margin: 5% 0% 2% 0%;
@@ -428,11 +426,9 @@ body > div {
     /*padding: 0% 5% 0% 5%;*/
 }
 
-
-
-
 #portfolioDiv {
-	margin-top: 50%;
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
 }
 
 #galleryDiv {
@@ -477,7 +473,7 @@ body > div {
 
 .embedded-prezi {
 
-}*/
+}
 
 #elevatorDiv2 {
 	top: 0px;
@@ -498,7 +494,7 @@ body > div {
 	margin: 0%;
 	padding: 0%;
 }
-	
+	*/
 
 
 
@@ -535,24 +531,24 @@ body > div {
 <!-- elevatorDiv2 elevator div -->
 <div id="elevatorDiv2">
 	<div id="elevatorPitch2">
-    <div class="elevator-third">
-        <img src="mediaFolder/indexRemakeMedia/trello.png" class="elevator-pic1">
-        <h4 class="elevator-title">Project Management and Communications</h4>        
-        <p class="elevator-text">Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace to keep all our near and long term goals in focus.
-        </p>
-    </div>
-    <div class="elevator-third">
-        <img src="mediaFolder/indexRemakeMedia/mica_brooding_gamma.png" class="elevator-pic2">
-        <h4 class="elevator-title">Projects managed personally.</h4>
-        <p class="elevator-text text2">Working directly with one person allows for a more streamline workflow, offering technical guidance to more effectively bring your ideas to the screen.
-        </p>
-    </div>
-    <div class="elevator-third">
-        <img src="mediaFolder/indexRemakeMedia/html-vs-wordpress.jpg" class="elevator-pic3">
-        <h4 class="elevator-title">Flexible codin</h4>
-        <p class="elevator-text text3">Being able to use Wordpress or code in pure HTML + CSS + Javascript provides a flexible approach to the project's needs and budget. See the below Prezi Presentation for more.
-        </p>
-    </div>
+	    <div class="elevator-third desktop">
+	        <img src="mediaFolder/indexRemakeMedia/trello.jpg" class="elevator-pic1 desktop">
+	        <h4 class="elevator-title desktop">Project Management and Communications</h4>        
+	        <p class="elevator-text desktop">Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace to keep all our near and long term goals in focus.
+	        </p>
+	    </div>
+	    <div class="elevator-third desktop">
+	        <img src="mediaFolder/indexRemakeMedia/mica_brooding_gamma.png" class="elevator-pic2 desktop">
+	        <h4 class="elevator-title desktop">Projects managed personally.</h4>
+	        <p class="elevator-text text2 desktop">Working directly with one person allows for a more streamline workflow, offering technical guidance to more effectively bring your ideas to the screen.
+	        </p>
+	    </div>
+	    <div class="elevator-third desktop">
+	        <img src="mediaFolder/indexRemakeMedia/html-vs-wordpress.jpg" class="elevator-pic3 desktop">
+	        <h4 class="elevator-title desktop">Flexible coding</h4>
+	        <p class="elevator-text text3 desktop">Being able to use Wordpress or code in pure HTML + CSS + Javascript provides a flexible approach to the project's needs and budget. See the below Prezi Presentation for more.
+	        </p>
+	    </div>
     </div>
 </div>
 
@@ -571,7 +567,7 @@ body > div {
 		<span style="display: inline-block;" class="button-dropdown glow portfolio-button" data-buttons="dropdown">
 		    <a href="#" class="button glow">Portfolio</a>
 		    <ul class="button-dropdown-menu-above" style="display: none;">
-		        <li><a href="derekPlusFolder/indexTry5AddScrollNav.html">Printing Plus Website</a></li>
+		        <li><a href="derekPlusFolder/indexTry5AddScrollNav.html">Printing Plus Website (in progress)</a></li>
 		        <li><a href="schedulePlanner.html">Schedule Planner</a></li>
 		        <li><a href="currencyExchange.html">Currency Calculator</a></li>
 		        <li><a href="uniqueBoxRestyled.html">Hover Button App</a></li>
@@ -620,15 +616,15 @@ body > div {
         </p>
     </div>
     <div class="elevator-third">
-        <img src="mediaFolder/indexRemakeMedia/cube_prezi.png" class="elevator-pic2">
+        <img src="mediaFolder/indexRemakeMedia/cube_prezi.jpg" class="elevator-pic2">
         <h4 class="elevator-title">Prezi Presentation</h4>
         <p class="elevator-text text2">Prezi is a wonderful presentation tool that creates engaging demonstrations. Incorporate them into your site or take it with you to your meetings. With your provided content of text and images, I can produce these solid presentations for you swiftly.
         </p>
     </div>
     <div class="elevator-third">
        	<!--<div id="indesignBrochure" class="elevator-pic3"></div> -->
-        <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.png" id="indesignBrochureB" class="elevator-pic3">
-        <img src="mediaFolder/indexRemakeMedia/indesign_elevatorA.png" id="indesignBrochureA" class="elevator-pic3">
+        <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.jpg" id="indesignBrochureB" class="elevator-pic3">
+        <img src="mediaFolder/indexRemakeMedia/indesign_elevatorA.jpg" id="indesignBrochureA" class="elevator-pic3">
         <h4 class="elevator-title" style="margin-top: 1%;">Adobe InDesign</h4>
         <p class="elevator-text text3">Working with Adobe InDesign has greatly improved the layout or my projects, from print to web. I am available for projects such as magazine layouts, iPad newletters, web publishing, brochures, business cards and more. 
 		Please view my Portfolio for some examples.
@@ -637,44 +633,31 @@ body > div {
     </div>
 </div>
 
-<!-- <div style="width: 30%; background-color: black; display: inline-block; border-style: none; padding: 0%; margin: 0%; float: left;">
-	<h2 id="portfolioTitle">Portfolio</h2>	
-	<p id="portfolioSubtitle">Hover over each list item for furth details</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	<p class="portfolioItem">item</p>
-	</div> -->
 <div id="portfolioDiv" style="width: 100%; background-color: black;">
 	<div id="galleryDiv" class="fotorama" data-nav="thumbs">
 	  <img src="mediaFolder/indexRemakeMedia/color_run.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl2.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/ladylive.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/cube_prezi.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl3.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/ladyliveinverted.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorA.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/getlostalot.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
+	  <!--<img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/cassandra_beach2.JPG" class="tooltip" title="beach shoot"/>
 	  <img src="mediaFolder/indexRemakeMedia/cassandra_beach.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/mica_brooding_gamma.png"/>
-	  <img src="mediaFolder/indexRemakeMedia/gym_woman.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/gym_woman.jpg"/> -->
 	</div>
 </div>
 
 <div id="preziDiv">
 	<iframe class="embedded-prezi" src="http://prezi.com/embed/qowfhslqaxvo/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 </div>
-
-
 
 <div id="preziDiv2">
 	<iframe class="embedded-prezi" src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="825" height="600" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
@@ -684,11 +667,11 @@ body > div {
 
 
 
-<!-- phone elevator2 -->
-<div id="elevatorDiv" style="display: none;">
+<!-- tablet/phone elevator2 -->
+<div id="elevatorDivMobile">
 	<div id="elevatorPitch">
     <div class="elevator-third">
-        <img src="mediaFolder/indexRemakeMedia/trello.png" class="elevator-pic1">
+        <img src="mediaFolder/indexRemakeMedia/trello.jpg" class="elevator-pic1">
         <h4 class="elevator-title">Continuous Coverage</h4>        
         <p class="elevator-text">Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace keep all our near and long term goals in focus.
         </p>

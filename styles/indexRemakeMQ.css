@@ -30,7 +30,7 @@
 	}
 
 	#changeIndesignTrigger {
-		margin-top: 300%;
+		margin-top: 299%;
 	}
 
 	#changeFixedpicTrigger {
@@ -211,6 +211,14 @@
 	    margin: 0% 0% 0% 0%;
 	}
 
+	#indesignBrochureB {
+		display: block;
+	}
+
+	#indesignBrochureA {
+		display: none;
+	}
+
 	.elevator-title {
 		margin: 0% 0% 0% 0%;
 		font-size: 2em;
@@ -247,10 +255,11 @@
 	}
 
 	#preziDiv {
-		background-image: url('mediaFolder/big-fish-in-the-blue-ocean.jpg');
+		/* background-image: url('mediaFolder/indexRemakeMedia/big-fish-in-the-blue-ocean.jpg'); */
+		background-color: black;
 		width: 100%;
 		height: 100%;
-		background-size: 100%, 100%;
+		background-size: 100% 100%;
 		margin: 0px 0px 0px 0px;
 		border-style: none;
 		background-repeat: no-repeat;
@@ -263,26 +272,41 @@
 		margin: 0% 10% 0% 10%;
 	}
 
-	#indesignBrochureB {
-		display: block;
+	#elevatorDiv2 {
+		top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		z-index: -1;
+		background-color: white;
+		display: none;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
 	}
 
-	#indesignBrochureA {
-		display: none;
+	.elevatorPitch2 {
+		display: inline-block;
+		margin: 0%;
+		padding: 0%;
 	}
 
 	#preziDiv2 {
 		margin: 35% 0% 0% 0%;
 		width: 100%;
 		height: 100%;
-		background-image: url('mediaFolder/big-fish-in-the-blue-ocean.jpg');
+		background-color: black;
+		/* background-image: url('mediaFolder/indexRemakeMedia/big-fish-in-the-blue-ocean.jpg'); */
 	}
 
-
+	#elevatorDivMobile {
+		display: none;
+	}
 }
 
 																									/* 1024px */
-@media (min-width: 760px) and (max-width: 1190px) {
+@media (min-width: 760px) and (max-width: 1170px) {
 	
 	body {
 		width: 100%;
@@ -299,8 +323,8 @@
 	}
 
 	#synerginTrigger {
-		display: block;
-		margin-top: 197%
+		display: none;
+		/* margin-top: 197% */
 	}
 
 	#elevatorTriggerWidth{
@@ -314,6 +338,20 @@
 	#elevatorTriggerContent{
 		display: none;
 	}
+
+	#changeIndesignTrigger{
+		display: none;
+	}
+
+	#changeFixedpicTrigger {
+		display: none;
+	}
+
+	#galleryDivMarginTrigger {
+		display: none;
+		/* margin-top: 250%;  3100px; */
+	}
+
 	
 	#synerginFixedPic {
 		width: 100%;
@@ -325,8 +363,10 @@
 		margin: 0% 0% 0% 0%;
 		padding: 0%;
 		position: fixed;
-		background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg');	
-		background-size: 100% 100%;
+		background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');	
+		/* background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
+		background-size: 100% 100%;		
+		display: none;
 	}
 
 	#teamCaption {
@@ -340,6 +380,7 @@
 		z-index: 1;
 		position: absolute;
 		opacity: 1;
+		display: none;
 	}
 
 	#micaCaption {
@@ -355,15 +396,16 @@
 		font-size: 1.5em;
 		z-index: 1;
 		position: absolute;
-	}
+		display: none;
+	} 
 
 	#synMobile {
-		display: none;
+		display: block;
 		z-index: -1;
 		top: 0px;
 		left: 0px;
-		margin: 0px 0px 0px 0px;
-		padding: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
 		position: fixed;
 		width: 100%;
 	}
@@ -372,19 +414,21 @@
 		width: 100%;
 		height: 100%;
 		z-index: -1;
+		margin: 0%;
+		padding: 0%;
 		/* right: 500px; */
 	}
 	
 	.syn-caption {
-		color: white;
+		color: orange;
 		margin: 0% 0% 0% 0%;
 		width: 100%;	
 		height: auto;
 		text-align: center;
 		background-color: black;
-		font-size: 2em;
+		font-size: 1.6em;
 		z-index: -1;
-		position: absolute;
+		/* position: absolute; */
 		opacity: 1;	
 	}
 																									/* 1024px */
@@ -393,6 +437,7 @@
 		z-index: 3;
 		top: 0px;
 		left: 0px;
+		position: relative;
 	}
 
 	.mw-name {
@@ -409,7 +454,7 @@
 	}
 
 	.javascript-logo {
-		margin: 0px 1% 0% 33%;	
+		margin: 0% 1% 0% 33%;	
 		float: left;
 		width: 10.5%;
 		display: inline-block;
@@ -444,13 +489,8 @@
 	.button-container {
 		width: 100%;
 		/*margin: 2% 18% 0% 18%;*/
-		padding-bottom: 13%;
+		padding-bottom: 10%;
 	}
-
-	/*	
-	.button-container > span > a {
-		
-	} */
 
 	.git-button {
 		float: left;
@@ -496,7 +536,7 @@
 	#ngwpsub {
 		font-size: 0.7em; 
 		font-style: italic; 
-		margin: 0% 0px 1.55% 0px;
+		margin: 0% 0% 1.55% 0%;
 	}
 
 	#leftIcons {
@@ -523,20 +563,6 @@
 		opacity: 1;
 	}
 
-	/* #micaCaption {
-		float: right;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 20%;
-		display: block;
-		color: white;
-		width: 100%;
-		height: auto;
-		background-color: black;
-		opacity: 1;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute;
-	} /*
 																									/* 1024px */
 	#elevatorDiv { 
 		display: block;
@@ -590,10 +616,70 @@
 	    padding: 0% 10% 0% 10%;
 	}
 
+	#preziDiv {
+		display: none;
+		/* background-image: url('mediaFolder/big-fish-in-the-blue-ocean.jpg'); */
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		margin: 0px 0px 0px 0px;
+		border-style: none;
+		background-repeat: no-repeat;
+	}
+
 	.embedded-prezi {
+		width: 80%;
+		height: 80%;
+		padding: 5% 0% 5% 0%;
+		margin: 0% 10% 0% 10%;
+		display: none;
+	}
+
+	
+
+
+
+	#preziDiv2 {
+		display: none;
+		margin: 35% 0% 0% 0%;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		/* background-image: url('mediaFolder/big-fish-in-the-blue-ocean.jpg'); */
+	}
+	
+	#elevatorDiv2 {
+		display: none;
+		/*top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		 z-index: -1; 
+		background-color: white;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;*/
+	}
+
+	.elevatorPitch2 {
+		margin: 0%;
+		padding: 0%;
+		display: none;
+	}
+
+	#elevatorDivMobile {
+		display: block;
+		background-color: white;
+		overflow-y: hidden;
+	}
+
+	.desktop {
 		display: none;
 	}
 }
+
+
 																									/* 768px 
 @media (min-width: 768px) {
   
@@ -610,7 +696,7 @@
 
 
 																									/* 320px */
-@media (max-width: 320px) {
+@media (max-width: 590px) {
 
 	body {
 		width: 100%;
@@ -638,6 +724,19 @@
 
 	#elevatorTriggerContent{
 		display: none;
+	}
+
+	#changeFixedpicTrigger {
+		display: none;
+	}
+
+	#changeIndesignTrigger {
+		display: none;
+	}
+
+	#galleryDivMarginTrigger {
+		display: none;
+		/* margin-top: 250%;  3100px; */
 	}
 	
 	#synerginFixedPic {
@@ -706,6 +805,7 @@
 		display: inline-block;
 		height: 0.8%;
 		margin: 0px 1% 1% 32%;	
+		float: left;
 	}
 /*
 	.html-logo {
@@ -770,7 +870,7 @@
 
 	#leftIcons {
 		width: 36%;
-		height: 100%;
+		/* height: 100%; */
 		margin: 0% 0% 0% 0%;
 		padding-top: 10%;
 		position: relative;	
@@ -808,9 +908,21 @@
 	}
 */
 
+	#ngwp {
+		margin: 0% 0% 0% 0%; 
+		-webkit-margin-after: 0.02%;
+		font-size: 1.3em;
+	}
+
+	#ngwpsub {
+		font-size: 0.7em; 
+		font-style: italic; 
+		margin: 0% 0% 1.55% 0%;
+	}
+
 	#elevatorDiv { 
 		width: 100%; 
-		margin: 1300px 0px 0px 0px;
+		margin: 800px 0px 0px 0px;
 		height: auto;
 	}
 
@@ -822,7 +934,6 @@
 	.elevator-pic1 {
 		display: block;
 	    width: 70%;
-	    height: 25%;
 	    margin: 2% 15% 2% 15%;
 	    border-style: solid;
 	}
@@ -830,7 +941,6 @@
 	.elevator-pic2 {
 		display: block;
 	    width: 70%;
-	    height: 25%;
 	    margin: 2% 15% 2% 15%;
 	    border-style: solid;
 	}
@@ -838,7 +948,6 @@
 	.elevator-pic3 {
 		display: block;
 	    width: 70%;
-	    height: 25%;
 	    margin: 2% 15% 2% 15%;
 	    border-style: solid;
 	}
@@ -865,6 +974,20 @@
 	}
 
 	.embedded-prezi {
+		display: none;
+	}
+
+	#elevatorDivMobile {
+		display: block;
+		background-color: white;
+	}
+
+	#portfolioDiv {
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+	}
+
+	.desktop {
 		display: none;
 	}
 
