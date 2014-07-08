@@ -923,7 +923,7 @@
 	#elevatorDiv { 
 		width: 100%; 
 		margin: 800px 0px 0px 0px;
-		height: auto;
+		height: 100%;
 	}
 
 	.elevatorPitch {
