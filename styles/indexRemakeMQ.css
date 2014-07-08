@@ -1,10 +1,10 @@
-@media (min-width: 1199px) and (max-width: 1365px) {
+@media (min-width: 1199px) {
 																									/* 1200+ px */
 
 	body {
 		width: 100%;
 	}
-
+																						/* Triggers */
 	#toolsTrigger {
 		margin-top: 57.885%; /* 800px */
 	}
@@ -17,7 +17,7 @@
 		margin-top: 230%; /* 2900px; */
 	}
 
-	#elevatorTriggerWidth{
+	#galleryDivMarginTrigger {
 		margin-top: 250%; /* 3100px; */
 	}
 
@@ -29,6 +29,14 @@
 		margin-top: 285%;
 	}
 
+	#changeIndesignTrigger {
+		margin-top: 300%;
+	}
+
+	#changeFixedpicTrigger {
+		margin-top: 325%;
+	}
+																						/* synerginFixedPic elements */
 	#synerginFixedPic {
 		width: 100%;
 		height: 100%; 
@@ -123,7 +131,7 @@
 	.button-container {
 		width: 32%;
 		margin: 2% 33.25% 0% 34.75%;
-		padding-bottom: 11.8%;
+		padding-bottom: 2.4%;
 	}
 																									/* 1200+ px */
 
@@ -141,6 +149,11 @@
 		margin: 1% 1% 1% 6%;
 	}
 
+	#scrollArrow {
+		width: 7%;
+		margin: 0% 46.5% 0% 46.5%;
+	}
+
 	.tools-proficiencies {
 		background-color: white;
 	}	
@@ -154,97 +167,118 @@
 		font-size: 1.9em;
 	}
 
-	.ngwp {
+	#ngwp {
 		margin-bot: 5px; 
 		-webkit-margin-after: 5px;
 	}
 
-	.ngwpsub {
+	#ngwpsub {
 		font-size: 0.7em; 
 		font-style: italic; 
 		margin: 5px 0px 15px 0px;
 	}
 
 	#elevatorDiv { 
-		width: 1280px; 
-		height: 600px;
+		width: 100%; 
+		height: 100%;
 		margin: 2850px 0px 0px 0px;
 	}
 																									/* 1200+ px */
 	.elevatorPitch {
-		width: 1280px;
+		width: 100%;
 	}
 
 	.elevator-third {
 		display: inline-block;
 		opacity: 1;
-	    width: 33%;   
-	    padding-top: 5%;
-	    margin: 0% 0% 0% 0%;
+	    width: 25%;   
+	    padding: 5% 0% 5% 0%;
+	    margin: 0% 1% 0% 5.5%;
 	}
 
 	.elevator-pic1 {
-	    width: 80%;
-	    height: 25%;
-	    margin: 5% 0% 2% 14%;
+	    width: 100%;
+	    margin: 0% 0% 0% 0%;
 	}
 
 	.elevator-pic2 {
-	    width: 80%;
-	    height: 25%;
-	    margin: 5% 12% 2% 10%;
+	    width: 100%;
+	    margin: 0% 0% 0% 0%;
 	}
 
 	.elevator-pic3 {
-	    width: 80%;
-	    height: 25%;
-	    margin: 5% 10% 2% 4%;
+	    width: 100%;
+	    margin: 0% 0% 0% 0%;
 	}
 
 	.elevator-title {
-		margin: 2% 0% 2% 0%;
-		font-size: 18pt;
-		width: 90%;
+		margin: 0% 0% 0% 0%;
+		font-size: 2em;
+		width: 100%;
 		text-align: center;
 	}
-
+/*
 	.title1 {
 		margin-left: 10%;
     }  
-
+*/
     .title2 {
-    	margin-left: 6%;
+    	font-size: 1.4em;
 	}
 																									/* 1200+ px */
-	.text2 {
-		margin-left: 10.5%;
+/*	.text2 {
+		margin-left: 5.5%;
 	}
 
 	.text3 {
 		width: 75%; 
 		margin-left: 8%;
 	}
-	
+	*/
 	.elevator-text {
 	    display: inline-block;
 	    text-align: center;
 	    font-size: 1.2em;
-	    width: 79%;
+	    width: 100%;
 	    height: auto;
-	    margin: 0% 0% 0% 14%;
+	    padding: 0% 1% 0% 1%;
+	    margin: 0% 0% 0% 0%;
 	    /*padding: 0% 5% 0% 5%;*/
 	}
 
 	#preziDiv {
-		display: block;
+		background-image: url('mediaFolder/big-fish-in-the-blue-ocean.jpg');
 		width: 100%;
-		height: 800px;
+		height: 100%;
+		background-size: 100%, 100%;
 		margin: 0px 0px 0px 0px;
+		border-style: none;
+		background-repeat: no-repeat;
 	}
 
 	.embedded-prezi {
-		margin: 5% 20% 0% 20%;
+		width: 80%;
+		height: 80%;
+		padding: 5% 0% 5% 0%;
+		margin: 0% 10% 0% 10%;
 	}
+
+	#indesignBrochureB {
+		display: block;
+	}
+
+	#indesignBrochureA {
+		display: none;
+	}
+
+	#preziDiv2 {
+		margin: 35% 0% 0% 0%;
+		width: 100%;
+		height: 100%;
+		background-image: url('mediaFolder/big-fish-in-the-blue-ocean.jpg');
+	}
+
+
 }
 
 																									/* 1024px */
@@ -554,10 +588,6 @@
 	    height: auto;
 	    margin: 0% 0% 7% 0%;
 	    padding: 0% 10% 0% 10%;
-	}
-
-	#preziDiv {
-
 	}
 
 	.embedded-prezi {
