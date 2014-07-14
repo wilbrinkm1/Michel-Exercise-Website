@@ -36,6 +36,15 @@
 	#changeFixedpicTrigger {
 		margin-top: 325%;
 	}
+
+	.trigger-class {
+		z-index: -1;
+		height: 20px;
+		width: 60px;
+		background-color: orange;
+		font-size: 6px;
+		position: absolute;
+	}
 																						/* synerginFixedPic elements */
 	#synerginFixedPic {
 		width: 100%;
@@ -47,7 +56,9 @@
 		margin: 0% 0% 0% 0%;
 		padding: 0%;
 		position: fixed;
-		background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg');
+		/*  background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
+		background-image: url('mediaFolder/indexRemakeMedia/teamusa.jpg');
+		background-repeat: no-repeat;
 	}
 
 	#teamCaption {
@@ -82,6 +93,34 @@
 		display: none;
 	}
 
+	.syn-mobile {
+		display: none;
+	}
+
+	.syn-caption {
+		display: none;
+	}
+
+	#elevatorDiv2 {
+		top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		z-index: -1;
+		background-color: white;
+		display: none;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+	}
+
+	.elevatorPitch2 {
+		display: inline-block;
+		margin: 0%;
+		padding: 0%;
+	}
+
 	.landing-div {
 		width: 100%;
 	}
@@ -100,10 +139,10 @@
 																										/* 1200+ px */
 	.javascript-logo {
 		float: left;
-		width: 11.3%;
+		width: 10.9%;
 		display: inline-block;
-		height: 138px;
-		margin: 0% 1% 3% 32%;	
+		/*height: %;  138px; */
+		margin: 0% 1% 0% 32%;	
 	}
 
 	.html-logo {
@@ -129,24 +168,36 @@
 	}
 
 	.button-container {
-		width: 32%;
-		margin: 2% 33.25% 0% 34.75%;
+	/*	width: 32%;
+		margin: 2% 33.25% 0% 34.75%; 
+		padding-bottom: 2.4%; */
+		width: 100%;
+		margin: 2% 0% 0% 0%; 
 		padding-bottom: 2.4%;
 	}
 																									/* 1200+ px */
 
 	.git-button {
+	/*	display: inline-block;
+		margin: 1% 6% 1% 1%; */
 		display: inline-block;
-		margin: 1% 6% 1% 1%;
+		float: left;
+		margin: 1% 0% 1% 32%;
 	}
 
 	.portfolio-button {
+	/*	display: inline-block; */
 		display: inline-block;
+		margin: 1% 0% 1% 0%;
+		padding: 0% 4.8% 0% 5%;
 	}
 
 	.linkedin-button {
+	/*	display: inline-block;
+		margin: 1% 1% 1% 6%; */
 		display: inline-block;
-		margin: 1% 1% 1% 6%;
+		float: right;
+		margin: 1% 32% 1% 0%;
 	}
 
 	#scrollArrow {
@@ -272,25 +323,7 @@
 		margin: 0% 10% 0% 10%;
 	}
 
-	#elevatorDiv2 {
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;
-		z-index: -1;
-		background-color: white;
-		display: none;
-		width: 100%;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-	}
-
-	.elevatorPitch2 {
-		display: inline-block;
-		margin: 0%;
-		padding: 0%;
-	}
+	
 
 	#preziDiv2 {
 		margin: 35% 0% 0% 0%;
@@ -306,7 +339,7 @@
 }
 
 																									/* 1024px */
-@media (min-width: 760px) and (max-width: 1170px) {
+@media (min-width: 760px) and (max-width: 1070px) {
 	
 	body {
 		width: 100%;
