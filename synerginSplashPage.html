@@ -2,9 +2,11 @@
 <html>
 <head>
 <!-- scripts to use jQuery in this html. -->
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 <script>
 
@@ -142,10 +144,75 @@ $(document).ready(function(){
 		
 </div>
 
+<nav class="navbar navbar-default" role="navigation" style="margin-top: 50%;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="navbar-brand" href="http://www.linkedin.com/in/michelwilbrink">LinkedIn</a>
+      <a class="navbar-brand" href="https://github.com/wilbrinkm1">Github</a>
+    </div>
 
-
-
-     <a href="indexRevamp.html">Home</a>
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Applications<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+            <li class="divider"></li>
+            <li><a href="rememoirLogin.html">Bootstrap Page</a></li>
+            <li class="divider"></li>
+            <li><a href="currencyExchange.html">Currency Exchange</a></li>
+            <li class="divider"></li>
+            <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
+            <li class="divider"></li>
+            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
+            <li class="divider"></li>
+            <li><a href="jQueryGrocery.html">Grocery List</a></li>
+            <li class="divider"></li>
+            <li><a href="uniqueBoxRestyled.html">Hover Button App</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">JS Exercises <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="jsExercises.html">Collections of Javascript Exercises</a></li>
+            <li class="divider"></li>
+            <li><a href="schedulePlanner.html">Schedule Planner</a></li>
+            <li class="divider"></li>
+            <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
+            <li class="divider"></li>
+            <li><a href="rememoir.html">WowSlider JS</a></li>
+            <li class="divider"></li>
+            <li><a href="fade.html">jQuery Fade</a></li>
+            <li class="divider"></li>
+            <li><a href="jQueryGrocery.html">Grocery List using jQuery</a></li>
+            <li class="divider"></li>
+            <li><a href="currencyExchange.html">Currency Exchange</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">HTML/CSS/Bootstrap Designs<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="synerginHoverjQuery.html">Hover Buttons App</a></li>
+            <li class="divider"></li>
+            <li><a href="rememoirLogin.html">Rememoir Log-in Page</a></li>
+            <li class="divider"></li>
+            <li><a href="uniqueBoxRestyled.html">Video Splash Page</a></li>
+            <li class="divider"></li>
+            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
 <!-- Above is the div that holds the video, below will be the rest of the site's code. Once the #movieDiv hides, the site should render normally

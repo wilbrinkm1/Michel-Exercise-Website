@@ -37,6 +37,7 @@ There are comments before each js block indicating which application the js belo
       </button>
       <a class="navbar-brand" href="index.html">Home</a>
       <a class="navbar-brand" href="http://www.linkedin.com/in/michelwilbrink">LinkedIn</a>
+      <a class="navbar-brand" href="https://github.com/wilbrinkm1">Github</a>
     </div>
 
     
@@ -47,15 +48,17 @@ There are comments before each js block indicating which application the js belo
           <ul class="dropdown-menu">
             <li><a href="schedulePlanner.html">Schedule Planner</a></li>
             <li class="divider"></li>
-            <li><a href="jQueryGrocery.html">Grocery List</a></li>
-            <li class="divider"></li>
-            <li><a href="synerginHoverjQuery.html">Hover Button App</a></li>
-            <li class="divider"></li>
-            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
+            <li><a href="rememoirLogin.html">Bootstrap Page</a></li>
             <li class="divider"></li>
             <li><a href="currencyExchange.html">Currency Exchange</a></li>
             <li class="divider"></li>
             <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
+            <li class="divider"></li>
+            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
+            <li class="divider"></li>
+            <li><a href="jQueryGrocery.html">Grocery List</a></li>
+            <li class="divider"></li>
+            <li><a href="uniqueBoxRestyled.html">Hover Button App</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -63,29 +66,29 @@ There are comments before each js block indicating which application the js belo
           <ul class="dropdown-menu">
             <li><a href="jsExercises.html">Collections of Javascript Exercises</a></li>
             <li class="divider"></li>
-            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
-            <li class="divider"></li>
             <li><a href="schedulePlanner.html">Schedule Planner</a></li>
             <li class="divider"></li>
             <li><a href="chooseAdventure.html">Choose Your Adventure</a></li>
             <li class="divider"></li>
+            <li><a href="rememoir.html">WowSlider JS</a></li>
+            <li class="divider"></li>
             <li><a href="fade.html">jQuery Fade</a></li>
             <li class="divider"></li>
+            <li><a href="jQueryGrocery.html">Grocery List using jQuery</a></li>
+            <li class="divider"></li>
+            <li><a href="currencyExchange.html">Currency Exchange</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">HTML/CSS Designs<b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">HTML/CSS/Bootstrap Designs<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="synerginHoverjQuery.html">Hover Buttons App</a></li>
-            <li class="divider"></li>
-            <li><a href="index.html">Previous Website Versions</a></li>
+            <li><a href="uniqueBoxRestyled.html">Hover Buttons App</a></li>
             <li class="divider"></li>
             <li><a href="rememoirLogin.html">Rememoir Log-in Page</a></li>
             <li class="divider"></li>
             <li><a href="synerginSplashPage.html">Video Splash Page</a></li>
             <li class="divider"></li>
-            <li><a href="embedly.html">Using Embedly</a></li>
-            <li class="divider"></li>
+            <li><a href="fantasyFootball.html">Fantasy Football</a></li>
           </ul>
         </li>  
       </ul>
@@ -94,7 +97,7 @@ There are comments before each js block indicating which application the js belo
 </nav>
 
 
-<div ng-app="ngReddit" ng-controller="myController">
+<!-- <div ng-app="ngReddit" ng-controller="myController"> -->
   <h2 class="exerciseTitle">Define and use variables in the DOM</h2>
 
   <h3 id="headerTitle" style="float:left">Enter your user name, age, and reddit name in the below text boxes.</h3>
@@ -105,24 +108,23 @@ There are comments before each js block indicating which application the js belo
   <form role="form" id="formGroup">
     <div class="form-group">
       <label for="uname">User Name</label>
-      <input ng-model="userName" type="text" class="form-control" id="uname" placeholder="Enter User Name">
+      <input type="text" class="form-control" id="uname" placeholder="Enter User Name">
     </div>
     <div class="form-group">
       <label for="age">Age</label>
-      <input ng-model="age" type="text" class="form-control" id="age" placeholder="Enter Your Age">
+      <input type="text" class="form-control" id="age" placeholder="Enter Your Age">
     </div>
     <div class="form-group">
       <label for="rname">Reddit Name</label>
-      <input ng-model="redditName" type="text" class="form-control" id="rname" placeholder="Enter Your Reddit Name">
+      <input type="text" class="form-control" id="rname" placeholder="Enter Your Reddit Name">
     </div>
-   <button type="button" ng-click="inputInfo()">Input Info</button>
+   <button type="button" onclick="inputInfo()">Input Info</button>
   </form>
 
-  <p>Your name is {{userName}}, you are {{age}}, and your Reddit name is {{redditName}}</p>
-</div>
+  <p id="answer"></p>
 
 
-<div ng-app="absoluteValue" ng-controller="absoluteValueCtrl">
+<!-- <div ng-app="absoluteValue" ng-controller="absoluteValueCtrl"> -->
   <h2 class="exerciseTitle">Return Absolute Value Function</h2>
 
   <h3>Write a function called absolute, which returns the absolute value of the number it is given as its argument. The absolute value of a negative number is the positive version of that same number, and the absolute value of a positive number (or zero) is that number itself.</h3>
@@ -130,34 +132,33 @@ There are comments before each js block indicating which application the js belo
   <form role="form" style="display: block;">
     <div class="form-group">
         <label for="amount" style="font-size: 1em; display:block;">Enter number</label>
-          <input ng-model="absoluteInput" type="text" class="form-control" id="absoluteParameter" placeholder="Enter number" style="width:20%;">
+          <input type="text" class="form-control" id="absoluteParameter" placeholder="Enter number" style="width:20%;">
       </div>
   </form>
-  <button type="button" ng-click="absolute()">Show absolute value</button>
+  <button type="button" onclick="absolute()">Show absolute value</button>
   <h3 id="absoluteAnswer"></h3>
-</div>
 
 
 
 
-<div ng-app="returnRange" ng-controller="returnRangeCtrl">
+
+<!-- <div ng-app="returnRange" ng-controller="returnRangeCtrl"> -->
   <h2 class="exerciseTitle">Return a Range</h2>
 
   <h3>Enter a positive number and click the Range button. The program returns a list of numbers from 0 up to and including the given number.</h3>
 
   <div class="form-group">
     <label for="goal">Input positive number</label>
-    <input ng-model="goal" type="text" class="form-control" id="goal" placeholder="">
+    <input type="text" class="form-control" id="goal" placeholder="">
   </div>
 
-  <button type="button" ng-click="range()">Enter</button>
+  <button type="button" onclick="range()">Enter</button>
 
   <h3 id="answer">Answer:</h3>
 
   <ul id="rangeList">
               
   </ul>
-</div>
 
 
 

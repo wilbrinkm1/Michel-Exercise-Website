@@ -1,0 +1,689 @@
+<!doctype html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width">
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="js/tooltipster-master/css/tooltipster.css" />
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<link rel="stylesheet" href="styles/buttons.css">
+<link rel="stylesheet" href="styles/indexRemakeMQ.css">
+
+
+<!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_examples/general.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_examples/highlight.pack.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_examples/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.debug.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/plugins/ScrollToPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script>
+<script type="text/javascript" src="js/buttons.js"></script>
+<script type="text/javascript" src="js/tooltipster-master/js/jquery.tooltipster.min.js"></script>
+
+
+<script>
+
+
+$(document).ready(function() {
+    $('.tooltip').tooltipster();
+});
+
+
+var controller;
+$(document).ready(function($) {
+	// init controller
+	controller = new ScrollMagic();
+});
+
+$(document).ready(function($) {
+        htmlLogo = document.getElementById("htmlLogo"),
+        cssLogo = document.getElementById("cssLogo"),
+        javascriptLogo = document.getElementById("javascriptLogo"),
+	
+	//The last parameter with value of .25 is the stagger amount. Try changing it to 1 see how it impacts the animation.
+    TweenMax.staggerFrom([htmlLogo, cssLogo, javascriptLogo], 4,  {scale:1.6, opacity:0}, 1.0);        
+});
+
+$(document).ready(function($) {
+		TweenMax.to(scrollArrow, 1.5, {opacity: 0, repeat:-1, yoyo:true}, 3);
+});
+
+
+$(document).ready(function($) {
+	// build tween 		
+	var tween = TweenLite.to(".tools-proficiencies", 0.9, {backgroundColor: "black"});
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#toolsTrigger", duration: 250})
+		.setTween(tween)
+		.addTo(controller);
+		scene.addIndicators();
+});	
+
+
+$(document).ready(function($) {
+	// build tween 		
+	var tween = TweenLite.from(leftIcons, 1, {opacity: 0, left:"4%"});
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#iconTrigger1", duration: 250})
+		.setTween(tween)
+		.addTo(controller);
+		scene.addIndicators();
+});	
+
+
+$(document).ready(function($) {
+	// build tween 		
+	var tween = TweenLite.from(rightIcons, 1, {opacity: 0, right:"4%"});
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#iconTrigger1", duration: 150})
+		.setTween(tween)
+		.addTo(controller);
+		scene.addIndicators();
+});
+
+// Changes fixed pic from group shot to mica shot
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.to(synerginFixedPic, 0.00001, {backgroundImage: "url('http://162.243.103.157/assets/mica-assets/mica1280x701.jpg')"});
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#synerginTrigger"})
+		.setTween(tween)
+		.addTo(controller);
+		scene.addIndicators();
+});	
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.from(micaCaption, 0.00001, {opacity: 0, top:"5%"});
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
+		.setTween(tween)
+		.addTo(controller);
+		scene.addIndicators();
+});	
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.to(teamCaption, 1, {opacity: 0, top:"-5%"});
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
+		.setTween(tween)
+		.addTo(controller);
+		scene.addIndicators();
+});	
+
+/* Reveals elevator
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.from(elevatorDiv, 1, {width: 2, left: 10});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerWidth", duration: 110})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+}); 
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.from(elevatorDiv, 1, {height: 0});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 130})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+}); */
+
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.from(portfolioDiv, 1, {marginTop: 200});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 90})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+});
+
+/*
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.from(elevatorPitch, 1, {opacity: 0});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerContent", duration: 130})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+}); */
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.to(synerginFixedPic, 1, {display: "none"});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#changeFixedpicTrigger"})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+});
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.to(indesignBrochureB, 0.00001, {display: "none"});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#changeIndesignTrigger"})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+}); 
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.to(indesignBrochureA, 0.00001, {display: "block"});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#changeIndesignTrigger"})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+}); 
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.to(elevatorDiv2, 1, {display: "block"});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#changeFixedpicTrigger"})
+		.setTween(tween)
+		.addTo(controller);	
+		scene.addIndicators();
+});
+
+</script>
+
+
+<style>
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Alegreya Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+body > div {
+	overflow-x: hidden;
+}
+
+.ScrollScreenIndicators {
+	opacity: 0;
+	float: left;
+}
+
+.hook {
+	opacity: 0;
+	float: left;
+}
+
+.start {
+	opacity: 0;
+	float: left;
+}
+
+.end {
+	opacity: 0;
+	float: left;
+}
+
+
+
+
+
+/*
+
+
+
+#synerginFixedPic {
+} 
+
+#teamCaption {
+}
+*/
+
+
+.landing-div {
+	display: block;
+	background-color: white;
+}
+
+.mw-name {
+	display: block;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: black;
+	text-align: center;
+}
+
+.job-title {
+	font-style: italic;
+	font-family: 'Alegreya Sans', sans-serif;
+	display: block;
+	text-align: center;
+}
+
+.javascript-logo {
+	opacity: 1;
+}
+
+.html-logo {
+	display: inline-block;
+	width: 9.5%;
+	float: left;
+	opacity: 1;
+	margin: 0% 1% 3% 1%;
+}
+
+.css-logo {
+	display: inline-block;
+	width: 9.5%;
+	float: left;
+	opacity: 1;
+	margin: 0% 25% 3% 1.5%;
+}
+
+.mw-intro {
+	display: block;
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.button-container {
+	display: block;
+}
+
+#scrollArrow {
+	width: 7%;
+	margin: 0% 46.5% 0% 46.5%;
+}
+
+/*.git-button {
+}
+
+.portfolio-button {
+	display: inline-block;
+}
+
+.linkedin-button {
+	display: inline-block;
+	margin: 1% 1% 1% 6%;
+}*/
+
+.tools-proficiencies {
+	width: 100%;
+	margin: 0%;
+	color: white;
+	text-align: center;
+	position: absolute;
+}
+
+.tools-header {
+	text-align: center; 
+	width: 100%; 
+	margin: 1% 0% 0% 0%; 
+}
+
+#leftIcons {
+	width: 36%;
+	margin: 0% 0% 0% 0%;
+	position: relative;	
+	top: 0%;
+	float: left;
+	display: inline-block;
+	opacity: 1;
+}
+
+#rightIcons {
+	width: 36%;
+	margin: 0% 0% 0% 0%;
+	position: relative;	
+	top: 0%;
+	float: right;
+	display: inline-block;
+	opacity: 1;
+}
+
+.tools-list {
+	width: 25%;
+	display: inline-block;
+	margin: 3% 0% 3% 0%;
+}
+
+.tools-list > p {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+
+#elevatorDiv { 
+	background-color: white;
+	position: relative;
+	/* display: block;	 */
+}
+
+.elevatorPitch {
+	display: inline-block;
+	margin: 0%;
+	padding: 0%;
+}
+/*
+.elevator-third {
+}
+        
+.elevator-pic {
+    width: 90%;
+    height: 250px;
+    margin: 5% 0% 2% 0%;
+    border-style: solid;
+}*/
+
+.elevator-pic1 {
+    border-style: none;
+
+}
+
+.elevator-pic2 {
+    border-style: none;
+}
+
+.elevator-pic3 {
+    border-style: solid;
+}
+
+.elevator-title {
+	text-align: center;
+}
+         
+.elevator-text {
+    text-align: center;
+    font-size: 1.2em;
+    /*padding: 0% 5% 0% 5%;*/
+}
+
+#portfolioDiv {
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+}
+
+#galleryDiv {
+	display: inline-block;
+	background-color: black;
+	width: 72%;
+	padding: 0% 0% 0% 0%;
+	margin: 0% 14% 0% 14%;
+}
+/*
+#portfolioSpan {
+	display: inline;
+	width: 30%;
+	height: 100%;
+	background-color: black;
+	margin: 0%;
+	padding: 0%;
+}
+
+#portfolioTitle {
+	display: block;
+	width: 100%;
+	color: white;
+	text-align: center;
+
+}
+
+#portfolioSubtitle {
+	display: block;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+.portfolioItem {
+	color: white;
+	display: block;
+	width: 100%;
+	padding: 1% 0% 0% 0%;
+	text-align: center;
+} 
+
+.embedded-prezi {
+
+}
+
+#elevatorDiv2 {
+	top: 0px;
+	left: 0px;
+	margin: 0% 0% 0% 0%;
+	padding: 0%;
+	position: fixed;
+	z-index: -1;
+	background-color: white;
+	display: none;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+}
+
+.elevatorPitch2 {
+	display: inline-block;
+	margin: 0%;
+	padding: 0%;
+}
+	*/
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Triggers -->
+<div id="toolsTrigger" class="trigger-class">Tools trigger</div>
+<div id="iconTrigger1" class="trigger-class">Icon trigger</div>
+<div id="synerginTrigger" class="trigger-class">Synergin trigger</div>
+<div id="galleryDivMarginTrigger" class="trigger-class">galleryDivMargin Trigger</div>
+<div id="elevatorTriggerHeight" class="trigger-class">Elevator trigger Height</div>
+<div id="elevatorTriggerContent" class="trigger-class">Elevator trigger Content</div>
+<div id="changeIndesignTrigger" class="trigger-class">changeIndesign trigger</div>
+<div id="changeFixedpicTrigger" class="trigger-class">changeFixedpic trigger</div>
+
+
+<!-- Fixed Synergin pic for desktop -->
+<div id="synerginFixedPic">
+	<p id="teamCaption">Currently coding with the Synergin team as well as other projects.</p>
+	<p id="micaCaption">Hey, that's me!</p>
+</div>
+
+<!-- Fixed Synergin pic for tablet and phone-->
+<div id="synMobile">
+	<img class="syn-mobile" src="http://162.243.103.157/assets/mica-assets/teamusa-1024.jpg"/>
+	<p class="syn-caption">Currently coding with the Synergin team, as well as other projects. I'm on the right.</p>
+</div>
+
+
+
+
+
+
+<!-- main container -->
+<div class="landing-div">
+	<h1 class="mw-name">Michel Wilbrink</h1>
+	<h2 class="job-title">Front End Code Herder and Web Designer</h2>	
+	<img src="mediaFolder/indexRemakeMedia/javascriptLogo.png" id="javascriptLogo" class="javascript-logo"/>
+	<img src="mediaFolder/indexRemakeMedia/htmlLogo.png" id="htmlLogo" class="html-logo" title="beach shoot"/>
+	<img src="mediaFolder/indexRemakeMedia/cssLogo.png" id="cssLogo" class="css-logo"/>
+	<p class="mw-intro">Hi and welcome. I'm Michel and I use a variety of web tools and programming proficiencies to breathe life into your designs. Promote yourself, your business, or your craft with a creative, professional website.
+	</p>
+	<div class="button-container">
+	   	<a href="https://github.com/wilbrinkm1" class="button glow git-button"><i class="fa fa-github"></i>My Github</a>
+		<span style="display: inline-block;" class="button-dropdown glow portfolio-button" data-buttons="dropdown">
+		    <a href="#" class="button glow">Portfolio</a>
+		    <ul class="button-dropdown-menu-above" style="display: none;">
+		        <li><a href="derekPlusFolder/indexTry5AddScrollNav.html">Printing Plus Website (in progress)</a></li>
+		        <li><a href="currencyExchange.html">Currency Calculator</a></li>
+		        <li><a href="uniqueBoxRestyled.html">Hover Button App</a></li>
+		        <li><a href="jsExercises.html">JS Exercises</a></li>
+		        <li><a href="chooseAdventure.html">Photoshop Portfolio (scroll below)</a></li>
+		    	<li><a href="chooseAdventure.html">Choose Your Own Adventure</a></li>
+		    	<li><a href="schedulePlanner.html">Schedule Planner</a></li>
+		    </ul>
+		</span>
+	    <a href="http://www.linkedin.com/in/michelwilbrink" class="button glow linkedin-button">Linked In</a>
+	</div>
+	<img src="mediaFolder/indexRemakeMedia/downArrows.jpg" id="scrollArrow"/>
+</div>
+
+
+<div class="tools-proficiencies">
+	<p class="tools-header">Tools & Proficiencies</p>
+	<img src="mediaFolder/indexRemakeMedia/left-icons.png" id="leftIcons"/>
+	<div class="tools-list">
+		<p>HTML5</p>
+		<p>CSS3</p>
+		<p>Javascript</p>
+		<p>jQuery</p>
+		<p>Photoshop</p>
+		<p>Github</p>	
+		<p>Bootstrap</p>
+		<p>Greensock AP</p>
+		<p>Trello</p>	
+		<p>Prezi</p>
+		<p>Adobe InDesign</p>
+		<p id="ngwp">Wordpress</p>
+		<p id="ngwpsub">(Divi Theme)</p>
+		<p id="ngwp">AngularJS</p>
+		<p id="ngwpsub">(Two Way Binding)</p>
+	</div>
+	<img src="mediaFolder/indexRemakeMedia/right-icons.png" id="rightIcons"/>
+</div>
+
+<div id="elevatorDiv">
+	<div id="elevatorPitch">
+    <div class="elevator-third">
+        <img src="mediaFolder/indexRemakeMedia/photoshop_mica.png" class="elevator-pic1">
+        <h4 class="elevator-title">Photoshop</h4>        
+        <p class="elevator-text">Many projects involve heavy photo-editting and graphic creation so it's vital to be proficient in Photoshop and supporting Adobe cloud software. The overall workflow is faster when I can instanteously manage the characteristics of my images and elements.  
+        </p>
+    </div>
+    <div class="elevator-third">
+        <img src="mediaFolder/indexRemakeMedia/cube_prezi.jpg" class="elevator-pic2">
+        <h4 class="elevator-title">Prezi Presentation</h4>
+        <p class="elevator-text text2">Prezi is a wonderful presentation tool that creates engaging demonstrations. Incorporate them into your site or take it with you to your meetings. With your provided content of text and images, I can produce these solid presentations for you swiftly.
+        </p>
+    </div>
+    <div class="elevator-third">
+       	<!--<div id="indesignBrochure" class="elevator-pic3"></div> -->
+        <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.jpg" id="indesignBrochureB" class="elevator-pic3">
+        <img src="mediaFolder/indexRemakeMedia/indesign_elevatorA.jpg" id="indesignBrochureA" class="elevator-pic3">
+        <h4 class="elevator-title" style="margin-top: 1%;">Adobe InDesign</h4>
+        <p class="elevator-text text3">Working with Adobe InDesign has greatly improved the layout or my projects, from print to web. I am available for projects such as magazine layouts, iPad newletters, web publishing, brochures, business cards and more. 
+		Please view my Portfolio for some examples.
+        </p>
+    </div>
+    </div>
+</div>
+
+<div id="portfolioDiv" style="width: 100%; background-color: black;">
+	<div id="galleryDiv" class="fotorama" data-nav="thumbs">
+	  <img src="mediaFolder/indexRemakeMedia/color_run.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/cube_prezi.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl3.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/ladyliveinvert.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorA.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/getlostalot.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
+	  <!--<img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/cassandra_beach2.JPG" class="tooltip" title="beach shoot"/>
+	  <img src="mediaFolder/indexRemakeMedia/cassandra_beach.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/mica_brooding_gamma.png"/>
+	  <img src="mediaFolder/indexRemakeMedia/gym_woman.jpg"/> -->
+	</div>
+</div>
+
+<div id="preziDiv">
+	<iframe class="embedded-prezi" src="http://prezi.com/embed/qowfhslqaxvo/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
+</div>
+
+<!-- elevatorDiv2 "Abilities Elevator" -->
+<div id="elevatorDiv2">
+	<div id="elevatorPitch2">
+	    <div class="elevator-third desktop">
+	        <img src="mediaFolder/indexRemakeMedia/trello.jpg" class="elevator-pic1 desktop">
+	        <h4 class="elevator-title desktop">Project Management and Communications</h4>        
+	        <p class="elevator-text desktop">Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace to keep all our near and long term goals in focus.
+	        </p>
+	    </div>
+	    <div class="elevator-third desktop">
+	        <img src="mediaFolder/indexRemakeMedia/mica_brooding_gamma.png" class="elevator-pic2 desktop">
+	        <h4 class="elevator-title desktop">Projects managed personally.</h4>
+	        <p class="elevator-text text2 desktop">Working directly with one person allows for a more streamline workflow, offering technical guidance to more effectively bring your ideas to the screen.
+	        </p>
+	    </div>
+	    <div class="elevator-third desktop">
+	        <img src="mediaFolder/indexRemakeMedia/html-vs-wordpress.jpg" class="elevator-pic3 desktop">
+	        <h4 class="elevator-title desktop">Flexible coding</h4>
+	        <p class="elevator-text text3 desktop">Being able to use Wordpress or code in pure HTML + CSS + Javascript provides a flexible approach to the project's needs and budget. See the below Prezi Presentation for more.
+	        </p>
+	    </div>
+    </div>
+</div>
+
+<!-- tablet/phone elevator2 "Mbile Abilities Elevator" -->
+<div id="elevatorDivMobile">
+	<div id="elevatorPitch">
+    <div class="elevator-third">
+        <img src="mediaFolder/indexRemakeMedia/trello.jpg" class="elevator-pic1">
+        <h4 class="elevator-title">Continuous Coverage</h4>        
+        <p class="elevator-text">Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace keep all our near and long term goals in focus.
+        </p>
+    </div>
+    <div class="elevator-third">
+        <img src="mediaFolder/indexRemakeMedia/mica_brooding_gamma.png" class="elevator-pic2">
+        <h4 class="elevator-title title2"> One Project. One Vision. One guy.</h4>
+        <p class="elevator-text text2">Working directly with one person allows for a more streamline workflow, offering technical guidance to more effectively bring your ideas to the screen.
+        </p>
+    </div>
+    <div class="elevator-third">
+        <img src="mediaFolder/indexRemakeMedia/html-vs-wordpress.jpg" class="elevator-pic3">
+        <h4 class="elevator-title">Coding flexibility</h4>
+        <p class="elevator-text text3">Being able to use Wordpress or code in pure HTML + CSS + Javascript provides a flexible approach to the project's needs and budget. See the below Prezi Presentation for more.
+        </p>
+    </div>
+    </div>
+</div>
+
+<div id="preziDiv2">
+	<iframe class="embedded-prezi" src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="825" height="600" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
+</div> 
+
+
+
+
+</body>
+</html>

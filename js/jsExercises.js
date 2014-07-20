@@ -5,7 +5,7 @@
 /*	Define and use variables in the DOM */
 
 
-
+/*
 angular.module('ngReddit', []);
 
 angular.module('ngReddit').controller('myController', function($scope) {
@@ -13,9 +13,10 @@ angular.module('ngReddit').controller('myController', function($scope) {
 
 });
 
+*/
 
 
-/*
+
 function inputInfo() {
   var userName=document.getElementById("uname").value;
   var age=document.getElementById("age").value;
@@ -23,7 +24,6 @@ function inputInfo() {
   document.getElementById("answer").innerHTML = "Your name is " + userName + ", you are " + age + " years old, and your username is " + redditName +".";
 
 }
-*/
 
 
 
@@ -37,7 +37,7 @@ function inputInfo() {
 
 /* Return Absolute Value Function */
 
-angular.module('absoluteValue',[]);
+/*angular.module('absoluteValue',[]);
 
 angular.module('absoluteValue').controller('absoluteValueCtrl', function($scope) {
     $scope.absolute = function () {    
@@ -45,14 +45,14 @@ angular.module('absoluteValue').controller('absoluteValueCtrl', function($scope)
     };                                 
 });
 
-/*
+*/
 
 var absolute = function () {
   var givenNumber = document.getElementById("absoluteParameter").value;
   document.getElementById("absoluteAnswer").innerHTML="The absolute value of " + (givenNumber) + " is " + Math.abs(givenNumber);
 }
 
-*/
+
 
 
 
@@ -66,7 +66,7 @@ var absolute = function () {
 
 /* Return a Range */
 
-angular.module('returnRange',[]);
+/*angular.module('returnRange',[]);
 
 angular.module('returnRange').controller('returnRangeCtrl', function($scope) {
   $scope.range = function () {
@@ -82,11 +82,11 @@ angular.module('returnRange').controller('returnRangeCtrl', function($scope) {
 
 
 
+*/
 
-/*
 
 var range = function () {
-/*  var goal = document.getElementById("goal").value; 
+  var goal = document.getElementById("goal").value; 
   for (var count = 0; count <= goal; count++) {
     document.getElementById("answer").innerHTML = "The numbers within the range are:";  
     console.log(count);
@@ -96,7 +96,7 @@ var range = function () {
     });
   }
 }
-*/
+
 
 
 /* Let's Sing a Song...! */

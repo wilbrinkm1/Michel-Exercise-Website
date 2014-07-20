@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width">
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_examples/general.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_examples/highlight.pack.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_examples/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.debug.js"></script>
+<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/plugins/ScrollToPlugin.min.js"></script>
+
+<script>
+
+function flashFunction() {
+	$(document).ready(function($) {
+		TweenMax.to(scrollArrow, 1.5, {opacity: 0, repeat:-1, yoyo:true}, 3);
+	});
+}
+
+function div0Function() {
+	$(document).ready(function($) {
+		
+		TweenMax.from(div0, 2, {left: 500});
+	});
+}
+
+</script>
+
+
+<style>
+
+#scrollArrow {
+	width: 7%;
+	margin: 0% 46.5% 0% 46.5%;
+}
+
+#lady {
+	width: 50%;
+	margin: 0% 25% 0% 25%;
+	position: relative;
+}
+
+#div0 {
+	width: 100%;
+	background-color: green;
+	position: relative;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div id="div0">
+	<img src="mediaFolder/indexRemakeMedia/downArrows.jpg" id="scrollArrow"/>
+	<button onclick="flashFunction()">Arrows</button>
+	<img src="mediaFolder/indexRemakeMedia/ladylive.jpg" id="lady"/>
+	<p>dlkjfkdsf</p>
+	<h1>lkjfljsdf</h1>
+</div>
+
+<div id="div1">
+	<img src="mediaFolder/indexRemakeMedia/downArrows.jpg" id="scrollArrow"/>
+	<img src="mediaFolder/indexRemakeMedia/mica1280x701.jpg" id="lady"/>
+	<p>dlkjfkdsf</p>
+	<h1>lkjfljsdf</h1>
+</div>
+
+
+<button onclick="div0Function()">Click me</button>
+
+<button onclick="slideInFunction()">Click me</button>
+
+
+
+</body>
+</html>

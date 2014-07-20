@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width">
 <!-- 320px width -->
 
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="styles/buttons.css">
-<script type="text/javascript" src="js/buttons.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/buttons.js"></script>
 
 <style>
 
@@ -17,6 +18,39 @@ body {
 	font-family: 'Alegreya Sans', sans-serif;
 	/* overflow-x: hidden; */
 }
+
+
+#synMobile {
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0px 0px 0px 0px;
+		padding: 0px;
+		position: fixed;
+	}
+
+	.syn-caption {
+		color: white;
+		margin: 0% 0% 0% 0%;
+		width: 100%;	
+		height: auto;
+		text-align: center;
+		background-color: black;
+		font-size: 1.3em;
+		z-index: -1;
+		position: absolute;
+		opacity: 1;	
+	}
+
+	.syn-mobile {
+		width: 100%;
+		height: 60%;
+	}
+
 
 .landing-div {
 	width: 100%;
@@ -271,12 +305,17 @@ body {
 </head>
 <body>
 
+<div id="synMobile">
+	<img class="syn-mobile" src="mediaFolder/indexRemakeMedia/teamusa800.jpg"/>
+	<p class="syn-caption">Currently coding with the Synergin team, as well as other projects. I'm on the right.</p>
+</div>
+
 <div class="landing-div">
 	<h1 class="mw-name">Michel Wilbrink</h1>
 	<h2 class="job-title">Front End Code Herder and Web Designer</h2>	
-	<img src="mediaFolder/indexRemakeMedia/javascriptLogo.png" id="javascriptLogo" class="javascript-logo"/>
-	<img src="mediaFolder/indexRemakeMedia/htmlLogo.png" id="htmlLogo" class="html-logo" title="beach shoot"/>
-	<img src="mediaFolder/indexRemakeMedia/cssLogo.png" id="cssLogo" class="css-logo"/>
+	<img src="mediaFolder/indexRemakeMedia/javascriptLogo320.png" id="javascriptLogo" class="javascript-logo"/>
+	<img src="mediaFolder/indexRemakeMedia/htmlLogo320.png" id="htmlLogo" class="html-logo" title="beach shoot"/>
+	<img src="mediaFolder/indexRemakeMedia/cssLogo320.png" id="cssLogo" class="css-logo"/>
 	<p class="mw-intro">Hi and welcome. I'm Michel and I use a variety of web tools and programming proficiencies to breathe life into your designs. Promote yourself, your business, or your craft with a creative, professional website.
 	</p>
 	<div class="button-container">
@@ -301,7 +340,7 @@ body {
 
 <div class="tools-proficiencies">
 	<p class="tools-header">Tools & Proficiencies</p>
-	<img src="mediaFolder/indexRemakeMedia/left-icons.png" id="leftIcons"/>
+	<img src="mediaFolder/indexRemakeMedia/left-icons320.png" id="leftIcons"/>
 	<div class="tools-list">
 		<p>HTML5</p>
 		<p>CSS3</p>
@@ -319,27 +358,27 @@ body {
 		<p id="ngwp">AngularJS</p>
 		<p id="ngwpsub">(Two Way Binding)</p>
 	</div>
-	<img src="mediaFolder/indexRemakeMedia/right-icons.png" id="rightIcons"/>
+	<img src="mediaFolder/indexRemakeMedia/right-icons320.png" id="rightIcons"/>
 </div>
 
 <div id="elevatorDiv">
 	<div id="elevatorPitch">
     <div class="elevator-third">
-        <img src="mediaFolder/indexRemakeMedia/photoshop_mica.png" class="elevator-pic1">
+        <img src="mediaFolder/indexRemakeMedia/photoshop_mica320.png" class="elevator-pic1">
         <h4 class="elevator-title">Photoshop</h4>        
         <p class="elevator-text">Many projects involve heavy photo-editting and graphic creation so it's vital to be proficient in Photoshop and supporting Adobe cloud software. The overall workflow is faster when I can instanteously manage the characteristics of my images and elements.  
         </p>
     </div>
     <div class="elevator-third">
-        <img src="mediaFolder/indexRemakeMedia/cube_prezi.jpg" class="elevator-pic2">
+        <img src="mediaFolder/indexRemakeMedia/cube_prezi320.png" class="elevator-pic2">
         <h4 class="elevator-title">Prezi Presentation</h4>
         <p class="elevator-text text2">Prezi is a wonderful presentation tool that creates engaging demonstrations. Incorporate them into your site or take it with you to your meetings. With your provided content of text and images, I can produce these solid presentations for you swiftly.
         </p>
     </div>
     <div class="elevator-third">
        	<!--<div id="indesignBrochure" class="elevator-pic3"></div> -->
-        <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.jpg" id="indesignBrochureB" class="elevator-pic3">
-        <img src="mediaFolder/indexRemakeMedia/indesign_elevatorA.jpg" id="indesignBrochureA" class="elevator-pic3">
+        <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB320.png" id="indesignBrochureB" class="elevator-pic3">
+        <!-- <img src="mediaFolder/indexRemakeMedia/indesign_elevator320.png" id="indesignBrochureA" class="elevator-pic3"> -->
         <h4 class="elevator-title" style="margin-top: 1%;">Adobe InDesign</h4>
         <p class="elevator-text text3">Working with Adobe InDesign has greatly improved the layout or my projects, from print to web. I am available for projects such as magazine layouts, iPad newletters, web publishing, brochures, business cards and more. 
 		Please view my Portfolio for some examples.
@@ -347,7 +386,7 @@ body {
     </div>
     </div>
 </div>
-
+<!--
 <div id="portfolioDiv" style="width: 100%; background-color: black;">
 	<div id="galleryDiv" class="fotorama" data-nav="thumbs">
 	  <img src="mediaFolder/indexRemakeMedia/color_run.jpg"/>
@@ -361,7 +400,7 @@ body {
 	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/getlostalot.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
-	  <!--<img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/cassandra_beach2.JPG" class="tooltip" title="beach shoot"/>
 	  <img src="mediaFolder/indexRemakeMedia/cassandra_beach.jpg"/>
