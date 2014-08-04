@@ -1,0 +1,2111 @@
+/* =================================================================================================================*/
+
+
+
+
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+
+
+@media screen and (min-width: 1910px) {
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Lato';
+		width: 100%;
+
+	}
+	
+	#homeTitle {
+		background-image: url('../media/homepageMedia/new_header.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 48%;
+		height: 84px;
+		margin: 65px 0% 0% 4.8%;
+		float: left;
+	}
+
+	#slogan {
+		position: relative;
+		float: left;
+		display: inline-block;
+		font-size: 14px;
+		color: #7A7A7A;
+		font-family: 'Lato';
+		width: auto;
+		margin: 0.2% 0% 1% 5.06%;
+		clear: left;
+	}
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+	.links-video-container {
+		float: right;
+		display: inline-block;
+		width: 33%;
+		height: auto;
+		margin: 120px 2% 0% 0%;
+	}
+
+	.flood-info {
+		display: inline-block;
+		font-size: 17px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+
+	.flood-report {
+		display: inline-block;
+		font-size: 17px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+	
+	.propertypeek-report {
+		display: inline-block;
+		font-size: 17px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 0% 0%;
+		text-decoration: none;
+	}
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+	.welcome-video-container {
+		float: left;
+		margin: 2.5% 7.55% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		display: inline-block;
+		width: 224px;
+		height: 123px;
+		background-image: url('../media/homepageMedia/18.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		-webkit-padding-before: 0em;
+		-webkit-padding-after: 0em;
+	}
+
+	.four-links {
+		float: left;
+		width: 46%;
+		color: #7A7A7A;
+		font-size: 18px;
+		display: inline-block;
+		padding: 1% 0% 1% 6.99%;
+	}
+
+	.about-link {
+		display: inline-block;
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		padding: 0% 0% 1% 6.8%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		margin: 2.5% 0% 0% 0%;
+		text-decoration: none;
+	}
+	
+	.request-pia {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+	.request-qq {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+	
+	.contact-link {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+		padding-bottom: 0%;
+	}	
+
+	.insurance-icon {
+		float: left;
+		width: 5.76%;
+		height: 109px;
+		display: inline-block;
+		margin: 1% 0.8% 0% 0%;
+	}
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+	#floodInsure {
+		display: block;
+		width: 8.4%;
+		background-image: url('../media/homepageMedia/02.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 0.8% 0% 5.06%;
+		clear: left;	
+	}
+	
+	#homeInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/03.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#marineInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/04.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+	#autoInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/05.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#healthInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/06.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+		
+	#artInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/07.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#businessInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/08.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 0% 0% 0%;
+	}
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+	#wowslider-container1 {
+		z-index: 1;
+		position: absolute;
+		display: block;
+		width: 90%;
+		max-width: 1728px;
+		height: auto;
+		max-height: 463px;
+		margin: 344px 5% 0% 5%;
+	}
+
+	.ws_images {
+		width: 100%;
+		max-width: 1728px;
+		height: auto;
+		max-height: 463px;
+	}
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+	.dimeglio-icon {
+		float: left;
+		display: inline-block;
+		background-image: url('../media/homepageMedia/dimeglio.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 22%;
+		height: 148px;
+		margin: 3% 0% 0% 0%;
+		padding: 0%;
+	}
+
+	.social-blog-container {
+		float: left;
+		width: 20%;
+		height: 110px;
+		display: inline-block;
+		margin: 3% 1% 0% 5%;
+	}
+
+	.sandy-stories-icon {
+		display: inline-block;
+		width: 100%;
+		height: 70px;
+		background-image: url('../media/homepageMedia/10.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 0% 5% 2% 5%;
+	}
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+	#fbIcon {
+		display: inline-block;
+		width: 20%;
+		height: 70px;
+		background-image: url('../media/homepageMedia/11.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 2% 0% 27%;
+		/* padding: 1% 1% 0% 5%; */ 
+	}
+	
+	#twitterIcon {
+		display: inline-block;
+		width: 20%;
+		height: 70px;
+		background-image: url('../media/homepageMedia/12.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+																				/* 1920 x 1080 */
+																				/* 1920 x 1200 */
+	#bloggerIcon {
+		display: inline-block;
+		width: 20%;
+		height: 70px;
+		background-image: url('../media/homepageMedia/13.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+
+	.join-us-ad {
+		float: left;
+		display: inline-block;
+		width: 20.2%;
+		height: 154px;
+		background-image: url('../media/homepageMedia/17.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 3.07% 3% 0% 8%;	
+		-webkit-margin-before: 3.07%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%;	
+
+	}
+
+	#cornerAd {
+		float: right;
+		display: inline-block;
+		width: 19%;
+		height: 154px;
+		border-style: solid;
+		background-color: white;
+		margin: 3% 0% 0% 0%;
+		padding: 0%;
+		/*-webkit-margin-before: 0%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%; */
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================================================================*/
+
+
+																				/* 1680 x 1050 */
+
+
+@media screen and (min-width: 1679px) and (max-width: 1909px) {
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Lato';
+		width: 100%;
+
+	}
+	
+	#homeTitle {
+		background-image: url('../media/homepageMedia/new_header.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 48%;
+		height: 74px;
+		margin: 65px 0% 0% 4.8%;
+		float: left;
+	}
+
+	#slogan {
+		position: relative;
+		float: left;
+		display: inline-block;
+		font-size: 14px;
+		color: #7A7A7A;
+		font-family: 'Lato';
+		width: auto;
+		margin: 0% 0% 1% 5.06%;
+		clear: left;
+	}
+																				/* 1680 x 1050 */
+	.links-video-container {
+		float: right;
+		display: inline-block;
+		width: 37.4%;
+		height: auto;
+		margin: 89px 2% 0% 0%;
+	}
+
+	.flood-info {
+		display: inline-block;
+		font-size: 17px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+
+	.flood-report {
+		display: inline-block;
+		font-size: 17px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+	
+	.propertypeek-report {
+		display: inline-block;
+		font-size: 17px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 0% 0%;
+		text-decoration: none;
+	}
+																				/* 1680 x 1050 */
+	.welcome-video-container {
+		float: left;
+		margin: 2.5% 7.55% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		display: inline-block;
+		width: 224px;
+		height: 123px;
+		background-image: url('../media/homepageMedia/18.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		-webkit-padding-before: 0em;
+		-webkit-padding-after: 0em;
+	}
+
+	.four-links {
+		float: left;
+		width: 46%;
+		color: #7A7A7A;
+		font-size: 18px;
+		display: inline-block;
+		padding: 1% 0% 1% 6.99%;
+	}
+
+	.about-link {
+		display: inline-block;
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		padding: 0% 0% 1% 6.8%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		margin: 2.5% 0% 0% 0%;
+		text-decoration: none;
+	}
+	
+	.request-pia {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+																				/* 1680 x 1050 */
+	.request-qq {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+	
+	.contact-link {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+		padding-bottom: 0%;
+	}	
+
+	.insurance-icon {
+		float: left;
+		width: 5.75%;
+		height: 96px;
+		display: inline-block;
+		margin: 1% 0.8% 0% 0%;
+	}
+																				/* 1680 x 1050 */
+	#floodInsure {
+		display: block;
+		width: 8.4%;
+		background-image: url('../media/homepageMedia/02.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 0.8% 0% 5.06%;
+		clear: left;	
+	}
+	
+	#homeInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/03.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#marineInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/04.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+																				/* 1680 x 1050 */
+	#autoInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/05.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#healthInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/06.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+		
+	#artInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/07.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#businessInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/08.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 0% 0% 0%;
+	}
+																				/* 1680 x 1050 */
+	#wowslider-container1 {
+		z-index: 1;
+		position: absolute;
+		display: block;
+		width: 90%;
+		max-width: 1512px;
+		height: auto;
+		max-height: 405px;
+		margin: 325px 5% 0% 5%;
+	}
+
+	.ws_images {
+		width: 100%;
+		max-width: 1680px;
+		height: auto;
+		max-height: 405px;
+	}
+																				/* 1680 x 1050 */
+	.dimeglio-icon {
+		float: left;
+		display: inline-block;
+		background-image: url('../media/homepageMedia/dimeglio.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 22%;
+		height: 128px;
+		margin: 3% 0% 0% 0%;
+		padding: 0%;
+	}
+
+	.social-blog-container {
+		float: left;
+		width: 20%;
+		height: 110px;
+		display: inline-block;
+		margin: 3% 1% 0% 5%;
+	}
+
+	.sandy-stories-icon {
+		display: inline-block;
+		width: 100%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/10.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 0% 5% 2% 5%;
+	}
+																				/* 1680 x 1050 */
+	#fbIcon {
+		display: inline-block;
+		width: 20%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/11.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 2% 0% 27%;
+		/* padding: 1% 1% 0% 5%; */ 
+	}
+	
+	#twitterIcon {
+		display: inline-block;
+		width: 20%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/12.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+																				/* 1680 x 1050 */
+	#bloggerIcon {
+		display: inline-block;
+		width: 20%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/13.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+
+	.join-us-ad {
+		float: left;
+		display: inline-block;
+		width: 20.2%;
+		height: 140px;
+		background-image: url('../media/homepageMedia/17.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 3.07% 3% 0% 8%;	
+		-webkit-margin-before: 3.07%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%;	
+
+	}
+
+	#cornerAd {
+		float: right;
+		display: inline-block;
+		width: 19%;
+		height: 128px;
+		border-style: solid;
+		background-color: white;
+		margin: 3% 0% 0% 0%;
+		padding: 0%;
+		/*-webkit-margin-before: 0%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%; */
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================================================================*/
+
+
+																				/* 1600 x 900 */
+
+
+@media screen and (min-width: 1599px) and (max-width: 1678px) {
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Lato';
+		width: 100%;
+
+	}
+	
+	#homeTitle {
+		background-image: url('../media/homepageMedia/new_header.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 48%;
+		height: 74px;
+		margin: 55px 0% 0% 4.8%;
+		float: left;
+	}
+
+	#slogan {
+		position: relative;
+		float: left;
+		display: inline-block;
+		font-size: 14px;
+		color: #7A7A7A;
+		font-family: 'Lato';
+		width: auto;
+		margin: 0% 0% 1% 5.06%;
+		clear: left;
+	}
+																				/* 1600 x 900 */
+	.links-video-container {
+		float: right;
+		display: inline-block;
+		width: 37.4%;
+		height: auto;
+		margin: 70px 3% 0% 0%;
+	}
+
+	.flood-info {
+		display: inline-block;
+		font-size: 17px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+
+	.flood-report {
+		display: inline-block;
+		font-size: 17px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+	
+	.propertypeek-report {
+		display: inline-block;
+		font-size: 17px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 0% 0%;
+		text-decoration: none;
+	}
+																				/* 1600 x 900 */
+	.welcome-video-container {
+		float: left;
+		margin: 2.5% 7.55% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		display: inline-block;
+		width: 224px;
+		height: 123px;
+		background-image: url('../media/homepageMedia/18.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		-webkit-padding-before: 0em;
+		-webkit-padding-after: 0em;
+	}
+
+	.four-links {
+		float: left;
+		width: 46%;
+		color: #7A7A7A;
+		font-size: 18px;
+		display: inline-block;
+		padding: 1% 0% 1% 6.99%;
+	}
+
+	.about-link {
+		display: inline-block;
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		padding: 0% 0% 1% 6.8%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		margin: 2.5% 0% 0% 0%;
+		text-decoration: none;
+	}
+	
+	.request-pia {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+																				/* 1600 x 900 */
+	.request-qq {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+	
+	.contact-link {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+		padding-bottom: 0%;
+	}	
+
+	.insurance-icon {
+		float: left;
+		width: 5.6%;
+		height: 89px;
+		display: inline-block;
+		margin: 1% 0.8% 0% 0%;
+	}
+																				/* 1600 x 900 */
+	#floodInsure {
+		display: block;
+		width: 8.4%;
+		background-image: url('../media/homepageMedia/02.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 0.8% 0% 5.06%;
+		clear: left;	
+	}
+	
+	#homeInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/03.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#marineInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/04.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+																				/* 1600 x 900 */
+	#autoInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/05.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#healthInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/06.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+		
+	#artInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/07.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#businessInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/08.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 0% 0% 0%;
+	}
+																				/* 1600 x 900 */
+	#wowslider-container1 {
+		z-index: 1;
+		position: absolute;
+		display: block;
+		width: 90%;
+		max-width: 1440px;
+		height: auto;
+		max-height: 386px;
+		margin: 293px 5% 0% 5%;
+	}
+
+	.ws_images {
+		width: 100%;
+		max-width: 1600px;
+		height: auto;
+		max-height: 386px;
+	}
+																				/* 1600 x 900 */
+	.dimeglio-icon {
+		float: left;
+		display: inline-block;
+		background-image: url('../media/homepageMedia/dimeglio.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 22%;
+		height: 128px;
+		margin: 2.3% 0% 0% 0%;
+		padding: 0%;
+	}
+
+	.social-blog-container {
+		float: left;
+		width: 20%;
+		height: 110px;
+		display: inline-block;
+		margin: 2.3% 1% 0% 5%;
+	}
+
+	.sandy-stories-icon {
+		display: inline-block;
+		width: 100%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/10.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 0% 5% 2% 5%;
+	}
+																				/* 1600 x 900 */
+	#fbIcon {
+		display: inline-block;
+		width: 20%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/11.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 2% 0% 27%;
+		/* padding: 1% 1% 0% 5%; */ 
+	}
+	
+	#twitterIcon {
+		display: inline-block;
+		width: 20%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/12.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+																				/* 1600 x 900 */
+	#bloggerIcon {
+		display: inline-block;
+		width: 20%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/13.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+
+	.join-us-ad {
+		float: left;
+		display: inline-block;
+		width: 20.2%;
+		height: 128px;
+		background-image: url('../media/homepageMedia/17.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 2.07% 3% 0% 8%;	
+		-webkit-margin-before: 2.07%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%;	
+
+	}
+
+	#cornerAd {
+		float: right;
+		display: inline-block;
+		width: 19%;
+		height: 128px;
+		border-style: solid;
+		background-color: white;
+		margin: 2.3% 0% 0% 0%;
+		padding: 0%;
+		/*-webkit-margin-before: 0%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%; */
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================================================================*/
+
+
+																				/* 1440 x 900*/
+
+
+@media screen and (min-width: 1430px) and (max-width: 1598px) {
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Lato';
+		width: 100%;
+
+	}
+	
+	#homeTitle {
+		background-image: url('../media/homepageMedia/new_header.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 47%;
+		height: 64px;
+		margin: 55px 0% 0% 4.8%;
+		float: left;
+	}
+
+	#slogan {
+		position: relative;
+		float: left;
+		display: inline-block;
+		font-size: 12px;
+		color: #7A7A7A;
+		font-family: 'Lato';
+		width: auto;
+		margin: 0% 0% 1% 5.06%;
+		clear: left;
+	}
+																				/* 1440 x 900*/
+	.links-video-container {
+		float: right;
+		display: inline-block;
+		width: 37.4%;
+		height: auto;
+		margin: 70px 4.6% 0% 0%;
+	}
+
+	.flood-info {
+		display: inline-block;
+		font-size: 16px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+
+	.flood-report {
+		display: inline-block;
+		font-size: 16px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+	
+	.propertypeek-report {
+		display: inline-block;
+		font-size: 16px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 2% 2% 2%;
+		margin: 0% 1% 0% 0%;
+		text-decoration: none;
+	}
+																				/* 1440 x 900*/
+	.welcome-video-container {
+		float: left;
+		margin: 2.5% 7.55% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		display: inline-block;
+		width: 208px;
+		height: 114px;
+		background-image: url('../media/homepageMedia/18.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		-webkit-padding-before: 0em;
+		-webkit-padding-after: 0em;
+	}
+
+	.four-links {
+		float: left;
+		width: 46%;
+		color: #7A7A7A;
+		font-size: 17px;
+		display: inline-block;
+		padding: 1% 0% 1% 6.99%;
+	}
+
+	.about-link {
+		display: inline-block;
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		padding: 0% 0% 1% 6.8%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		margin: 2.5% 0% 0% 0%;
+		text-decoration: none;
+	}
+	
+	.request-pia {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+																				/* 1440 x 900*/
+	.request-qq {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+	
+	.contact-link {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+		padding-bottom: 0%;
+	}	
+
+	.insurance-icon {
+		float: left;
+		width: 5.6%;
+		height: 79px;
+		display: inline-block;
+		margin: 1% 0.8% 0% 0%;
+	}
+																				/* 1440 x 900*/
+	#floodInsure {
+		display: block;
+		width: 8.4%;
+		background-image: url('../media/homepageMedia/02.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 0.8% 0% 5.06%;
+		clear: left;	
+	}
+	
+	#homeInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/03.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#marineInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/04.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+																				/* 1440 x 900*/
+	#autoInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/05.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#healthInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/06.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+		
+	#artInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/07.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#businessInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/08.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 0% 0% 0%;
+	}
+																				/* 1440 x 900*/
+	#wowslider-container1 {
+		z-index: 1;
+		position: absolute;
+		display: block;
+		width: 90%;
+		max-width: 1296px;
+		height: auto;
+		max-height: 347.1px;
+		margin: 278px 5% 0% 5%;
+	}
+
+	.ws_images {
+		width: 100%;
+		max-width: 1440px;
+		height: auto;
+		max-height: 347.1px;
+	}
+																				/* 1440 x 900*/
+	.dimeglio-icon {
+		float: left;
+		display: inline-block;
+		background-image: url('../media/homepageMedia/dimeglio.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 22%;
+		height: 114px;
+		margin: 2.3% 0% 0% 0%;
+		padding: 0%;
+	}
+
+	.social-blog-container {
+		float: left;
+		width: 20%;
+		height: 110px;
+		display: inline-block;
+		margin: 2.3% 1% 0% 5%;
+	}
+
+	.sandy-stories-icon {
+		display: inline-block;
+		width: 100%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/10.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 0% 5% 0% 5%;
+	}
+																				/* 1440 x 900*/
+	#fbIcon {
+		display: inline-block;
+		width: 20%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/11.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 2% 0% 27%;
+		/* padding: 1% 1% 0% 5%; */ 
+	}
+	
+	#twitterIcon {
+		display: inline-block;
+		width: 20%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/12.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+																				/* 1440 x 900*/
+	#bloggerIcon {
+		display: inline-block;
+		width: 20%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/13.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+
+	.join-us-ad {
+		float: left;
+		display: inline-block;
+		width: 20.2%;
+		height: 117px;
+		background-image: url('../media/homepageMedia/17.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 2.07% 3% 0% 8%;	
+		-webkit-margin-before: 2.07%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%;	
+
+	}
+
+	#cornerAd {
+		float: right;
+		display: inline-block;
+		width: 19%;
+		height: 114px;
+		border-style: solid;
+		background-color: white;
+		margin: 2.3% 0% 0% 0%;
+		padding: 0%;
+		/*-webkit-margin-before: 0%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%; */
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================================================================*/
+
+
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+
+
+@media screen and (min-width: 1355px) and (max-width: 1429px) {
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Lato';
+		width: 100%;
+
+	}
+	
+	#homeTitle {
+		background-image: url('../media/homepageMedia/new_header.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 49%;
+		height: 64px;
+		margin: 40px 0% 0% 4.8%;
+		float: left;
+	}
+
+	#slogan {
+		position: relative;
+		float: left;
+		display: inline-block;
+		font-size: 12px;
+		color: #7A7A7A;
+		font-family: 'Lato';
+		width: 49%;
+		margin: 0% 0% 1% 5.06%;
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+	.links-video-container {
+		float: right;
+		display: inline-block;
+		width: 33.4%;
+		height: auto;
+		margin: 55px 4.4% 0% 0%;
+	}
+
+	.flood-info {
+		display: inline-block;
+		font-size: 12px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 3% 2% 3%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+
+	.flood-report {
+		display: inline-block;
+		font-size: 12px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 3% 2% 3%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+	
+	.propertypeek-report {
+		display: inline-block;
+		font-size: 12px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 3% 2% 3%;
+		margin: 0% 1% 0% 0%;
+		text-decoration: none;
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+	.welcome-video-container {
+		float: left;
+		margin: 2.5% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		display: inline-block;
+		width: 208px;
+		height: 114px;
+		background-image: url('../media/homepageMedia/18.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		-webkit-padding-before: 0em;
+		-webkit-padding-after: 0em;
+	}
+
+	.four-links {
+		float: right;
+		width: 46%;
+		color: #7A7A7A;
+		font-size: 14px;
+		display: inline-block;
+		padding: 2% 0% 1.5% 3%;
+	}
+
+	.about-link {
+		display: inline-block;
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		padding: 0% 0% 1% 3%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		margin: 2.5% 0% 0% 0%;
+		text-decoration: none;
+	}
+	
+	.request-pia {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+	.request-qq {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+	
+	.contact-link {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		padding: 2% 0% 0% 3%;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}	
+
+	.insurance-icon {
+		float: left;
+		width: 5.6%;
+		height: 76px;
+		display: inline-block;
+		margin: 1.05% 0.8% 0% 0%;
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+	#floodInsure {
+		display: block;
+		width: 8.4%;
+		background-image: url('../media/homepageMedia/02.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 0.8% 0% 5.06%;
+		clear: left;	
+	}
+	
+	#homeInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/03.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#marineInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/04.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */	
+	#autoInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/05.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#healthInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/06.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+		
+	#artInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/07.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#businessInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/08.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1.05% 0% 0% 0%;
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+	#wowslider-container1 {
+		z-index: 1;
+		position: absolute;
+		display: block;
+		width: 90%;
+		max-width: 1224px;
+		height: auto;
+		max-height: 328px;
+		margin: 243px 5% 0% 5%;
+	}
+
+	.ws_images {
+		width: 100%;
+		max-width: 1224px;
+		height: auto;
+		max-height: 328px;
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+	.dimeglio-icon {
+		float: left;
+		display: inline-block;
+		background-image: url('../media/homepageMedia/dimeglio.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 20.4%;
+		height: 110px;
+		margin: 2% 0% 0% 0%;
+		padding: 0%;
+	}
+
+	.social-blog-container {
+		float: left;
+		width: 20%;
+		height: 110px;
+		display: inline-block;
+		margin: 2% 0% 0% 5%;
+	}
+
+	.sandy-stories-icon {
+		display: inline-block;
+		width: 90%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/10.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1.2% 5% 0% 5%;
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+	#fbIcon {
+		display: inline-block;
+		width: 15%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/11.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 2% 0% 27%;
+		/* padding: 1% 1% 0% 5%; */ 
+	}
+	
+	#twitterIcon {
+		display: inline-block;
+		width: 15%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/12.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+	#bloggerIcon {
+		display: inline-block;
+		width: 15%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/13.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+
+	.join-us-ad {
+		float: left;
+		display: inline-block;
+		width: 20.4%;
+		height: 114px;
+		background-image: url('../media/homepageMedia/17.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 2% 1% 0% 9%;	
+		-webkit-margin-before: 1.2%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%;	
+
+	}
+																				/* 1366 x 768 */
+																				/* 1360 x 768 */
+	#cornerAd {
+		float: right;
+		display: inline-block;
+		width: 19%;
+		height: 104px;
+		border-style: solid;
+		background-color: white;
+		margin: 2% 0% 0% 0%;
+		padding: 0%;
+		/*-webkit-margin-before: 0%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%; */
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================================================================*/
+
+
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */
+
+
+@media screen and (min-width: 1279px) and (max-width: 1358px) {
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Lato';
+		width: 100%;
+
+	}
+	
+	#homeTitle {
+		background-image: url('../media/homepageMedia/new_header.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 47.6%;
+		height: 64px;
+		margin: 40px 0% 0% 4.8%;
+		float: left;
+	}
+
+	#slogan {
+		position: relative;
+		float: left;
+		display: inline-block;
+		font-size: 11px;
+		color: #7A7A7A;
+		font-family: 'Lato';
+		width: auto;
+		margin: 0% 0% 1% 5.06%;
+		clear: left;
+	}
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */
+	.links-video-container {
+		float: right;
+		display: inline-block;
+		width: 35.4%;
+		height: auto;
+		margin: 55px 4.4% 0% 0%;
+	}
+
+	.flood-info {
+		display: inline-block;
+		font-size: 12px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 3% 2% 3%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+
+	.flood-report {
+		display: inline-block;
+		font-size: 12px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 3% 2% 3%;
+		margin: 0% 1% 1% 0%;
+		text-decoration: none;
+	}
+	
+	.propertypeek-report {
+		display: inline-block;
+		font-size: 12px;
+		color: #7A7A7A;
+		width: auto;
+		font-family: 'Lato';
+		border-style: solid;
+		padding: 2% 3% 2% 3%;
+		margin: 0% 1% 0% 0%;
+		text-decoration: none;
+	}
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */
+	.welcome-video-container {
+		float: left;
+		margin: 2.5% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		display: inline-block;
+		width: 208px;
+		height: 114px;
+		background-image: url('../media/homepageMedia/18.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		-webkit-padding-before: 0em;
+		-webkit-padding-after: 0em;
+	}
+
+	.four-links {
+		float: right;
+		width: 46%;
+		color: #7A7A7A;
+		font-size: 14px;
+		display: inline-block;
+		padding: 2% 0% 1.5% 3%;
+	}
+
+	.about-link {
+		display: inline-block;
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		padding: 0% 0% 1% 3%;
+		-webkit-margin-before: 2.5%;
+		-webkit-margin-after: 0em;
+		margin: 2.5% 0% 0% 0%;
+		text-decoration: none;
+	}
+	
+	.request-pia {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */
+	.request-qq {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}
+	
+	.contact-link {
+		border-left-style: solid;
+		border-left-color: #C0C0C0;
+		padding: 2% 0% 0% 3%;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		text-decoration: none;
+	}	
+
+	.insurance-icon {
+		float: left;
+		width: 5.3%;
+		height: 74px;
+		display: inline-block;
+		margin: 1.8% 0.8% 0% 0%;
+	}
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */
+	#floodInsure {
+		display: block;
+		width: 8.4%;
+		background-image: url('../media/homepageMedia/02.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1.8% 0.8% 0% 5.06%;
+		clear: left;	
+	}
+	
+	#homeInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/03.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#marineInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/04.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */	
+	#autoInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/05.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	#healthInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/06.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+		
+	#artInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/07.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	#businessInsure {
+		display: inline-block;
+		background-image: url('../media/homepageMedia/08.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1.8% 0% 0% 0%;
+	}
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */
+	#wowslider-container1 {
+		z-index: 1;
+		position: absolute;
+		display: block;
+		width: 90%;
+		max-width: 1224px;
+		height: auto;
+		max-height: 309px;
+		margin: 243px 5% 0% 5%;
+	}
+
+	.ws_images {
+		width: 100%;
+		max-width: 1280px;
+		height: auto;
+		max-height: 309px;
+	}
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */
+	.dimeglio-icon {
+		float: left;
+		display: inline-block;
+		background-image: url('../media/homepageMedia/dimeglio.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 22%;
+		height: 108px;
+		margin: 1.8% 0% 0% 0%;
+		padding: 0%;
+	}
+
+	.social-blog-container {
+		float: left;
+		width: 20%;
+		height: 110px;
+		display: inline-block;
+		margin: 1.8% 1% 0% 5%;
+	}
+
+	.sandy-stories-icon {
+		display: inline-block;
+		width: 90%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/10.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 0% 5% 0% 5%;
+	}
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */
+	#fbIcon {
+		display: inline-block;
+		width: 15%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/11.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 2% 0% 27%;
+		/* padding: 1% 1% 0% 5%; */ 
+	}
+	
+	#twitterIcon {
+		display: inline-block;
+		width: 15%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/12.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+																				/* 1280 x 1024 */
+																				/* 1280 x 800 */
+	#bloggerIcon {
+		display: inline-block;
+		width: 15%;
+		height: 60px;
+		background-image: url('../media/homepageMedia/13.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1% 1% 0% 0%;
+	}
+
+	.join-us-ad {
+		float: left;
+		display: inline-block;
+		width: 22%;
+		height: 114px;
+		background-image: url('../media/homepageMedia/17.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 1.8% 3% 0% 7%;	
+		-webkit-margin-before: 1.2%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%;	
+
+	}
+
+	#cornerAd {
+		float: right;
+		display: inline-block;
+		width: 19%;
+		height: 104px;
+		border-style: solid;
+		background-color: white;
+		margin: 1.9% 0% 0% 0%;
+		padding: 0%;
+		/*-webkit-margin-before: 0%;
+		-webkit-margin-after: 0%;
+		-webkit-padding-before: 0%;
+		-webkit-padding-after: 0%; */
+	}
+}
+
+/* =================================================================================================================*/
+
+
+																				/* 1024 x 768 */
+
+
+@media screen and (min-width: 1022px) and (max-width: 1278px) {
+
+
+}
+
+
+/* =================================================================================================================*/
+
+
+																				/* 768 x 1024 */
+
+
+@media screen and (min-width: 766px) and (max-width: 1021px) {
+
+
+}
+
+
+
+/* =================================================================================================================*/
+
+
+																				/* 568 x 320 */
+
+
+@media screen and (min-width: 566px) and (max-width: 765px) {
+
+
+}
+
+
+
+/* =================================================================================================================*/
+
+
+																				/* 480 x 320 */
+
+
+@media screen and (min-width: 478px) and (max-width: 565px) {
+
+
+}
+
+
+/* =================================================================================================================*/
+
+
+																				/* 320 x 480 */
+
+
+@media screen and (min-width: 150px) and (max-width: 477px) {
+
+
+}
