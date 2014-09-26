@@ -8,10 +8,13 @@
 
 <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
 <!-- <link rel="stylesheet" type="text/css" href="js/tooltipster-master/css/tooltipster.css" /> -->
-<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<!-- <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet"> -->
 <link rel="stylesheet" href="styles/buttons.css">
 <link rel="stylesheet" href="styles/indexMediaQueryBeta.css">
 
+
+	<script type="text/javascript" src="engine1/jquery.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/jquery-1.11.0.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery.js"></script> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
@@ -62,6 +65,9 @@ $(document).ready(function($) {
 
 /* For these animations, add 	scene.addIndicators(); 	at end of var scene to debug */
 
+
+
+/*
 $(document).ready(function($) {
 	// build tween 		
 	var tween = TweenLite.from(".tools-proficiencies", 0.9, {backgroundColor: "white"});
@@ -83,7 +89,7 @@ $(document).ready(function($) {
 		.addTo(controller);
 });	
 
-/* to bring back movement of icons, include this after opacity -> right:"4%" left:"4%" , respectively */
+/* to bring back movement of icons, include this after opacity -> right:"4%" left:"4%" , respectively 
 $(document).ready(function($) {
 	// build tween 		
 	var tween = TweenLite.from(rightIcons, 1, {opacity: 0});
@@ -93,6 +99,7 @@ $(document).ready(function($) {
 		.setTween(tween)
 		.addTo(controller);
 });
+*/
 
 // Changes fixed pic from group shot to mica shot
 
@@ -139,7 +146,7 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 	// build tween
-	var tween = TweenLite.from(portfolioDiv, 1, {marginTop: 500});
+	var tween = TweenLite.from(preziDiv, 1, {marginTop: 500});
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#galleryDivMarginTrigger", duration: 90})
 		.setTween(tween)
@@ -157,7 +164,7 @@ $(document).ready(function($) {
 }); 
 
 
-
+/*
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenLite.to(indesignBrochure, 0.00001, {backgroundImage: "url('mediaFolder/indexRemakeMedia/indesign_elevatorB480.png')"});
@@ -165,7 +172,7 @@ $(document).ready(function($) {
 	var scene = new ScrollScene({triggerElement: "#changeIndesignTrigger"})
 		.setTween(tween)
 		.addTo(controller);	
-}); 
+}); */
 
 
 </script>
@@ -180,27 +187,34 @@ body {
 	width: 100%;
 }
 
+.skype-button > a {
+	background-color: black;
+}
+
+.skype-button {
+	background-color: black;
+}
 
 </style>
 </head>
 <body>
 
 <!-- Triggers -->
-<div id="toolsTrigger" class="trigger-class">Tools trigger</div>
-<div id="iconTrigger1" class="trigger-class">Icon trigger</div>
+<!-- <div id="toolsTrigger" class="trigger-class">Tools trigger</div>
+<div id="iconTrigger1" class="trigger-class">Icon trigger</div> -->
 <div id="synerginTrigger" class="trigger-class">Synergin trigger</div>
 <div id="galleryDivMarginTrigger" class="trigger-class">galleryDivMargin Trigger</div>
 <div id="elevatorTriggerHeight" class="trigger-class">Elevator trigger Height</div>
 <div id="elevatorTriggerContent" class="trigger-class">Elevator trigger Content</div>
-<div id="changeIndesignTrigger" class="trigger-class">changeIndesign trigger</div>
-<div id="changeFixedpicTrigger" class="trigger-class">changeFixedpic trigger</div>
+<!-- <div id="changeIndesignTrigger" class="trigger-class">changeIndesign trigger</div>
+<div id="changeFixedpicTrigger" class="trigger-class">changeFixedpic trigger</div> -->
 
 
 <!-- Fixed Synergin pic for parallax, z-index: -1 -->
 <div id="synerginFixedPic">
-	<p id="teamCaption">Hi there, I'm available for freelance web development projects and I can work solo or on a team remotely. Here's me and the Synergin team, a non-profit social extrepreneurship formed to serve the Athens, Greece population.</p>
+	<p id="teamCaption">Hi and welcome, I'm Michel and I'm available for freelance web development projects, working solo or on a team remotely. Here's me and the Synergin team, a non-profit social extrepreneurship formed to serve the Athens, Greece population.</p>
 	<p id="micaCaption">Hey, that's me!</p>
-	<p class="syn-caption">Hi there, I'm available for freelance web development projects and I work solo or on a team. Here's me and the Synergin team, a non-profit social extrepreneurship formed.</p>
+	<p class="syn-caption">Hi and welcome, I'm Michel and I'm available for freelance web development projects, working solo or on a team. Here's me and the Synergin team, a non-profit social extrepreneurship formed to serve the Athens, Greece population.</p>
 	<div class="mobile-syn-pic"></div>
 </div>
 
@@ -210,16 +224,7 @@ body {
 
 <!-- main container -->
 
-<span style="display: inline-block;" class="button-dropdown skype-button" data-buttons="dropdown">
 
-	<a href="#" class="button button-rounded button-flat-action">Have a question? I'm on Skype currently at your convenience -Michel</a>
-		<ul class="button-dropdown-menu-above">
-		   	<li>Skype Name:</li>
-		   	<li>michel.andrei.w</li>
-		   	<li>Or email me for a quick response at:</li>
-		   	<li>wilbrinkm1@gmail.com</li>
-		</ul>
-</span>
 
 <div class="landing-div">
 
@@ -231,7 +236,7 @@ body {
 	<p class="mw-intro">Hi and welcome. I'm Michel and I use a variety of web tools and programming proficiencies to breathe life into your designs. Promote yourself, your business, or your craft with a creative, professional website.
 	</p>
 	<div class="button-container">
-	   	<a href="https://github.com/wilbrinkm1" class="button glow git-button"><i class="fa fa-github"></i>My Github</a>
+	   	<a href="https://github.com/wilbrinkm1" class="button glow git-button">My Github</a>
 		<span style="display: inline-block;" class="button-dropdown glow portfolio-button" data-buttons="dropdown">
 		   <a href="#" class="button glow">Portfolio</a>
 		   <ul class="button-dropdown-menu-above" style="display: none;">
@@ -248,7 +253,16 @@ body {
 		</span>
 	    <a href="http://www.linkedin.com/in/michelwilbrink" class="button glow linkedin-button">Linked In</a>
 	</div>
-	<img src="mediaFolder/indexRemakeMedia/downArrows.jpg" id="scrollArrow"/>
+	<img src="mediaFolder/indexRemakeMedia/new_down_arrow.png" id="scrollArrow"/>
+	<span class="button-dropdown skype-button" data-buttons="dropdown">
+    <a href="#" class="button button-rounded button-flat-action">Have a question? I'm currently on Skype  at your convenience -Michel</a>
+ 	<ul class="button-dropdown-menu-above">
+	   	<li>Skype Name:</li>
+	   	<li>michel.andrei.w</li>
+	   	<li>Or email me for a quick response at:</li>
+	   	<li>wilbrinkm1@gmail.com</li>
+	</ul>
+	</span>
 </div>
 
 
@@ -273,9 +287,12 @@ body {
 		<p id="ngwp">AngularJS</p>
 		<p id="ngwpsub">(Two Way Binding)</p>
 		<p>Trello</p>
-		<p>Wowslider</p>
-	</div>
+		<p >Wowslider</p>
+		<p style="display: block; width: 100%; color: white; font-size: margin: 0% 0% 1% 0%;">Currently training in:</p>
+		<p style="display: block; width: 100%; color: white; font-size: margin: 0% 0% 0% 0%;">MongoDB, ExpressJS, AngularJS, Node.js</p>
+		</div>
 	<div id="rightIcons"></div>
+	
 </div>
 
 <div id="elevatorDiv">
@@ -302,6 +319,7 @@ body {
     </div>
 </div>
 
+<!--
 <div id="portfolioDiv">
 	<div id="galleryDiv" class="fotorama" data-nav="thumbs">
 	  <img src="mediaFolder/indexRemakeMedia/color_run.jpg"/>
@@ -313,13 +331,12 @@ body {
 	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/TriFold1.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/Invite.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/box_layout_indesign.jpg"/>
 	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl.jpg"/>
 	</div>
-</div>
+</div> -->
 
-<div class="prezi-div">
+<div id="preziDiv" class="prezi-div">
 	<iframe class="embedded-prezi" src="http://prezi.com/embed/qowfhslqaxvo/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 </div>
 
@@ -330,7 +347,7 @@ body {
 	    <div class="elevator-third">
 	        <div class="elevator-pic ep-trello"></div>
 	        <h4 class="elevator-title">Project Management</h4>        
-	        <p class="elevator-text">Collaborating through Skype, Trello, and other web-based resources gives us a digital workspace to keep all our near and long term goals in focus.
+	        <p class="elevator-text">Collaborating through Skype screenshare, Trello PM, and other web-based resources gives us a digital workspace to keep all of our near and long term goals in focus.
 	        </p>
 	    </div>
 	    <div class="elevator-third">
@@ -342,15 +359,81 @@ body {
 	    <div class="elevator-third">
 	        <div class="elevator-pic ep-html-wordpress"></div>
 	        <h4 class="elevator-title">Flexible coding</h4>
-	        <p class="elevator-text">Being able to use Wordpress or code in pure HTML + CSS + Javascript provides a flexible approach to the project's needs and budget. See the below Prezi Presentation for more.
+	        <p class="elevator-text">Being able to use Wordpress or code in pure HTML + CSS + Javascript provides a flexible approach to the project's needs and budget. See the above Prezi Presentation for more.
 	        </p>
 	    </div>
     </div>
 </div>
 
+
+
+
+
+
+<div style="background-color: black; height: 100%;">
+<p id="portfolioDiv">Portfolio</p>
+<div id="wowslider-container1">
+	<div class="ws_images">
+	<ul>
+		<li><img src="data1/images/color_run.jpg" alt="color_run" title="Photography + Photoshop" id="wows1_0"/>Hi-definition Photography available</li>
+		<li><img src="data1/images/responsive_example.jpg" alt="Responsive Design" title="responsive_example" id="wows1_1"/>Responsive design to reach the most users</li>
+		<li><img src="data1/images/cube_prezi.jpg" alt="cube_prezi" title="Prezi Presentation" id="wows1_2"/>Prezi created quickly</li>
+		<li><img src="data1/images/marketing_campaign.jpg" alt="Marketing Campaign" title="marketing_campaign" id="wows1_3"/>Marketing materials created with Photoshop and InDesign</li>
+		<li><img src="data1/images/tattoo_girl3.jpg" alt="tattoo_girl3" title="Photography + Photoshop" id="wows1_4"/>Photoshop work available</li>
+		<li><img src="data1/images/indesign_elevator.png" alt="indesign_elevator" title="indesign_elevator" id="wows1_5"/>InDesign work welcome</li>
+		<li><img src="data1/images/carribean_week.jpg" alt="carribean_week" title="carribean_week" id="wows1_6"/>Marketing flyers</li>
+		<li><img src="data1/images/labels.jpg" alt="Labels" title="Labels" id="wows1_7"/>Any InDesign applications</li>
+	</ul>
+	</div>
+	<div class="ws_thumbs">
+		<div>
+			<a href="#" title="color_run"><img src="data1/tooltips/color_run.jpg" alt="" /></a>
+			<a href="#" title="responsive_example"><img src="data1/tooltips/responsive_example.jpg" alt="" /></a>
+			<a href="#" title="cube_prezi"><img src="data1/tooltips/cube_prezi.jpg" alt="" /></a>
+			<a href="#" title="marketing_campaign"><img src="data1/tooltips/marketing_campaign.jpg" alt="" /></a>
+			<a href="#" title="tattoo_girl3"><img src="data1/tooltips/tattoo_girl3.jpg" alt="" /></a>
+			<a href="#" title="indesign_elevator"><img src="data1/tooltips/indesign_elevator.png" alt="" /></a>
+			<a href="#" title="carribean_week"><img src="data1/tooltips/carribean_week.jpg" alt="" /></a>
+			<a href="#" title="Labels"><img src="data1/tooltips/labels.jpg" alt="" /></a>
+		</div>
+	</div>
+<!-- Generated by WOWSlider.com v5.6 -->
+	<div class="ws_shadow"></div>
+</div>	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+</div>
+
+
+
+
+
+
+
+
+
+<!--<div id="portfolioDiv">
+	<div id="galleryDiv" class="fotorama" data-nav="thumbs">
+	  <img src="mediaFolder/indexRemakeMedia/color_run.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl3.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/cube_prezi.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/carribean_week.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorA.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/TriFold1.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/box_layout_indesign.jpg"/>
+	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl.jpg"/>
+	</div>
+</div>
+
+
+
+
 <div class="prezi-div">
 	<iframe class="embedded-prezi" src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
-</div> 
+</div>  -->
 
 </body>
 </html>

@@ -855,7 +855,7 @@ button.button:disabled {
 }
 /* line 330, ../scss/partials/_buttons.scss */
 .button-flat-action:hover, .button-flat-action:focus {
-  background: #8fcf00;
+  background: #000000;
 }
 /* line 333, ../scss/partials/_buttons.scss */
 .button-flat-action:active {
@@ -863,7 +863,7 @@ button.button:disabled {
   -moz-transition-duration: 0s;
   -o-transition-duration: 0s;
   transition-duration: 0s;
-  background: #76a312;
+  background: #000000;
   color: #486900;
 }
 /* line 338, ../scss/partials/_buttons.scss */
