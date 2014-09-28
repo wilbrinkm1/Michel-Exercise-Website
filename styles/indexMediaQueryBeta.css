@@ -6,7 +6,7 @@
 																				/* 1920px*/
 
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2020px) {
 
 
 	body {
@@ -450,6 +450,7 @@
 		margin: 0%; 
 		font-size: 2.6em;
 		padding: 2% 0%;
+		background-color: #000000;
 	/*	margin: 0% 0% 0% 0%;
 		padding: 0% 12.5% 0% 12.5%;
 		width: 75%;
@@ -542,12 +543,12 @@
 	}
 
 	#wowslider-container1 {
-		width: 100%;
+		width: 1920px;
 		background-color: #000000;
 	}
 
 	.ws_thumbs {
-		width: 100%;
+	/*	width: 100%; */
 		background-color: #000000;
 	}
 }
@@ -829,6 +830,10 @@
 	.skype-button > ul > li {
 		font-size: 1.1em;
 	}
+
+	#wowslider-container1 {
+		width: 1680px;
+	}
 																					/* 1680 x 1050px */
 
 }
@@ -1108,6 +1113,10 @@
 	}
 
 	.skype-button > ul > li {
+	}
+
+	#wowslider-container1 {
+		width: 1600px;
 	}
 }
 
@@ -1413,6 +1422,10 @@
 
 	.skype-button > ul > li {
 	}
+
+	#wowslider-container1 {
+		width: 1440px;
+	}
 }
 
 
@@ -1717,6 +1730,10 @@
 	.skype-button > ul > li {
 	
 	}
+
+	#wowslider-container1 {
+		width: 1366px;
+	}
 }
 
 
@@ -1800,6 +1817,7 @@
 	}
 
 	.trigger-class {
+
 		z-index: -2;
 		height: 20px;
 		width: 60px;
@@ -2182,7 +2200,11 @@
 	.skype-button > ul > li {
 	
 	}
-																									/* 1280 px */
+
+	#wowslider-container1 {
+		width: 1280px;
+	}
+																										/* 1280 px */
 }
 
 
@@ -2227,6 +2249,7 @@
 
 @media screen and (max-width: 1024px) {
  
+
 	#toolsTrigger {
 		display: none;
 	}
@@ -2236,7 +2259,7 @@
 	}
 																										/* 1024px */
 	#synerginTrigger {
-		display: none;
+		margin-top: 220%;
 	}
 
 	#galleryDivMarginTrigger {
@@ -2258,10 +2281,17 @@
 	#changeFixedpicTrigger {
 		display: none;
 	}
+
+	.trigger-class {
+
+	}
 	
 	#synerginFixedPic {
-	/*	display: block;
-		width: 100%;
+		top:0px;
+		margin-top: 0%;
+		padding-top: 0%;
+		display: block;
+	/*	width: 100%;
 		height: 86%; 
 		z-index: -1;
 		overflow-x: hidden;
@@ -2273,8 +2303,8 @@
 	}
 
 	#teamCaption {
-	/*	display: none;
-		color: white;
+		display: block;
+	/*	color: white;
 		margin: 0% 0% 0% 0%;
 		width: 100%;	
 		height: auto;
@@ -2302,7 +2332,7 @@
 	}
 
 	.syn-caption {
-	/*	display: block;
+	/*	display: none;
 		color: white;
 		margin: 54% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
@@ -2316,7 +2346,7 @@
 	}
 
 	.mobile-syn-pic {
-		display: block;
+	/*	display: none;
 		width: 100%;
 		height: 100%; 
 		z-index: -1;
@@ -2325,7 +2355,7 @@
 		overflow-x: hidden;
 		margin: 0% 0% 0% 0%;
 		padding: 0%;
-		position: fixed;
+		position: fixed; */
 	}
 
 	.landing-div {
@@ -2463,8 +2493,8 @@
 	.tools-header {
 	/*	text-align: center; 
 		width: 100%; 
-		margin: 1% 0% 0% 0%; 
-		font-size: 2.1em; */
+		margin: 1% 0% 0% 0%; */
+		font-size: 3em; 
 	}
 
 	.tools-list {
@@ -2640,6 +2670,7 @@
 	}
 
 	.skype-button {
+		width: 94.6%;
 	/*	margin: 51.85% 0% 0% 0%; */
 	}
 
@@ -2650,6 +2681,10 @@
 	}
 
 	.skype-button > ul > li {
+	}
+
+	#wowslider-container1 {
+		width: 1024px;
 	}
 																										/* 1024px */
 
@@ -2691,38 +2726,46 @@
 
 	#toolsTrigger {
 		margin-top: 57.885%; /* 800px */
+		display: none;
 	}
 
 	#iconTrigger1 {
 		margin-top: 64%; /* 900px; */
+		display: none;
 	}
 
 	#synerginTrigger {
 		margin-top: 230%; /* 2900px; */
+		display: none;
 	}
 
 	#galleryDivMarginTrigger {
 		margin-top: 290%; /* 3100px; */
+		display: none;
 	}
 
 	#elevatorTriggerHeight{
 		margin-top: 265%;
+		display: none;
 	}
 
 	#elevatorTriggerContent{
 		margin-top: 278%;
+		display: none;
 	}
 
 	#changeIndesignTrigger {
 		margin-top: 287.5%;
+		display: none;
 	}
 
 	#changeFixedpicTrigger {
 		margin-top: 325%;
+		display: none;
 	}
 
-		#toolsTrigger {
-
+	#toolsTrigger {
+		display: none;
 	}
 
 	#iconTrigger1 {
@@ -2950,7 +2993,9 @@
 	
 	}
 
-
+	#wowslider-container1 {
+		width: 966px;
+	}
 }
 
 
@@ -3037,12 +3082,12 @@
 		top: 0px;
 		left: 0px;
 		margin: 0% 0% 0% 0%;
-		padding: 20% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
 		position: fixed;
 		/*  background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
-		background-image: url('../mediaFolder/indexRemakeMedia/justmica320.jpg');
+		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366.jpg');
 		background-repeat: no-repeat;
-		background-size: 100%
+		background-size: 100%;
 	}
 
 	#teamCaption {
@@ -3296,7 +3341,7 @@
 		background-color: white;
 		position: relative;
 		width: 100%; 
-		margin: 200% 0% 0% 0%;
+		margin: 180% 0% 0% 0%;
 		height: 405px;
 	/*	height: 100%; */
 	}
@@ -3423,6 +3468,10 @@
 
 	.skype-button > ul > li {
 	}
+
+	#wowslider-container1 {
+		width: 768px;
+	}
 }
 
 
@@ -3431,14 +3480,80 @@
 
 
 
+/* =================================================================================================================*/
+
+
+
+/*
+
+																640 x 360	HTC One X Landscape
+																640 x 360	HTC EVO LTE/3D Landscape
+																640 x 360	HTC Sensation Landscape
+																640 x 384	LG Optimus G Landscape
+																640 x 400	Samsung Note 1 
+																640 x 360	Samsung Note 2
+
+																640 x 360	Samsung Galaxy S 3/4 Galaxy Nexus Landscape
+																640 x 360	Samsung Galaxy Nexus Landscape
+															 	640 x 384	Blackberry Z10 Landscape 
+																640 x 360	Blackberry Z30 Landscape 
+																640 x 384	Google Nexus 4 Landscape 
+																640 x 360	Google Nexus 5 Landscape 
+																640 x 360	Nokia C5/C6/C7/N97/N8/X7 Landscape
+																640 x 360	Sony Xperia S/Ion Landscape
+
+	
+																*/
+
+
+
+@media screen and (max-width: 640px) {
+
+
+	.mw-name {
+		color: red;
+	}
+
+	#teamCaption {
+		display: block;
+		color: white;
+		width: 50%;
+		margin: 60% 20% 0% 20%;
+		height: 500px;
+		text-align: center;
+		background-color: black;
+		font-size: 2em;
+		z-index: -1;
+		position: absolute;
+		opacity: 0.7;
+	}
+
+	#micaCaption {
+
+	}
+
+	.syn-caption {
+		display: none;
+		color: white;
+		margin: 50% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		width: 100%;	
+		text-align: center;
+		background-color: black;
+		font-size: 1.6em;
+		z-index: -1;
+		opacity: 1;	
+	}
+
+	#wowslider-container1 {
+		width: 640px;
+	}
 
 
 
 
 
-
-
-
+}
 
 
 
@@ -3933,6 +4048,10 @@
 	.skype-button > ul > li {
 	
 	}
+
+	#wowslider-container1 {
+		width: 568px;
+	}
 }
 
 
@@ -4413,6 +4532,10 @@
 	.skype-button > ul > li {
 	
 	}
+
+	#wowslider-container1 {
+		width: 480px;
+	}
 }
 
 
@@ -4512,9 +4635,9 @@
 		padding: 0%;
 		position: fixed;
 		/*  background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
-		background-image: url('../mediaFolder/indexRemakeMedia/justmica320.jpg');
+		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366.jpg');
 		background-repeat: no-repeat;
-		background-size: 100%
+		background-size: 100%;
 	}
 
 	#teamCaption {
@@ -4879,4 +5002,9 @@
 	.skype-button > ul > li {
 	
 	}
+
+	#wowslider-container1 {
+		width: 320px;
+	}
+
 }
