@@ -2145,7 +2145,6 @@
 	}
 																									/* 1280 px */
 	.elevator-text {
-		font-size: 0.9em;
 	/*	text-align: center;
 	    font-size: 1.2em;
 	    display: block;
@@ -3121,7 +3120,7 @@
 	.syn-caption {
 		display: block;
 		color: white;
-		margin: 35% 0% 0% 0%;
+		margin: 50% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		width: 100%;	
 		text-align: center;
@@ -3990,7 +3989,7 @@
 
 	.syn-caption {
 		width: 90%;
-		font-size: 0.65em;
+		font-size: 0.85em;
 		height: auto;
 		display: block;
 		background-color: black;
