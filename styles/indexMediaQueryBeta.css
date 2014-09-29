@@ -4025,8 +4025,10 @@
 	}
 
 	.syn-caption {
+		z-index: -1;
 		width: 90%;
 		font-size: 0.95em;
+		height: auto;
 		display: block;
 		background-color: black;
 		padding: 0% 5%;
@@ -4614,10 +4616,10 @@
 	}
 
 	.syn-caption {
-		display: block;
-		background-color: black;
 		font-size: 1em;
 	/*	display: block;
+		background-color: black;	
+		display: block;
 		color: white;
 		margin: 50% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
@@ -4631,11 +4633,10 @@
 
 	.mobile-syn-pic {
 
-		padding: 0%;
-		background-color: black; 
+	/*	background-color: black; 
 		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
 		display: block;
-	/*	width: 100%;
+		width: 100%;
 		height: 100%; 
 		z-index: -1;
 		overflow-x: hidden;
@@ -4791,6 +4792,7 @@
 		height: auto;
 		margin-top: 0%;
 		top: 0%; 
+		margin: 50% 0% 0% 0%;
 		padding: 5% 5% 5% 5%;
 		font-size: 1em;
 	/*	width: 100%;
