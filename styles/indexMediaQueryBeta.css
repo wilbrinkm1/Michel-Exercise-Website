@@ -4027,7 +4027,8 @@
 	.syn-caption {
 		z-index: -1;
 		width: 90%;
-		font-size: 0.75em;
+		color: red;
+		font-size: 0.55em;
 		height: auto;
 		display: block;
 		background-color: black;
@@ -4616,7 +4617,6 @@
 	}
 
 	.syn-caption {
-		font-size: 0.8em;
 	/*	display: block;
 		background-color: black;	
 		display: block;
