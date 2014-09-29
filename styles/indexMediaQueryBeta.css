@@ -6,7 +6,7 @@
 																				/* 1920px*/
 
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1924px) {
 
 
 	body {
@@ -70,7 +70,7 @@
 		margin: 0% 0% 0% 0%;
 		padding: 0%;
 		position: fixed;
-		/*  background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
+	/*  background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
 		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366.jpg');
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -2635,10 +2635,10 @@
 	}
 
 	#portfolioDiv {
-		margin: 0% 0% 0% 0%;
+	/*	margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		width: 100%;
-		background-color: black;
+		background-color: black; */
 	}
 																										/* 1024px */
 	#galleryDiv {
@@ -2692,7 +2692,10 @@
 	}
 
 	#wowslider-container1 {
-		width: 1024px;
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		margin: 0.01% 0% 0% 0%;
 	}
 																										/* 1024px */
 
