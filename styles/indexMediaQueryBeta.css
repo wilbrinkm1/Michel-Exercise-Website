@@ -3988,6 +3988,7 @@
 	}
 
 	.syn-caption {
+		float: left;
 		width: 90%;
 		font-size: 0.85em;
 		height: auto;
@@ -4012,6 +4013,7 @@
 	}
 
 	.mobile-syn-pic {
+		float: left;
 		top: -35px;
 		margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
@@ -4583,6 +4585,7 @@
 		background-color: white; */
 	}
 }
+
 
 
 
