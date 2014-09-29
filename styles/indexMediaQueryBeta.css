@@ -3120,7 +3120,7 @@
 	.syn-caption {
 		display: block;
 		color: white;
-		margin: 50% 0% 0% 0%;
+		margin: 35% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		width: 100%;	
 		text-align: center;
@@ -3988,9 +3988,8 @@
 	}
 
 	.syn-caption {
-		float: left;
 		width: 90%;
-		font-size: 0.85em;
+		font-size: 0.65em;
 		height: auto;
 		display: block;
 		background-color: black;
@@ -4013,7 +4012,6 @@
 	}
 
 	.mobile-syn-pic {
-		float: left;
 		top: -35px;
 		margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
