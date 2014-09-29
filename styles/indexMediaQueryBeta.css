@@ -3578,6 +3578,1008 @@
 
 
 
+/* =================================================================================================================*/
+
+
+
+
+																				/* 568px */
+
+@media screen and (max-width: 568px) {
+
+	#toolsTrigger {
+		display: none;
+	}
+
+	#iconTrigger1 {
+		display: none;
+	}
+																										/* 568px */
+	#synerginTrigger {
+		display: none;
+	}
+
+	#galleryDivMarginTrigger {
+		display: none;
+	}
+
+	#elevatorTriggerHeight{
+		display: none;
+	}
+																										/* 568px */
+	#elevatorTriggerContent{
+		display: none;
+	}
+
+	#changeIndesignTrigger {
+		display: none;
+	}
+
+	#changeFixedpicTrigger {
+		display: none;
+	}
+																										/* 568px */
+	
+
+
+	.landing-div {
+	/*	width: 100%;
+		display: block;
+		background-color: white; */
+	}
+																										/* 568px */
+	.mw-name {
+
+	}
+
+	.job-title {
+		font-size: 0.8em;
+	/*	font-style: italic;
+		font-family: 'Alegreya Sans', sans-serif;
+		display: block;
+		text-align: center;
+		font-size: 0.8em;
+		margin: 5px 23% 15px 23%;	*/
+	}
+
+	#javascriptLogo {
+		background-image: url('../mediaFolder/indexRemakeMedia/javascriptLogo110.png');
+		height: 65px;
+		width: 10.6%;
+		display: inline-block;
+		margin: 0% 1% 0% 33%;	
+		float: left;
+		opacity: 1;
+	}
+																										/* 568px */
+	#htmlLogo {
+		background-image: url('../mediaFolder/indexRemakeMedia/htmlLogo110.png');
+		height: 65px;
+		display: inline-block;
+		width: 9.5%;
+		float: left;
+		opacity: 1;
+		margin: 0% 1% 0% 1%;
+	}
+
+	#cssLogo {
+		background-image: url('../mediaFolder/indexRemakeMedia/cssLogo110.png');
+		display: inline-block;
+		height: 65px;
+		width: 9.5%;
+		float: left;
+		opacity: 1;
+		margin: 0% 24% 0% 1.5%;
+	}
+																										/* 568px */
+	.mw-intro {
+	}
+
+	.button-container {
+
+	/*	display: block;
+		width: 60%;
+		margin: 0% 20% 0% 20%;
+		padding-bottom: 0% 0% 0% 0%; */
+	}
+
+	.git-button {
+		width: 19%;
+		margin-left: 16.1%;
+		margin-top: 4.1%;
+	/*	display: block;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
+	}
+																										/* 568px */
+	.portfolio-button {
+		width: 19%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 4.1%;
+	/*	display: block;
+		width: 100%;
+		margin: 7% 0% 7% 0%;
+		padding: 0% 0% 0% 0%;	*/
+	}
+
+	.button-container > span {
+	/*	width: 100%; */
+	}
+
+	.button-container > span > a {
+	/*	width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
+	}
+
+	.linkedin-button {
+		width: 19%;
+		margin-top: 4.1%;
+	/*	display: block;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
+	}
+																										/* 568px */
+	#scrollArrow {
+	/*	width: 14%;
+		margin: 2% 43% 2% 43%; */
+	}
+
+	.tools-proficiencies {
+		height: 755px;
+	}
+
+	.tools-header {
+	/*	font-size: 1.2em; */
+	}
+
+	.tools-list {
+	/*	width: 30%;
+		display: inline-block;
+		padding-top: 7%; */
+	}
+																										/* 568px */
+	.tools-list > p {
+	/*	width: 100%;
+		margin: 4% 0% 4% 0%; */
+		font-size: 0.7em;
+	}
+
+	#leftIcons {
+	/*	
+		height: 85%;
+		max-height: 85%; */
+	}
+
+	#rightIcons {
+	/*	width: 32%;
+		height: 85%; /* 758px; 
+		max-height: 85%;*/
+	}
+																										/* 568px */
+	#ngwp {
+	/*	margin: 0% 0% 0% 0%; 
+		-webkit-margin-after: 0.02%; */
+		font-size: 0.7em; 
+	}
+
+	#ngwpsub {
+		font-size: 0.5em; 
+	/*	font-style: italic; 
+		margin: 0% 0% 1.55% 0%; */
+	}
+
+	#elevatorDiv { 
+		height: 299px;
+		margin: 205% 0% 0% 0%;
+	/*	background-color: white;
+		position: relative;
+		width: 100%; 
+		margin: 300% 0% 0% 0%;
+		height: 100%; */
+	}
+																										/* 568px */
+	.elevator-div { 
+		height: auto;
+	/*	background-color: white;
+		width: 100%; 
+		margin: 0% 0% 0% 0%;
+		height: 100%;
+		padding: 0% 0% 0% 0%; */
+	}
+
+	.elevatorPitch {
+	/*	display: inline-block;
+		margin: 0%;
+		padding: 0%;
+		width: 100%;
+		height: auto; */
+	}
+
+	.br {
+		display: block;
+	}
+
+	.elevator-third {	
+		width: 32.85%;
+	}
+
+	.elevator-pic {
+	/*	border-style: none;
+		display: block;
+	    width: 70%;
+	    margin: 2% 15% 2% 15%;
+		background-color:#cccccc; */
+	}
+
+	.ep-photoshop {
+		background-image: url('../mediaFolder/indexRemakeMedia/photoshop_mica568.png');
+		height: 74px;
+	}
+																										/* 568px */
+	.ep-prezi {
+		background-image: url('../mediaFolder/indexRemakeMedia/cube_prezi568.png');
+		height: 74px;	
+	}
+
+	#indesignBrochure {
+		display: block;
+		height: 74px;
+	}
+
+	.elevator-title {
+		text-align: center;
+		display: block;
+		margin: 1% 0% 2% 0%;
+		padding: 0% auto 0% auto;
+		font-size: 1em;
+		width: 100%;
+	}
+	 																									/* 568px */        
+	.elevator-text {
+		text-align: justify;
+	    font-size: 0.75em;
+	    display: block;
+	    width: 80%;
+	    height: auto;
+	    margin: 0% 0% 7% 0%;
+	    padding: 0% 10% 0% 10%;
+	}
+
+	#portfolioDiv {
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		width: 100%;
+		background-color: black;
+	}
+
+	#galleryDiv {
+		display: inline-block;
+		background-color: black;
+		width: 100%;
+		padding: 0% 0% 0% 0%;
+		margin: 0% 0% 0% 0%;
+	}
+																										/* 568px */
+	.prezi-div {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: url('../mediaFolder/indexRemakeMedia/big-fish-in-the-blue-ocean568.jpg');
+		padding: 0%;
+		margin-top: 0%;	
+	}
+
+	.embedded-prezi {
+		display: block;
+		width: 70%;
+		height: 140px;
+		padding: 3% 15% 3% 15%;
+		margin: 0% 0% 0% 0%;
+	}
+
+	.ep-trello {
+		background-image: url('../mediaFolder/indexRemakeMedia/trello568.png');
+		height: 74px;	
+	}
+
+	.ep-mica-gamma {
+		height: 74px;
+	}
+																										/* 568px */
+	.ep-html-wordpress {
+		background-image: url('../mediaFolder/indexRemakeMedia/html-vs-wordpress568.png');
+		height: 74px;
+	}
+
+	.skype-button {
+		width: 91.1%;
+		margin-top: 1%;
+	/*	margin: 51.85% 0% 0% 0%; */
+	}
+
+	.skype-button > a {
+		font-size: 0.83em;
+	}
+
+	.skype-button > ul {
+	}
+
+	.skype-button > ul > li {
+	
+	}
+
+	#wowslider-container1 {
+	/*	width: 568px;
+		height: 227px; */
+	}
+
+
+
+/*
+	#synerginFixedPic {
+		display: block;
+		width: 100%;
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
+		 background-image: url('../mediaFolder/indexRemakeMedia/teamusa568.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%; 
+	}*/
+
+																										/* 568px */   
+
+	
+
+
+
+
+
+
+	/* added  to see if it works better this way */
+
+	#synerginFixedPic {
+
+		display: block;
+		color: white;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		width: 100%;	
+		text-align: center;
+		background-color: black;
+		z-index: -1;
+		opacity: 1;	
+		background-image: none;
+	/*	height: 320px;
+		padding-top: 10%;
+		display: block;
+		width: 100%;
+		height: 100%; 
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
+	}
+
+	#teamCaption {
+		display: none;
+
+	}
+
+	#micaCaption {
+		display: none;
+	}
+
+	.syn-caption {
+		z-index: -1;
+		width: 90%;
+		font-size: 0.85em;
+		height: auto;
+		display: block;
+		background-color: black;
+		padding: 0% 5%;
+		margin: 0% 0% 0% 0%;
+	/*	display: block;
+		color: white;
+		margin: 50% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		width: 100%;	
+		text-align: center;
+		background-color: black;
+		font-size: 1.6em;
+		z-index: -1;
+		opacity: 1;	*/
+	}
+
+	.mobile-syn-pic {
+		z-index: -1;
+		overflow-x: hidden;
+		top: -35px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		position: fixed;
+		background-repeat: no-repeat;
+		background-size: 100%;
+
+		width: 100%;
+		padding: 0%;
+		background-color: black; 
+		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
+		display: block;
+	/*	width: 100%;
+		height: 100%; 
+		z-index: -1;
+		overflow-x: hidden;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed; */
+	}
+
+	.landing-div {
+		background-image: url('../mediaFolder/indexRemakeMedia/blurred_colors.jpg');
+	/*	width: 100%;
+		display: block;
+		background-color: white; */
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================================================================*/
+
+
+
+
+																				/* 480px */
+
+@media screen and (max-width: 499px) {
+
+	#toolsTrigger {
+		display: none;
+	}
+
+	#iconTrigger1 {
+		display: none;
+	}
+																										/* 480px */
+	#synerginTrigger {
+		display: none;
+	}
+
+	#galleryDivMarginTrigger {
+		display: none;
+	}
+
+	#elevatorTriggerHeight{
+		display: none;
+	}
+
+	#elevatorTriggerContent{
+		display: none;
+	}
+	#changeIndesignTrigger {
+		display: none;
+	}
+
+	#changeFixedpicTrigger {
+		display: none;
+	}
+																											/* 480px */
+	#synerginFixedPic {
+	/*	display: block;
+		width: 100%;
+		height: 100%; 
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		background-image: url('../mediaFolder/indexRemakeMedia/teamusa480.jpg');
+		background-repeat: no-repeat; */
+	}
+
+	#teamCaption {
+	/*	display: none;
+		color: white;
+		margin: 0% 0% 0% 0%;
+		width: 100%;	
+		height: auto;
+		text-align: center;
+		background-color: black;
+		font-size: 2em;
+		z-index: -1;
+		position: absolute;
+		opacity: 1; */
+	}
+
+	#micaCaption {
+	/*	display: none;
+		float: right;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 70%;
+		color: white;
+		width: 100%;
+		height: auto;
+		background-color: black;
+		opacity: 1;
+		font-size: 2em;
+		z-index: -1;
+		position: absolute; */
+	}
+
+	.syn-caption {
+	/*	display: none;
+		display: block;
+		color: white;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		width: 100%;	
+		text-align: center;
+		background-color: black;
+		font-size: 1.6em;
+		z-index: -1;
+		opacity: 1;	 */
+	}
+						/* not sure why having both pics with display block shows correctly..		480px */
+	.mobile-syn-pic {
+	/*	display: none;
+		display: block;
+		width: 100%;
+		height: 100%; 
+		z-index: -1;
+		overflow-x: hidden;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		background-image: url('../mediaFolder/indexRemakeMedia/teamusa480.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%; */
+	}
+
+	.landing-div {
+	/*	width: 100%;
+		display: block;
+		background-color: white; */
+	}
+
+	.mw-name {
+	/*	display: block;
+		font-family: 'Alegreya Sans', sans-serif;
+		color: black;
+		text-align: center;
+		width: 100%;
+		font-size: 2.2em;
+		padding: 4% 0% 0% 0%;
+		margin: 0% 0% 0% 0%; */
+	}
+																										/* 480px */
+	.job-title {
+	/*	font-style: italic;
+		font-family: 'Alegreya Sans', sans-serif;
+		display: block;
+		text-align: center;
+		font-size: 0.8em;
+		margin: 5px 23% 15px 23%; */
+	}
+
+	#javascriptLogo {
+		background-image: url('../mediaFolder/indexRemakeMedia/javascriptLogo110.png');
+	/*	height: 65px;
+		width: 10.6%;
+		display: inline-block;
+		margin: 0% 1% 1% 33%;	
+		float: left;
+		opacity: 1; */
+	}
+
+	#htmlLogo {
+		background-image: url('../mediaFolder/indexRemakeMedia/htmlLogo110.png');
+	/*	height: 65px;
+		display: inline-block;
+		width: 9.5%;
+		float: left;
+		opacity: 1;
+		margin: 0% 1% 1% 1%; */
+	}
+																										/* 480px */
+	#cssLogo {
+		background-image: url('../mediaFolder/indexRemakeMedia/cssLogo110.png');
+	/*	display: inline-block;
+		height: 65px;
+		width: 9.5%;
+		float: left;
+		opacity: 1;
+		margin: 0% 24% 1% 1.5%; */
+	}
+
+	.mw-intro {
+	/*	display: block;
+		width: 80%;
+		font-size: 1.15em;
+		margin: 0.6% 10% 3% 10%;
+		padding: 0% 0% 0% 0%;
+		text-align: center; */
+	}
+																										/* 480px */
+	.button-container {
+	/*	display: block;
+		width: 60%;
+		margin: 0% 20% 0% 20%;
+		padding-bottom: 0% 0% 0% 0%; */
+	}
+
+	.git-button {
+		margin-top: 3%;
+	/*	display: block;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
+	}
+
+	.portfolio-button {
+		margin-top: 3%;
+	/*	display: block;
+		width: 100%;
+		margin: 7% 0% 7% 0%;
+		padding: 0% 0% 0% 0%;	*/
+	}
+
+	.button-container > span {
+	/*	width: 100%; */
+	}
+
+	.button-container > span > a {
+	/*	width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
+	}
+																										/* 480px */
+	.linkedin-button {
+		margin-top: 3%;
+	/*	display: block;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
+	}
+
+	#scrollArrow {
+	/*	width: 14%;
+		margin: 2% 43% 2% 43%; */
+		margin-bottom: 0%;
+	}
+
+	.tools-proficiencies {
+		height: 575px;
+	
+	}
+
+	.tools-header {
+	
+		font-size: 1.2em;	
+	}
+																										/* 480px */
+	.tools-list {
+	/*	width: 30%;
+		display: inline-block;
+		padding-top: 7%; 	*/
+	}
+
+	.tools-list > p {
+	/*	width: 100%;
+		margin: 4% 0% 4% 0%;
+		font-size: 0.9em;	*/
+		font-size: 0.5em;
+	}
+
+	#leftIcons {
+	
+	}
+
+	#rightIcons {
+
+	}
+
+	#ngwp {
+		font-size: 0.5em;
+	/*	margin: 0% 0% 0% 0%; 
+		-webkit-margin-after: 0.02%;
+		font-size: 0.9em;	*/
+
+	}
+
+	#ngwpsub {
+		font-size: 0.4em;
+	/*	font-size: 0.5em; 
+		font-style: italic; 
+		margin: 0% 0% 1.55% 0%;	*/
+	}
+																										/* 480px */
+	#elevatorDiv { 
+		height: auto;
+	/*	background-color: white;
+		position: relative;
+		width: 100%; 
+		margin: 300% 0% 0% 0%;
+		height: 100%;	*/
+	}
+
+	.elevator-third {	
+		width: 100%;
+		margin: 0%;
+	}
+
+	.elevator-div { 
+		height: auto;
+	/*	background-color: white;
+		width: 100%; 
+		margin: 0% 0% 0% 0%;
+		height: 100%;
+		padding: 0% 0% 0% 0%;	*/
+	}
+
+	.elevatorPitch {
+	/*	display: inline-block;
+		margin: 0%;
+		padding: 0%;
+		width: 100%;
+		height: auto;	*/
+	}
+
+	.br {
+	}
+																										/* 480px */
+	.elevator-pic {
+		width: 80%;
+		height: 228px;
+		margin: 2% 10% 1% 10%;
+	/*	border-style: none;
+		display: block;
+	    width: 70%;
+	    margin: 2% 15% 2% 15%;
+		background-color:#cccccc;	*/
+	}
+
+	.ep-photoshop {
+		background-image: url('../mediaFolder/indexRemakeMedia/photoshop_mica480.png');
+		height: 217px;
+	/*	height: 184px;	*/
+	}
+
+	.ep-prezi {
+		background-image: url('../mediaFolder/indexRemakeMedia/cube_prezi480.png');
+		height: 217px;
+	/*	height: 210px;	*/
+	}
+
+	#indesignBrochure {
+		width: 80%;
+		height: 217px;
+	/*	width: 70%;
+		height: 149px;
+		display: block;	*/
+	}
+																										/* 480px */
+	.elevator-title {
+		width: 100%;
+		font-size: 1.84em;
+	/*	text-align: center;
+		display: block;
+		margin: 1% 0% 2% 0%;
+		padding: 0% auto 0% auto;
+		font-size: 1.4em;
+		width: 100%;	*/
+	}
+	         
+	.elevator-text {
+		text-align: justify;
+		font-size: 1.209em;
+		width: 90%;
+		margin: 0% 0% 5% 0%;
+		padding: 0% 5%;
+	/*  font-size: 1.2em;
+	    display: block;
+	    width: 80%;
+	    height: auto;
+	    margin: 0% 0% 7% 0%;
+	    padding: 0% 10% 0% 10%;	*/
+	}
+
+	#portfolioDiv {
+	/*	margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		width: 100%;
+		background-color: black;	*/
+	}
+																										/* 480px */
+	#galleryDiv {
+	/*	display: inline-block;
+		background-color: black;
+		width: 100%;
+		padding: 0% 0% 0% 0%;	
+		margin: 0% 0% 0% 0%;	*/
+	}
+
+	.prezi-div {
+	/*	display: block;
+		width: 100%;
+		height: 100%;
+		background-image: url('../mediaFolder/indexRemakeMedia/big-fish-in-the-blue-ocean480.jpg');
+		padding: 0%;
+		margin-top: 0%;		*/
+	}
+
+	.embedded-prezi {
+	/*	display: block;
+		width: 70%;
+		height: 140px;
+		padding: 3% 15% 3% 15%;
+		margin: 0% 0% 0% 0%;	*/
+	}
+																										/* 480px */
+	.ep-trello {
+		background-image: url('../mediaFolder/indexRemakeMedia/trello480.png');
+		height: 217px;	
+	}
+
+	.ep-mica-gamma {
+		height: 187px;
+	/*	height: 220px;	*/
+	}
+																										/* 480px */
+	.ep-html-wordpress {
+		height: 217px;
+		background-image: url('../mediaFolder/indexRemakeMedia/html-vs-wordpress480.png');
+	/*	height: 201px;*/
+	}
+
+	.skype-button {
+		width: 89.74%;
+		margin-top: 6.2%;
+	/*	margin: 51.85% 0% 0% 0%; */
+	}
+
+	.skype-button > a {
+		font-size: 0.68em;
+	}
+
+	.skype-button > ul {
+	}
+
+	.skype-button > ul > li {
+	
+	}
+
+	#wowslider-container1 {
+	/*	width: 480px;
+		height: 192px; */
+	}
+
+
+
+
+
+
+
+
+
+
+
+	/* added  to see if it works better this way */
+
+	#synerginFixedPic {
+		background-image: none;
+		/*
+		
+		padding-top: 10%;
+	/*	display: block;
+		width: 100%;
+		height: 100%; 
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
+	}
+
+	#teamCaption {
+		display: none;
+	}
+
+	#micaCaption {
+		display: none;
+	}
+
+	.syn-caption {
+	/*	display: block;
+		background-color: black;	
+		display: block;
+		color: white;
+		margin: 50% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		width: 100%;	
+		text-align: center;
+		background-color: black;
+		font-size: 1.6em;
+		z-index: -1;
+		opacity: 1;	*/
+	}
+
+	.mobile-syn-pic {
+
+	/*	background-color: black; 
+		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
+		display: block;
+		width: 100%;
+		height: 100%; 
+		z-index: -1;
+		overflow-x: hidden;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed; */
+	}
+
+	.landing-div {
+		background-image: url('../mediaFolder/indexRemakeMedia/blurred_colors.jpg');
+	/*	width: 100%;
+		display: block;
+		background-color: white; */
+	}
+}
+
+
 
 
 
