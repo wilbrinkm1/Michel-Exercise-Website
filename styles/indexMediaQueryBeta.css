@@ -30,7 +30,6 @@
 	}
 
 	#galleryDivMarginTrigger {
-		display: none;
 		margin-top: 275%; /* 3100px; */
 	}
 
@@ -4122,7 +4121,7 @@
 
 																				/* 480px */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 499px) {
 
 	#toolsTrigger {
 		display: none;
@@ -4613,7 +4612,7 @@
 
 																				/* 320px */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 365px) {
 
 	.landing-page{
 
@@ -4757,6 +4756,8 @@
 	}
 
 	.mw-name {
+		font-size: 2.6em;
+		padding-top: 7%;
 	/*	display: block;
 		font-family: 'Alegreya Sans', sans-serif;
 		color: black;
@@ -4805,6 +4806,7 @@
 	}
 
 	.mw-intro {
+
 	/*	display: none;
 		width: 80%;
 		font-size: 1.15em;
