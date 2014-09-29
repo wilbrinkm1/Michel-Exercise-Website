@@ -4032,7 +4032,7 @@
 		display: block;
 		background-color: black;
 		padding: 0% 5%;
-		margin: 45% 0% 0% 0%;
+		margin: 39% 0% 0% 0%;
 	/*	display: block;
 		color: white;
 		margin: 50% 0% 0% 0%;
@@ -4759,32 +4759,10 @@
 	}
 
 	#teamCaption {
-	/*	display: none;
-		color: white;
-		margin: 0% 0% 0% 0%;
-		width: 100%;	
-		height: auto;
-		text-align: center;
-		background-color: black;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute;
-		opacity: 1;	*/
+	
 	}
 
 	#micaCaption {
-	/*	display: none;
-		float: right;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 70%;
-		color: white;
-		width: 100%;
-		height: auto;
-		background-color: black;
-		opacity: 1;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute; */
 	}
 
 	.syn-caption {
@@ -4793,7 +4771,7 @@
 		margin-top: 0%;
 		top: 0%; 
 		margin: 50% 0% 0% 0%;
-		padding: 5% 5% 5% 5%;
+		padding: 2% 5% 2% 5%;
 		font-size: 1em;
 	/*	width: 100%;
 		font-size: 1.4em;
