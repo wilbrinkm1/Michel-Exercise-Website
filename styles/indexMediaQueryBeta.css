@@ -10,10 +10,11 @@
 
 
 	body {
-		margin: 0%;
+		margin: 0%;	
 		padding: 0%;
 		overflow-x: hidden;
 	}
+
 	#toolsTrigger {
 		display: none;
 		margin-top: 57.885%; /* 800px */
@@ -818,6 +819,7 @@
 
 	.skype-button {
 		margin-top: 17.4%;
+		width: 97%;
 	}
 
 	.skype-button > a {
@@ -1105,6 +1107,7 @@
 
 	.skype-button {
 	/*	margin: 51.85% 0% 0% 0%; */
+		width: 96.8%;
 	}
 
 	.skype-button > a {
@@ -1413,6 +1416,7 @@
 
 	.skype-button {
 	/*	margin: 57.65% 0% 0% 0%; */
+		width: 96.5%;
 	}
 
 	.skype-button > a {
@@ -1471,7 +1475,8 @@
 																				/* 1360 x 768 */
 
 @media screen and (max-width: 1366px) { 
-#toolsTrigger {
+
+	#toolsTrigger {
 		margin-top: 57.885%; /* 800px */
 	}
 
@@ -1720,6 +1725,7 @@
 
 	.skype-button {
 	/*	margin: 51.15% 0% 0% 0%; */
+		width: 96.2%;
 	}
 
 	.skype-button > a {
@@ -2190,6 +2196,7 @@
 
 	.skype-button {
 	/*	margin: 51.85% 0% 0% 0%; */
+		width: 96%;
 	}
 
 	.skype-button > a {
@@ -2671,7 +2678,7 @@
 	}
 
 	.skype-button {
-		width: 94.6%;
+		width: 94.7%;
 	/*	margin: 51.85% 0% 0% 0%; */
 	}
 
@@ -2981,10 +2988,12 @@
 	}
 
 	.skype-button {
-		margin: 51.15% 0% 0% 0%;
+		width: 94.6%;
+	/*	margin: 51.15% 0% 0% 0%; */
 	}
 
 	.skype-button > a {
+		font-size: 0.9em;
 	}
 
 	.skype-button > ul {
@@ -2998,6 +3007,10 @@
 		width: 966px;
 	}
 }
+																			/* 966 x 604 	Google Nexus 7 Landscape */ 																			/* 960 x 600 	Google Nexus 7.2 Landscape */ 
+																			/* 960 x 600 	Google Nexus 7.2 Landscape */ 
+																			/* 960 x 540 	Samsung Note 3 Landscape */
+																			/* 960 x 540	Motorola Droid 3/4/Razr/Atrix 4G/2 */
 
 
 
@@ -3512,7 +3525,7 @@
 
 
 	.mw-name {
-		color: red;
+
 	}
 
 	#teamCaption {
@@ -3548,9 +3561,14 @@
 
 	#wowslider-container1 {
 		width: 640px;
+		margin-bottom: 0%;
 	}
 
-
+	.skype-button {
+		margin: 21.85% 0% 0% 0%; 
+		font-size: 1.3em;
+		width: 92.1%;
+	}
 
 
 
@@ -3662,12 +3680,12 @@
 	.syn-caption {
 		display: block;
 		color: white;
-		margin: 46% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
+		margin: 42% 0% 0% 0%;
+		padding: 2% 0% 2% 0%;
 		width: 100%;	
 		text-align: center;
 		background-color: black;
-		font-size: 1.6em;
+		font-size: 1.1em;
 		z-index: -1;
 		opacity: 1;	
 	}
@@ -3715,36 +3733,34 @@
 		background-size: 100%; */
 
 	.landing-div {
-		width: 100%;
+	/*	width: 100%;
 		display: block;
-		background-color: white;
+		background-color: white; */
 	}
 																										/* 568px */
 	.mw-name {
-		display: block;
+	/*	display: block;
 		font-family: 'Alegreya Sans', sans-serif;
-		color: black;
+		color: white;
 		text-align: center;
 		width: 100%;
-		font-size: 2.2em;
 		padding: 4% 0% 0% 0%;
-		margin: 0% 0% 0% 0%;
+		margin: 0% 0% 0% 0%; */
 	}
 
 	.job-title {
-		font-style: italic;
+		font-size: 0.8em;
+	/*	font-style: italic;
 		font-family: 'Alegreya Sans', sans-serif;
 		display: block;
 		text-align: center;
 		font-size: 0.8em;
-		margin: 5px 23% 15px 23%;
+		margin: 5px 23% 15px 23%;	*/
 	}
 
 	#javascriptLogo {
 		background-image: url('../mediaFolder/indexRemakeMedia/javascriptLogo110.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 80px;
+		height: 65px;
 		width: 10.6%;
 		display: inline-block;
 		margin: 0% 1% 0% 33%;	
@@ -3754,9 +3770,7 @@
 																										/* 568px */
 	#htmlLogo {
 		background-image: url('../mediaFolder/indexRemakeMedia/htmlLogo110.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 80px;
+		height: 65px;
 		display: inline-block;
 		width: 9.5%;
 		float: left;
@@ -3766,10 +3780,8 @@
 
 	#cssLogo {
 		background-image: url('../mediaFolder/indexRemakeMedia/cssLogo110.png');
-		background-repeat: no-repeat;
 		display: inline-block;
-		background-size: 100%;
-		height: 80px;
+		height: 65px;
 		width: 9.5%;
 		float: left;
 		opacity: 1;
@@ -3777,91 +3789,101 @@
 	}
 																										/* 568px */
 	.mw-intro {
-		display: block;
+	/*	display: none;
 		width: 80%;
 		font-size: 1.15em;
 		margin: 0.6% 10% 3% 10%;
 		padding: 0% 0% 0% 0%;
-		text-align: center;
+		text-align: center; */
 	}
 
 	.button-container {
-		display: block;
+	/*	display: block;
 		width: 60%;
 		margin: 0% 20% 0% 20%;
-		padding-bottom: 0% 0% 0% 0%;
+		padding-bottom: 0% 0% 0% 0%; */
 	}
 
 	.git-button {
-		display: block;
+		width: 19%;
+		margin-left: 16.1%;
+		margin-top: 4.1%;
+	/*	display: block;
 		width: 100%;
 		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
 	}
 																										/* 568px */
 	.portfolio-button {
-		display: block;
+		width: 19%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 4.1%;
+	/*	display: block;
 		width: 100%;
 		margin: 7% 0% 7% 0%;
-		padding: 0% 0% 0% 0%;	
+		padding: 0% 0% 0% 0%;	*/
 	}
 
 	.button-container > span {
-		width: 100%;
+	/*	width: 100%; */
 	}
 
 	.button-container > span > a {
-		width: 100%;
+	/*	width: 100%;
 		max-width: 100%;
 		min-width: 100%;
 		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
 	}
 
 	.linkedin-button {
-		display: block;
+		width: 19%;
+		margin-top: 4.1%;
+	/*	display: block;
 		width: 100%;
 		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
 	}
 																										/* 568px */
 	#scrollArrow {
-		width: 14%;
-		margin: 2% 43% 2% 43%;
+	/*	width: 14%;
+		margin: 2% 43% 2% 43%; */
 	}
 
 	.tools-proficiencies {
-		width: 100%;
+		height: 765px;
+	/*	width: 100%;
 		height: 500px;
 		max-height: 500px;
 		margin: 0%;
 		color: white;
 		text-align: center;
 		position: absolute;
-		background-color: black;
+		background-color: black; */
 	}
 
 	.tools-header {
-		text-align: center; 
+	/*	text-align: center; 
 		width: 100%; 
 		margin: 1% 0% 0% 0%; 
-		font-size: 1.2em;
+		font-size: 1.2em; */
 	}
 
 	.tools-list {
-		width: 30%;
+	/*	width: 30%;
 		display: inline-block;
-		padding-top: 7%;
+		padding-top: 7%; */
 	}
 																										/* 568px */
 	.tools-list > p {
-		width: 100%;
-		margin: 4% 0% 4% 0%;
-		font-size: 0.9em;
+	/*	width: 100%;
+		margin: 4% 0% 4% 0%; */
+		font-size: 0.7em;
 	}
 
 	#leftIcons {
-		background-image: url('../mediaFolder/indexRemakeMedia/left-icons568aka185.png');
+	/*	background-image: url('../mediaFolder/indexRemakeMedia/left-icons568aka185.png');
 		background-repeat: no-repeat;
 		width: 33%;
 		height: 85%;
@@ -3873,11 +3895,11 @@
 		float: left;
 		display: inline-block;
 		opacity: 1;
-		background-size: 100% 100%;
+		background-size: 100% 100%; */
 	}
 
 	#rightIcons {
-		width: 32%;
+	/*	width: 32%;
 		margin: 0% 1% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		position: relative;
@@ -3888,79 +3910,78 @@
 		background-image: url('../mediaFolder/indexRemakeMedia/right-icons568aka185.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		height: 85%; /* 758px; */
-		max-height: 85%;
+		height: 85%; /* 758px; 
+		max-height: 85%;*/
 	}
 																										/* 568px */
 	#ngwp {
-		margin: 0% 0% 0% 0%; 
-		-webkit-margin-after: 0.02%;
-		font-size: 0.9em;
+	/*	margin: 0% 0% 0% 0%; 
+		-webkit-margin-after: 0.02%; */
+		font-size: 0.7em; 
 	}
 
 	#ngwpsub {
 		font-size: 0.5em; 
-		font-style: italic; 
-		margin: 0% 0% 1.55% 0%;
+	/*	font-style: italic; 
+		margin: 0% 0% 1.55% 0%; */
 	}
 
 	#elevatorDiv { 
-		background-color: white;
+		height: 299px;
+		margin: 205% 0% 0% 0%;
+	/*	background-color: white;
 		position: relative;
 		width: 100%; 
 		margin: 300% 0% 0% 0%;
-		height: 100%;
+		height: 100%; */
 	}
 																										/* 568px */
 	.elevator-div { 
-		background-color: white;
+		height: auto;
+	/*	background-color: white;
 		width: 100%; 
 		margin: 0% 0% 0% 0%;
 		height: 100%;
-		padding: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
 	}
 
 	.elevatorPitch {
-		display: inline-block;
+	/*	display: inline-block;
 		margin: 0%;
 		padding: 0%;
 		width: 100%;
-		height: auto;
+		height: auto; */
 	}
 
 	.br {
 		display: block;
 	}
 
+	.elevator-third {	
+		width: 32.85%;
+	}
+
 	.elevator-pic {
-		border-style: none;
+	/*	border-style: none;
 		display: block;
 	    width: 70%;
 	    margin: 2% 15% 2% 15%;
-		background-color:#cccccc;
+		background-color:#cccccc; */
 	}
 
 	.ep-photoshop {
 		background-image: url('../mediaFolder/indexRemakeMedia/photoshop_mica568.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 224px;
+		height: 74px;
 	}
 																										/* 568px */
 	.ep-prezi {
 		background-image: url('../mediaFolder/indexRemakeMedia/cube_prezi568.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 246px;	
+		height: 74px;	
 	}
 
 	#indesignBrochure {
 		display: block;
-		background-image: url('../mediaFolder/indexRemakeMedia/indesign_elevatorA568.png');
-		background-repeat: no-repeat;
-		width: 70%;
-		background-size: 100%;
-		height: 176px;
+		height: 74px;
 	}
 
 	.elevator-title {
@@ -3968,13 +3989,13 @@
 		display: block;
 		margin: 1% 0% 2% 0%;
 		padding: 0% auto 0% auto;
-		font-size: 1.4em;
+		font-size: 1em;
 		width: 100%;
 	}
 	 																									/* 568px */        
 	.elevator-text {
-		text-align: center;
-	    font-size: 1.2em;
+		text-align: justify;
+	    font-size: 0.75em;
 	    display: block;
 	    width: 80%;
 	    height: auto;
@@ -4002,8 +4023,6 @@
 		width: 100%;
 		height: 100%;
 		background-image: url('../mediaFolder/indexRemakeMedia/big-fish-in-the-blue-ocean568.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%;
 		padding: 0%;
 		margin-top: 0%;	
 	}
@@ -4018,29 +4037,28 @@
 
 	.ep-trello {
 		background-image: url('../mediaFolder/indexRemakeMedia/trello568.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 247px;	
+		height: 74px;	
 	}
 
 	.ep-mica-gamma {
-		height: 260px;
+		height: 74px;
 	}
 																										/* 568px */
 	.ep-html-wordpress {
 		background-image: url('../mediaFolder/indexRemakeMedia/html-vs-wordpress568.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 239px;
+		height: 74px;
 		border-style: solid;
 		border-color: #000099;	
 	}
 
 	.skype-button {
-		margin: 51.85% 0% 0% 0%;
+		width: 91.1%;
+		margin-top: 37%;
+	/*	margin: 51.85% 0% 0% 0%; */
 	}
 
 	.skype-button > a {
+		font-size: 0.83em;
 	}
 
 	.skype-button > ul {
@@ -4128,7 +4146,7 @@
 	}
 																											/* 480px */
 	#synerginFixedPic {
-		display: block;
+	/*	display: block;
 		width: 100%;
 		height: 100%; 
 		z-index: -1;
@@ -4138,12 +4156,12 @@
 		margin: 0% 0% 0% 0%;
 		padding: 0%;
 		position: fixed;
-		/* background-image: url('../mediaFolder/indexRemakeMedia/teamusa480.jpg');
+		background-image: url('../mediaFolder/indexRemakeMedia/teamusa480.jpg');
 		background-repeat: no-repeat; */
 	}
 
 	#teamCaption {
-		display: none;
+	/*	display: none;
 		color: white;
 		margin: 0% 0% 0% 0%;
 		width: 100%;	
@@ -4153,11 +4171,11 @@
 		font-size: 2em;
 		z-index: -1;
 		position: absolute;
-		opacity: 1;
+		opacity: 1; */
 	}
 
 	#micaCaption {
-		display: none;
+	/*	display: none;
 		float: right;
 		margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 70%;
@@ -4168,11 +4186,11 @@
 		opacity: 1;
 		font-size: 2em;
 		z-index: -1;
-		position: absolute;
+		position: absolute; */
 	}
 
 	.syn-caption {
-		display: block;
+	/*	display: block;
 		color: white;
 		margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
@@ -4181,11 +4199,11 @@
 		background-color: black;
 		font-size: 1.6em;
 		z-index: -1;
-		opacity: 1;	
+		opacity: 1;	 */
 	}
 						/* not sure why having both pics with display block shows correctly..		480px */
 	.mobile-syn-pic {
-		display: block;
+	/*	display: block;
 		width: 100%;
 		height: 100%; 
 		z-index: -1;
@@ -4195,157 +4213,156 @@
 		position: fixed;
 		background-image: url('../mediaFolder/indexRemakeMedia/teamusa480.jpg');
 		background-repeat: no-repeat;
-		background-size: 100%;
+		background-size: 100%; */
 	}
 
 	.landing-div {
-		width: 100%;
+	/*	width: 100%;
 		display: block;
-		background-color: white;
+		background-color: white; */
 	}
 
 	.mw-name {
-		display: block;
+	/*	display: block;
 		font-family: 'Alegreya Sans', sans-serif;
 		color: black;
 		text-align: center;
 		width: 100%;
 		font-size: 2.2em;
 		padding: 4% 0% 0% 0%;
-		margin: 0% 0% 0% 0%;
+		margin: 0% 0% 0% 0%; */
 	}
 																										/* 480px */
 	.job-title {
-		font-style: italic;
+	/*	font-style: italic;
 		font-family: 'Alegreya Sans', sans-serif;
 		display: block;
 		text-align: center;
 		font-size: 0.8em;
-		margin: 5px 23% 15px 23%;
+		margin: 5px 23% 15px 23%; */
 	}
 
 	#javascriptLogo {
 		background-image: url('../mediaFolder/indexRemakeMedia/javascriptLogo110.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 65px;
+	/*	height: 65px;
 		width: 10.6%;
 		display: inline-block;
 		margin: 0% 1% 1% 33%;	
 		float: left;
-		opacity: 1;
+		opacity: 1; */
 	}
 
 	#htmlLogo {
 		background-image: url('../mediaFolder/indexRemakeMedia/htmlLogo110.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 65px;
+	/*	height: 65px;
 		display: inline-block;
 		width: 9.5%;
 		float: left;
 		opacity: 1;
-		margin: 0% 1% 1% 1%;
+		margin: 0% 1% 1% 1%; */
 	}
 																										/* 480px */
 	#cssLogo {
 		background-image: url('../mediaFolder/indexRemakeMedia/cssLogo110.png');
-		background-repeat: no-repeat;
-		display: inline-block;
-		background-size: 100%;
+	/*	display: inline-block;
 		height: 65px;
 		width: 9.5%;
 		float: left;
 		opacity: 1;
-		margin: 0% 24% 1% 1.5%;
+		margin: 0% 24% 1% 1.5%; */
 	}
 
 	.mw-intro {
-		display: block;
+	/*	display: block;
 		width: 80%;
 		font-size: 1.15em;
 		margin: 0.6% 10% 3% 10%;
 		padding: 0% 0% 0% 0%;
-		text-align: center;
+		text-align: center; */
 	}
 																										/* 480px */
 	.button-container {
-		display: block;
+	/*	display: block;
 		width: 60%;
 		margin: 0% 20% 0% 20%;
-		padding-bottom: 0% 0% 0% 0%;
+		padding-bottom: 0% 0% 0% 0%; */
 	}
 
 	.git-button {
-		display: block;
+		margin-top: 3%;
+	/*	display: block;
 		width: 100%;
 		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
 	}
 
 	.portfolio-button {
-		display: block;
+		margin-top: 3%;
+	/*	display: block;
 		width: 100%;
 		margin: 7% 0% 7% 0%;
-		padding: 0% 0% 0% 0%;	
+		padding: 0% 0% 0% 0%;	*/
 	}
 
 	.button-container > span {
-		width: 100%;
+	/*	width: 100%; */
 	}
 
 	.button-container > span > a {
-		width: 100%;
+	/*	width: 100%;
 		max-width: 100%;
 		min-width: 100%;
 		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
 	}
 																										/* 480px */
 	.linkedin-button {
-		display: block;
+		margin-top: 3%;
+	/*	display: block;
 		width: 100%;
 		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%; */
 	}
 
 	#scrollArrow {
-		width: 14%;
-		margin: 2% 43% 2% 43%;
+	/*	width: 14%;
+		margin: 2% 43% 2% 43%; */
 	}
 
 	.tools-proficiencies {
-		width: 100%;
+		height: 575px;
+	/*	width: 100%;
 		height: 480px;
 		max-height: 480px;
 		margin: 0%;
 		color: white;
 		text-align: center;
 		position: absolute;
-		background-color: black;
+		background-color: black;*/
 	}
 
 	.tools-header {
-		text-align: center; 
+	/*	text-align: center; 
 		width: 100%; 
 		margin: 1% 0% 0% 0%; 
-		font-size: 1.2em;
+		font-size: 1.2em;	*/
 	}
 																										/* 480px */
 	.tools-list {
-		width: 30%;
+	/*	width: 30%;
 		display: inline-block;
-		padding-top: 7%;
+		padding-top: 7%; 	*/
 	}
 
 	.tools-list > p {
-		width: 100%;
+	/*	width: 100%;
 		margin: 4% 0% 4% 0%;
-		font-size: 0.9em;
+		font-size: 0.9em;	*/
+		font-size: 0.5em;
 	}
 
 	#leftIcons {
-		background-image: url('../mediaFolder/indexRemakeMedia/left-icons480aka160.png');
+	/*	background-image: url('../mediaFolder/indexRemakeMedia/left-icons480aka160.png');
 		background-repeat: no-repeat;
 		width: 33%;
 		height: 85%;
@@ -4357,11 +4374,11 @@
 		float: left;
 		display: inline-block;
 		opacity: 1;
-	    background-size: 100% 100%;
-		}
+	    background-size: 100% 100%;	*/
+	}
 
 	#rightIcons {
-		width: 32%;
+	/*	width: 32%;
 		margin: 0% 1% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		position: relative;
@@ -4372,159 +4389,170 @@
 		background-image: url('../mediaFolder/indexRemakeMedia/right-icons480aka160.png');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		height: 85%; /* 758px; */
-		max-height: 85%;
+		height: 85%; /* 758px; 
+		max-height: 85%;*/
 	}
 
 	#ngwp {
-		margin: 0% 0% 0% 0%; 
+		font-size: 0.5em;
+	/*	margin: 0% 0% 0% 0%; 
 		-webkit-margin-after: 0.02%;
-		font-size: 0.9em;
+		font-size: 0.9em;	*/
+
 	}
 
 	#ngwpsub {
-		font-size: 0.5em; 
+		font-size: 0.4em;
+	/*	font-size: 0.5em; 
 		font-style: italic; 
-		margin: 0% 0% 1.55% 0%;
+		margin: 0% 0% 1.55% 0%;	*/
 	}
 																										/* 480px */
 	#elevatorDiv { 
-		background-color: white;
+		height: auto;
+	/*	background-color: white;
 		position: relative;
 		width: 100%; 
 		margin: 300% 0% 0% 0%;
-		height: 100%;
+		height: 100%;	*/
+	}
+
+	.elevator-third {	
+		width: 100%;
+		margin: 0%;
 	}
 
 	.elevator-div { 
-		background-color: white;
+		height: auto;
+	/*	background-color: white;
 		width: 100%; 
 		margin: 0% 0% 0% 0%;
 		height: 100%;
-		padding: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;	*/
 	}
 
 	.elevatorPitch {
-		display: inline-block;
+	/*	display: inline-block;
 		margin: 0%;
 		padding: 0%;
 		width: 100%;
-		height: auto;
+		height: auto;	*/
 	}
 
 	.br {
-		display: block;
 	}
 																										/* 480px */
 	.elevator-pic {
-		border-style: none;
+		width: 80%;
+		height: 228px;
+		margin: 2% 10% 1% 10%;
+	/*	border-style: none;
 		display: block;
 	    width: 70%;
 	    margin: 2% 15% 2% 15%;
-		background-color:#cccccc;
+		background-color:#cccccc;	*/
 	}
 
 	.ep-photoshop {
 		background-image: url('../mediaFolder/indexRemakeMedia/photoshop_mica480.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 184px;
+		height: 217px;
+	/*	height: 184px;	*/
 	}
 
 	.ep-prezi {
 		background-image: url('../mediaFolder/indexRemakeMedia/cube_prezi480.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 210px;	
+		height: 217px;
+	/*	height: 210px;	*/
 	}
 
 	#indesignBrochure {
-		display: block;
-		background-image: url('../mediaFolder/indexRemakeMedia/indesign_elevatorA480.png');
-		background-repeat: no-repeat;
-		width: 70%;
-		background-size: 100%;
+		width: 80%;
+		height: 217px;
+	/*	width: 70%;
 		height: 149px;
+		display: block;	*/
 	}
 																										/* 480px */
 	.elevator-title {
-		text-align: center;
+		width: 100%;
+		font-size: 1.84em;
+	/*	text-align: center;
 		display: block;
 		margin: 1% 0% 2% 0%;
 		padding: 0% auto 0% auto;
 		font-size: 1.4em;
-		width: 100%;
+		width: 100%;	*/
 	}
 	         
 	.elevator-text {
-		text-align: center;
-	    font-size: 1.2em;
+		text-align: justify;
+		font-size: 1.209em;
+		width: 90%;
+		margin: 0% 0% 5% 0%;
+		padding: 0% 5%;
+	/*  font-size: 1.2em;
 	    display: block;
 	    width: 80%;
 	    height: auto;
 	    margin: 0% 0% 7% 0%;
-	    padding: 0% 10% 0% 10%;
+	    padding: 0% 10% 0% 10%;	*/
 	}
 
 	#portfolioDiv {
-		margin: 0% 0% 0% 0%;
+	/*	margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		width: 100%;
-		background-color: black;
+		background-color: black;	*/
 	}
 																										/* 480px */
 	#galleryDiv {
-		display: inline-block;
+	/*	display: inline-block;
 		background-color: black;
 		width: 100%;
-		padding: 0% 0% 0% 0%;
-		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;	
+		margin: 0% 0% 0% 0%;	*/
 	}
 
 	.prezi-div {
-		display: block;
+	/*	display: block;
 		width: 100%;
 		height: 100%;
 		background-image: url('../mediaFolder/indexRemakeMedia/big-fish-in-the-blue-ocean480.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%;
 		padding: 0%;
-		margin-top: 0%;	
+		margin-top: 0%;		*/
 	}
 
 	.embedded-prezi {
-		display: block;
+	/*	display: block;
 		width: 70%;
 		height: 140px;
 		padding: 3% 15% 3% 15%;
-		margin: 0% 0% 0% 0%;
+		margin: 0% 0% 0% 0%;	*/
 	}
 																										/* 480px */
 	.ep-trello {
 		background-image: url('../mediaFolder/indexRemakeMedia/trello480.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 210px;	
+		height: 217px;	
 	}
 
 	.ep-mica-gamma {
-		height: 220px;
+		height: 187px;
+	/*	height: 220px;	*/
 	}
 																										/* 480px */
 	.ep-html-wordpress {
+		height: 217px;
 		background-image: url('../mediaFolder/indexRemakeMedia/html-vs-wordpress480.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 201px;
-		border-style: solid;
-		border-color: #000099;
+	/*	height: 201px;*/
 	}
 
 	.skype-button {
-		margin: 51.85% 0% 0% 0%;
+		width: 89.74%;
+	/*	margin: 51.85% 0% 0% 0%; */
 	}
 
 	.skype-button > a {
+		font-size: 0.68em;
 	}
 
 	.skype-button > ul {
@@ -4576,6 +4604,10 @@
 
 @media screen and (max-width: 320px) {
 
+	.landing-page{
+
+	}
+
 	.ScrollScreenIndicators {
 		display: none;
 	}
@@ -4625,7 +4657,12 @@
 	}
 	
 	#synerginFixedPic {
-		display: block;
+		background-image: none;
+		height: 480px;
+		/*
+		
+		padding-top: 10%;
+	/*	display: block;
 		width: 100%;
 		height: 100%; 
 		z-index: -1;
@@ -4635,14 +4672,11 @@
 		margin: 0% 0% 0% 0%;
 		padding: 0%;
 		position: fixed;
-		/*  background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%;
+		background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
 	}
 
 	#teamCaption {
-		display: none;
+	/*	display: none;
 		color: white;
 		margin: 0% 0% 0% 0%;
 		width: 100%;	
@@ -4652,11 +4686,11 @@
 		font-size: 2em;
 		z-index: -1;
 		position: absolute;
-		opacity: 1;
+		opacity: 1;	*/
 	}
 
 	#micaCaption {
-		display: none;
+	/*	display: none;
 		float: right;
 		margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 70%;
@@ -4667,11 +4701,17 @@
 		opacity: 1;
 		font-size: 2em;
 		z-index: -1;
-		position: absolute;
+		position: absolute; */
 	}
 
 	.syn-caption {
+		width: 100%;
+		font-size: 1.4em;
 		display: block;
+		height: 480px;
+		background-color: black;
+		padding-top: 20%;
+	/*	display: block;
 		color: white;
 		margin: 50% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
@@ -4680,82 +4720,86 @@
 		background-color: black;
 		font-size: 1.6em;
 		z-index: -1;
-		opacity: 1;	
+		opacity: 1;	*/
 	}
 
 	.mobile-syn-pic {
+		margin-top: 0%;
+		background-color: green; 
+		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
 		display: block;
-		width: 100%;
+	/*	width: 100%;
 		height: 100%; 
 		z-index: -1;
 		overflow-x: hidden;
 		margin: 0% 0% 0% 0%;
 		padding: 0%;
-		position: fixed;
+		position: fixed; */
 	}
 																										/* 320px */
 
 	.landing-div {
-		width: 100%;
+		background-image: url('../mediaFolder/indexRemakeMedia/blurred_colors.jpg');
+	/*	width: 100%;
 		display: block;
-		background-color: white;
+		background-color: white; */
 	}
 
 	.mw-name {
-		display: block;
+	/*	display: block;
 		font-family: 'Alegreya Sans', sans-serif;
 		color: black;
 		text-align: center;
 		width: 100%;
 		font-size: 2.2em;
 		padding: 4% 0% 0% 0%;
-		margin: 0% 0% 0% 0%;
+		margin: 0% 0% 0% 0%;	*/
 	}
 																										/* 320px */
 	.job-title {
-		font-style: italic;
+	/*	font-style: italic;
 		font-family: 'Alegreya Sans', sans-serif;
 		display: block;
 		text-align: center;
 		font-size: 0.8em;
-		margin: 5px 23% 15px 23%;
+		margin: 5px 23% 15px 23%; */
 	}
 
 	#javascriptLogo {
-		height: 50px;
+	/*	height: 50px;
 		width: 10.6%;
 		display: inline-block;
 		margin: 0% 1% 1% 33%;	
 		float: left;
-		opacity: 1;
+		opacity: 1; */
 	}
 
 	#htmlLogo {
-		height: 50px;
+	/*	height: 50px;
 		display: inline-block;
 		width: 9.5%;
 		float: left;
 		opacity: 1;
-		margin: 0% 1% 1% 1%;
+		margin: 0% 1% 1% 1%; */
 	}
 																										/* 320px */
 	#cssLogo {
-		display: inline-block;
+	/*	display: inline-block;
 		background-size: 100%;
 		height: 50px;
 		width: 9.5%;
 		float: left;
 		opacity: 1;
-		margin: 0% 24% 1% 1.5%;
+		margin: 0% 24% 1% 1.5%;	*/
 	}
 
 	.mw-intro {
-		display: block;
+	/*	display: none;
 		width: 80%;
 		font-size: 1.15em;
 		margin: 0.6% 10% 3% 10%;
 		padding: 0% 0% 0% 0%;
-		text-align: center;
+		text-align: center;	*/
 	}
 
 	.button-container {
@@ -4804,37 +4848,40 @@
 	}
 
 	.tools-proficiencies {
-		width: 100%;
+		height: 505px;
+	/*	width: 100%;
 		height: 420px;
 		max-height: 420px;
 		margin: 0%;
 		color: white;
 		text-align: center;
 		position: absolute;
-		background-color: black;
+		background-color: black;	*/
 	}
 
 	.tools-header {
-		text-align: center; 
+		font-size: 1.9em;
+	/*	text-align: center; 
 		width: 100%; 
 		margin: 1% 0% 0% 0%; 
-		font-size: 1.2em;
+		font-size: 1.2em;	*/
 	}
 
 	.tools-list {
-		width: 30%;
+	/*	width: 30%;
 		display: inline-block;
-		padding-top: 7%;
+		padding-top: 7%; */
 	}
 																										/* 320px */
 	.tools-list > p {
-		width: 100%;
+		font-size: 0.6em;
+	/*	width: 100%;
 		margin: 4% 0% 4% 0%;
-		font-size: 0.9em;
+		font-size: 0.9em;	*/
 	}
 
 	#leftIcons {
-		width: 33%;
+	/*	width: 33%;
 		height: 85%;
 		max-height: 85%; 
 		margin: 0% 0% 0% 0%;
@@ -4844,11 +4891,11 @@
 		float: left;
 		display: inline-block;
 		opacity: 1;
-		    background-size: 100% 100%;
+		background-size: 100% 100%;	*/
 	}
 
 	#rightIcons {
-		width: 32%;
+	/*	width: 32%;
 		margin: 0% 1% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		position: relative;
@@ -4856,142 +4903,150 @@
 		float: right;
 		display: inline-block;
 		opacity: 1;
-		height: 85%; /* 758px; */
-		max-height: 85%;
+		height: 85%; /* 758px; 
+		max-height: 85%;	*/
 	}
 
 	#ngwp {
-		margin: 0% 0% 0% 0%; 
+	/*	margin: 0% 0% 0% 0%; 
 		-webkit-margin-after: 0.02%;
-		font-size: 0.9em;
+		font-size: 0.9em;	*/
 	}
 
 	#ngwpsub {
-		font-size: 0.5em; 
+	/*	font-size: 0.5em; 
 		font-style: italic; 
-		margin: 0% 0% 1.55% 0%;
+		margin: 0% 0% 1.55% 0%;	*/
 	}
 																										/* 320px */
 	#elevatorDiv { 
+		height: 1250px;
+		margin-top: 317%;
 		background-color: white;
-		position: relative;
+	/*	position: relative;
 		width: 100%; 
 		margin: 300% 0% 0% 0%;
-		height: 100%;
+		height: 100%;	*/
 	}
 
 	.elevator-div { 
-		background-color: white;
+	/*	background-color: white;
 		width: 100%; 
 		margin: 0% 0% 0% 0%;
 		height: 100%;
-		padding: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;	*/
 	}
 
 	.elevatorPitch {
-		display: inline-block;
+
+
+	/*	display: inline-block;
 		margin: 0%;
 		padding: 0%;
 		width: 100%;
-		height: auto;
+		height: auto;	*/
 	}
 
 	.br {
-		display: block;
+
 	}
 																										/* 320px */
 	.elevator-pic {
-		border-style: none;
+		height: 146px;
+	/*	border-style: none;
 		display: block;
 	    width: 70%;
 	    margin: 2% 15% 2% 15%;
-		background-color:#cccccc;
+		background-color:#cccccc;	*/
 	}
 
 	.ep-photoshop {
-		height: 127px;
-		margin-top: 5%;
+	/*	height: 127px;
+		margin-top: 5%;	*/
 	}
 
 	.ep-prezi {
-		height: 140px;	
+	/*	height: 140px;	*/
 	}
 																										/* 320px */
 	#indesignBrochure {
-		width: 70%;
+		height: 146px;
+	/*	width: 70%;
 		background-size: 100% 100%;
 		height: 100px;
 		min-width: 100px;
 		max-height: 120px;
-		display: block;
+		display: block;	*/
 	}
 
 	.elevator-title {
-		text-align: center;
+	/*	text-align: center;
 		display: block;
 		margin: 1% 0% 2% 0%;
 		padding: 0% auto 0% auto;
 		font-size: 1.4em;
-		width: 100%;
+		width: 100%;	*/
 	}
 	         
 	.elevator-text {
-		text-align: center;
+	/*	text-align: center;
 	    font-size: 1.2em;
 	    display: block;
 	    width: 80%;
 	    height: auto;
 	    margin: 0% 0% 7% 0%;
-	    padding: 0% 10% 0% 10%;
+	    padding: 0% 10% 0% 10%;	*/
 	}
 																										/* 320px */
 	#portfolioDiv {
-		margin: 0% 0% 0% 0%;
+	/*	margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		width: 100%;
-		background-color: black;
+		background-color: black;	*/
 	}
 
 	#galleryDiv {
-		display: inline-block;
+	/*	display: inline-block;
 		background-color: black;
 		width: 100%;
 		padding: 0% 0% 0% 0%;
-		margin: 0% 0% 0% 0%;
+		margin: 0% 0% 0% 0%;	*/
 	}
 
 	.prezi-div {
-		display: block;
+	/*	display: block;
 		width: 100%;
 		height: 100%;
 		padding: 0%;
-		margin-top: 0%;	
+		margin-top: 0%;		*/
 	}
 																										/* 320px */
 	.embedded-prezi {
-		display: block;
+	/*	display: block;
 		width: 70%;
 		height: 140px;
 		margin: 0% 15% 0% 15%;
-		padding: 3% 0% 3% 0%;
+		padding: 3% 0% 3% 0%;	*/
 	}
 
 	.ep-trello {
-		height: 140px;	
+		height: 161px;	
 	}
 /* need to settle on picture */
 	.ep-mica-gamma {
-		height: 140px;
+		height: 126px;
 	}
 																										/* 320px */
 	.ep-html-wordpress {
-		height: 135px;
+		height: 155px;
 		border-style: solid;
 		border-color: #000099;
 	}
 
 	.skype-button {
-		margin: 51.85% 0% 0% 0%;
+		width: 84.1%;
+		margin-top: 0%;
+	/*	margin: 51.85% 0% 0% 0%; */
 	}
 
 	.skype-button > a {
