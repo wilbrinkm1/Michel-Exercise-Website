@@ -4523,7 +4523,6 @@
 	/* added  to see if it works better this way */
 
 	#synerginFixedPic {
-		background-image: none;
 		/*
 		
 		padding-top: 10%;
@@ -4620,7 +4619,7 @@
 
 																				/* 320px */
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 325px) {
 
 
 	.ScrollScreenIndicators {
@@ -4673,7 +4672,6 @@
 	
 	#synerginFixedPic {
 		background-image: none;
-		height: 640px;
 		/*
 		
 		padding-top: 10%;
