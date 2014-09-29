@@ -4027,12 +4027,12 @@
 	.syn-caption {
 		z-index: -1;
 		width: 90%;
-		font-size: 0.95em;
+		font-size: 0.75em;
 		height: auto;
 		display: block;
 		background-color: black;
 		padding: 0% 5%;
-		margin: 37.5% 0% 0% 0%;
+		margin: 36.5% 0% 0% 0%;
 	/*	display: block;
 		color: white;
 		margin: 50% 0% 0% 0%;
