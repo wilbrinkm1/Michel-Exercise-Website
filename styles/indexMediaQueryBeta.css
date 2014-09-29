@@ -61,7 +61,6 @@
 	#synerginFixedPic {
 		display: block;
 		width: 100%;
-		max-width: 1920px;
 		height: 100%; 
 		z-index: -1;
 		overflow-x: hidden;
@@ -544,10 +543,10 @@
 	}
 
 	#wowslider-container1 {
-		display: block;
+	/*	display: block;
 		position: absolute;
-		z-index: 1;
-		width: 1920px;
+		z-index: 1; */
+		width: 100%;
 		background-color: #000000;
 	}
 
@@ -837,7 +836,7 @@
 	}
 
 	#wowslider-container1 {
-		width: 1680px;
+	/*	width: 1680px; */
 	}
 																					/* 1680 x 1050px */
 
@@ -1122,7 +1121,7 @@
 	}
 
 	#wowslider-container1 {
-		width: 1600px;
+	/*	width: 1600px; */
 	}
 }
 
@@ -1431,7 +1430,7 @@
 	}
 
 	#wowslider-container1 {
-		width: 1440px;
+	/*	width: 1440px; */
 	}
 }
 
@@ -1741,7 +1740,7 @@
 	}
 
 	#wowslider-container1 {
-		width: 1366px;
+	/*	width: 1366px; */
 	}
 }
 
@@ -2212,7 +2211,7 @@
 	}
 
 	#wowslider-container1 {
-		width: 1280px;
+	/*	width: 1280px; */
 	}
 																										/* 1280 px */
 }
@@ -2697,7 +2696,6 @@
 		width: 100%;
 		max-width: 100%;
 		min-width: 100%;
-		margin: 0.01% 0% 0% 0%;
 	}
 																										/* 1024px */
 
@@ -3009,7 +3007,7 @@
 	}
 
 	#wowslider-container1 {
-		width: 966px;
+	/*	width: 966px; */
 	}
 }
 																			/* 966 x 604 	Google Nexus 7 Landscape */ 																			/* 960 x 600 	Google Nexus 7.2 Landscape */ 
@@ -3489,10 +3487,10 @@
 	}
 
 	#wowslider-container1 {
-		width: 768px;
+	/*	width: 768px;
 		height: 307px;
 		margin: 0%;
-		padding: 0%;
+		padding: 0%; */
 	}
 }
 
@@ -3568,8 +3566,8 @@
 	}
 
 	#wowslider-container1 {
-		width: 640px;
-		margin-bottom: 0%;
+	/*	width: 640px;
+		margin-bottom: 0%; */
 	}
 
 	.skype-button {
@@ -5070,14 +5068,14 @@
 	}
 
 	#wowslider-container1 {
-		width: 320px;
-		height: 128px;
+	/*	width: 320px;
+		height: 128px; */
 
 	}
 
 	.ws_thumbs {
-	/*	margin: 0% auto; */
-		padding-bottom: 5%;
+	/*	margin: 0% auto; 
+		padding-bottom: 5%; */
 
 	}
 
