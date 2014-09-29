@@ -3986,7 +3986,6 @@
 	}
 
 	.syn-caption {
-		z-index: -1;
 		width: 90%;
 		font-size: 0.85em;
 		height: auto;
@@ -4007,8 +4006,7 @@
 	}
 
 	.mobile-syn-pic {
-		z-index: -1;
-		overflow-x: hidden;
+
 		top: -35px;
 		left: 0px;
 		margin: 0% 0% 0% 0%;
