@@ -3525,7 +3525,7 @@
 																640 x 360	Sony Xperia S/Ion Landscape
 
 	
-																*/
+																
 
 
 
@@ -3556,7 +3556,7 @@
 
 	.syn-caption {
 		display: none;
-	/*	color: white;
+		color: white;
 		margin: 50% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		width: 100%;	
@@ -3564,12 +3564,12 @@
 		background-color: black;
 		font-size: 1.6em;
 		z-index: -1;
-		opacity: 1;	 */
+		opacity: 1;	 
 	}
 
 	#wowslider-container1 {
 	/*	width: 640px;
-		margin-bottom: 0%; */
+		margin-bottom: 0%; 
 	}
 
 	.skype-button {
@@ -3582,7 +3582,7 @@
 
 }
 
-
+*/
 
 
 
@@ -3694,7 +3694,7 @@
 		width: 100%;	
 		text-align: center;
 		background-color: black;
-		font-size: 1.1em;
+		font-size: 1.5em;
 		z-index: -1;
 		opacity: 1;	
 	}
@@ -4135,9 +4135,8 @@
 
 	.syn-caption {
 		width: 100%;
-		font-size: 0.8em;
+		font-size: 1.5em;
 		display: block;
-		height: 90px;
 		background-color: black;
 		padding-top: 0%;
 
@@ -4866,7 +4865,7 @@
 	
 	#synerginFixedPic {
 		background-image: none;
-		height: 480px;
+		height: 640px;
 		/*
 		
 		padding-top: 10%;
@@ -4913,10 +4912,13 @@
 	}
 
 	.syn-caption {
-		width: 100%;
+		width: 90%;
+		height: auto; 
+		padding: 20% 5% 5% 5%;
+	/*	width: 100%;
 		font-size: 1.4em;
 		display: block;
-		height: 480px;
+	/*	height: 480px; 
 		background-color: black;
 		padding-top: 20%;
 	/*	display: block;
@@ -4932,7 +4934,9 @@
 	}
 
 	.mobile-syn-pic {
-		margin-top: 0%;
+		top: 45%;
+		background-color: #000000;
+	/*	margin-top: 0%;
 		background-color: green; 
 		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
 		display: block;
@@ -5133,7 +5137,7 @@
 																										/* 320px */
 	#elevatorDiv { 
 		height: 1250px;
-		margin-top: 317%;
+		margin-top: 246%;
 		background-color: white;
 	/*	position: relative;
 		width: 100%; 
