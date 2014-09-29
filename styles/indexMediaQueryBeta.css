@@ -3641,32 +3641,7 @@
 	}
 																										/* 568px */
 	
-/*
-		display: block;
-		width: 100%;
-		height: 100%; 
-		z-index: -1;
-		overflow-x: hidden;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa480.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%;
 
-		display: block;
-		width: 100%;
-		height: 100%; 
-		z-index: -1;
-		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: absolute;
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa568.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%; */
 
 	.landing-div {
 	/*	width: 100%;
@@ -3725,12 +3700,6 @@
 	}
 																										/* 568px */
 	.mw-intro {
-	/*	display: none;
-		width: 80%;
-		font-size: 1.15em;
-		margin: 0.6% 10% 3% 10%;
-		padding: 0% 0% 0% 0%;
-		text-align: center; */
 	}
 
 	.button-container {
@@ -3788,7 +3757,7 @@
 	}
 
 	.tools-proficiencies {
-		height: 765px;
+		height: 755px;
 	/*	width: 100%;
 		height: 500px;
 		max-height: 500px;
@@ -3819,33 +3788,13 @@
 	}
 
 	#leftIcons {
-	/*	background-image: url('../mediaFolder/indexRemakeMedia/left-icons568aka185.png');
-		background-repeat: no-repeat;
-		width: 33%;
+	/*	
 		height: 85%;
-		max-height: 85%; 
-		margin: 0% 0% 0% 0%;
-		padding-top: 0%;
-		position: relative;
-		top: 0%;
-		float: left;
-		display: inline-block;
-		opacity: 1;
-		background-size: 100% 100%; */
+		max-height: 85%; */
 	}
 
 	#rightIcons {
 	/*	width: 32%;
-		margin: 0% 1% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		position: relative;
-		top: 0%;
-		float: right;
-		display: inline-block;
-		opacity: 1;
-		background-image: url('../mediaFolder/indexRemakeMedia/right-icons568aka185.png');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
 		height: 85%; /* 758px; 
 		max-height: 85%;*/
 	}
@@ -3983,13 +3932,11 @@
 	.ep-html-wordpress {
 		background-image: url('../mediaFolder/indexRemakeMedia/html-vs-wordpress568.png');
 		height: 74px;
-		border-style: solid;
-		border-color: #000099;	
 	}
 
 	.skype-button {
 		width: 91.1%;
-		margin-top: 37%;
+		margin-top: 1%;
 	/*	margin: 51.85% 0% 0% 0%; */
 	}
 
@@ -4070,33 +4017,11 @@
 
 	#teamCaption {
 		display: none;
-	/*	display: none;
-		color: white;
-		margin: 0% 0% 0% 0%;
-		width: 100%;	
-		height: auto;
-		text-align: center;
-		background-color: black;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute;
-		opacity: 1;	*/
+
 	}
 
 	#micaCaption {
 		display: none;
-	/*	display: none;
-		float: right;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 70%;
-		color: white;
-		width: 100%;
-		height: auto;
-		background-color: black;
-		opacity: 1;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute; */
 	}
 
 	.syn-caption {
@@ -4866,7 +4791,7 @@
 		height: auto;
 		margin-top: 0%;
 		top: 0%; 
-		padding: 50% 5% 5% 5%;
+		padding: 5% 5% 5% 5%;
 		font-size: 1em;
 	/*	width: 100%;
 		font-size: 1.4em;
