@@ -3640,79 +3640,7 @@
 		display: none;
 	}
 																										/* 568px */
-	#synerginFixedPic {
-		display: block;
-		width: 100%;
-		z-index: -1;
-		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;
-		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
-		/* background-image: url('../mediaFolder/indexRemakeMedia/teamusa568.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%; */
-	}
-
-	#teamCaption {
-		display: none;
-	/*	color: white;
-		margin: 0% 0% 0% 0%;
-		width: 100%;	
-		height: auto;
-		text-align: center;
-		background-color: black;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute;
-		opacity: 1; */
-	}
-
-	#micaCaption {
-		display: none;
-	/*	float: right;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 70%;
-		color: white;
-		width: 100%;
-		height: auto;
-		background-color: black;
-		opacity: 1;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute; */
-	}
-																										/* 568px */
-	.syn-caption {
-
-		display: block;
-		color: white;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		width: 100%;	
-		text-align: center;
-		background-color: black;
-		font-size: 1.5em;
-		z-index: -1;
-		opacity: 1;	
-	}
-
-	.mobile-syn-pic {
-		display: block;
-		width: 100%;
-		z-index: -1;
-		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		position: fixed;
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa568.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
+	
 /*
 		display: block;
 		width: 100%;
@@ -4081,12 +4009,50 @@
 		height: 227px; */
 	}
 
+
+
+/*
+	#synerginFixedPic {
+		display: block;
+		width: 100%;
+		z-index: -1;
+		overflow-x: hidden;
+		top: 0px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
+		 background-image: url('../mediaFolder/indexRemakeMedia/teamusa568.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%; 
+	}*/
+
+																										/* 568px */   
+
+	
+
+
+
+
+
+
 	/* added  to see if it works better this way */
 
 	#synerginFixedPic {
+
+		display: block;
+		color: white;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		width: 100%;	
+		text-align: center;
+		background-color: black;
+		z-index: -1;
+		opacity: 1;	
 		background-image: none;
-		height: 320px;
-		/*
+	/*	height: 320px;
+		
 		
 		padding-top: 10%;
 	/*	display: block;
@@ -4134,12 +4100,12 @@
 	}
 
 	.syn-caption {
-		width: 100%;
-		font-size: 1.5em;
+		width: 90%;
+		font-size: 0.95em;
 		display: block;
 		background-color: black;
-		padding-top: 0%;
-
+		padding: 0% 5%;
+		margin: 45% 0% 0% 0%;
 	/*	display: block;
 		color: white;
 		margin: 50% 0% 0% 0%;
@@ -4153,6 +4119,16 @@
 	}
 
 	.mobile-syn-pic {
+		z-index: -1;
+		overflow-x: hidden;
+		top: -20px;
+		left: 0px;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		position: fixed;
+		background-repeat: no-repeat;
+		background-size: 100%;
+
 		width: 100%;
 		padding: 0%;
 		background-color: black; 
@@ -4736,12 +4712,9 @@
 	}
 
 	.syn-caption {
-		width: 100%;
-		font-size: 1.1em;
 		display: block;
-		height: 90px;
 		background-color: black;
-		padding-top: 0%;	
+		font-size: 1em;
 	/*	display: block;
 		color: white;
 		margin: 50% 0% 0% 0%;
@@ -4913,8 +4886,11 @@
 
 	.syn-caption {
 		width: 90%;
-		height: auto; 
-		padding: 20% 5% 5% 5%;
+		height: auto;
+		margin-top: 0%;
+		top: 0%; 
+		padding: 50% 5% 5% 5%;
+		font-size: 1em;
 	/*	width: 100%;
 		font-size: 1.4em;
 		display: block;
