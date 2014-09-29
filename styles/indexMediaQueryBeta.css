@@ -4682,33 +4682,10 @@
 
 	#teamCaption {
 		display: none;
-	/*	display: none;
-		color: white;
-		margin: 0% 0% 0% 0%;
-		width: 100%;	
-		height: auto;
-		text-align: center;
-		background-color: black;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute;
-		opacity: 1;	*/
 	}
 
 	#micaCaption {
 		display: none;
-	/*	display: none;
-		float: right;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 70%;
-		color: white;
-		width: 100%;
-		height: auto;
-		background-color: black;
-		opacity: 1;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute; */
 	}
 
 	.syn-caption {
@@ -4910,7 +4887,6 @@
 	}
 
 	.mobile-syn-pic {
-		top: 45%;
 		background-color: #000000;
 	/*	margin-top: 0%;
 		background-color: green; 
