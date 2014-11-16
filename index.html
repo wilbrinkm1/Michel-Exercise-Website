@@ -7,173 +7,35 @@
 
 
 <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
-<!-- <link rel="stylesheet" type="text/css" href="js/tooltipster-master/css/tooltipster.css" /> -->
+<link rel="stylesheet" type="text/css" href="resources/tooltipster-master/css/tooltipster.css" />
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css" rel="stylesheet">
 <link rel="stylesheet" href="styles/buttons.css">
 <link rel="stylesheet" href="styles/indexMediaQueryBeta.css">
+<link rel="stylesheet" type="text/css" href="resources/wowsliders/engine1/style.css"/>
 
-	<link rel="stylesheet" type="text/css" href="resources/wowsliders/engine1/style.css" />
-	<script type="text/javascript" src="resources/wowsliders/engine1/jquery.js"></script>
-
-<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="resources/wowsliders/engine1/jquery.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic-master/js/_dependent/jquery.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery.js"></script> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/TweenMax.min.js"></script>
-<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/TweenLite.min.js"></script>
-<!--<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/TimelineMax.min.js"></script>
-<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/TimelineLite.min.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic-master/js/_dependent/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic-master/js/_dependent/greensock/TweenLite.min.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic-master/js/_dependent/greensock/TimelineMax.min.js"></script>
+<!--<script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/TimelineLite.min.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/jquery.gsap.min.js"></script>
-
 <script type="text/javascript" src="js/ScrollMagic-master/js/_examples/general.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/_examples/highlight.pack.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/_examples/modernizr.custom.min.js"></script>
 <script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.js"></script> -->
-<script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.min.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic-master/js/jquery.scrollmagic.min.js"></script>
 <!--<script type="text/javascript" src="js/ScrollMagic-master/js/jquery.scrollmagic.debug.js"></script>
  <script type="text/javascript" src="js/ScrollMagic-master/js/_dependent/greensock/plugins/ScrollToPlugin.min.js"></script> -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script>
 <script type="text/javascript" src="js/buttons.js"></script>
-<!-- <script type="text/javascript" src="js/tooltipster-master/js/jquery.tooltipster.min.js"></script> -->
+<script type="text/javascript" src="js/indexJS.js"></script>
+<script type="text/javascript" src="resources/tooltipster-master/js/jquery.tooltipster.min.js"></script>
 
 
 <script>
-
-/* tooltipster initialize 
-$(document).ready(function() {
-    $('.tooltip').tooltipster();
-});
-*/
-
-var controller;
-$(document).ready(function($) {
-	// init controller
-	controller = new ScrollMagic();
-});
-
-$(document).ready(function($) {
-        htmlLogo = document.getElementById("htmlLogo"),
-        cssLogo = document.getElementById("cssLogo"),
-        javascriptLogo = document.getElementById("javascriptLogo"),
-	
-	//The last parameter with value of .25 is the stagger amount. Try changing it to 1 see how it impacts the animation.
-    TweenMax.staggerFrom([htmlLogo, cssLogo, javascriptLogo], 4,  {scale:1.6, opacity:0}, 1.0);        
-});
-
-$(document).ready(function($) {
-		TweenMax.to(scrollArrow, 1.5, {opacity: 0, repeat:-1, yoyo:true}, 3);
-});
-
-/* For these animations, add 	scene.addIndicators(); 	at end of var scene to debug */
-
-
-
-/*
-$(document).ready(function($) {
-	// build tween 		
-	var tween = TweenLite.from(".tools-proficiencies", 0.9, {backgroundColor: "white"});
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#toolsTrigger", duration: 250})
-		.setTween(tween)
-		.addTo(controller);
-});	
-
-
-$(document).ready(function($) {
-	// build tween 		
-	var tween = TweenLite.from(leftIcons, 1, {opacity: 0});
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#iconTrigger1", duration: 250})
-		.setTween(tween)
-		.addTo(controller);
-});	
-
-/* to bring back movement of icons, include this after opacity -> right:"4%" left:"4%" , respectively 
-$(document).ready(function($) {
-	// build tween 		
-	var tween = TweenLite.from(rightIcons, 1, {opacity: 0});
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#iconTrigger1", duration: 250})
-		.setTween(tween)
-		.addTo(controller);
-});
-*/
-
-// Changes fixed pic from group shot to mica shot
-
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.to(synerginFixedPic, 0.00001, {backgroundImage: "url('mediaFolder/indexRemakeMedia/justmica1366.jpg')"});
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#synerginTrigger"})
-		.setTween(tween)
-		.addTo(controller);
-});	 
-
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.from(micaCaption, 0.00001, {opacity: 0, top:"5%"});
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
-		.setTween(tween)
-		.addTo(controller);
-});	
-
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.to(teamCaption, 1, {opacity: 0, top:"-5%"});
-
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
-		.setTween(tween)
-		.addTo(controller);
-});	
-
-
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.from(elevatorDiv, 1, {height: 0});
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 130})
-		.setTween(tween)
-		.addTo(controller);	
-}); 
-
-
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.from(preziDiv, 1, {marginTop: 600});
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#galleryDivMarginTrigger", duration: 90})
-		.setTween(tween)
-		.addTo(controller);	
-});
-
-
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.from(elevatorPitch, 1, {opacity: 0});
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerContent", duration: 130})
-		.setTween(tween)
-		.addTo(controller);	
-}); 
-
-
-/*
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.to(indesignBrochure, 0.00001, {backgroundImage: "url('mediaFolder/indexRemakeMedia/indesign_elevatorB480.png')"});
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#changeIndesignTrigger"})
-		.setTween(tween)
-		.addTo(controller);	
-}); */
-
 
 </script>
 
@@ -201,6 +63,8 @@ body {
 <!-- Triggers -->
 <!-- <div id="toolsTrigger" class="trigger-class">Tools trigger</div>
 <div id="iconTrigger1" class="trigger-class">Icon trigger</div> -->
+<div id="toolListTrigger" class="trigger-class">Tool list trigger</div>
+<div id="portfolioTrigger" class="trigger-class">Tool list trigger</div>
 <div id="synerginTrigger" class="trigger-class">Synergin trigger</div>
 <div id="galleryDivMarginTrigger" class="trigger-class">galleryDivMargin Trigger</div>
 <div id="elevatorTriggerHeight" class="trigger-class">Elevator trigger Height</div>
@@ -269,77 +133,80 @@ body {
 	<p class="tools-header">Tools & Proficiencies</p>
 	<div id="leftIcons"></div>
 	<div class="tools-list">
-		<p>HTML5</p>
-		<p>CSS3</p>
-		<p>Javascript</p>
-		<p>jQuery</p>
-		<p>Photoshop</p>
-		<p>Github</p>	
-		<p>Bootstrap</p>
-		<p>Greensock AP</p>
-	
-		<p>Prezi</p>
-		<p>InDesign</p>
-		<p>Wordpress</p>
-<!--	<p id="ngwp">Wordpress</p>
-		<p id="ngwpsub">(Divi Theme)</p>	
-		<p id="ngwp">AngularJS</p>
-		<p id="ngwpsub">(Two Way Binding)</p>-->
-		<p>Trello</p>
-		<p >Wowslider</p>
-		<p id="ngwpsub" style="display: block; width: 100%; color: white; margin: 0% 0% 1% 0%;">Currently training in:</p>
-		<p id="ngwpsub" style="display: block; width: 100%; color: white; margin: 0% 0% 0% 0%;">MongoDB, ExpressJS, AngularJS, Node.js</p>
+		<a href="http://www.w3.org/html/wiki/FAQs" id="htmltool" class="toolname tooltip" title="www.w3.org/html/wiki/FAQs">HTML5</a>
+		<a href="http://www.w3schools.com/css/css3_intro.asp" class="toolname tooltip" title="www.w3schools.com/css">CSS3</a>
+		<a href="http://www.w3schools.com/js/" class="toolname tooltip" title="	www.w3schools.com/js">Javascript</a>
+		<a href="http://jquery.com/" class="toolname tooltip" title="www.jquery.com/">jQuery</a>
+		<a href="http://www.photoshop.com/" class="toolname tooltip" title="www.photoshop.com/">Photoshop</a>
+		<a href="https://github.com/" class="toolname tooltip" title="www.github.com/">Github</a>	
+		<a href="http://getbootstrap.com/" class="toolname tooltip" title="www.getbootstrap.com/">Bootstrap</a>
+		<a href="http://greensock.com/" class="toolname tooltip" title="www.greensock.com/">Greensock AP</a>
+		<a href="http://prezi.com/index/13/" class="toolname tooltip" title="www.prezi.com">Prezi</a>
+		<a href="http://www.adobe.com/products/indesign.html" class="toolname tooltip" title="www.adobe.com/products/indesign.html">InDesign</a>
+		<a href="" class="toolname tooltip" title="">Wordpress</a>
+		<a href="https://trello.com/" class="toolname tooltip" title="www.trello.com">Trello</a>
+		<a href="http://wowslider.com/" class="toolname tooltip" title="www.wowslider.com/">Wowslider</a>
+		<a id="ngwpsub" class="toolname">Currently training in:</a>
+		<a href="http://meanjs.org/" id="ngwpsub" class="toolname tooltip" title="www.meanjs.org/">MongoDB, ExpressJS, AngularJS, Node.js</a>
+	</div>
+	<div id="rightIcons"></div>	
+	<div id="portfolioDiv">
+		<div id="ptdiv"><p id="portfoliotitle">Quick Portfolio</p></div>	
+		<div id="wowslider-container1">
+			<div class="ws_images">
+				<ul>
+					<li><img src="resources/wowsliders/data1/images/color_run_web.png" alt="Photoshop & Graphic Design" title="Photoshop & Graphic Design" id="wows1_0"/>Many projects involve heavy photo-editting and graphic creation so it's vital to be proficient in Photoshop and supporting Adobe cloud software. The overall workflow is faster when I can instanteously manage the characteristics of my images and elements.</li>
+				</ul>
+			</div>
+			<div class="ws_thumbs">
+				<div>
+					<a href="resources/wowsliders/data1/images/color_run_web.png" title="Photoshop & Graphic Design"><img src="resources/wowsliders/data1/tooltips/color_run_web.png" alt="" /></a>
+					<a href="resources/wowsliders/data1/images/cube_prezi_web.png" title="Prezi Presentations"><img src="resources/wowsliders/data1/tooltips/cube_prezi_web.png" alt="" /></a>
+					<a href="resources/wowsliders/data1/images/insuretheshore_web.png" title="Insuretheshore.com"><img src="resources/wowsliders/data1/tooltips/insuretheshore_web.png" alt="" /></a>
+					<a href="resources/wowsliders/data1/images/responsive_example_web.png" title="Responsive Design"><img src="resources/wowsliders/data1/tooltips/responsive_example_web.png" alt="" /></a>
+					<a href="resources/wowsliders/data1/images/indesign_web.png" title="InDesign"><img src="resources/wowsliders/data1/tooltips/indesign_web.png" alt="" /></a>
+					<a href="resources/wowsliders/data1/images/googlemaps_web.png" title="Google Interactive Maps"><img src="resources/wowsliders/data1/tooltips/googlemaps_web.png" alt="" /></a>
+					<a href="resources/wowsliders/data1/images/tattoo_girl3_web.jpg" title="Photoshop & Illustrator"><img src="resources/wowsliders/data1/tooltips/tattoo_girl3_web.jpg" alt="" /></a>
+					<a href="resources/wowsliders/data1/images/micabwaruba_web.jpg" title="Mica Wilbrink"><img src="resources/wowsliders/data1/tooltips/micabwaruba_web.jpg" alt="" /></a>
+				</div>
+			</div>
+			<div class="ws_shadow"></div>
 		</div>
-	<div id="rightIcons"></div>
-	
+	</div>	
+<script type="text/javascript" src="resources/wowsliders/engine1/wowslider.js"></script>
+<script type="text/javascript" src="resources/wowsliders/engine1/script.js"></script>
 </div>
+
 
 <div id="elevatorDiv">
 	<div id="elevatorPitch">
 	<br class="br">
     <div class="elevator-third">
-        <div class="ep-photoshop elevator-pic"></div>
-        <h4 class="elevator-title">Photoshop</h4>        
-        <p class="elevator-text">Many projects involve heavy photo-editting and graphic creation so it's vital to be proficient in Photoshop and supporting Adobe cloud software. The overall workflow is faster when I can instanteously manage the characteristics of my images and elements.  
-        </p>
-    </div>
-    <div class="elevator-third">
-        <div class="elevator-pic ep-prezi"></div>
-        <h4 class="elevator-title">Prezi Presentation</h4>
-        <p class="elevator-text">Prezi is a wonderful presentation tool that creates engaging demonstrations. Incorporate them into your site or take it with you to your meetings. I can produce these solid presentations for you quickly and make them accessible online at your convenience. 
-        </p>
-    </div>
-    <div class="elevator-third">
-       	<div class="elevator-pic" id="indesignBrochure"></div>
-        <h4 class="elevator-title" style="margin-top: 1%;">Adobe InDesign</h4>
-        <p class="elevator-text">Working with Adobe InDesign has greatly improved the layout of my projects, from print to web. I am available for projects such as magazine layouts, iPad newletters, web publishing, brochures, business cards, and more. View the below Portfolio for examples.
-        </p>
-    </div>
+	    <div class="elevator-pic ep-trello"></div>
+	        <h4 class="elevator-title">Project Management</h4>        
+	        <p class="elevator-text">Collaborating through Skype screenshare, Trello PM, and other web-based resources gives us a digital workspace to keep all of our near and long term goals in focus.
+	        </p>
+	    </div>
+	    <div class="elevator-third">
+	        <div class="elevator-pic ep-mica-gamma"></div>
+	        <h4 class="elevator-title">Streamlined Workflow</h4>
+	        <p class="elevator-text">Working directly with one person gives us a more streamlined workflow, where I can offer instant advice and technical guidance to effectively bring your ideas to the screen.
+	        </p>
+	    </div>
+	    <div class="elevator-third">
+	        <div class="elevator-pic ep-html-wordpress"></div>
+	        <h4 class="elevator-title">Long-term Reliability</h4>
+	        <p class="elevator-text"> Maintenance and upgrades are important to the longevity and effectiveness of your website. I'm available post-project to ensure your site grows with your business needs. 
+	        </p>
+	    </div>
     </div>
 </div>
-
-<!--
-<div id="portfolioDiv">
-	<div id="galleryDiv" class="fotorama" data-nav="thumbs">
-	  <img src="mediaFolder/indexRemakeMedia/color_run.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl3.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/cube_prezi.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/carribean_week.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorA.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/TriFold1.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/box_layout_indesign.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl.jpg"/>
-	</div>
-</div> -->
 
 <div id="preziDiv" class="prezi-div">
 	<iframe class="embedded-prezi" src="http://prezi.com/embed/qowfhslqaxvo/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 </div>
 
-<!-- "Abilities Elevator" -->
+<!-- Can be second elevator
 <div class="elevator-div">
 	<div id="elevatorPitch">
 	<br class="br">
@@ -357,110 +224,11 @@ body {
 	    </div>
 	    <div class="elevator-third">
 	        <div class="elevator-pic ep-html-wordpress"></div>
-	        <h4 class="elevator-title">Flexible coding</h4>
-	        <p class="elevator-text">Being able to use Wordpress or code in pure HTML + CSS + Javascript provides a flexible approach to the project's needs and budget. See the above Prezi Presentation for more.
-	        </p>
+	        <h4 class="elevator-title">Long-term Reliability</h4>
+	        <p class="elevator-text">Working directly with one person gives us a more streamlined workflow, where I can offer instant advice and technical guidance to effectively bring your ideas to the screen.</p>
 	    </div>
     </div>
 </div>
-
-
-
-
-
-<!--
-<p id="portfolioDiv">Portfolio</p>
-<div id="wowslider-container1">
-	<div class="ws_images">
-	<ul>
-		<li><img src="data1/images/color_run.jpg" alt="color_run" title="Photography + Photoshop" id="wows1_0"/>Hi-definition Photography available</li>
-		<li><img src="data1/images/responsive_example.jpg" alt="Responsive Design" title="responsive_example" id="wows1_1"/>Responsive design to reach the most users</li>
-		<li><img src="data1/images/cube_prezi.jpg" alt="cube_prezi" title="Prezi Presentation" id="wows1_2"/>Prezi created quickly</li>
-		<li><img src="data1/images/marketing_campaign.jpg" alt="Marketing Campaign" title="marketing_campaign" id="wows1_3"/>Marketing materials created with Photoshop and InDesign</li>
-		<li><img src="data1/images/tattoo_girl3.jpg" alt="tattoo_girl3" title="Photography + Photoshop" id="wows1_4"/>Photoshop work available</li>
-		<li><img src="data1/images/indesign_elevator.png" alt="indesign_elevator" title="indesign_elevator" id="wows1_5"/>InDesign work welcome</li>
-		<li><img src="data1/images/carribean_week.jpg" alt="carribean_week" title="carribean_week" id="wows1_6"/>Marketing flyers</li>
-		<li><img src="data1/images/labels.jpg" alt="Labels" title="Labels" id="wows1_7"/>Any InDesign applications</li>
-	</ul>
-	</div>
-	<div class="ws_thumbs">
-		<div>
-			<a href="#" title="color_run"><img src="data1/tooltips/color_run.jpg" alt="" /></a>
-			<a href="#" title="responsive_example"><img src="data1/tooltips/responsive_example.jpg" alt="" /></a>
-			<a href="#" title="cube_prezi"><img src="data1/tooltips/cube_prezi.jpg" alt="" /></a>
-			<a href="#" title="marketing_campaign"><img src="data1/tooltips/marketing_campaign.jpg" alt="" /></a>
-			<a href="#" title="tattoo_girl3"><img src="data1/tooltips/tattoo_girl3.jpg" alt="" /></a>
-			<a href="#" title="indesign_elevator"><img src="data1/tooltips/indesign_elevator.png" alt="" /></a>
-			<a href="#" title="carribean_week"><img src="data1/tooltips/carribean_week.jpg" alt="" /></a>
-			<a href="#" title="Labels"><img src="data1/tooltips/labels.jpg" alt="" /></a>
-		</div>
-	</div>
- Generated by WOWSlider.com v5.6 
-	<div class="ws_shadow"></div>
-</div>	
-	<script type="text/javascript" src="engine1/wowslider.js"></script>
-	<script type="text/javascript" src="engine1/script.js"></script>
-
-
-
-
-
-
-<div class="prezi-div">
-	<iframe class="embedded-prezi" src="http://prezi.com/embed/qtj4k9cw200k/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
-</div> 
-
-
-
-
-
-
-
-
-<div id="portfolioDiv">
-	<p class="portfolio-title">Quick Portfolio</p>
-	<div id="galleryDiv" class="fotorama" data-nav="thumbs">
-	  <img src="mediaFolder/indexRemakeMedia/color_run.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/marketing_campaign.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl3.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/cube_prezi.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/carribean_week.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorA.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/indesign_elevatorB.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/Labels.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/TriFold1.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/box_layout_indesign.jpg"/>
-	  <img src="mediaFolder/indexRemakeMedia/tattoo_girl.jpg"/>
-	</div>
-</div>
-
 -->
-
-
-
-
-	<div id="wowslider-container1">
-	<div class="ws_images"><ul>
-		<li><img src="resources/wowsliders/data1/images/color_run_web.png" alt="Photoshop & Graphic Design" title="Photoshop & Graphic Design" id="wows1_0"/>Many projects involve heavy photo-editting and graphic creation so it's vital to be proficient in Photoshop and supporting Adobe cloud software. The overall workflow is faster when I can instanteously manage the characteristics of my images and elements.</li>
-	</ul></div>
-	<div class="ws_thumbs">
-<div>
-		<a href="resources/wowsliders/data1/images/color_run_web.png" title="Photoshop & Graphic Design"><img src="resources/wowsliders/data1/tooltips/color_run_web.png" alt="" /></a>
-		<a href="resources/wowsliders/data1/images/cube_prezi_web.png" title="Prezi Presentations"><img src="resources/wowsliders/data1/tooltips/cube_prezi_web.png" alt="" /></a>
-		<a href="resources/wowsliders/data1/images/insuretheshore_web.png" title="Insuretheshore.com"><img src="resources/wowsliders/data1/tooltips/insuretheshore_web.png" alt="" /></a>
-		<a href="resources/wowsliders/data1/images/responsive_example_web.png" title="Responsive Design"><img src="resources/wowsliders/data1/tooltips/responsive_example_web.png" alt="" /></a>
-		<a href="resources/wowsliders/data1/images/indesign_web.png" title="InDesign"><img src="resources/wowsliders/data1/tooltips/indesign_web.png" alt="" /></a>
-		<a href="resources/wowsliders/data1/images/googlemaps_web.png" title="Google Interactive Maps"><img src="resources/wowsliders/data1/tooltips/googlemaps_web.png" alt="" /></a>
-		<a href="resources/wowsliders/data1/images/tattoo_girl3_web.jpg" title="Photoshop & Illustrator"><img src="resources/wowsliders/data1/tooltips/tattoo_girl3_web.jpg" alt="" /></a>
-		<a href="resources/wowsliders/data1/images/micabwaruba_web.jpg" title="Mica Wilbrink"><img src="resources/wowsliders/data1/tooltips/micabwaruba_web.jpg" alt="" /></a>
-	</div>
-</div>
-
-	<div class="ws_shadow"></div>
-	</div>	
-	<script type="text/javascript" src="resources/wowsliders/engine1/wowslider.js"></script>
-	<script type="text/javascript" src="resources/wowsliders/engine1/script.js"></script>
-
-
 </body>
 </html>
