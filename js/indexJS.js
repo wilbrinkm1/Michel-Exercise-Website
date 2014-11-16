@@ -20,10 +20,11 @@ $(document).ready(function($) {
     TweenMax.staggerFrom([htmlLogo, cssLogo, javascriptLogo], 4,  {scale:1.6, opacity:0}, 1.0);        
 });
 
+/*
 $(document).ready(function($) {
 		TweenMax.to(scrollArrow, 1.5, {opacity: 0, repeat:-1, yoyo:true}, 3);
 });
-
+*/
 /* For these animations, add 	scene.addIndicators(); 	at end of var scene to debug */
 
 
@@ -110,6 +111,31 @@ $(document).ready(function($) {
 
 // Changes fixed pic from group shot to mica shot
 
+
+/* Timeline synergin
+$(document).ready(function($) {
+	// build tween
+	var tween = new TimelineMax()
+		.add (
+			TweenLite.to(synerginFixedPic, 0.01, {backgroundImage: "url('mediaFolder/indexRemakeMedia/justmica1366.jpg')"})
+		)
+
+		.add (
+			TweenLite.from(micaCaption, 0.01, {opacity: 0, top:"5%"})
+		)
+
+		.add (
+			TweenLite.to(teamCaption, 1, {opacity: 0, top:"-5%"})
+		)
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#synerginTrigger"})
+		.setTween(tween)
+		.addTo(controller);
+});	 
+*/
+
+/* original synerginTrigger function */
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenLite.to(synerginFixedPic, 0.00001, {backgroundImage: "url('mediaFolder/indexRemakeMedia/justmica1366.jpg')"});
@@ -141,6 +167,32 @@ $(document).ready(function($) {
 });	
 
 
+
+$(document).ready(function($) {
+	// build tween
+	var tween = new TimelineMax()
+		.add (
+			TweenLite.from(elevatorDiv, 1, {height: 0})
+		)
+
+		.add (
+			TweenLite.from(elevatorPitch, 1, {opacity: 0})
+		)
+
+		.add (
+			TweenLite.from(preziDiv, 1, {marginTop: 600}, 1)
+		)
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 130})
+		.setTween(tween)
+		.addTo(controller);	
+}); 
+
+
+
+
+
+
+/* original elevatorTiggerHeight function 
 $(document).ready(function($) {
 	// build tween
 	var tween = TweenLite.from(elevatorDiv, 1, {height: 0});
@@ -151,14 +203,6 @@ $(document).ready(function($) {
 }); 
 
 
-$(document).ready(function($) {
-	// build tween
-	var tween = TweenLite.from(preziDiv, 1, {marginTop: 600});
-	// build scene
-	var scene = new ScrollScene({triggerElement: "#galleryDivMarginTrigger", duration: 90})
-		.setTween(tween)
-		.addTo(controller);	
-});
 
 
 $(document).ready(function($) {
@@ -169,6 +213,18 @@ $(document).ready(function($) {
 		.setTween(tween)
 		.addTo(controller);	
 }); 
+
+$(document).ready(function($) {
+	// build tween
+	var tween = TweenLite.from(preziDiv, 1, {marginTop: 600});
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#galleryDivMarginTrigger", duration: 90})
+		.setTween(tween)
+		.addTo(controller);	
+});
+*/
+
+
 
 
 /*
