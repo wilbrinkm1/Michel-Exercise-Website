@@ -554,6 +554,22 @@
 		background-color: #000000;
 	/*	width: 100%; */
 	}
+
+	.ws_title {
+		font-size: 2em;
+	}
+
+	.ws-title-wrapper {
+		font-size: 2em;
+	}
+
+	.ws_title > span {
+		font-size: 2em;
+	}
+
+	.ws_title > div {
+		font-size: 2em;
+	}
 }
 	/* Previously used CSS but removed 
 
@@ -2275,6 +2291,8 @@
 	}
 																										/* 1024px */
 	.linkedin-button {
+		font-size: 1em;
+		height: 29px;
 	/*	display: inline-block;
 		width: 15%;
 		margin: 0% 0% 0% 10%;
@@ -2285,8 +2303,7 @@
 	}
 
 	#scrollArrow {
-	/*	width: 9%;
-		margin: 2% 45.5% 2% 45.5%; */
+
 	}
 
 	.tools-proficiencies {
