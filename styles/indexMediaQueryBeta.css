@@ -2069,8 +2069,6 @@
 		display: none;
 	}
 																										/* 1024px */
-
-
 	#toolListTrigger {
 		display: none;
 		/*margin-top: 70%;*/
@@ -2127,6 +2125,10 @@
 	}
 
 	.mobile-syn-pic {
+
+		display: none;
+		/*
+		brought this down from 1920 originally
 		width: 100%;
 		height: 80%; 
 		overflow-x: hidden;
@@ -2137,8 +2139,8 @@
 		background-image: url('../mediaFolder/indexRemakeMedia/teamusa768.jpg');
 		background-repeat: no-repeat;
 		background-size: 100%;
-		display: none;
-		/*width: 100%;
+
+		width: 100%;
 		height: 100%; 
 		z-index: -1;
 		top: 0px;
@@ -2164,7 +2166,7 @@
 		position: absolute;
 		margin: 37% 0% 0% 0%;
 		font-size: 2.3em;
-		display: inline-block;
+		display: block;
 		opacity: 1;
 		color: #ffffff;
 	/*	color: white;

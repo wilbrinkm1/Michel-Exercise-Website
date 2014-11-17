@@ -91,6 +91,7 @@ $(document).ready(function($) {
 
 
 $(document).ready(function($) {
+	if (widthcheck > 1024) {
 
 	// TweenMax.set("#portfoliotitle", {height: "0%"});
 
@@ -118,6 +119,9 @@ $(document).ready(function($) {
 		.reverse(false)
 		.setTween(tween)
 		.addTo(controller);
+	} else {
+		console.log("under 1024");
+	}
 });
 
 
