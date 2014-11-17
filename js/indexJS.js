@@ -1,4 +1,8 @@
 
+
+var widthcheck = $( window ).width();
+	console.log(widthcheck);
+
 /* tooltipster initialize */
 $(document).ready(function() {
     $('.tooltip').tooltipster();
@@ -67,12 +71,19 @@ $(document).ready(function($) {
 
 /* Stagger tools li fade in. */
 $(document).ready(function($) {
+	if (widthcheck > 1024) {
 	// build tween
 	var tween = TweenMax.staggerFrom($(".toolname"), 0.5, {color:"black"}, 0.25)
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#toolListTrigger"})
-		.setTween(tween)
-		.addTo(controller);
+		scene.reverse(false)
+		scene.setTween(tween)
+		scene.addTo(controller);
+		var enabled = scene.enabled();
+		console.log("tools"+enabled);
+	} else {
+		console.log("under 1024");
+	}
 });
 
 
@@ -104,6 +115,7 @@ $(document).ready(function($) {
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#portfolioTrigger"})
+		.reverse(false)
 		.setTween(tween)
 		.addTo(controller);
 });
@@ -137,34 +149,58 @@ $(document).ready(function($) {
 
 /* original synerginTrigger function */
 $(document).ready(function($) {
+	if (widthcheck > 1024) {
 	// build tween
 	var tween = TweenLite.to(synerginFixedPic, 0.00001, {backgroundImage: "url('mediaFolder/indexRemakeMedia/justmica1366.jpg')"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#synerginTrigger"})
-		.setTween(tween)
-		.addTo(controller);
+		scene.setTween(tween)
+		scene.addTo(controller);
+	} else {
+		console.log("under 1024");
+	}
 });	 
 
 $(document).ready(function($) {
+	if (widthcheck > 1024) {
 	// build tween
 	var tween = TweenLite.from(micaCaption, 0.00001, {opacity: 0, top:"5%"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
-		.setTween(tween)
-		.addTo(controller);
+		scene.setTween(tween)
+		scene.addTo(controller);
+	} else {
+		console.log("under 1024");
+	}
 });	
 
 $(document).ready(function($) {
+	if (widthcheck > 1024) {
 	// build tween
 	var tween = TweenLite.to(teamCaption, 1, {opacity: 0, top:"-5%"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#synerginTrigger", duration: 200})
-		.setTween(tween)
-		.addTo(controller);
+		scene.setTween(tween)
+		scene.addTo(controller);
+		var enabled = scene.enabled();
+		console.log(enabled);
+	} else {
+		console.log("under 1024");
+	}
 });	
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -182,7 +218,7 @@ $(document).ready(function($) {
 		.add (
 			TweenLite.from(preziDiv, 1, {marginTop: 600}, 1)
 		)
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight", duration: 130})
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight"})
 		.setTween(tween)
 		.addTo(controller);	
 }); 
@@ -223,8 +259,6 @@ $(document).ready(function($) {
 		.addTo(controller);	
 });
 */
-
-
 
 
 /*
