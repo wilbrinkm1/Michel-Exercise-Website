@@ -2125,7 +2125,6 @@
 	}
 
 	.mobile-syn-pic {
-
 		display: none;
 		/*
 		brought this down from 1920 originally
@@ -2164,7 +2163,7 @@
 
 	#teamCaption {
 		position: absolute;
-		margin: 37% 0% 0% 0%;
+		margin: 40% 0% 0% 0%;
 		font-size: 2.3em;
 		display: block;
 		opacity: 1;
@@ -2182,8 +2181,8 @@
 	}
 																										/* 1024px */
 	#micaCaption {
-		display: none;
-		/*float: right;
+		display: none;		
+		/* float: right;
 		margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 70%;
 		color: white;
@@ -2339,7 +2338,8 @@
 		padding-top: 7%; */
 	}
 
-	.tools-list > p {
+	.tools-list > a {
+		font-size: 1.2em;
 	/*	width: 100%;
 		margin: 5% 0% 5% 0%;
 		font-size: 1.7em; */

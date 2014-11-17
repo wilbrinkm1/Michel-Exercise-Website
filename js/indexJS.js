@@ -212,15 +212,15 @@ $(document).ready(function($) {
 	// build tween
 	var tween = new TimelineMax()
 		.add (
-			TweenLite.from(elevatorDiv, 1, {height: 0})
+			TweenLite.from(elevatorDiv, 0.5, {height: 0})
 		)
 
 		.add (
-			TweenLite.from(elevatorPitch, 1, {opacity: 0})
+			TweenLite.from(elevatorPitch, 1, {opacity: 0}, -1)
 		)
 
 		.add (
-			TweenLite.from(preziDiv, 1, {marginTop: 600}, 1)
+			TweenLite.from(preziDiv, 0.5, {marginTop: 600}, -2)
 		)
 	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight"})
 		.setTween(tween)
