@@ -505,18 +505,21 @@
 
 
 
-@media all and (max-width:640px){
-	#wowslider-container1 .ws-title span{
+@media screen and (max-width: 640px) {
+
+
+	#wowslider-container1 .ws-title span {
 		font-size: 1.8em;
 	}
 
-	#wowslider-container1 .ws-title div{
+	#wowslider-container1 .ws-title div {
 		display: none;
 		/*font-size: 1.1em;*/
 	}
 	#wowslider-container1 .ws_controls,
 	#wowslider-container1 .ws_bullets,
-	#wowslider-container1 .ws_thumbs{
+	#wowslider-container1 .ws_thumbs,
+	#wowslider-container1 .ws_images {
 		display: none;
 	}
 }
