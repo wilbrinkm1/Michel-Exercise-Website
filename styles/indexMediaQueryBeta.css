@@ -380,7 +380,7 @@
 	#ptdiv {
 		width: 100%;
 		height: 150px;
-		display: none;
+		display: inline-block;
 		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.21, #FF681C),color-stop(1, #FF9D00));
 		background-image: -o-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
 		background-image: -moz-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);background-image: -webkit-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
@@ -393,7 +393,7 @@
 		height: 150px;
 		margin: 0%; 
 		padding: 4% 0% 4% 0%;
-		display: none;
+		display: inline-block;
 		text-align: center; 
 		font-size: 4.3em;
 		color: -webkit-gradient(linear,left top,left bottom,color-stop(0.21, #FF681C),color-stop(1, #FF9D00));
@@ -2077,7 +2077,7 @@
 	}
 
 	#portfolioTrigger {
-		/*margin-top: 150%;*/
+		margin-top: 150%;
 	}
 
 	#synerginTrigger {
@@ -2319,7 +2319,7 @@
 	}
 
 	.tools-proficiencies {
-		height: 1600px;
+		height: 1450px;
 	/*	width: 100%;
 		max-height: 850px;
 		margin: 0%;
@@ -2343,7 +2343,7 @@
 	}
 
 	.tools-list > a {
-		font-size: 1.15em;
+		font-size: 0.95em;
 	/*	width: 100%;
 		margin: 5% 0% 5% 0%;
 		font-size: 1.7em; */

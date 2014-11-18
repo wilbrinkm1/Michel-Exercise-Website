@@ -91,24 +91,23 @@ $(document).ready(function($) {
 
 
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
-
-	// TweenMax.set("#portfoliotitle", {height: "0%"});
-
 	// build tween
 	var tween = new TimelineMax()
+		/*
 		.add (
-			TweenMax.to("#ptdiv", 1, {display: "inline-block"})
+			TweenMax.from("#ptdiv", 1, {display: "none"})
 		)
 
-
+		
 		.add (
 			TweenMax.from("#ptdiv", 0.75, {height: "0px"})
 		)
 
 		.add (
-			TweenMax.to("#portfoliotitle", 1, {display: "inline-block"})
+			TweenMax.from("#portfoliotitle", 1, {display: "none"})
 		)
+		*/
+
 		.add (
 			TweenMax.to("#portfoliotitle", 0.5, {backgroundColor: "#000000", color: "#FF6600", textShadow:"2px 2px 15px #FF6600"})
 
@@ -116,12 +115,9 @@ $(document).ready(function($) {
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#portfolioTrigger"})
-		.reverse(false)
+		/*.reverse(false)*/
 		.setTween(tween)
 		.addTo(controller);
-	} else {
-		console.log("under 1024");
-	}
 });
 
 
