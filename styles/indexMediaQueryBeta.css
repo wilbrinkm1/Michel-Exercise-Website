@@ -802,6 +802,10 @@
 	#portfolioDiv {
 
 	}
+
+	#portfoliotitle {
+
+	}
 																				/* 1680 x 1050px */
 	.prezi-div {
 
@@ -1080,6 +1084,10 @@
 	}
 
 	#portfolioDiv {
+
+	}
+
+	#portfoliotitle {
 
 	}
 
@@ -1384,6 +1392,10 @@
 
 	}
 
+	#portfoliotitle {
+
+	}
+
 	#galleryDiv {
 
 	}
@@ -1678,6 +1690,10 @@
 
 	}
 
+	#portfoliotitle {
+
+	}
+
 	#galleryDiv {
 
 	}
@@ -1941,6 +1957,10 @@
 	}
 
 	#portfolioDiv {
+
+	}
+
+	#portfoliotitle {
 
 	}
 
@@ -2236,6 +2256,10 @@
 	}
 
 	#portfolioDiv {
+
+	}
+
+	#portfoliotitle {
 
 	}
 																										/* 1024px */
@@ -2544,6 +2568,10 @@
 	}
 
 	#portfolioDiv {
+
+	}
+
+	#portfoliotitle {
 
 	}
 
@@ -2957,6 +2985,10 @@
 		padding: 0% 0% 0% 0%;
 		width: 100%;
 		background-color: black;
+	}
+
+	#portfoliotitle {
+		font-size: 2.5em;
 	}
 
 	#galleryDiv {
@@ -3383,6 +3415,10 @@
 		padding: 0% 0% 0% 0%;
 		width: 100%;
 		background-color: black;
+	}
+
+	#portfoliotitle {
+		font-size: 2em;
 	}
 
 	#galleryDiv {
@@ -4528,6 +4564,10 @@
 		padding: 0% 0% 0% 0%;
 		width: 100%;
 		background-color: black;	*/
+	}
+
+	#portfoliotitle {
+		font-size: 1.7em;
 	}
 
 	#galleryDiv {
