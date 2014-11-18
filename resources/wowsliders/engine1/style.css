@@ -511,16 +511,15 @@
 	}
 
 	#wowslider-container1 .ws-title div{
-		font-size: 1.1em;
+		display: none;
+		/*font-size: 1.1em;*/
 	}
-}
-
-
-@media all and (max-width:400px){
 	#wowslider-container1 .ws_controls,
 	#wowslider-container1 .ws_bullets,
 	#wowslider-container1 .ws_thumbs{
+		display: none;
 	}
 }
+
 
 

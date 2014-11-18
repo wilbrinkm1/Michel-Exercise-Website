@@ -804,6 +804,10 @@
 
 	}
 
+	#ptdiv {
+
+	}
+
 	#portfoliotitle {
 
 	}
@@ -1087,11 +1091,15 @@
 	#portfolioDiv {
 
 	}
+	
+	#ptdiv {
+
+	}
 
 	#portfoliotitle {
 
 	}
-
+	
 	#galleryDiv {
 
 	}
@@ -1691,6 +1699,10 @@
 
 	}
 
+	#ptdiv {
+
+	}
+
 	#portfoliotitle {
 
 	}
@@ -1958,6 +1970,10 @@
 	}
 
 	#portfolioDiv {
+
+	}
+
+	#ptdiv {
 
 	}
 
@@ -2260,6 +2276,10 @@
 
 	}
 
+	#ptdiv {
+
+	}
+
 	#portfoliotitle {
 
 	}
@@ -2537,6 +2557,10 @@
 
 	}
 
+	#ptdiv {
+
+	}
+
 	#portfoliotitle {
 
 	}
@@ -2690,16 +2714,6 @@
 	}
 
 	.mobile-syn-pic {
-	/*	display: block;
-		width: 100%;
-		z-index: -1;
-		overflow-x: hidden;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa768.jpg');
-		background-repeat: no-repeat;
-		background-size: 100% */
 	}
 																										/* 768px */
 	.landing-div {
@@ -2777,52 +2791,19 @@
 	}
 
 	#leftIcons {
-		/*
-		height: 100%;
-		background-size: 100%;
-		background-image: url('../mediaFolder/indexRemakeMedia/left-icons768aka256.png');
-		background-repeat: no-repeat;
-		width: 33%;
-		height: 85%;
-		max-height: 85%; 
-		margin: 0% 0% 0% 0%;
-		padding-top: 0%;
-		position: relative;	
-		top: 0%;
-		float: left;
-		display: inline-block;
-		opacity: 1;
-    	background-size: 100% 100%; */
+
 	}
 
 	#rightIcons {
-	/*	width: 32%;
-		margin: 0% 1% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		position: relative;	
-		top: 0%;
-		float: right;
-		display: inline-block;
-		opacity: 1;	
-		background-image: url('../mediaFolder/indexRemakeMedia/right-icons768aka256.png');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		height: 85%; /* 758px; 
-		max-height: 85%;*/
+
 	}
 																										/* 768px */
 	#ngwp {
 		font-size: 0.8em;
-	/*	margin: 0% 0% 0% 0%; 
-		-webkit-margin-after: 0.02%;
-		font-size: 1.5em; */
 	}
 
 	#ngwpsub {
 		font-size: 0.5em;
-	/*	font-size: 0.9em; 
-		font-style: italic; 
-		margin: 0% 0% 1.55% 0%; */
 	}
 
 	#elevatorDiv { 
@@ -2831,23 +2812,14 @@
 		width: 100%; 
 		height: 405px;
 		margin-top: 280%;
-	/*	height: 100%; */
 	}
 																										/* 768px */
 	.elevator-div { 
-		background-color: white;
-		width: 100%; 
-		margin: 0% 0% 0% 0%;
-		height: 100%;
-		padding: 0% 0% 0% 0%;
+
 	}
 
 	.elevatorPitch {
-		display: inline-block;
-		margin: 0%;
-		padding: 0%;
-		width: 100%;
-		height: auto;
+
 	}
 
 	.br {
@@ -2855,20 +2827,12 @@
 	}
 
 	.elevator-pic {
-		border-style: none;
-		display: block;
-	    width: 70%;
-	    margin: 2% 15% 2% 15%;
-		background-color:#cccccc;
+
 	}
 																										/* 768px */
 	.elevator-title {
-		text-align: center;
-		display: block;
-		margin: 1% 0% 2% 0%;
 		padding: 0% auto 0% auto;
 		font-size: 1.35em;
-		width: 100%;
 	}
 																										/* 768px */         
 	.elevator-text {
@@ -2876,16 +2840,13 @@
 	    font-size: 1em;
 	    display: block;
 	    width: 80%;
-	    height: auto;
-	    margin: 0% 0% 7% 0%;
-	    padding: 0% 10% 0% 10%;
 	}
 
 	#portfolioDiv {
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		width: 100%;
-		background-color: black;
+	}
+
+	#ptdiv {
+
 	}
 
 	#portfoliotitle {
@@ -3316,6 +3277,10 @@
 		padding: 0% 0% 0% 0%;
 		width: 100%;
 		background-color: black;
+	}
+
+	#ptdiv {
+
 	}
 
 	#portfoliotitle {
@@ -4455,6 +4420,10 @@
 		padding: 0% 0% 0% 0%;
 		width: 100%;
 		background-color: black;	*/
+	}
+
+	#ptdiv {
+
 	}
 
 	#portfoliotitle {
