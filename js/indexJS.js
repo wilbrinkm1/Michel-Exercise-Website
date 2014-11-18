@@ -91,6 +91,7 @@ $(document).ready(function($) {
 
 
 $(document).ready(function($) {
+	if (widthcheck > 1024) {
 	// build tween
 	var tween = new TimelineMax()
 		/*
@@ -115,9 +116,11 @@ $(document).ready(function($) {
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#portfolioTrigger"})
-		/*.reverse(false)*/
 		.setTween(tween)
 		.addTo(controller);
+	} else {
+		console.log("under 1024");
+	}
 });
 
 

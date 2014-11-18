@@ -32,6 +32,7 @@
 	body {
 		margin: 0%;	
 		padding: 0%;
+		font-family: 'Alegreya Sans', sans-serif;
 	/*	overflow-x: hidden; */
 	}
 
@@ -113,10 +114,10 @@
 		display: block;
 		padding: 0% 0% 0% 0%;
 		margin: 0% 0% 0% 0%;
-		color: white;
 		text-align: center;
-		background-color: black;
 		font-size: 2.7em;
+		background-color: black;
+		color: #ffffff;
 	}
 
 	#micaCaption {
@@ -134,20 +135,6 @@
 		color: white;
 	}
 																									/* 1920px */
-	.syn-caption {
-		width: 100%;	
-		z-index: -1;
-		position: absolute;
-		opacity: 1;	
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		display: none;
-		text-align: center;
-		font-size: 1.6em;
-		background-color: black;
-		color: white;
-	}	
-
 	.mobile-syn-pic {
 		display: none;
 
@@ -513,6 +500,7 @@
 		opacity: 0.5;
 		font-size: 1.5em;
 		text-align: center;
+		background-color: #000000;
 	}
 
 	.skype-button > a {
@@ -689,9 +677,6 @@
 
 	#micaCaption {
 	}
-
-	.syn-caption {
-	}	
 
 	.mobile-syn-pic {
 	}
@@ -958,10 +943,6 @@
 
 	}
 																									/* 1600px */
-	.syn-caption {
-
-	}	
-
 	.mobile-syn-pic {
 
 	}
@@ -1263,10 +1244,6 @@
 
 	}
 																				/* 1440px */
-	.syn-caption {
-
-	}	
-
 	.mobile-syn-pic {
 
 	}
@@ -1573,10 +1550,6 @@
 
 	}
 																				/* 1366px */
-	.syn-caption {
-
-	}	
-
 	.mobile-syn-pic {
 
 	}
@@ -1830,7 +1803,7 @@
 	.trigger-class {
 
 	}
-																						/* synerginFixedPic elements */
+
 	#synerginFixedPic {
 
 	}
@@ -1840,10 +1813,6 @@
 	}
 																									/* 1280 px */
 	#micaCaption {
-
-	}
-
-	.syn-caption {
 
 	}
 
@@ -2073,30 +2042,26 @@
 																										/* 1024px */
 	#toolListTrigger {
 		display: none;
-		/*margin-top: 70%;*/
 	}
 
 	#portfolioTrigger {
-		margin-top: 150%;
+		display: none;
 	}
 
 	#synerginTrigger {
-		/*margin-top: 220%;*/
+		display: none;
 	}
 
 	#elevatorTriggerHeight{
 		display: none;
-		/*margin-top: 296%;*/
 	}
 
 	#elevatorTriggerContent{
 		display: none;
-		/*margin-top: 306%;*/
 	}
 	
 	#galleryDivMarginTrigger {
 		display: none;
-		/*margin-top: 315%;*/ 
 	}
 																											/* 1024px */
 	#changeIndesignTrigger {
@@ -2112,164 +2077,55 @@
 	}
 	
 	#synerginFixedPic {
-	/*	display: block;
-		margin-top: 0%;
-		padding-top: 0%;
+		display: block;
 		width: 100%;
-		height: 86%; 
+		height: 100%; 
 		z-index: -1;
 		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
 		margin: 0% 0% 0% 0%;
 		padding: 0%;
-		position: fixed; */
+		position: fixed;
+		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+
 	}
 
 	.mobile-syn-pic {
 		display: none;
-		/*
-		brought this down from 1920 originally
-		width: 100%;
-		height: 80%; 
-		overflow-x: hidden;
-		position: absolute;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		z-index: -1;
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa768.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%;
-
-		width: 100%;
-		height: 100%; 
-		z-index: -1;
-		top: 0px;
-		left: 0px;
-		overflow-x: hidden;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed; 
-		margin-top: 0%;
-		padding-top: 0%;
-		width: 100%;
-		height: 86%; 
-		z-index: -1;
-		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;*/
 	}
 
 	#teamCaption {
-		margin: 46% 0% 0% 0%;
-	/*	
-		position: absolute;
-		font-size: 2.3em;
-		display: block;
-		opacity: 1;
-		color: #ffffff;
-		z-index: -1;
-		color: white;
-		margin: 0% 0% 0% 0%;
-		width: 100%;	
-		height: auto;
-		text-align: center;
-		background-color: black;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute;
-		opacity: 1; */
+		margin: 32% 0% 0% 0%;
+		font-size: 1.5em;
 	}
 																										/* 1024px */
 	#micaCaption {
 		display: none;		
-		/* float: right;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 70%;
-		color: white;
-		width: 100%;
-		height: auto;
-		background-color: black;
-		opacity: 1;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute; */
 	}
-
-	.syn-caption {
-	/*	display: block;
-		color: white;
-		margin: 54% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		width: 100%;
-		max-width: 100%;	
-		text-align: center;
-		background-color: black;
-		font-size: 2.9em;
-		z-index: -1;
-		opacity: 1;	*/
-	}
-
-
 
 	.landing-div {
-	/*	width: 100%;
-		display: block;
-		background-color: white; */
+
 	}
 																										/* 1024px */
 	.mw-name {
-	/*	display: block;
-		font-family: 'Alegreya Sans', sans-serif;
-		color: black;
-		text-align: center;
-		width: 100%;
-		;
-		padding: 4% 0% 0% 0%;
-		margin: 0% 0% 0% 0%; 
-		font-size: 3.4em*/
+		font-size: 3.2em;
 	}
 
 	.job-title {
-	/*	font-style: italic;
-		font-family: 'Alegreya Sans', sans-serif;
-		display: block;
-		text-align: center;
-		font-size: 0.8em;
-		margin: 5px 23% 15px 23%; */
+
 	}
 																										/* 1024px */
 	#javascriptLogo {
 		height: 57px;
-	/*	width: 10.6%;
-		display: inline-block;
-		margin: 0% 1% 0% 33%;	
-		float: left;
-		opacity: 1; */
 	}
 
 	#htmlLogo {
 		height: 57px;
-	/*	height: 145px;
-		display: inline-block;
-		width: 9.5%;
-		float: left;
-		opacity: 1;
-		margin: 0% 1% 0% 1%; */
 	}
 																										/* 1024px */
 	#cssLogo {
 		height: 57px;
-	/*	display: inline-block;
-		background-size: 100%;
-		height: 145px;
-		width: 9.5%;
-		float: left;
-		opacity: 1;
-		margin: 0% 24% 0% 1.5%;*/
 	}
 
 	.mw-intro {
@@ -2300,18 +2156,12 @@
 	}
 
 	.button-container > span > a {
+	
 	}
 																										/* 1024px */
 	.linkedin-button {
 		font-size: 1em;
 		height: 29px;
-	/*	display: inline-block;
-		width: 15%;
-		margin: 0% 0% 0% 10%;
-		padding: 0% 5% 0% 5%;
-		float: right;
-		font-size: 1em;
-		height: 29px; */
 	}
 
 	#scrollArrow {
@@ -2320,144 +2170,73 @@
 
 	.tools-proficiencies {
 		height: 1450px;
-	/*	width: 100%;
-		max-height: 850px;
-		margin: 0%;
-		color: white;
-		text-align: center;
-		position: absolute;
-		background-color: black; */
 	}
 																										/* 1024px */
 	.tools-header {
-	/*	text-align: center; 
-		width: 100%; 
-		margin: 1% 0% 0% 0%;
-		font-size: 3em;  */
+
 	}
 
 	.tools-list {
-	/*	width: 33%;
-		display: inline-block;
-		padding-top: 7%; */
+
 	}
 
 	.tools-list > a {
 		font-size: 0.95em;
-	/*	width: 100%;
-		margin: 5% 0% 5% 0%;
-		font-size: 1.7em; */
 	}
 																										/* 1024px */
 	#leftIcons {
 		height: 65%;
 		max-height: 65%; 
-
-	/*	width: 33%;
-		height: 85%;
-		max-height: 85%; 
-		margin: 0% 0% 0% 0%;
-		padding-top: 0%;
-		position: relative;
-		top: 0%;
-		float: left;
-		display: inline-block;
-		opacity: 1;
-	    background-size: 100% 100%; */
 	}
 
 	#rightIcons {
 		height: 65%;
 		max-height: 65%; 
-	/*	width: 32%;
-		margin: 0% 1% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		position: relative;
-		top: 0%;
-		float: right;
-		display: inline-block;
-		opacity: 1;
-		height: 85%; /* 758px; 
-		max-height: 85%;*/
 	}
 																										/* 1024px */
 	#ngwp {
-	/*	margin: 0% 0% 0% 0%; 
-		-webkit-margin-after: 0.02%;
-		font-size: 1.5em; */
+
 	}
 
 	#ngwpsub {
-	/*	font-size: 0.9em; 
-		font-style: italic; 
-		margin: 0% 0% 1.55% 0%; */
+
 	}
 
 	#elevatorDiv { 
 		margin: 260% 0% 0% 0%;
-	/*	background-color: white;
-		position: relative;
-		width: 100%; 
-		height: 100%; */
 	}
 																										/* 1024px */
 	.elevator-div { 
-	/*	background-color: white;
-		margin: 0% 0% 0% 0%;
-		width: 100%; 
-		height: 100%;
-		padding: 0% 0% 0% 0%; */
+
 	}
 
 	.elevatorPitch {
-	/*	display: inline-block;
-		margin: 0%;
-		padding: 0%;
-		width: 100%;
-		height: auto; */
+
 	}
 																										/* 1024px */
 	.br {
-	/*	display: block; */
+
 	}
 
 	.elevator-third {
-	/*	width: 33%;
-		display: inline-block;
-		padding-top: 3%; */
+
 	}
 																										/* 1024px */
-
 	.elevator-pic {
-	/*	border-style: none;
-		display: block;
-	    width: 70%;
-	    margin: 2% 15% 2% 15%;
-		background-color:#cccccc; */
+
 	}
 
 	.elevator-title {
 		font-size: 1.4em;
-	/*	text-align: center;
-		display: block;
-		margin: 1% 0% 2% 0%;
-		padding: 0% auto 0% auto;
-		font-size: 1.4em;
-		width: 100%; */
 	}
 	         																							/* 1024px */
-
 	.elevator-text {
 		font-size: 1.1em;
 		width: 82%;
-
 	}
 
 	#portfolioDiv {
-	/*	margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		width: 100%;
-		background-color: black; */
+
 	}
 																										/* 1024px */
 	#galleryDiv {
@@ -2486,7 +2265,6 @@
 
 	.skype-button {
 		width: 94.7%;
-	/*	margin: 51.85% 0% 0% 0%; */
 	}
 
 	.skype-button > a {
@@ -2628,10 +2406,6 @@
 	#micaCaption {
 
 	}
-
-	.syn-caption {
-
-	}	
 
 	.mobile-syn-pic {
 
@@ -2922,22 +2696,6 @@
 		display: none;
 	}
 
-	.syn-caption {
-		display: none;
-		/*
-		display: block;
-		color: white;
-		margin: 50% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		width: 100%;	
-		text-align: center;
-		background-color: black;
-		font-size: 1.6em;
-		z-index: -1;
-		opacity: 1;	
-		*/
-	}
-
 	.mobile-syn-pic {
 		display: block;
 		width: 100%;
@@ -3085,11 +2843,8 @@
 		padding-top: 7%; */
 	}
 																										/* 768px */
-	.tools-list > p {
+	.tools-list > a {
 		font-size: 0.8em;
-	/*	width: 100%;
-		margin: 4% 0% 4% 0%;
-		font-size: 1.5em; */
 	}
 
 	#leftIcons {
@@ -3325,24 +3080,6 @@
 
 	}
 
-	.syn-caption {
-		display: none;
-		color: white;
-		margin: 50% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		width: 100%;	
-		text-align: center;
-		background-color: black;
-		font-size: 1.6em;
-		z-index: -1;
-		opacity: 1;	 
-	}
-
-	#wowslider-container1 {
-	/*	width: 640px;
-		margin-bottom: 0%; 
-	}
-
 	.skype-button {
 		margin: 21.85% 0% 0% 0%; 
 		font-size: 1.3em;
@@ -3536,9 +3273,7 @@
 		padding-top: 7%; */
 	}
 																										/* 568px */
-	.tools-list > p {
-	/*	width: 100%;
-		margin: 4% 0% 4% 0%; */
+	.tools-list > a {
 		font-size: 0.7em;
 	}
 
@@ -4112,10 +3847,7 @@
 		padding-top: 7%; 	*/
 	}
 
-	.tools-list > p {
-	/*	width: 100%;
-		margin: 4% 0% 4% 0%;
-		font-size: 0.9em;	*/
+	.tools-list > a {
 		font-size: 0.5em;
 	}
 
@@ -4669,11 +4401,8 @@
 		padding-top: 7%; */
 	}
 																										/* 320px */
-	.tools-list > p {
-		font-size: 0.6em;
-	/*	width: 100%;
-		margin: 4% 0% 4% 0%;
-		font-size: 0.9em;	*/
+	.tools-list > a {
+		font-size: 0.65em;
 	}
 
 	#leftIcons {
