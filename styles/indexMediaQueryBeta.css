@@ -368,11 +368,12 @@
 		width: 100%;
 		height: 150px;
 		display: inline-block;
-		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.21, #FF681C),color-stop(1, #FF9D00));
+		/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.21, #FF681C),color-stop(1, #FF9D00));
 		background-image: -o-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
 		background-image: -moz-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);background-image: -webkit-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
 		background-image: -ms-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);background-image: linear-gradient(to bottom, #FF681C 21%, #FF9D00 100%);
-		/*background-color: #ffffff;*/
+		*/
+		background-color: #000000;
 	}
 
 	#portfoliotitle {
@@ -2345,77 +2346,42 @@
 @media screen and (max-width: 966px) {
 
 	#toolsTrigger {
-		margin-top: 57.885%; /* 800px */
-		display: none;
+
 	}
 
 	#iconTrigger1 {
-		margin-top: 64%; /* 900px; */
-		display: none;
+
 	}
 
 	#synerginTrigger {
-		margin-top: 230%; /* 2900px; */
-		display: none;
+
 	}
 
 	#galleryDivMarginTrigger {
-		margin-top: 290%; /* 3100px; */
-		display: none;
+
 	}
 
 	#elevatorTriggerHeight{
-		margin-top: 265%;
-		display: none;
+
 	}
 
 	#elevatorTriggerContent{
-		margin-top: 278%;
-		display: none;
+
 	}
 
 	#changeIndesignTrigger {
-		margin-top: 287.5%;
-		display: none;
+
 	}
 
 	#changeFixedpicTrigger {
-		margin-top: 325%;
-		display: none;
+
 	}
 
 	#toolsTrigger {
-		display: none;
+
 	}
 
 	#iconTrigger1 {
-
-	}
-
-	#synerginTrigger {
-
-	}
-
-	#galleryDivMarginTrigger {
-
-	}
-
-	#elevatorTriggerHeight{
-
-	}
-
-	#elevatorTriggerContent{
-	}
-
-	#changeIndesignTrigger {
-
-	}
-
-	#changeFixedpicTrigger {
-
-	}
-
-	.trigger-class {
 
 	}
 
@@ -2450,7 +2416,7 @@
 	#javascriptLogo {
 
 	}
-
+																							/* 960 x 540 */
 	#htmlLogo {
 
 	}
@@ -2586,7 +2552,7 @@
 	.embedded-prezi {
 
 	}
-
+																								/* 960 x 540 */
 	.ep-trello {
 
 	}
@@ -2616,7 +2582,7 @@
 	}
 
 	#wowslider-container1 {
-	/*	width: 966px; */
+
 	}
 }
 																			/* 966 x 604 	Google Nexus 7 Landscape */ 																			/* 960 x 600 	Google Nexus 7.2 Landscape */ 
@@ -2668,35 +2634,35 @@
 @media screen and (max-width: 768px) {
 
 	#toolsTrigger {
-		display: none;
+
 	}
 
 	#iconTrigger1 {
-		display: none;
+
 	}
 																										/* 768px */
 	#synerginTrigger {
-		display: none;
+
 	}
 
 	#galleryDivMarginTrigger {
-		display: none;
+
 	}
 
 	#elevatorTriggerHeight{
-		display: none;
+
 	}
 																										/* 768px */
 	#elevatorTriggerContent{
-		display: none;
+
 	}
 
 	#changeIndesignTrigger {
-		display: none;
+
 	}
 
 	#changeFixedpicTrigger {
-		display: none;
+
 	}
 																										/* 768px */
 	#synerginFixedPic {
@@ -2710,7 +2676,6 @@
 		margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		position: fixed;
-		/*  background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
 		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366.jpg');
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -2721,11 +2686,11 @@
 	}
 
 	#micaCaption {
-		display: none;
+
 	}
 
 	.mobile-syn-pic {
-		display: block;
+	/*	display: block;
 		width: 100%;
 		z-index: -1;
 		overflow-x: hidden;
@@ -2734,141 +2699,77 @@
 		position: fixed;
 		background-image: url('../mediaFolder/indexRemakeMedia/teamusa768.jpg');
 		background-repeat: no-repeat;
-		background-size: 100%
+		background-size: 100% */
 	}
 																										/* 768px */
 	.landing-div {
-	/*	width: 100%;
-		display: block;
-		background-color: white; */
+
 	}
 
 	.mw-name {
-	/*	display: block;
-		font-family: 'Alegreya Sans', sans-serif;
-		color: black;
-		text-align: center;
-		width: 100%;
-		font-size: 3.5em;
-		padding: 4% 0% 0% 0%;
-		margin: 0% 0% 0% 0%; */
+
 	}
 
 	.job-title {
+
 	}
 																										/* 768px */
 	#javascriptLogo {
-	/*	background-image: url('../mediaFolder/indexRemakeMedia/javascriptLogo320.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 115px;
-		width: 10.6%;
-		display: inline-block;
-		margin: 0% 1% 0% 33%;	
-		float: left;
-		opacity: 1; */
+
 	}
 
 	#htmlLogo {
-	/*	background-image: url('../mediaFolder/indexRemakeMedia/htmlLogo320.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 115px;
-		display: inline-block;
-		width: 9.5%;
-		float: left;
-		opacity: 1;
-		margin: 0% 1% 0% 1%; */
+
 	}
 																										/* 768px */
 	#cssLogo {
-	/*	background-image: url('../mediaFolder/indexRemakeMedia/cssLogo320.png');
-		background-repeat: no-repeat;
-		display: inline-block;
-		background-size: 100%;
-		height: 115px;
-		width: 9.5%;
-		float: left;
-		opacity: 1;
-		margin: 0% 24% 0% 1.5%; */
+
 	}
 
 	.mw-intro {
-	/*	display: block;
-		width: 80%;
-		font-size: 1.15em;
-		margin: 0.6% 10% 3% 10%;
-		padding: 0% 0% 0% 0%;
-		text-align: center; */
+
 	}
 
 	.button-container {
-	/*	display: block;
-		width: 100%;
-		margin: 0% 0% 0% 0%;
-		padding-bottom: 0% 0% 0% 0%; */
+
 	}
 																										/* 768px */
 	.git-button {
-	/*	display: inline-block;
-		width: 20%;
-		margin: 0% 3.8% 0% 15%;
-		padding: 0% 0% 0% 0%; */
+
 	}
 
 	.portfolio-button {
-	/*	display: inline-block;
-		width: 20%;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;	*/
+
 	}
 
 	.button-container > span {
-	/*	widows: 20%;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%; */
+
 	}
 
 	.button-container > span > a {
-	/*	width: 70%;  */
-		
+
 	}
 
 	.linkedin-button {
-	/*	display: inline-block;
-		width: 20%;
-		margin: 0% 15% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		float: right; */
+
 	}
 																										/* 768px */
 	#scrollArrow {
-	/*	width: 10%;
-		margin: 2% 45% 2% 45%; */
+
 	}
 
 	.tools-proficiencies {
 		width: 100%;
 		height: 1000px;
-	/*	max-height: 780px;
-		margin: 0%;
-		color: white;
-		text-align: center;
-		position: absolute;
-		background-color: black; */
+
 	}
 
 	.tools-header {
-	/*	text-align: center; 
-		width: 100%; 
-		margin: 1% 0% 0% 0%; */
 		font-size: 2.4em; 
 	}
 
 	.tools-list {
-	/*	width: 33%;
-		display: inline-block;
-		padding-top: 7%; */
+
 	}
 																										/* 768px */
 	.tools-list > a {
@@ -3447,6 +3348,7 @@
 	}
 
 	.ep-trello {
+		margin-top: 5%;
 		background-image: url('../mediaFolder/indexRemakeMedia/trello568.png');
 		height: 74px;	
 	}
@@ -3884,15 +3786,17 @@
 	}
 
 	.tools-list > a {
-		font-size: 0.5em;
+		font-size: 0.4em;
 	}
 
 	#leftIcons {
-	
+		height: 100%;
+		max-height: 100%;
 	}
 
 	#rightIcons {
-
+		height: 100%;
+		max-height: 100%;
 	}
 
 	#ngwp {
@@ -3954,26 +3858,6 @@
 	    margin: 2% 15% 2% 15%;
 		background-color:#cccccc;	*/
 	}
-
-	.ep-photoshop {
-		background-image: url('../mediaFolder/indexRemakeMedia/photoshop_mica480.png');
-		height: 217px;
-	/*	height: 184px;	*/
-	}
-
-	.ep-prezi {
-		background-image: url('../mediaFolder/indexRemakeMedia/cube_prezi480.png');
-		height: 217px;
-	/*	height: 210px;	*/
-	}
-
-	#indesignBrochure {
-		width: 80%;
-		height: 217px;
-	/*	width: 70%;
-		height: 149px;
-		display: block;	*/
-	}
 																										/* 480px */
 	.elevator-title {
 		width: 100%;
@@ -4005,6 +3889,10 @@
 		padding: 0% 0% 0% 0%;
 		width: 100%;
 		background-color: black;	*/
+	}
+
+	#ptdiv {
+		height: 90px;
 	}
 																										/* 480px */
 	#galleryDiv {
@@ -4066,8 +3954,7 @@
 	}
 
 	#wowslider-container1 {
-	/*	width: 480px;
-		height: 192px; */
+
 	}
 
 
@@ -4438,10 +4325,12 @@
 	}
 																										/* 320px */
 	.tools-list > a {
-		font-size: 0.65em;
+		font-size: 0.355em;
 	}
 
 	#leftIcons {
+		height: 100%;
+		max-height: 100%;
 	/*	width: 33%;
 		height: 85%;
 		max-height: 85%; 
@@ -4456,6 +4345,8 @@
 	}
 
 	#rightIcons {
+		height: 100%;
+		max-height: 100%;
 	/*	width: 32%;
 		margin: 0% 1% 0% 0%;
 		padding: 0% 0% 0% 0%;
