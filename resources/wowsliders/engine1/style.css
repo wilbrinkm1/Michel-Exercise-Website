@@ -512,14 +512,6 @@
 		font-size: 1.8em;
 	}
 
-	#wowslider-container1 .ws-title div {
-		/*font-size: 1.1em;*/
-	}
-	#wowslider-container1 .ws_controls,
-	#wowslider-container1 .ws_bullets,
-	#wowslider-container1 .ws_thumbs {
-		display: none;
-	}
 }
 
 
