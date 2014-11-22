@@ -273,7 +273,6 @@
 
 	.tools-proficiencies {
 		width: 100%;
-		height: 1900px;
 		margin: 0%;
 		position: absolute;
 		text-align: center;
@@ -2843,6 +2842,7 @@
 	}
 
 	#portfolioDiv {
+	
 	}
 
 	#ptdiv {
