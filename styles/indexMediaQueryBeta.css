@@ -2065,7 +2065,7 @@
 																			/* 1024 x 600	Amazon Kindle Fire 1st Gen Landscape */
 																			/* 1024 x 600	Blackberry Playbook Landscape */
 
-@media screen and (max-width: 1025px) {
+@media all and (max-width: 1030px) {
  
 
 	#toolsTrigger {
