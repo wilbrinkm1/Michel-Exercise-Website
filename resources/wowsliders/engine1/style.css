@@ -8,7 +8,7 @@
 	zoom: 1; 
 	position: relative;
 	width: 100%;
-	max-height:768px;
+	max-height:872px;
 	margin:0px auto 0px;
 	z-index:90;
 	text-align:left; /* reset align=center */
@@ -74,7 +74,7 @@
 	margin:0;
 }
 #wowslider-container1 .ws_images > div > img {
-	max-height:768px;
+	max-height:872px;
 }
 
 #wowslider-container1 .ws_images iframe {
@@ -336,45 +336,52 @@
 
 #wowslider-container1 .ws_pause:hover, #wowslider-container1 .ws_play:hover {
     background-position: 100% 100% !important;
-}/* top right */
+}/* bottom center */
 #wowslider-container1  .ws_bullets {
-    top: 5px;
-    right: 10px;
+    bottom: 0px;
+	left:50%;
 }
-
+#wowslider-container1  .ws_bullets div{
+	left:-50%;
+}
 #wowslider-container1 .ws-title{
 	position:absolute;
 	display:block;
 	bottom: 3.5em;
-	left: 1em;
+	left: 6em;
 	margin-right:1em;
-	color:#7698c1;
+	padding: 1% 3%;
+	color:#FF9900;
 	z-index: 50;
 	font-family:'PT Sans', sans-serif;
-	line-height: 2.6em;
+	/*line-height: 6em;*/
 	font-weight: bold;
 	text-transform:uppercase;
 }
 #wowslider-container1 .ws-title div,#wowslider-container1 .ws-title span{
 	display:inline-block;
 	padding:0.5em;
-	background-color:rgba(0, 0, 0, 0.2);
+	background-color:#000000;
+	opacity: 0.7;
 	border-radius:0.1em;
 	-moz-border-radius:0.1em;
 	-webkit-border-radius:0.1em;
 }
 #wowslider-container1 .ws-title div{
-	padding:0.6em;
+	width: auto;
+	max-width: 85%;
+	padding:0px;
 	display:block;
 	margin-top:0.3em;
-	font-size: 1.8em;
+	font-size: 3.2em;
 	font-weight: normal;
 	text-transform:none;
 	color: #FFFFFF;
-	line-height: 1.15em;
+	line-height: 1.4em;
 }
 #wowslider-container1 .ws-title span{
-	font-size: 2.5em;
+	font-size: 4em;
+	padding: 0px;	
 }#wowslider-container1  .ws_thumbs { 
 	overflow:auto;
 	/*z-index:60;*/
@@ -392,11 +399,11 @@
 	text-decoration: none;
 	display: inline-block;
 	border: 0;
-	margin:2.63%;
+	margin:0.28%;
 	text-indent:0;
-	padding: 3.51%;
-	width: 87.72%;
-	max-width: 100px;
+	padding: 0.37%;
+	width: 11.2%;
+	max-width: 120px;
 }
 #wowslider-container1 .ws_thumbs a:hover{
 	opacity:1;
@@ -404,27 +411,24 @@
 #wowslider-container1 .ws_thumbs a:hover img{
 	visibility:visible;
 }
-#wowslider-container1 .ws_images {
-	margin-left: 12.9em;
+#wowslider-container1 .ws_images,
+#wowslider-container1 .ws_shadow {
+	margin-bottom: 11.9em;
 }
-#wowslider-container1 div.ws_shadow {
-	left: 12.9em;
-	right: -$frameL$%;
-	margin-left: -$frameL$%;
-	width: auto;
-}
-#wowslider-container1 .ws_thumbs {
+#wowslider-container1  .ws_thumbs {
     position: absolute;
     text-align: left;
 
-    top: 0;
+    bottom: 0;
     left: 0;
-	width:12.9em;
-	height:100%;
+	width:100%;
+	height: 11.9em;
 }
 #wowslider-container1  .ws_thumbs div{
 	position:relative;
-	width:100%;
+	letter-spacing:-4px;
+	width:119.2em;
+	height: 100%;
 }#wowslider-container1 .ws_thumbs a.ws_selthumb{
 	background-color: rgba(118, 152, 193, 1);
 }
@@ -436,25 +440,20 @@
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-#wowslider-container1  .ws_logo{
-	position: absolute;
-	left:0;
-	top:0;
-	height: 100%;
-	width: 100%;
-	z-index: 9;
-	background: url(./loading.gif) 50% 50% no-repeat;
+#wowslider-container1 .ws_images > ul{
+	animation: wsBasic 70.4s infinite;
+	-moz-animation: wsBasic 70.4s infinite;
+	-webkit-animation: wsBasic 70.4s infinite;
 }
-#wowslider-container1  img.loading{
-	width:100px;
-	height:100px;
-	background: url(./loading.gif) 50% 50% no-repeat;
-}
+@keyframes wsBasic{0%{left:-0%} 10.65%{left:-0%} 12.5%{left:-100%} 23.15%{left:-100%} 25%{left:-200%} 35.65%{left:-200%} 37.5%{left:-300%} 48.15%{left:-300%} 50%{left:-400%} 60.65%{left:-400%} 62.5%{left:-500%} 73.15%{left:-500%} 75%{left:-600%} 85.65%{left:-600%} 87.5%{left:-700%} 98.15%{left:-700%} }
+@-moz-keyframes wsBasic{0%{left:-0%} 10.65%{left:-0%} 12.5%{left:-100%} 23.15%{left:-100%} 25%{left:-200%} 35.65%{left:-200%} 37.5%{left:-300%} 48.15%{left:-300%} 50%{left:-400%} 60.65%{left:-400%} 62.5%{left:-500%} 73.15%{left:-500%} 75%{left:-600%} 85.65%{left:-600%} 87.5%{left:-700%} 98.15%{left:-700%} }
+@-webkit-keyframes wsBasic{0%{left:-0%} 10.65%{left:-0%} 12.5%{left:-100%} 23.15%{left:-100%} 25%{left:-200%} 35.65%{left:-200%} 37.5%{left:-300%} 48.15%{left:-300%} 50%{left:-400%} 60.65%{left:-400%} 62.5%{left:-500%} 73.15%{left:-500%} 75%{left:-600%} 85.65%{left:-600%} 87.5%{left:-700%} 98.15%{left:-700%} }
+
 #wowslider-container1 .ws_bullets  a img{
 	text-indent:0;
 	display:block;
-	top:20px;
-	left:-50px;
+	bottom:20px;
+	left:-60px;
 	visibility:hidden;
 	position:absolute;
     border: 4px solid rgba(0, 0, 0, 0.2);
@@ -468,7 +467,7 @@
 }
 
 #wowslider-container1 .ws_bulframe div div{
-	height:100px;
+	height:90px;
 	overflow:visible;
 	position:relative;
 }
@@ -476,12 +475,12 @@
 	left:0;
 	overflow:hidden;
 	position:relative;
-	width:100px;
+	width:120px;
 	background-color:rgba(0, 0, 0, 0.2);
 }
 #wowslider-container1  .ws_bullets .ws_bulframe{
 	display:none;
-	top:27px;
+	bottom:27px;
 	overflow:visible;
 	position:absolute;
 	cursor:pointer;
@@ -493,9 +492,9 @@
 #wowslider-container1 .ws_bulframe span{
 	display:block;
 	position:absolute;
-	top:-10px;
+	bottom:-10px;
 	margin-left:-1px;
-	left:50px;
+	left:60px;
 	background:url(./triangle.png);
 	width:15px;
 	height:6px;
@@ -503,16 +502,10 @@
 	height: auto;
 }
 
-
-
-@media screen and (max-width: 640px) {
-
-
-	#wowslider-container1 .ws-title span {
-		font-size: 1.8em;
+@media all and (max-width:400px){
+	#wowslider-container1 .ws_controls,
+	#wowslider-container1 .ws_bullets,
+	#wowslider-container1 .ws_thumbs{
+		display: none
 	}
-
 }
-
-
-
