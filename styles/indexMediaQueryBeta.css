@@ -2132,8 +2132,8 @@
 	}
 
 	#teamCaption {
-		top: 40%;
-		margin: 10% 0% 0% 0%;
+		bottom: 13%;
+		margin: 0% 0% 0% 0%;
 		font-size: 1.5em;
 	}
 																										/* 1024px */
@@ -2706,6 +2706,7 @@
 	}
 
 	#teamCaption {
+		top: 0px;
 		margin: 58% 0% 0% 0%;
 	}
 
