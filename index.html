@@ -7,10 +7,15 @@
 
 
 <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300|Inika' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
 <link rel="stylesheet" type="text/css" href="resources/tooltipster-master/css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="resources/tooltipster-master/css/themes/tooltipster-light.css" />
 <link rel="stylesheet" href="styles/buttons.css">
 <link rel="stylesheet" href="styles/indexMediaQueryBeta.css">
 <link rel="stylesheet" type="text/css" href="resources/wowsliders/engine1/style.css"/>
+
+
 
 <script type="text/javascript" src="resources/wowsliders/engine1/jquery.js"></script>
 <script type="text/javascript" src="resources/ScrollMagic-master/js/_dependent/jquery.min.js"></script>
@@ -30,6 +35,9 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script>-->
 <script type="text/javascript" src="js/buttons.js"></script>
 <script type="text/javascript" src="resources/tooltipster-master/js/jquery.tooltipster.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/TweenMax.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/TimelineMax.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/plugins/ScrambleTextPlugin.min.js"></script>
 <script type="text/javascript" src="js/indexJS.js"></script>
 </head>
 <body>
@@ -39,9 +47,11 @@
 <div id="iconTrigger1" class="trigger-class">Icon trigger</div> 
 -->
 <div id="toolListTrigger" class="trigger-class">Tool list trigger</div>
-<div id="portfolioTrigger" class="trigger-class">Tool list trigger</div>
+<div id="portfolioTrigger" class="trigger-class">Portfolio trigger</div>
 <div id="synerginTrigger" class="trigger-class">Synergin trigger</div>
 <div id="elevatorTriggerHeight" class="trigger-class">Elevator trigger Height</div>
+<div id="heightHolder" class="trigger-class">Elevator trigger Content</div>
+
 <!-- 
 <div id="elevatorTriggerContent" class="trigger-class">Elevator trigger Content</div>
 <div id="galleryDivMarginTrigger" class="trigger-class">galleryDivMargin Trigger</div>
@@ -49,6 +59,8 @@
 
 
 <!-- Fixed Synergin pic for parallax, z-index: -1 -->
+<div id="loading"></div>
+
 <div id="synerginFixedPic">
 	
 	<p id="teamCaption">Hi and welcome, I'm Michel and I'm available for freelance web development projects, working solo or on a team remotely. Here's me (right) and the Synergin team, a non-profit social extrepreneurship formed to serve the Athens, Greece population.</p>
@@ -61,65 +73,79 @@
 
 	<h1 class="mw-name">Michel Wilbrink</h1>
 	<h2 class="job-title">Front End Code Herder and Web Designer</h2>	
-	<div id="javascriptLogo"></div>
-	<div id="htmlLogo"></div>
-	<div id="cssLogo"></div>
+	<img src="mediaFolder/indexRemakeMedia/javascriptLogoResized.png" id="javascriptLogo"/>
+	<img src="mediaFolder/indexRemakeMedia/htmlLogo1024.png" id="htmlLogo"/>
+	<img src="mediaFolder/indexRemakeMedia/cssLogo1024.png" id="cssLogo"/>
 	<p class="mw-intro">Hi and welcome. I'm Michel and I use a variety of web tools and programming proficiencies to breathe life into your designs. Promote yourself, your business, or your craft with a creative, professional website.
 	</p>
 	<div class="button-container">
 	   	<a href="https://github.com/wilbrinkm1" class="button glow git-button">My Github</a>
 		<span style="display: inline-block;" class="button-dropdown glow portfolio-button" data-buttons="dropdown">
 		   <a href="#" class="button glow">Portfolio</a>
-		   <ul class="button-dropdown-menu-above" style="display: none;">
+		   <ul class="button-dropdown-menu-below" style="display: none;">
+		        <li class="button-dropdown-divider"><a>Websites Built:</a></li>
+		    	<li><a href="http://www.gregorytitleservices.com">Gregory Title Services</a></li>
+		   		<li><a href="http://www.thenautifish.com">The Nautifish Rumbar</a></li>
 		   		<li><a href="http://www.insuretheshore.com">InsuretheShore.com</a></li>
-		   		<li><a href="derekPlusFolder/indexTry5AddScrollNav.html">Printing Plus Website (in progress)</a></li>
+		   		<li><a href="http://www.homebuyershound.com">Homebuyers Hound</a></li>
+		        <li class="button-dropdown-divider"><a href="#portfolioDiv">Quick Portfolio</a></li>
+		        <li class="button-dropdown-divider"><a>Javascript/CSS Examples:</a></li>
 		        <li><a href="currencyExchange.html">Currency Calculator</a></li>
-		        <li><a href="uniqueBoxRestyled.html">Hover Button App</a></li>
 		        <li><a href="jsExercises.html">JS Exercises</a></li>
-		        <li><a href="#portfolioDiv">Photoshop-InDesign-Prezi Portfolio</a></li>
 		    	<li><a href="chooseAdventure.html">Choose Your Own Adventure</a></li>
 		    	<li><a href="schedulePlanner.html">Schedule Planner</a></li>
-		    	<li><a href="http://www.insuretheshore.com">Current Project (working with Responsive Design)</a></li>
 		    </ul>
 		</span>
 	    <a href="http://www.linkedin.com/in/michelwilbrink" class="button glow linkedin-button">Linked In</a>
 	</div>
-	<img src="mediaFolder/indexRemakeMedia/new_down_arrow.png" id="scrollArrow"/>
+	<!-- <img src="mediaFolder/indexRemakeMedia/new_down_arrow.png" id="scrollArrow"/> -->
+	<div id="skypeDiv">
+		<img src="mediaFolder/indexRemakeMedia/skypeicon.png" id="skypeIcon"/>
+		<p id="skypeMessage">Have a question? I'm currently on Skype at your convenience -Michel</p>
+		<p class="skypeinfo">Skype Name: michel.andrei.w</p>
+		<p class="skypeinfo">Or email me for a quick response at: wilbrinkm1@gmail.com</p>
+	</div>
 	<span class="button-dropdown skype-button" data-buttons="dropdown">
-    <a href="#" class="button button-rounded button-flat-action">Have a question? I'm currently on Skype  at your convenience -Michel</a>
- 	<ul class="button-dropdown-menu-above">
-	   	<li>Skype Name:</li>
-	   	<li>michel.andrei.w</li>
-	   	<li>Or email me for a quick response at:</li>
-	   	<li>wilbrinkm1@gmail.com</li>
-	</ul>
+	    <a href="#" class="button button-rounded button-flat-action">Have a question? I'm currently on Skype  at your convenience -Michel</a>
+	 	<ul class="button-dropdown-menu-above">
+		   	<li>Skype Name:</li>
+		   	<li>michel.andrei.w</li>
+		   	<li>Or email me for a quick response at:</li>
+		   	<li>wilbrinkm1@gmail.com</li>
+		</ul>
 	</span>
 </div>
+
+
+<!--	<div id="skype">
+		<img src="media/iconcurrent_owner.png" class="blockicon"/>
+		<p id="skypeIntro">Have a question? I'm currently on Skype  at your convenience -Michel</p>
+	</div> -->
 
 
 <div class="tools-proficiencies">
 	<p class="tools-header">Tools & Proficiencies</p>
 	<div id="leftIcons"></div>
 	<div class="tools-list">
-		<a href="http://www.w3.org/html/wiki/FAQs" id="htmltool" class="toolname tooltip" title="www.w3.org/html/wiki/FAQs">HTML5</a>
+		<a href="http://www.w3.org/html/wiki/FAQs" id="htmltool" class="toolname" title="www.w3.org/html/wiki/FAQs">HTML5</a>
 		<a href="http://www.w3schools.com/css/css3_intro.asp" class="toolname tooltip" title="www.w3schools.com/css">CSS3</a>
 		<a href="http://www.w3schools.com/js/" class="toolname tooltip" title="	www.w3schools.com/js">Javascript</a>
 		<a href="http://jquery.com/" class="toolname tooltip" title="www.jquery.com/">jQuery</a>
+		<a href="" class="toolname tooltip" title="">Wordpress</a>
+		<a href="http://www.woothemes.com/woocommerce/" class="toolname tooltip" title="www.woothemes.com">E-Commerce</a>
+		<a href="http://greensock.com/" class="toolname tooltip" title="www.greensock.com/">Greensock AP</a>
 		<a href="http://www.photoshop.com/" class="toolname tooltip" title="www.photoshop.com/">Photoshop</a>
+		<a href="http://www.adobe.com/products/indesign.html" class="toolname tooltip" title="www.adobe.com/products/indesign.html">InDesign</a>
 		<a href="https://github.com/" class="toolname tooltip" title="www.github.com/">Github</a>	
 		<a href="http://getbootstrap.com/" class="toolname tooltip" title="www.getbootstrap.com/">Bootstrap</a>
-		<a href="http://greensock.com/" class="toolname tooltip" title="www.greensock.com/">Greensock AP</a>
 		<a href="http://prezi.com/index/13/" class="toolname tooltip" title="www.prezi.com">Prezi</a>
-		<a href="http://www.adobe.com/products/indesign.html" class="toolname tooltip" title="www.adobe.com/products/indesign.html">InDesign</a>
-		<a href="" class="toolname tooltip" title="">Wordpress</a>
-		<a href="https://trello.com/" class="toolname tooltip" title="www.trello.com">Trello</a>
 		<a href="http://wowslider.com/" class="toolname tooltip" title="www.wowslider.com/">Wowslider</a>
 		<a id="ngwpsub" class="toolname">Currently training in:</a>
 		<a href="http://meanjs.org/" id="ngwpsub" class="toolname tooltip" title="www.meanjs.org/">MongoDB, ExpressJS, AngularJS, Node.js</a>
 	</div>
 	<div id="rightIcons"></div>	
 	<div id="portfolioDiv">
-		<div id="ptdiv"><p id="portfoliotitle">Quick Portfolio</p></div>	
+		<div id="ptdiv"><p id="portfoliotitle">QUICK PORTFOLIO</p></div>	
 		<div id="wowslider-container1">
 			<div class="ws_images"><ul>
 				<li><img src="resources/wowsliders/data1/images/color_run_web.png" alt="Photoshop & Graphic Design" title="Photoshop & Graphic Design" id="wows1_0"/>Many projects involve heavy photo-editting and graphic creation so it's vital to be proficient in Photoshop and supporting Adobe cloud software. The overall workflow is faster when I can instanteously manage the characteristics of my images and elements.</li>
@@ -151,39 +177,6 @@
 	</div>
 </div>
 
-
-
-
-
-
-
-
-<!--
-		<div id="wowslider-container1">
-			<div class="ws_images">
-				<ul>
-					<li><img src="resources/wowsliders/data1/images/color_run_web.png" alt="Photoshop & Graphic Design" title="Photoshop & Graphic Design" id="wows1_0"/>Many projects involve heavy photo-editting and graphic creation so it's vital to be proficient in Photoshop and supporting Adobe cloud software. The overall workflow is faster when I can instanteously manage the characteristics of my images and elements.</li>
-				</ul>
-			</div>
-			<div class="ws_thumbs">
-				<div>
-					<a href="resources/wowsliders/data1/images/color_run_web.png" title="Photoshop & Graphic Design"><img src="resources/wowsliders/data1/tooltips/color_run_web.png" alt="" /></a>
-					<a href="resources/wowsliders/data1/images/cube_prezi_web.png" title="Prezi Presentations"><img src="resources/wowsliders/data1/tooltips/cube_prezi_web.png" alt="" /></a>
-					<a href="resources/wowsliders/data1/images/insuretheshore_web.png" title="Insuretheshore.com"><img src="resources/wowsliders/data1/tooltips/insuretheshore_web.png" alt="" /></a>
-					<a href="resources/wowsliders/data1/images/responsive_example_web.png" title="Responsive Design"><img src="resources/wowsliders/data1/tooltips/responsive_example_web.png" alt="" /></a>
-					<a href="resources/wowsliders/data1/images/indesign_web.png" title="InDesign"><img src="resources/wowsliders/data1/tooltips/indesign_web.png" alt="" /></a>
-					<a href="resources/wowsliders/data1/images/googlemaps_web.png" title="Google Interactive Maps"><img src="resources/wowsliders/data1/tooltips/googlemaps_web.png" alt="" /></a>
-					<a href="resources/wowsliders/data1/images/tattoo_girl3_web.jpg" title="Photoshop & Illustrator"><img src="resources/wowsliders/data1/tooltips/tattoo_girl3_web.jpg" alt="" /></a>
-					<a href="resources/wowsliders/data1/images/micabwaruba_web.jpg" title="Mica Wilbrink"><img src="resources/wowsliders/data1/tooltips/micabwaruba_web.jpg" alt="" /></a>
-				</div>
-			</div>
-			<div class="ws_shadow"></div>
-		</div>
-	</div>	
-<script type="text/javascript" src="resources/wowsliders/engine1/wowslider.js"></script>
-<script type="text/javascript" src="resources/wowsliders/engine1/script.js"></script>
-</div>
--->
 
 <div id="elevatorDiv">
 	<div id="elevatorPitch">

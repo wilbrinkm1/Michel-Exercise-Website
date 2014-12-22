@@ -1,23 +1,748 @@
 
 
+body, html {
+	margin: 0%;
+	padding: 0%;
+	overflow-x: hidden;
+}
 
 
+p, div {
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		-webkit-padding-before: 0em;
+		-webkit-padding-after: 0em;
+		-webkit-padding-start: 0px;
+		-webkit-padding-end: 0px;
+
+}
+
+#loading {
+	position: absolute;
+	z-index: 500;
+	top: 0%;
+	bottom: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 1;
+	display: block;
+}
 /* =================================================================================================================*/
 
 																		/* 	2880 x 1800 Your Macbook Pro 15'
 																			2800 x 1920 Desktop | 3:2
 																		*/
+@media screen and (max-width: 2880px) {
+
+
+	body {
+		margin: 0%;	
+		padding: 0%;
+		font-family: 'Alegreya Sans', sans-serif;
+		background-color: #000000;
+	/*	overflow-x: hidden; */
+	}
+
+	#toolsTrigger {
+		display: none;
+		margin-top: 57.885%;
+	}
+
+	#iconTrigger1 {
+		display: none;
+		margin-top: 64%;
+	}
+
+	#toolListTrigger {
+		margin-top: 70%;
+		display: block;
+	}
+
+	#portfolioTrigger {
+		margin-top: 130%;
+		display: block;		
+	}
+
+	#synerginTrigger {
+		margin-top: 220%; 
+	}
+
+	#elevatorTriggerHeight{
+		margin-top: 250%;
+	}
+
+	#elevatorTriggerContent{
+		margin-top: 266%;
+	}
+
+	#changeIndesignTrigger {
+		margin-top: 270%;
+	}
+
+	#changeFixedpicTrigger {
+		margin-top: 325%;
+	}
+
+	#heightHolder {
+		margin-top: 270%;
+	}
+
+	.trigger-class {
+		position: absolute;
+		z-index: 5;
+		width: 60px;
+		height: 20px;
+		font-size: 6px;
+		background-color: orange;
+	}
+
+	#synerginFixedPic {
+		display: block;
+		width: 100%;
+		height: 100%;
+		max-width: 2880px; 
+		z-index: -1;
+		overflow-x: hidden;
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		position: fixed;
+		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		/*top: 0%;
+		left: 0px;*/
+	}
+
+	#teamCaption {
+		width: 90%;	
+		height: auto;
+		z-index: -1;
+		position: absolute;
+		opacity: 1;
+		display: block;
+		padding: 0% 5% 0% 5%;
+		margin: 0% 0% 0% 0%;
+		text-align: center;
+		font-size: 3.5em;
+		background-color: black;
+		color: #ffffff;
+	}
+
+	#micaCaption {
+		float: right;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 70%;
+		width: 100%;
+		height: auto;
+		opacity: 1;
+		z-index: -1;
+		position: absolute;
+		display: block;
+		font-size: 3.5em;
+		background-color: black;
+		color: white;
+	}
+
+	.mobile-syn-pic {
+		display: none;
+
+	}
+
+	.landing-div {
+		width: 100%;
+		height: 1413px;
+		/* min-height: 1413px; */
+		margin: 0% 0% 0% 0%;
+		padding: 0%;
+		display: block;
+		background-image: url('../mediaFolder/indexRemakeMedia/micaBWarubaSFW.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.mw-name {
+		width: 100%;
+		padding: 1% 0% 0% 0%;
+		margin: 0% 0% 0% 0%;
+		display: block;
+		font-size: 9.58em;
+		text-align: center;
+		font-family: 'Alegreya Sans', sans-serif;
+		color: white;
+	}
+
+	.job-title {
+		font-size: 2.5em;
+		margin: 5px 23% 1.5% 23%;
+		display: block;
+		text-align: center;
+		font-style: italic;
+		font-family: 'Alegreya Sans', sans-serif;
+		color: white;
+	}
+
+	#javascriptLogo {
+		float: left;
+		width: 5.2%;
+		margin: 0% 1.2% 0% 40.75%;	
+		opacity: 0;
+		display: inline-block;
+		/* height: 108px;
+		background-image: url('../mediaFolder/indexRemakeMedia/javascriptLogo.png');
+		background-repeat: no-repeat;
+		background-size: 100%; */
+	}
+
+	#htmlLogo {
+		float: left;
+		width: 4.5%;
+		opacity: 0;
+		display: inline-block;
+		margin: 0% 1% 0% 1%;
+		/* height: 108px;
+		background-image: url('../mediaFolder/indexRemakeMedia/htmlLogo.png');
+		background-repeat: no-repeat;
+		background-size: 100%; */
+	}
+
+	#cssLogo {
+		float: left;
+		width: 4.5%;
+		margin: 0% 24% 0% 1.5%;
+		opacity: 0;
+		display: inline-block;
+		/* height: 108px;
+		background-image: url('../mediaFolder/indexRemakeMedia/cssLogo.png');
+		background-repeat: no-repeat;
+		background-size: 100%; */
+	}
+
+	.mw-intro {
+		width: 35%;
+		margin: 0% 32.5% 0.5% 32.5%;
+		padding: 0% 0% 0% 0%;
+		display: none;
+		font-size: 1.5em;
+		text-align: center;
+		color: #A71616;
+	}
+
+	.button-container {
+		width: 100%;
+		height: auto;
+		margin: 0% 0% 19% 0%;
+		padding: 0%;
+		display: block;
+	}
+
+	.git-button {
+		float: left;
+		clear: left;
+		width: 12%;
+		height: 37px;
+		margin: 1.5% 0% 0% 29.95%;
+		padding: 0.8% 0%;
+		display: block;
+		font-size: 3.5em;
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.portfolio-button {
+		float: left;
+		width: 12%;
+		height: auto;	
+		margin: 1.5% 2% 19.38% 2%;
+		padding: 0% 0% 0% 0%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.portfolio-button > a {
+		width: 100%; 
+		/* height: 37px; */
+		padding: 6.8% 0%;
+		font-size: 3.5em;
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.portfolio-button > ul > {
+	}
+
+	.portfolio-button > ul > li > a {
+		font-size: 2.5em;
+		line-height: 2.5em;
+		left: -15%;
+	}
+
+	.linkedin-button {
+		float: left;
+		width: 12%;
+		/* height: 37px; */
+		margin: 1.5% 0% 0% 0%;
+		padding: 0.8% 0%;
+		display: inline-block;
+		font-size: 3.5em;
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+	}
+
+	#scrollArrow {
+		width: 3%;
+		margin: 2% 40% 2% 48.8%;
+	}
+/*
+	.skype-button {
+		position: absolute;
+		top: 30%;
+		z-index: 11;
+		width: 97.33%;     changed from 97.33% 
+		margin: 0% 0% 0% 0%;
+		display: block;
+		line-height: 70px;
+		opacity: 0.5;
+		font-size: 1.5em;
+		text-align: center;
+		background-color: #000000;
+	}*/
+
+	#skypeDiv {
+		position: absolute;
+		bottom: 21.4%;
+		z-index: 11;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		display: block;
+		font-size: 1.5em;
+		background-color: rgba(0,0,0,0.3);
+	}
+
+	#skypeIcon {
+		float: left;
+		width: 2.4%;
+		padding: 0.8% 2% 0% 2%;
+		display: inline-block;
+	}
+
+	#skypeMessage {
+		width: 90%;
+		display: inline-block;
+		color: #ffffff;
+		font-size: 2.2em;
+		-webkit-margin-before: 0px;
+		-webkit-margin-after: 0px;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		padding: 1% 0%;
+	}
+
+	.skypeinfo {
+		width: 90%;
+		display: inline-block;
+		-webkit-margin-before: 0px;
+		-webkit-margin-after: 0px;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		padding: 1% 0% 1% 6.4%;
+		opacity: 0;
+		color: #ffffff;
+		font-size: 2.2em;
+		display: none;
+	}
+
+	.tools-proficiencies {
+		width: 100%;
+		margin: 0%;
+		position: absolute;
+		text-align: center;
+		color: white;
+		background-color: black;
+	}
+																									/* 2880px */
+	.tools-header {
+		width: 100%; 
+		margin: 0% 0% 0% 0%;
+		padding-top: 2%; 
+		text-align: center; 
+		font-size: 7.58em;
+	}
+
+	.tools-list {
+		width: 33%;
+		padding-top: 7%;
+		display: inline-block;
+		font-size: 3.1em
+	}
+
+	.tools-list > a {
+		width: 100%;
+		margin: 4% 0% 4% 0%;
+		display: block;
+		font-size: 1.55em;
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	.tool-name {
+		color: #ffffff;
+	}
+	#leftIcons {
+		width: 33%;
+		height: 1800px;
+		max-height: 75%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		position: relative;
+		top: 0%;
+		float: left;
+		display: inline-block;
+		opacity: 1;
+		background-image: url('../mediaFolder/indexRemakeMedia/left-icons.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;*/
+	}
+
+	#rightIcons {
+		width: 32%;
+		height: 1800px;
+		max-height: 75%; /* 90%; */
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		position: relative;
+		top: 0%;
+		float: right;
+		display: inline-block;
+		opacity: 1;
+		background-image: url('../mediaFolder/indexRemakeMedia/right-icons.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;/*82%;*/
+	}
+
+	#ngwp {
+		width: 100%; 
+		margin: 0% 0% 1% 0%;
+		-webkit-margin-after: 1%; /*0.02%;*/
+		display: block;
+		font-size: 1.35em;
+		color: white;
+	}
+
+	#ngwpsub {
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		display: block;
+		color: white;
+		font-size: 0.7em; 
+		font-style: italic; 
+	}
+
+	#portfolioDiv {
+		width:100%; 
+		height: auto;
+		background-color: #000000;
+	}
+
+	#ptdiv {
+		width: 100%;
+		height: 250px;
+		margin-top: 4%;
+		display: inline-block;
+		/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.21, #FF681C),color-stop(1, #FF9D00));
+		background-image: -o-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
+		background-image: -moz-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);background-image: -webkit-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
+		background-image: -ms-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);background-image: linear-gradient(to bottom, #FF681C 21%, #FF9D00 100%);
+		*/
+		background-color: #000000;
+	}
+
+	#portfoliotitle {
+		width: 100%;
+		height: 150px;
+		margin: 0% 0% 0% 0%;
+		display: inline-block;
+		text-align: center; 
+		font-size: 7.58em;
+		color: -webkit-gradient(linear,left top,left bottom,color-stop(0.21, #FF681C),color-stop(1, #FF9D00));
+		color: -o-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
+		color: -moz-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);color: -webkit-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
+		color: -ms-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);color: linear-gradient(to bottom, #FF681C 21%, #FF9D00 100%);
+	}
+
+	#elevatorDiv { 
+		width: 100%; 
+		height: 100%;
+		margin: 207% 0% 0% 0%;
+		position: relative;
+		background-color: #ffffff;
+	}
+
+	.elevator-div { 
+		width: 100%; 
+		height: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+		background-color: white;
+	}
+																									/* 2880px */
+	.elevatorPitch {
+		width: 100%;
+		height: auto;
+		margin: 0%;
+		padding: 0%;
+		display: inline-block;
+	}
+
+	.br {
+		display: block;
+	}
+
+	.elevator-third {
+		width: 33%;
+		padding-top: 3%;
+		display: inline-block;
+	}
+
+	.elevator-pic {
+	    width: 80%;
+	    height: 375px;
+	    margin: 2% 10% 2% 10%;
+		display: block;
+		border-style: none;
+		background-color:#cccccc;
+	}
+
+	.elevator-title {
+		width: 100%;
+		margin: 1% 0% 2% 0%;
+		padding: 0% 0% 0% 0%;
+		display: block;
+		text-align: center;
+		font-size: 3em;
+	}
+
+	.elevator-text {
+	    width: 78.1%;
+	    height: auto;
+	    margin: 0% 0% 7% 0%;
+	    padding: 0% 10% 0% 10%;
+	    display: block;
+		text-align: center;
+	    font-size: 2.5em;
+	}
+
+																									/* 2880px */
+	.ep-trello {
+		background-image: url('../mediaFolder/indexRemakeMedia/trello1366.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	.ep-mica-gamma {
+		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-color: #000000;
+	}
+
+	.ep-html-wordpress {
+		background-image: url('../mediaFolder/indexRemakeMedia/drawcircles.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		border-style: none;
+	}
+
+
+	.prezi-div {
+		width: 100%;
+		height: 600px;
+		margin-top: 0%;	
+		padding: 0%;
+		display: block;
+		background-image: url('../mediaFolder/indexRemakeMedia/big-fish-in-the-blue-ocean1366.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+    
+	.embedded-prezi {
+		width: 90%;
+		height: 90%;
+		padding: 3% 5% 3% 5%;
+		margin: 0% 0% 0% 0%;
+		display: block;
+	}
+/*
+	.skype-button {
+		width: 97.33%;   
+		margin: 19.38% 0% 0% 0%;
+		display: block;
+		line-height: 70px;
+		opacity: 0.5;
+		font-size: 1.5em;
+		text-align: center;
+		background-color: #000000;
+	}
+
+	.skype-button > a {
+		width: 97.33%;
+		height: 90px;
+		margin: 0% 0% 0% 0%;
+		display: block;
+		line-height: 90px;
+		font-size: 2.1em;
+		background-color: #000000;
+	}
+
+	.skype-button > ul {
+		width: 97.33%;
+		font-size: 1.4em;
+	}
+
+	.skype-button > ul > li {
+		width: 97.33%;
+		padding-left: 4%;
+		font-size: 1.4em;
+		text-align: left;
+	} */
+
+	#wowslider-container1 {
+		width: 100%;
+		background-color: #000000;
+	/*	display: block;
+		position: absolute;
+		z-index: 1; */
+	}
+
+	.ws_thumbs {
+		background-color: #000000;
+	/*	width: 100%; */
+	}
+
+	.ws_title {
+		font-size: 3.2em;
+	}
+
+	.ws-title-wrapper {
+		font-size: 3.2em;
+	}
+
+	.ws_title > span {
+		font-size: 3.2em;
+	}
+
+	.ws_title > div {
+		font-size: 3.2em;
+	}
+}
 
 
 /* =================================================================================================================*/
 
+@media screen and (max-width: 2560px) {
+																									/*	2560 x 1440 */
+	.landing-div {
+		height: 1256px;
+	}
 
+	#skypeDiv {
+		bottom: 12.4%;
+	}
+
+	#synerginTrigger {
+		margin-top: 240%; 
+	}
+
+	#elevatorTriggerHeight{
+		margin-top: 270%;
+	}
+
+	.elevator-pic {
+	    width: 80%;
+	    height: 330px;
+	    margin: 2% 10% 2% 10%;
+		display: block;
+		border-style: none;
+		background-color:#000000;
+	}
+
+	.elevator-text {
+		font-size: 2.4em;
+	}
+}
 
 /* =================================================================================================================*/
 
+@media screen and (max-width: 2048px) {
+																										/*	2048 x 1536 */
+	#portfolioTrigger {
+		margin-top: 145%;
+		display: block;		
+	}
 
+	#synerginTrigger {
+		margin-top: 280%; 
+	}
 
-/* =================================================================================================================*/
+	#elevatorTriggerHeight{
+		margin-top: 330%;
+	}
+
+	.landing-div {
+		height: 1005px;
+	}
+
+	.git-button {
+		font-size: 3em;
+		margin-left: 30.4%;
+	}
+
+	.portfolio-button > a {
+		font-size: 3em;
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.portfolio-button > ul > {
+	}
+
+	.portfolio-button > ul > li > a {
+		font-size: 2em;
+		line-height: 2em;
+	}
+
+	.linkedin-button {
+		font-size: 3em;
+	}
+
+	#skypeDiv {
+		bottom: 34.5%;
+	}
+
+	#skypeIcon {
+		width: 3.5%;
+	}
+
+	#elevatorDiv { 
+		margin-top: 273%;
+	}
+
+	#heightHolder {
+		margin-top: 420%;
+	}
+
+	.elevator-pic {
+	    width: 90%;
+	    height: 266px;
+	    margin: 2% 5% 2% 5%;
+	}
+
+	.elevator-text {
+		font-size: 2.2em;
+	}
+}
 
 
 
@@ -26,14 +751,75 @@
 																				/* 1920px*/
 
 
-@media screen and (max-width: 2900px) {
+@media screen and (max-width: 1920px) {
 
+	.mw-name {
+		font-size: 6.3em;
+	}
 
+	.job-title {
+		font-size: 1.8em;
+	}
+
+	.git-button {
+		font-size: 2.3em;
+		margin-left: 30%;
+	}
+
+	.portfolio-button > a {
+		font-size: 2.3em;
+	}
+
+	.portfolio-button > ul > li > a {
+		font-size: 2.3em;
+		line-height: 2.3em;
+	}
+
+	.linkedin-button {
+		font-size: 2.3em;
+	}
+
+	#skypeDiv {
+		bottom: 6.5%;
+	}
+
+	#skypeIcon {
+		width: 3.1%;
+	}
+
+	#skypeMessage {
+		font-size: 1.8em;
+	}
+	
+	.skypeinfo {
+		font-size: 1.8em;	
+	}
+
+	.tools-header {
+		font-size: 5.5em;
+	}
+
+	.tools-list > a {
+		font-size: 1.35em;
+	}
+
+	#teamCaption {
+		font-size: 2.8em;
+	}
+
+	.elevator-text {
+		font-size: 2.05em;
+	}
+
+	#heightHolder {
+		margin-top: 429%;
+	}
+}
+/*
 	body {
 		margin: 0%;	
 		padding: 0%;
 		font-family: 'Alegreya Sans', sans-serif;
-	/*	overflow-x: hidden; */
 	}
 
 	#toolsTrigger {
@@ -57,7 +843,7 @@
 	}
 
 	#synerginTrigger {
-		margin-top: 246%; 
+
 	}
 
 	#galleryDivMarginTrigger {
@@ -65,9 +851,9 @@
 	}
 
 	#elevatorTriggerHeight{
-		margin-top: 256%;
+
 	}
-																									/* 1920px */
+
 	#elevatorTriggerContent{
 		margin-top: 266%;
 	}
@@ -82,13 +868,13 @@
 
 	.trigger-class {
 		position: absolute;
-		z-index: -2;
+		z-index: 5;
 		width: 60px;
 		height: 20px;
 		font-size: 6px;
 		background-color: orange;
 	}
-																									/* 1920px */	
+
 	#synerginFixedPic {
 		display: block;
 		width: 100%;
@@ -100,9 +886,7 @@
 		position: fixed;
 		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366.jpg');
 		background-repeat: no-repeat;
-		background-size: 100%;
-		/*top: 0%;
-		left: 0px;*/
+		background-size: 100% auto;
 	}
 
 	#teamCaption {
@@ -134,7 +918,7 @@
 		background-color: black;
 		color: white;
 	}
-																									/* 1920px */
+
 	.mobile-syn-pic {
 		display: none;
 
@@ -142,7 +926,7 @@
 
 	.landing-div {
 		width: 100%;
-		height: auto;
+		height: 
 		margin: 0% 0% 0% 0%;
 		display: block;
 		background-image: url('../mediaFolder/indexRemakeMedia/micaBWarubaSFW.png');
@@ -150,7 +934,7 @@
 		background-size: 100% 100%;
 
 	}
-																									/* 1920px */	
+
 	.mw-name {
 		width: 100%;
 		padding: 1% 0% 0% 0%;
@@ -171,7 +955,7 @@
 		font-family: 'Alegreya Sans', sans-serif;
 		color: white;
 	}
-																									/* 1920px */
+
 	#javascriptLogo {
 		float: left;
 		width: 5.0%;
@@ -195,7 +979,7 @@
 		background-repeat: no-repeat;
 		background-size: 100%;
 	}
-																									/* 1920px */
+
 	#cssLogo {
 		float: left;
 		width: 4.5%;
@@ -217,7 +1001,7 @@
 		text-align: center;
 		color: #A71616;
 	}
-																									/* 1920px */
+
 	.button-container {
 		width: 100%;
 		margin: 0% 0% 0% 0%;
@@ -254,7 +1038,7 @@
 		font-size: 1.5em;
 		text-align: center;
 	}
-																									/* 1920px */
+
 	.linkedin-button {
 		float: left;
 		width: 12%;
@@ -279,7 +1063,7 @@
 		color: white;
 		background-color: black;
 	}
-																									/* 1920px */
+
 	.tools-header {
 		width: 100%; 
 		margin: 0% 0% 0% 0%;
@@ -307,7 +1091,7 @@
 	.tool-name {
 		color: #ffffff;
 	}
-																									/* 1920px */
+
 	#leftIcons {
 		width: 33%;
 		height: 75%;
@@ -326,8 +1110,8 @@
 
 	#rightIcons {
 		width: 32%;
-		height: 75%; /* 82%; */
-		max-height: 75%; /* 90%; */
+		height: 75%; 
+		max-height: 75%;
 		margin: 0% 0% 0% 0%;
 		padding: 0% 0% 0% 0%;
 		position: relative;
@@ -337,13 +1121,13 @@
 		opacity: 1;
 		background-image: url('../mediaFolder/indexRemakeMedia/right-icons.png');
 		background-repeat: no-repeat;
-		background-size: 100% 100%;/*82%;*/
+		background-size: 100% 100%;
 	}
-																									/* 1920px */
+
 	#ngwp {
 		width: 100%; 
 		margin: 0% 0% 1% 0%;
-		-webkit-margin-after: 1%; /*0.02%;*/
+		-webkit-margin-after: 1%;
 		display: block;
 		font-size: 1.35em;
 		color: white;
@@ -367,11 +1151,6 @@
 		width: 100%;
 		height: 150px;
 		display: inline-block;
-		/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.21, #FF681C),color-stop(1, #FF9D00));
-		background-image: -o-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
-		background-image: -moz-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);background-image: -webkit-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);
-		background-image: -ms-linear-gradient(bottom, #FF681C 21%, #FF9D00 100%);background-image: linear-gradient(to bottom, #FF681C 21%, #FF9D00 100%);
-		*/
 		background-color: #000000;
 	}
 
@@ -404,7 +1183,7 @@
 		padding: 0% 0% 0% 0%;
 		background-color: white;
 	}
-																									/* 1920px */	
+
 	.elevatorPitch {
 		width: 100%;
 		height: auto;
@@ -439,7 +1218,7 @@
 		text-align: center;
 		font-size: 1.9em;
 	}
-																									/* 1920px */
+
 	.elevator-text {
 	    width: 78.1%;
 	    height: auto;
@@ -449,7 +1228,7 @@
 		text-align: center;
 	    font-size: 1.3em;
 	}
-																									/* 1920px */
+
 	.prezi-div {
 		width: 100%;
 		height: 100%;
@@ -468,7 +1247,7 @@
 		margin: 0% 0% 0% 0%;
 		display: block;
 	}
-																									/* 1920px */
+
 	.ep-trello {
 		height: 245px;	
 		background-image: url('../mediaFolder/indexRemakeMedia/trello1366.png');
@@ -528,14 +1307,10 @@
 	#wowslider-container1 {
 		width: 100%;
 		background-color: #000000;
-	/*	display: block;
-		position: absolute;
-		z-index: 1; */
 	}
 
 	.ws_thumbs {
 		background-color: #000000;
-	/*	width: 100%; */
 	}
 
 	.ws_title {
@@ -552,8 +1327,14 @@
 
 	.ws_title > div {
 		font-size: 2em;
-	}
-}
+	} 
+	*/
+
+
+
+
+
+
 	/* Previously used CSS but removed 
 
 
@@ -632,13 +1413,126 @@
 
 
 
-																				/* 1680 x 1050px */
 
 
 @media screen and (max-width: 1680px) {
+																				/* 1680 x 1050px */
 
 
 
+	.landing-div {
+		height: 824px;
+	}
+
+	.mw-name {
+		font-size: 5.3em;
+	}
+
+	.job-title {
+		margin-top: 0px;
+	}
+
+	.git-button {
+		font-size: 1.8em;
+		margin-left: 30%;
+	}
+
+	.portfolio-button > a {
+		font-size: 1.8em;
+	}
+
+	.portfolio-button > ul > li > a {
+		font-size: 1.8em;
+		line-height: 1.8em;
+	}
+
+	.linkedin-button {
+		font-size: 1.8em;
+	}
+
+	#skypeDiv {
+		bottom: 21.5%;
+	}
+
+	#skypeIcon {
+		width: 2.8%;
+		padding-top: 0.8%;
+	}
+
+	#skypeMessage {
+		font-size: 1.4em;
+	}
+	
+	.skypeinfo {
+		font-size: 1.4em;	
+	}
+
+	.tools-proficiencies {
+		height: 1700px;
+	}
+
+	.tools-header {
+		font-size: 4.8em;
+	}
+
+	.tools-list > a {
+		font-size: 1.12em;
+	}
+
+	#ptdiv {
+		height: 150px;
+	}
+
+	#portfoliotitle {
+		font-size: 5.8em;
+	}
+
+	#teamCaption {
+		font-size: 2.8em;
+	}
+
+	.elevator-pic {
+		height: 241px;
+	}
+
+	.elevator-title {
+		font-size: 2.5em;
+	}
+
+	.elevator-text {
+		font-size: 1.85em;
+	}
+
+	.prezi-div {
+		height: 1000px;
+	}
+
+	#heightHolder {
+		margin-top: 416%;
+	}
+
+	.ws_title {
+		font-size: 2.3em;
+	}
+
+	.ws-title-wrapper {
+		font-size: 2.3em;
+	}
+
+	.ws_title > span {
+		font-size: 2.3em;
+	}
+
+	.ws_title > div {
+		font-size: 2.3em;
+	}
+
+
+
+
+}
+
+/*
 	#iconTrigger1 {
 		margin-top: 64%;
 	}
@@ -653,7 +1547,7 @@
 	#elevatorTriggerHeight{
 		margin-top: 264%;
 	}
-																				/* 1680 x 1050px */
+
 	#elevatorTriggerContent{
 		margin-top: 269%;
 	}
@@ -670,7 +1564,7 @@
 		top: 0%;
 		background-color: #000000;
 	}
-																				/* 1680 x 1050px */
+
 	#teamCaption {
 	
 	}
@@ -682,38 +1576,40 @@
 	}
 
 	.landing-div {
+		height: 824px;
 	}
-																				/* 1680 x 1050px */
+
 	.mw-name {
 		
 	}
 
 	.job-title {
-		
+		font-size: 1.7em;
 	}
-																				/* 1680 x 1050px */
+
 	#javascriptLogo {
-		height: 82px;
+
 	}
 
 	#htmlLogo {
-		height: 86px;
+
 	}
-																				/* 1680 x 1050px */
+
 	#cssLogo {
-		height: 86px;
+
 	}
 
 	.mw-intro {
 		
 	}
-																				/* 1680 x 1050px */
+
 	.button-container {
 		
 	}
 
 	.git-button {
 		margin: 2% 0% 0% 30.05%;
+
 	}
 
 	.portfolio-button {
@@ -727,7 +1623,7 @@
 	.button-container > span > a {
 
 	}
-																				/* 1680 x 1050px */
+
 	.linkedin-button {
 		margin-top: 2%;
 	}
@@ -739,7 +1635,7 @@
 	.tools-proficiencies {
 		height: 1400px;
 	}
-																				/* 1680 x 1050px */
+
 	.tools-header {
 		
 	}
@@ -747,7 +1643,7 @@
 	.tools-list {
 		
 	}
-																				/* 1680 x 1050px */
+
 	#leftIcons {
 		height: 100%;
 		max-height: 100%;
@@ -757,7 +1653,7 @@
 		height: 100%;
 		max-height: 100%;
 	}
-																				/* 1680 x 1050px */
+
 	#ngwp {
 		
 	}
@@ -773,7 +1669,7 @@
 	.elevator-div { 
 		
 	}
-																				/* 1680 x 1050px */
+
 	.elevatorPitch {
 
 	}
@@ -793,7 +1689,7 @@
 	.elevator-title {
 
 	}
-																				/* 1680 x 1050px */
+
 	.elevator-text {
 	    font-size: 1.5em;
 	    width: 80%;
@@ -810,7 +1706,7 @@
 	#portfoliotitle {
 
 	}
-																				/* 1680 x 1050px */
+
 	.prezi-div {
 
 	}
@@ -818,7 +1714,7 @@
 	.embedded-prezi {
 
 	}
-																				/* 1680 x 1050px */
+
 	.ep-trello {
 		height: 191px;	
 	}
@@ -852,7 +1748,6 @@
 	#wowslider-container1 {
 
 	}
-																					/* 1680 x 1050px */
 
 }
 
@@ -904,6 +1799,40 @@
 
 @media screen and (max-width: 1600px) {
 
+	#portfolioTrigger {
+		margin-top: 165%;
+	}
+
+	#synerginTrigger {
+		margin-top: 295%;
+	}
+
+	.landing-div {
+		height: 785px;
+	}
+
+	.job-title {
+		font-size: 1.5em;
+	}
+
+	#skypeDiv {
+		bottom: 12.7%;
+	}
+
+	#skypeIcon {
+		padding-top: 0.83%;
+	}
+
+	#teamCaption {
+		font-size: 2.3em;
+	}	
+
+	.elevator-text {
+		font-size: 1.65em;
+	}
+
+
+/*
 	#toolsTrigger {
 
 	}
@@ -923,7 +1852,7 @@
 	#elevatorTriggerHeight{
 
 	}
-																									/* 1600px */
+
 	#elevatorTriggerContent{
 	}
 
@@ -938,7 +1867,7 @@
 	.trigger-class {
 
 	}
-																									/* 1600px */	
+	
 	#synerginFixedPic {
 	
 	}
@@ -950,7 +1879,7 @@
 	#micaCaption {
 
 	}
-																									/* 1600px */
+
 	.mobile-syn-pic {
 
 	}
@@ -958,7 +1887,7 @@
 	.landing-div {
 
 	}
-																									/* 1600px */	
+
 	.mw-name {
 
 	}
@@ -966,7 +1895,7 @@
 	.job-title {
 
 	}
-																									/* 1600px */
+
 	#javascriptLogo {
 
 	}
@@ -974,7 +1903,7 @@
 	#htmlLogo {
 
 	}
-																									/* 1600px */
+
 	#cssLogo {
 
 	}
@@ -982,7 +1911,7 @@
 	.mw-intro {
 
 	}
-																									/* 1600px */
+
 	.button-container {
 
 	}
@@ -1002,7 +1931,7 @@
 	.button-container > span > a {
 
 	}
-																									/* 1600px */
+
 	.linkedin-button {
 
 	}
@@ -1014,7 +1943,7 @@
 	.tools-proficiencies {
 
 	}
-																									/* 1600px */
+
 	.tools-header {
 
 	}
@@ -1026,7 +1955,7 @@
 	.tools-list > p {
 
 	}
-																									/* 1600px */
+
 	#leftIcons {
 
 	}
@@ -1034,7 +1963,7 @@
 	#rightIcons {
 
 	}
-																									/* 1600px */
+
 	#ngwp {
 
 	}
@@ -1050,7 +1979,7 @@
 	.elevator-div { 
 
 	}
-																									/* 1600px */	
+
 	.elevatorPitch {
 
 	}
@@ -1070,7 +1999,7 @@
 	.ep-photoshop {
 
 	}
-																									/* 1600px */
+
 	.ep-prezi {
 
 	}
@@ -1082,7 +2011,7 @@
 	.elevator-title {
 
 	}
-																									/* 1600px */
+
 	.elevator-text {
 
 	}
@@ -1102,7 +2031,7 @@
 	#galleryDiv {
 
 	}
-																									/* 1600px */
+
 	.prezi-div {
 
 	}
@@ -1110,7 +2039,7 @@
 	.embedded-prezi {
 
 	}
-																									/* 1600px */
+
 	.ep-trello {
 
 	}
@@ -1138,6 +2067,7 @@
 
 	#wowslider-container1 {
 	}
+	*/
 }
 
 
@@ -1176,31 +2106,116 @@
 
 
 
-																				/* 1440px */
+																				/* 1440 x 900*/
 
 
 @media screen and (max-width: 1440px) {
 
+
+	#portfolioTrigger {
+		margin-top: 145%;
+	}
+
+	.landing-div {
+		height: 707px;
+	}
+
+	#skypeDiv {
+		bottom: 21.5%;
+	}
+
+	#skypeIcon {
+		padding-top: 1%;
+	}
+
+
+
+
+
+	.git-button {
+		margin-left: 30.05%;
+		padding: 0%;
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+
+	.portfolio-button > a {
+		padding: 3px 0%;
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+
+	.linkedin-button {
+		padding: 3px 0% 4px 0%;
+		font-size: 1.5em;
+		line-height: 1.5em;		
+	}
+
+	.tools-proficiencies {
+		height: 1400px;
+	}
+
+	.tools-header {
+		font-size: 4em;
+	}
+
+	.tools-list > a {
+		font-size: 0.9em;
+	}
+
+	#ngwpsub {
+		font-size: 0.65em;
+	}
+
+	.elevator-pic {
+		height: 208px;
+	}
+
+	.elevator-title {
+		font-size: 2.3em;
+	}
+
+	.elevator-text {
+		font-size: 1.55em
+	}
+
+	.ws_title {
+		font-size: 1.6em;
+	}
+
+	.ws-title-wrapper {
+		font-size: 1.6em;
+	}
+
+	.ws_title > span {
+		font-size: 1.6em;
+	}
+
+	.ws_title > div {
+		font-size: 1.6em;
+	}
+}
+/*
 	#toolsTrigger {
-		margin-top: 57.885%; /* 800px */
+		margin-top: 57.885%;
 	}
 
 	#iconTrigger1 {
-		margin-top: 64%; /* 900px; */
+		margin-top: 64%;
 	}
 
 	#synerginTrigger {
-
+		margin-top: 270%;
 	}
 
 	#galleryDivMarginTrigger {
-		margin-top: 289%; /* 3100px; */
+		margin-top: 289%; 
 	}
 
 	#elevatorTriggerHeight{
-		margin-top: 265%;
+		margin-top: 300%;
 	}
-																				/* 1440px */
+
 	#elevatorTriggerContent{
 		margin-top: 270%;
 	}
@@ -1232,7 +2247,7 @@
 	#elevatorTriggerHeight{
 
 	}
-																				/* 1440px */
+
 	#elevatorTriggerContent{
 	}
 
@@ -1247,7 +2262,7 @@
 	.trigger-class {
 
 	}
-																				/* 1440px */
+
 	#synerginFixedPic {
 	
 	}
@@ -1259,15 +2274,15 @@
 	#micaCaption {
 
 	}
-																				/* 1440px */
+
 	.mobile-syn-pic {
 
 	}
 
 	.landing-div {
-
+		height: 707px;
 	}
-																				/* 1440px */
+
 	.mw-name {
 
 	}
@@ -1275,7 +2290,7 @@
 	.job-title {
 
 	}
-																				/* 1440px */
+
 	#javascriptLogo {
 
 	}
@@ -1283,7 +2298,7 @@
 	#htmlLogo {
 
 	}
-																				/* 1440px */
+
 	#cssLogo {
 
 	}
@@ -1291,7 +2306,7 @@
 	.mw-intro {
 
 	}
-																				/* 1440px */
+
 	.button-container {
 
 	}
@@ -1311,7 +2326,7 @@
 	.button-container > span > a {
 
 	}
-																				/* 1440px */
+
 	.linkedin-button {
 
 	}
@@ -1320,10 +2335,22 @@
 
 	}
 
+	#skypeDiv {
+		bottom: 5%;
+	}
+
+	#skypeMessage {
+		font-size: 1.2em;
+	}
+
+	.skypeinfo {
+		font-size: 1.2em;
+	}
+
 	.tools-proficiencies {
 
 	}
-																				/* 1440px */
+
 	.tools-header {
 
 	}
@@ -1335,7 +2362,7 @@
 	.tools-list > p {
 
 	}
-																				/* 1440px */
+
 	#leftIcons {
 
 	}
@@ -1343,7 +2370,7 @@
 	#rightIcons {
 
 	}
-																				/* 1440px */
+
 	#ngwp {
 
 	}
@@ -1353,13 +2380,13 @@
 	}
 
 	#elevatorDiv { 
-
+		margin-top: 240%;
 	}
 
 	.elevator-div { 
 
 	}
-																				/* 1440px */
+
 	.elevatorPitch {
 
 	}
@@ -1379,7 +2406,7 @@
 	.ep-photoshop {
 		height: 189px;
 	}
-																				/* 1440px */
+
 	.ep-prezi {
 		height: 189px;
 	}
@@ -1391,7 +2418,7 @@
 	.elevator-title {
 
 	}
-																				/* 1440px */
+
 	.elevator-text {
 
 	}
@@ -1407,15 +2434,15 @@
 	#galleryDiv {
 
 	}
-																				/* 1440px */
-	.prezi-div {
 
+	.prezi-div {
+		height: 830px;
 	}
 
 	.embedded-prezi {
 
 	}
-																				/* 1440px */
+
 	.ep-trello {
 		height: 163px;
 	}
@@ -1430,7 +2457,6 @@
 	}
 
 	.skype-button {
-	/*	margin: 57.65% 0% 0% 0%; */
 		width: 96.5%;
 	}
 
@@ -1447,7 +2473,7 @@
 
 	}
 }
-
+/*
 
 
 
@@ -1491,36 +2517,52 @@
 
 @media screen and (max-width: 1366px) { 
 
+	.landing-div {
+		height: 670px;
+	}
+
+	#skypeDiv {
+		bottom: 12.75%;
+	}
+
+	#skypeIcon {
+		padding-top: 1%;
+	}
+
+	.tools-proficiencies {
+		height: 1400px;
+	}
+
+
+
+
+/*
 	#toolsTrigger {
-		margin-top: 57.885%; /* 800px */
+		margin-top: 57.885%;
 	}
 
 	#iconTrigger1 {
-		margin-top: 64%; /* 900px; */
+		margin-top: 64%; 
 	}
-
+*/
 	#synerginTrigger {
-		margin-top: 235%; /* 2900px; */
-	}
-
-	#galleryDivMarginTrigger {
-		margin-top: 295%; /* 3100px; */
+		margin-top: 278%;
 	}
 
 	#elevatorTriggerHeight{
-		margin-top: 275%;
+		margin-top: 325%;
 	}
 																									/* 1366 px */
 	#elevatorTriggerContent{
-		margin-top: 283%;
+
 	}
 
 	#changeIndesignTrigger {
-		margin-top: 287.5%;
+
 	}
 
 	#changeFixedpicTrigger {
-		margin-top: 325%;
+
 	}
 
 	#toolsTrigger {
@@ -1528,10 +2570,6 @@
 	}
 
 	#iconTrigger1 {
-
-	}
-
-	#synerginTrigger {
 
 	}
 
@@ -1630,10 +2668,18 @@
 
 	}
 
-	.tools-proficiencies {
-
+	#skypeDiv {
+		bottom: 12.75%;
 	}
-																				/* 1366px */
+
+	#skypeIcon {
+		padding-top: 1%;
+	}
+
+	.tools-proficiencies {
+		height: 1400px;
+	}
+
 	.tools-header {
 
 	}
@@ -1645,7 +2691,7 @@
 	.tools-list > a {
 
 	}
-																				/* 1366px */
+
 	#leftIcons {
 
 	}
@@ -1711,7 +2757,7 @@
 	}
 																				/* 1366px */
 	.prezi-div {
-
+		height: 768px;
 	}
 
 	.embedded-prezi {
@@ -1719,20 +2765,15 @@
 	}
 																				/* 1366px */
 	.ep-trello {
-		height: 155px;
+
 	}
 
 	.ep-mica-gamma {
-		height: 155px;
+
 	}
 
 	.ep-html-wordpress {
-		height: 155px;
-	}
 
-	.skype-button {
-	/*	margin: 51.15% 0% 0% 0%; */
-		width: 96.2%;
 	}
 
 	.skype-button > a {
@@ -1746,6 +2787,10 @@
 	}
 
 	#wowslider-container1 {
+	}
+
+	#heightHolder {
+		margin-top: 408%;
 	}
 }
 
@@ -1805,17 +2850,13 @@
 	}
 
 	#synerginTrigger {
-		margin-top: 250%; 
-	}
-
-	#galleryDivMarginTrigger {
-		margin-top: 285%; 
+		margin-top: 277%; 
 	}
 
 	#elevatorTriggerHeight{
-		margin-top: 274.5%;
+		margin-top: 299.5%;
 	}
-																									/* 1280 px */
+																									/* 1280 px 
 	#elevatorTriggerContent{
 		margin-top: 283%;
 	}
@@ -1827,7 +2868,7 @@
 	#changeFixedpicTrigger {
 		margin-top: 325%;
 	}
-
+*/
 	.trigger-class {
 
 	}
@@ -1849,7 +2890,7 @@
 	}
 
 	.landing-div {
-
+		height: 628px;
 	}
 																									/* 1280 px */
 	.mw-name {
@@ -1884,24 +2925,38 @@
 
 	}
 
-	.portfolio-button {
-
+	.git-button {
+		margin-left: 30.05%;
+		padding: 0% 0% 2px 0%;
 	}
 
-	.button-container > span {
-
-	}
-
-	.button-container > span > a {
-		
-	}
-																									/* 1280 px */
+	.portfolio-button > ul >li > a {
+		font-size: 1.3em;
+		line-height: 1.8em;
+	}		
+																								/* 1280 px */
 	.linkedin-button {
 
 	}
 
 	#scrollArrow {
 
+	}
+
+	#skypeDiv {
+		bottom: 21.1%;
+	}
+
+	#skypeIcon {
+		padding-top: 0.75%;
+	}
+
+	#skypeMessage {
+		font-size: 1.1em;
+	}
+
+	.skypeinfo {
+		font-size: 1.1em;
 	}
 
 	.tools-proficiencies {
@@ -1937,11 +2992,10 @@
 	}
 
 	#elevatorDiv { 
-
+		margin: 233% 0% 0% 0%;
 	}
 
 	.elevator-div { 
-
 	}
 																									/* 1280 px */
 	.elevatorPitch {
@@ -2022,6 +3076,10 @@
 	#wowslider-container1 {
 
 	}
+
+	#heightHolder {
+		margin-top: 378%;
+	}
 																										/* 1280 px */
 }
 
@@ -2065,7 +3123,7 @@
 																			/* 1024 x 600	Amazon Kindle Fire 1st Gen Landscape */
 																			/* 1024 x 600	Blackberry Playbook Landscape */
 
-@media all and (max-width: 1030px) {
+@media screen and (max-width: 1024px) {
  
 
 	#toolsTrigger {
@@ -2115,6 +3173,7 @@
 	#synerginFixedPic {
 		display: block;
 		width: 100%;
+		max-width: 1024px;
 		height: 100%; 
 		z-index: -1;
 		overflow-x: hidden;
@@ -2132,9 +3191,10 @@
 	}
 
 	#teamCaption {
-		bottom: 13%;
+		bottom: 28%;
 		margin: 0% 0% 0% 0%;
 		font-size: 1.5em;
+		color: #ffffff;
 	}
 																										/* 1024px */
 	#micaCaption {
@@ -2142,7 +3202,7 @@
 	}
 
 	.landing-div {
-
+		height: 502px;
 	}
 																										/* 1024px */
 	.mw-name {
@@ -2154,15 +3214,15 @@
 	}
 																										/* 1024px */
 	#javascriptLogo {
-		height: 57px;
+		opacity: 1;
 	}
 
 	#htmlLogo {
-		height: 57px;
+		opacity: 1;
 	}
 																										/* 1024px */
 	#cssLogo {
-		height: 57px;
+		opacity: 1;
 	}
 
 	.mw-intro {
@@ -2176,6 +3236,7 @@
 	.git-button {
 		font-size: 1em;
 		height: 29px;
+		padding: 3px 0px 2px 0px;
 	}
 
 	.portfolio-button {
@@ -2188,13 +3249,6 @@
 		height: 29px;		
 	}
 
-	.button-container > span {
-
-	}
-
-	.button-container > span > a {
-	
-	}
 																										/* 1024px */
 	.linkedin-button {
 		font-size: 1em;
@@ -2205,12 +3259,46 @@
 
 	}
 
+	#skypeDiv {
+		display: none;
+	}
+
+	#skypeIcon {
+		padding-top: 1.15%;
+	}
+
+	.skype-button {
+		margin-top: 5.4%;
+		width: 100%;
+	}
+
+	.skype-button > a {
+		width: 100%;
+		opacity: 0.5;
+		background-color: #000000;
+		font-size: 1.4em;
+		line-height: 1.4em;
+		padding: 1% 0%;
+	}
+
+	.skype-button > ul {
+		background-color: rgba(0,0,0,0.3);
+
+	}
+
+	.skype-button > ul > li {
+		color: #ffffff;
+		font-size: 1.8em;
+		line-height: 2em;
+		text-indent: 30px;
+	}
+
 	.tools-proficiencies {
-		height: 1450px;
+		height: 1350px;
 	}
 																										/* 1024px */
 	.tools-header {
-
+		font-size: 3.6em;
 	}
 
 	.tools-list {
@@ -2218,7 +3306,7 @@
 	}
 
 	.tools-list > a {
-		font-size: 0.95em;
+		font-size: 0.75em;
 	}
 																										/* 1024px */
 	#leftIcons {
@@ -2236,7 +3324,7 @@
 	}
 
 	#ngwpsub {
-
+		font-size: 0.5em;
 	}
 
 	#elevatorDiv { 
@@ -2260,7 +3348,7 @@
 	}
 																										/* 1024px */
 	.elevator-pic {
-
+		height: 149px;
 	}
 
 	.elevator-title {
@@ -2277,11 +3365,14 @@
 	}
 
 	#ptdiv {
-
+		height: 90px;
 	}
 
 	#portfoliotitle {
-
+		font-size: 3.9em;
+		color: #FF6600;
+		text-shadow: 2px 2px 15px #FF6600;
+		height: 100px;
 	}
 																										/* 1024px */
 	#galleryDiv {
@@ -2297,32 +3388,18 @@
 	}
 
 	.ep-trello {
-		height: 145px;	
+
 	}
 
 	.ep-mica-gamma {
-		height: 146px;
+
 	}
 																										/* 1024px */
 	.ep-html-wordpress {
-		height: 145px;
-	}
-
-	.skype-button {
-		width: 94.7%;
-	}
-
-	.skype-button > a {
 
 	}
 
-	.skype-button > ul {
-
-	}
-
-	.skype-button > ul > li {
-
-	}
+	
 
 	#wowslider-container1 {
 
@@ -2422,7 +3499,7 @@
 	}
 
 	.landing-div {
-
+		height: 474px;
 	}
 
 	.mw-name {
@@ -2477,6 +3554,11 @@
 
 	}
 
+	#skypeDiv {
+
+	}
+
+
 	.tools-proficiencies {
 
 	}
@@ -2530,7 +3612,7 @@
 	}
 
 	.elevator-pic {
-
+		height: 140px;
 	}
 
 	.ep-photoshop {
@@ -2828,7 +3910,7 @@
 	}
 
 	.elevator-pic {
-
+		height: 110px;
 	}
 																										/* 768px */
 	.elevator-title {
@@ -2881,24 +3963,21 @@
 	}
 
 	.ep-trello {
-		height: 100px;	
+
 	}
 
 	.ep-mica-gamma {
-		height: 76px;
+
 	}
-																										/* 768px */
+
 	.ep-html-wordpress {
-		height: 100px;
-		/*border-style: solid;
-		border-width: 1px;*/
 
 	}
 
 	.skype-button {
-		margin: 21.85% 0% 0% 0%; 
+		width: 100%;
+		margin: 9.85% 0% 0% 0%; 
 		font-size: 1.3em;
-		width: 93.2%;
 	}
 
 	.skype-button > a {
@@ -2908,6 +3987,7 @@
 	}
 
 	.skype-button > ul > li {
+		font-size: 1.2em;
 	}
 
 	#wowslider-container1 {

@@ -3,9 +3,42 @@
 var widthcheck = $( window ).width();
 	console.log(widthcheck);
 
+
+
+
+
+$(document).ready(function(){
+var tl = new TimelineLite();
+	if (widthcheck > 1024) {
+	$(document).on("mouseenter","#skypeDiv",function(){
+		tl.to("#skypeDiv", 1.2, {height: "26%"})
+		.to(".skypeinfo", 0.2, {display: "block"})
+		.to(".skypeinfo", 0.5, {opacity:1});
+	});
+	}
+	$(document).on("mouseleave", "#skypeDiv", function(){
+		tl.to(".skypeinfo", 0.5, {opacity:0})
+		.to(".skypeinfo", 0.2, {display:"none"})
+		.to("#skypeDiv", 1.1, {height: "8%"});
+	});
+});
+
+
+
+
+
+
 /* tooltipster initialize */
 $(document).ready(function() {
     $('.tooltip').tooltipster();
+});
+
+$('#REattorney').tooltipster({
+	theme: '.tooltipster-light',
+	animation: 'grow',
+	interactive: true,
+    content: $('<a href="http://www.w3.org/html/wiki/FAQs" style="text-decoration: none;">What is HTML?</a>')
+
 });
 
 
@@ -16,12 +49,18 @@ $(document).ready(function($) {
 });
 
 $(document).ready(function($) {
-        htmlLogo = document.getElementById("htmlLogo"),
-        cssLogo = document.getElementById("cssLogo"),
-        javascriptLogo = document.getElementById("javascriptLogo"),
-	
-	//The last parameter with value of .25 is the stagger amount. Try changing it to 1 see how it impacts the animation.
-    TweenMax.staggerFrom([htmlLogo, cssLogo, javascriptLogo], 4,  {scale:1.6, opacity:0}, 1.0);        
+    htmlLogo = document.getElementById("htmlLogo");
+    cssLogo = document.getElementById("cssLogo");
+    javascriptLogo = document.getElementById("javascriptLogo");
+	TweenLite.to($("#loading"), 2, {opacity:0, delay: 2, onComplete: myFunction});
+	function myFunction() {
+	TweenLite.to($("#loading"), 0.2, {display:"none"})
+	if (widthcheck > 1024) {
+	    TweenMax.staggerFromTo([htmlLogo, cssLogo, javascriptLogo], 3,  {scale:1.6, opacity:0}, {scale: 1, opacity: 1}, 1.0);        
+	} else {
+		console.log("under 1024");
+	}
+	}
 });
 
 /*
@@ -195,7 +234,19 @@ $(document).ready(function($) {
 	}
 });	
 
+$(document).ready(function($) {
+	if (widthcheck > 1024) {
+	// build tween
+	var tween = TweenLite.to(synerginFixedPic, 0.5, {opacity: 0});
 
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight"})
+		scene.setTween(tween)
+		scene.addTo(controller);
+	} else {
+		console.log("under 1024");
+	}
+});	 
 
 
 
@@ -208,6 +259,7 @@ $(document).ready(function($) {
 
 
 $(document).ready(function($) {
+	if (widthcheck > 1024) {
 	// build tween
 	var tween = new TimelineMax()
 		.add (
@@ -219,11 +271,14 @@ $(document).ready(function($) {
 		)
 
 		.add (
-			TweenLite.from(preziDiv, 0.5, {marginTop: 600}, -2)
+			TweenLite.from(preziDiv, 0.5, {visibility:"none", opacity: 0, scale: 0.7})
 		)
 	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight"})
 		.setTween(tween)
 		.addTo(controller);	
+	} else {
+		console.log("under 1024");
+	}
 }); 
 
 

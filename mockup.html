@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width">
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="styles/buttons.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/TweenMax.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/TimelineMax.min.js"></script>
+<script type="text/javascript" src="js/buttons.js"></script>
+
+
+
+
+<script>
+
+var info = [
+	// Industry Slider array
+	{
+		num0: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	}
+]
+
+
+
+var slideIn = "A";
+
+$(document).ready(function(){
+	$("#industry1").click(function(){
+	TweenLite.defaultEase = Power3.easeInOut;
+	var tl = new TimelineMax() 
+	tl.to("#slide1", 1, {scale:0.5, opacity: 0})
+	  .to("#slide1", 0.1, {display: "none"})
+  	  .from("#slide2", 1, {xPercent:-100}, "-=1");
+	});
+});
+
+$(document).ready(function(){
+	$("#industry2").click(function(){
+	TweenLite.defaultEase = Power3.easeInOut;
+	var tl = new TimelineMax() 
+	tl.to("#slide1", 1, {scale:0.5, opacity: 0})
+	  .to("#slide1", 0.1, {display: "none"})
+  	  .from("#slide2", 1, {yPercent: 100}, "-=1");
+	});
+});
+
+$(document).ready(function(){
+	$("#industry3").click(function(){
+	TweenLite.defaultEase = Power3.easeInOut;
+	var tl = new TimelineMax() 
+	tl.to("#slide1", 1, {scale:0.5, opacity: 0})
+	  .to("#slide1", 0.1, {display: "none"})
+  	  .from("#slide2", 1, {scale: 0, opacity: 0}, "-=1");
+	});
+});
+
+$(document).ready(function(){
+	$("#industry4").click(function(){
+	TweenLite.defaultEase = Power3.easeInOut;
+	var tl = new TimelineMax() 
+	tl.from("#slide2", 1, {yPercent:-100})
+	  
+	  .to("#slide1", 1, {scale:0.5, opacity: 0}, "-=1")
+  	  .to("#slide1", 0.1, {display: "none"});
+	});
+});
+
+
+$(document).ready(function(){
+	$("#industry5").click(function(){
+	TweenLite.defaultEase = Power3.easeInOut;
+	var tl = new TimelineMax()
+	tl.to("#slide1", 0.5, {scale: 0.5, opacity: 0.5})
+	  .to("#slide1", 0.75, {xPercent: -100})
+	  .from("#slide2", 0.75, {xPercent: 100}, "-=0.75")
+	  .to("#slide1", 0.1, {display: "none"})
+	  .from("#slide2", 0.5, {scale: 0.5, opacity: 0.5});
+	});
+});
+
+$(document).ready(function(){
+	$("#industry6").click(function(){
+	TweenLite.defaultEase = Power3.easeInOut;
+	var tl = new TimelineMax() 
+	tl.to("#slide1", 1, {yPercent: 100})
+	  .from("#slide2", 1, {yPercent: -100}, "-=1")
+  	  .to("#slide1", 0.1, {display: "none"});
+	});
+});
+
+
+$(document).ready(function(){
+	$("#industry6").click(function(){
+	TweenLite.defaultEase = Power3.easeInOut;
+	var tl = new TimelineMax() 
+	tl.to("#slide1", 1, {yPercent: 100})
+	  .from("#slide2", 1, {yPercent: -100}, "-=1")
+  	  .to("#slide1", 0.1, {display: "none"});
+	});
+});
+
+</script>
+
+
+<style>
+
+
+html,body {
+	margin: 0%;
+	padding: 0%;
+	overflow-x: hidden;
+	background-color: #000000;
+}
+
+p, div {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-before: 0em;
+	-webkit-padding-after: 0em;
+	-webkit-padding-start: 0px;
+	-webkit-padding-end: 0px;
+	font-family: 'Open Sans';
+}
+
+#buttonContainer {
+	z-index: 10;
+	position: absolute;
+	margin: 25% 0% 0% 25%;
+}
+
+#slideContainer {
+	width: 200%;
+	height: 700px;
+	max-height: 700px;
+	position: relative;
+	overflow-y: hidden;
+}
+
+#slide1 {
+	width: 50%;
+	height: 700px;
+	position: absolute;
+	float: left;
+	display: inline-block;
+	background-color: orange;
+}
+
+#leftside {
+	width: 50%;
+	height: 700px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	display: inline-block;
+	background-image: url('mediaFolder/waterfall-night.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#rightside {
+	width: 50%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	display: inline-block;
+}
+
+#industryTitle {
+	font-size:3em;
+	text-align: center;
+}
+
+#industryText {
+	width: 50%;
+	margin: 4% 25% 4% 25%;
+	text-align: justify;
+	font-size: 1.1em;
+}
+
+#slide2 {
+	width: 50%;
+	height: 700px;
+	position: absolute;
+	float: left;
+	display: inline-block;
+	background-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.39, #E8E8E8),color-stop(1, #FFFFFF));
+	background-image: -o-linear-gradient(top, #E8E8E8 9%, #FFFFFF 50%);
+	background-image: -moz-linear-gradient(top, #E8E8E8 9%, #FFFFFF 50%);
+	background-image: -webkit-linear-gradient(top, #E8E8E8 9%, #FFFFFF 50%);
+	background-image: -ms-linear-gradient(top, #E8E8E8 9%, #FFFFFF 50%);
+	background-image: linear-gradient(to top, #E8E8E8 9%, #FFFFFF 50%);
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div id="buttonContainer">
+<span class="button-dropdown" data-buttons="dropdown">
+	<a href="#"class="button button-rounded">Functions</a>
+  	<ul>
+		<li><a href="#" id="industry1">Industry 1</a></li>
+		<li><a href="#" id="industry2">Industry 2</a></li>
+		<li><a href="#" id="industry3">Industry 3</a></li>
+		<li><a href="#" id="industry4">Industry 4</a></li>
+		<li><a href="#" id="industry5">Industry 5</a></li>
+		<li><a href="#" id="industry6">Industry 6</a></li>
+
+  </ul>
+</span>
+</div>
+
+<div id="slideContainer">
+	<div id="slide2">
+		<div id="leftside">
+
+		</div>
+		<div id="rightside">
+			<p id="industryTitle">Industry Title Here</p>
+			<p id="industryText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+	<div id="slide1">
+		<p style="font-size:3em; width: 100%; text-align: center;">AAAAAAAAAAA</p>
+	</div>
+</div>
+
+<div style="width: 100%; height: 1200px; background-color: #ffffff;"></div>
+
+
+
+
+
+</body>
+</html>
