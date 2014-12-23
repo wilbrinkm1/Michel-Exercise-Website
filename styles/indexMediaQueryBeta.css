@@ -1287,6 +1287,11 @@ p, div {
 	}
 	
 	#synerginFixedPic {
+		background-image: none;
+		background-color: #000000;
+	}	
+
+	#synerginFixedPicMobile {
 		display: block;
 		width: 100%;
 		max-width: 1024px;
@@ -1296,10 +1301,6 @@ p, div {
 		margin: 0% 0% 0% 0%;
 		padding: 0%;
 		position: fixed;
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366mobile.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%;
-
 	}
 
 	.mobile-syn-pic {
@@ -1994,7 +1995,6 @@ p, div {
 	}
 																										/* 768px */
 	.elevator-title {
-		padding: 0% auto 0% auto;
 		font-size: 1.35em;
 	}
 																										/* 768px */         
