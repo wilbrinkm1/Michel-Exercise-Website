@@ -43,7 +43,7 @@ var tl = new TimelineLite();
 	});
 });
 
-
+/*
 $(document).ready(function(){
 var tl = new TimelineLite();
 	$("#skypeDiv").click(function(){
@@ -60,7 +60,7 @@ var tl = new TimelineLite();
 		}
 	});
 });
-
+*/
 
 
 /* tooltipster initialize */
@@ -84,16 +84,16 @@ $(document).ready(function($) {
 });
 
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
     htmlLogo = document.getElementById("htmlLogo");
     cssLogo = document.getElementById("cssLogo");
     javascriptLogo = document.getElementById("javascriptLogo");
 	TweenLite.to($("#loading"), 2, {opacity:0, delay: 2, onComplete: myFunction});
 	function myFunction() {
 	TweenLite.to($("#loading"), 0.2, {display:"none"})
+	if (widthcheck > 1024) {
 	    TweenMax.staggerFromTo([htmlLogo, cssLogo, javascriptLogo], 3,  {scale:1.6, opacity:0}, {scale: 1, opacity: 1}, 1.0);        
 	}
-	}
+}	
 });
 
 /*

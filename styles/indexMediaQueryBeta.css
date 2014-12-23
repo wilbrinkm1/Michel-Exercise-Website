@@ -1239,7 +1239,7 @@ p, div {
 @media screen and (max-width: 1024px) {
  
 	#loading {
-		display: none;
+		
 	}
 
 	#toolsTrigger {
@@ -1307,7 +1307,7 @@ p, div {
 	}
 
 	#teamCaption {
-		margin: 21% 0% 0% 0%;
+		margin: 0.5% 0% 0% 0%;
 		font-size: 1.7em;
 		color: #ffffff;
 		background-color: #000000;
@@ -1394,7 +1394,6 @@ p, div {
 
 	.skype-button > ul {
 		background-color: rgba(0,0,0,0.3);
-
 	}
 
 	.skype-button > ul > li {
