@@ -26,7 +26,7 @@ var tl = new TimelineLite();
 
 $(document).ready(function(){
 var tl = new TimelineLite();
-	if (widthcheck > 924) {
+	if (widthcheck > 1020) {
 	$(document).on("mouseenter","#skypeDiv",function(){
 		tl.reversed(false);
 		tl.to("#skypeDiv", 1.2, {height: "30%", yPercent: "-65%"})		
@@ -44,7 +44,22 @@ var tl = new TimelineLite();
 });
 
 
-
+$(document).ready(function(){
+var tl = new TimelineLite();
+	$("#skypeDiv").click(function(){
+		if (widthcheck < 1124) {
+			tl.reversed(false);
+			tl.to("#skypeDiv", 1.2, {height: "30%", yPercent: "-65%"})		
+			.to(".skypeinfo", 0.2, {display: "block"})
+			.to(".skypeinfo", 0.5, {opacity:1});
+		}	
+	});
+	$(document).on("click", "#skypeDiv", function(){
+		if (widthcheck < 1124) {
+			tl.reversed(true);
+		}
+	});
+});
 
 
 
