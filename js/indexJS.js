@@ -26,7 +26,7 @@ var tl = new TimelineLite();
 
 $(document).ready(function(){
 var tl = new TimelineLite();
-	if (widthcheck > 1020) {
+	if (widthcheck > 1025) {
 	$(document).on("mouseenter","#skypeDiv",function(){
 		tl.reversed(false);
 		tl.to("#skypeDiv", 1.2, {height: "30%", yPercent: "-65%"})		
@@ -54,7 +54,7 @@ var tl = new TimelineLite();
 			.to(".skypeinfo", 0.5, {opacity:1});
 		}	
 	});
-	$(document).on("click", "#skypeDiv", function(){
+	$("#skypeDiv").click(function(){
 		if (widthcheck < 1124) {
 			tl.reversed(true);
 		}

@@ -1307,11 +1307,12 @@ p, div {
 	}
 
 	#teamCaption {
-		margin: 41% 0% 0% 0%;
+		margin: 21% 0% 0% 0%;
 		font-size: 1.7em;
 		color: #ffffff;
 		background-color: #000000;
 		opacity: 1;
+		z-index: 3;
 	}
 																										/* 1024px */
 	#micaCaption {
@@ -1404,7 +1405,7 @@ p, div {
 	}
 
 	.tools-proficiencies {
-		height: 1350px;
+		height: 1200px;
 	}
 																										/* 1024px */
 	.tools-header {
@@ -1416,7 +1417,7 @@ p, div {
 	}
 
 	.tools-list > a {
-		font-size: 0.55em;
+		font-size: 0.25em;
 	}
 																										/* 1024px */
 	#leftIcons {
@@ -1434,7 +1435,7 @@ p, div {
 	}
 
 	#ngwpsub {
-		font-size: 0.35em;
+		font-size: 0.25em;
 	}
 
 	#elevatorDiv { 
