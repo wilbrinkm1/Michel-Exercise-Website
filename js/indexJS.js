@@ -6,7 +6,7 @@ var widthcheck = $( window ).width();
 
 
 
-
+/*
 $(document).ready(function(){
 var tl = new TimelineLite();
 	if (widthcheck > 1024) {
@@ -20,6 +20,26 @@ var tl = new TimelineLite();
 		tl.to(".skypeinfo", 0.5, {opacity:0})
 		.to(".skypeinfo", 0.2, {display:"none"})
 		.to("#skypeDiv", 1.1, {height: "8%"});
+	});
+}); 
+*/
+
+$(document).ready(function(){
+var tl = new TimelineLite();
+	if (widthcheck > 924) {
+	$(document).on("mouseenter","#skypeDiv",function(){
+		tl.reversed(false);
+		tl.to("#skypeDiv", 1.2, {height: "30%", yPercent: "-65%"})		
+		.to(".skypeinfo", 0.2, {display: "block"})
+		.to(".skypeinfo", 0.5, {opacity:1});
+	});
+	}
+	$(document).on("mouseleave", "#skypeDiv", function(){
+		tl.reversed(true);
+	/*	tl.to(".skypeinfo", 0.5, {opacity:0})
+		.to(".skypeinfo", 0.2, {display:"none"})
+		.to("#skypeDiv", 1.2, {top: "80%"})
+		.to("#skypeDiv", 1.2, {height: "3%"}, -1.2); */
 	});
 });
 
@@ -49,16 +69,14 @@ $(document).ready(function($) {
 });
 
 $(document).ready(function($) {
+	if (widthcheck > 1024) {
     htmlLogo = document.getElementById("htmlLogo");
     cssLogo = document.getElementById("cssLogo");
     javascriptLogo = document.getElementById("javascriptLogo");
 	TweenLite.to($("#loading"), 2, {opacity:0, delay: 2, onComplete: myFunction});
 	function myFunction() {
 	TweenLite.to($("#loading"), 0.2, {display:"none"})
-	if (widthcheck > 1024) {
 	    TweenMax.staggerFromTo([htmlLogo, cssLogo, javascriptLogo], 3,  {scale:1.6, opacity:0}, {scale: 1, opacity: 1}, 1.0);        
-	} else {
-		console.log("under 1024");
 	}
 	}
 });
@@ -234,10 +252,26 @@ $(document).ready(function($) {
 	}
 });	
 
+
+
 $(document).ready(function($) {
 	if (widthcheck > 1024) {
 	// build tween
 	var tween = TweenLite.to(synerginFixedPic, 0.5, {opacity: 0});
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight"})
+		scene.setTween(tween)
+		scene.addTo(controller);
+	} else {
+		console.log("under 1024");
+	}
+});
+
+$(document).ready(function($) {
+	if (widthcheck > 1024) {
+	// build tween
+	var tween = TweenLite.to(bodyID, 0.5, {backgroundColor: "#000000"});
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight"})
