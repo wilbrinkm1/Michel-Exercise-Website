@@ -1349,22 +1349,26 @@ p, div {
 	.git-button {
 		font-size: 1em;
 		height: 29px;
-		padding: 3px 0px 2px 0px;
+		margin-left: 28.45%;
+		padding: 3px 10px 2px 10px;
 	}
 
 	.portfolio-button {
 		font-size: 1em;
 		height: 29px;
+
 	}
 
 	.portfolio-button > a {
 		font-size: 1em;
 		height: 29px;		
+		padding: 3px 10px 2px 10px;
 	}
 																										/* 1024px */
 	.linkedin-button {
 		font-size: 1em;
 		height: 29px;
+		padding: 3px 10px 2px 10px;
 	}
 
 	#scrollArrow {
@@ -1395,7 +1399,7 @@ p, div {
 	}
 
 	.skype-button > ul {
-		background-color: rgba(0,0,0,0.3);
+		background-color: rgba(0,0,0,0.8);
 	}
 
 	.skype-button > ul > li {
@@ -1418,7 +1422,7 @@ p, div {
 	}
 
 	.tools-list > a {
-		font-size: 1.4em;
+		font-size: 1.51em;
 	}
 
 	#leftIcons {
@@ -1525,350 +1529,34 @@ p, div {
 
 @media screen and (max-width: 966px) {
 
-	#toolsTrigger {
-
-	}
-
-	#iconTrigger1 {
-
-	}
-
-	#synerginTrigger {
-
-	}
-
-	#galleryDivMarginTrigger {
-
-	}
-
-	#elevatorTriggerHeight{
-
-	}
-
-	#elevatorTriggerContent{
-
-	}
-
-	#changeIndesignTrigger {
-
-	}
-
-	#changeFixedpicTrigger {
-
-	}
-
-	#toolsTrigger {
-
-	}
-
-	#iconTrigger1 {
-
-	}
-
-	#synerginFixedPic {
-	
-	}
-
-	#teamCaption {
-
-	}
-
-	#micaCaption {
-
-	}
-
-	.mobile-syn-pic {
-
-	}
 
 	.landing-div {
 		height: 474px;
 	}
 
-	.mw-name {
-
-	}
-
-	.job-title {
-
-	}
-
-	#javascriptLogo {
-
-	}
-																							/* 960 x 540 */
-	#htmlLogo {
-
-	}
-
-	#cssLogo {
-
-	}
-
-	.mw-intro {
-
-	}
-
-	.button-container {
-
-	}
-
-	.git-button {
-
-	}
-
-	.portfolio-button {
-
-	}
-
-	.button-container > span {
-
-	}
-
-	.button-container > span > a {
-
-	}
-
-	.linkedin-button {
-
-	}
-
-	#scrollArrow {
-
-	}
-
-	#skypeDiv {
-
-	}
-
-
-	.tools-proficiencies {
-
-	}
-
-	.tools-header {
-
-	}
-
-	.tools-list {
-
-	}
-
-	.tools-list > p {
-
-	}
-
-	#leftIcons {
-
-	}
-
-	#rightIcons {
-
-	}
-
-	#ngwp {
-
-	}
-
-	#ngwpsub {
-
-	}
-
-	#elevatorDiv { 
-
-	}
-
-	.elevator-div { 
-
-	}
-
-	.elevatorPitch {
-
-	}
-
-	.br {
-
-	}
-
-	.elevator-third {
-
-	}
-
 	.elevator-pic {
-		height: 140px;
-	}
-
-	.ep-photoshop {
-
-	}
-
-	.ep-prezi {
-
-	}
-
-	#indesignBrochure {
-
-	}
-
-	.elevator-title {
-
-	}
-
-	.elevator-text {
-
-	}
-
-	#portfolioDiv {
-
-	}
-
-	#ptdiv {
-
-	}
-
-	#portfoliotitle {
-
-	}
-
-	#galleryDiv {
-
-	}
-
-	.prezi-div {
-
-	}
-
-	.embedded-prezi {
-
-	}
-																								/* 960 x 540 */
-	.ep-trello {
-
-	}
-
-	.ep-mica-gamma {
-
-	}
-
-	.ep-html-wordpress {
-
-	}
-
-	.skype-button {
-		width: 94.6%;
-	/*	margin: 51.15% 0% 0% 0%; */
+		height: 141px;
 	}
 
 	.skype-button > a {
 		font-size: 0.9em;
 	}
-
-	.skype-button > ul {
-	}
-
-	.skype-button > ul > li {
-	
-	}
-
-	#wowslider-container1 {
-
-	}
 }
 																			/* 966 x 604 	Google Nexus 7 Landscape */ 																			/* 960 x 600 	Google Nexus 7.2 Landscape */ 
 																			/* 960 x 600 	Google Nexus 7.2 Landscape */ 
 																			/* 960 x 540 	Samsung Note 3 Landscape */
-																			/* 960 x 540	Motorola Droid 3/4/Razr/Atrix 4G/2 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* =================================================================================================================*/
 
-
-
-
 																				/* 768px */
 
 @media screen and (max-width: 768px) {
 
-	#toolsTrigger {
-
-	}
-
-	#iconTrigger1 {
-
-	}
-																										/* 768px */
-	#synerginTrigger {
-
-	}
-
-	#galleryDivMarginTrigger {
-
-	}
-
-	#elevatorTriggerHeight{
-
-	}
-																										/* 768px */
-	#elevatorTriggerContent{
-
-	}
-
-	#changeIndesignTrigger {
-
-	}
-
-	#changeFixedpicTrigger {
-
-	}
 																										/* 768px */
 	#synerginFixedPicMobile {
 		height: 421px;
-	/*	display: block;
-		width: 100%;
-		height: 100%; 
-		z-index: -1;
-		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		position: fixed;
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa1366.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%; */
 	}
 
 	#teamCaption {
@@ -1876,68 +1564,6 @@ p, div {
 		margin: 58% 0% 0% 0%;
 	}
 
-	#micaCaption {
-
-	}
-
-	.mobile-syn-pic {
-	}
-																										/* 768px */
-	.landing-div {
-
-	}
-
-	.mw-name {
-
-	}
-
-	.job-title {
-
-	}
-																										/* 768px */
-	#javascriptLogo {
-
-	}
-
-	#htmlLogo {
-
-	}
-																										/* 768px */
-	#cssLogo {
-
-	}
-
-	.mw-intro {
-
-	}
-
-	.button-container {
-
-	}
-																										/* 768px */
-	.git-button {
-
-	}
-
-	.portfolio-button {
-
-	}
-
-	.button-container > span {
-
-	}
-
-	.button-container > span > a {
-
-	}
-
-	.linkedin-button {
-
-	}
-																										/* 768px */
-	#scrollArrow {
-
-	}
 
 	.tools-proficiencies {
 		width: 100%;
@@ -1949,22 +1575,10 @@ p, div {
 		font-size: 2.4em; 
 	}
 
-	.tools-list {
-
-	}
-																										/* 768px */
 	.tools-list > a {
-		font-size: 0.8em;
+		font-size: 0.99em;
 	}
 
-	#leftIcons {
-
-	}
-
-	#rightIcons {
-
-	}
-																										/* 768px */
 	#ngwp {
 		font-size: 0.8em;
 	}
@@ -1977,26 +1591,14 @@ p, div {
 		background-color: white;
 		position: relative;
 		width: 100%; 
-		height: 405px;
+		height: 354px;
 		margin-top: 280%;
 	}
 																										/* 768px */
-	.elevator-div { 
-
-	}
-
-	.elevatorPitch {
-
-	}
-
-	.br {
-		display: block;
-	}
-
 	.elevator-pic {
 		height: 110px;
 	}
-																										/* 768px */
+
 	.elevator-title {
 		font-size: 1.35em;
 	}
@@ -2006,14 +1608,6 @@ p, div {
 	    font-size: 1em;
 	    display: block;
 	    width: 80%;
-	}
-
-	#portfolioDiv {
-	
-	}
-
-	#ptdiv {
-
 	}
 
 	#portfoliotitle {
@@ -2034,7 +1628,6 @@ p, div {
 		height: 100%;
 		padding: 0% 0% 0% 0%;
 		margin: 0%;	
-
 	}
 
 	.embedded-prezi {
@@ -2045,21 +1638,9 @@ p, div {
 		margin: 0% 0% 0% 0%;
 	}
 
-	.ep-trello {
-
-	}
-
-	.ep-mica-gamma {
-
-	}
-
-	.ep-html-wordpress {
-
-	}
-
 	.skype-button {
 		width: 100%;
-		margin: 9.85% 0% 0% 0%; 
+		margin: 44.35% 0% 0% 0%; 
 		font-size: 1.3em;
 	}
 
@@ -2071,13 +1652,6 @@ p, div {
 
 	.skype-button > ul > li {
 		font-size: 1.2em;
-	}
-
-	#wowslider-container1 {
-	/*	width: 768px;
-		height: 307px;
-		margin: 0%;
-		padding: 0%; */
 	}
 }
 
@@ -2091,7 +1665,7 @@ p, div {
 
 
 
-/*
+/*]
 
 																640 x 360	HTC One X Landscape
 																640 x 360	HTC EVO LTE/3D Landscape
@@ -2107,49 +1681,72 @@ p, div {
 																640 x 384	Google Nexus 4 Landscape 
 																640 x 360	Google Nexus 5 Landscape 
 																640 x 360	Nokia C5/C6/C7/N97/N8/X7 Landscape
-																640 x 360	Sony Xperia S/Ion Landscape
+																640 x 360	Sony Xperia S/Ion Landscape 
+																*/
 
 	
 																
 
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) and (max-height: 360px) {
 
 
-	.mw-name {
-
+	.landing-div {
+		height: 314px;
 	}
 
-	#teamCaption {
-		display: block;
-		color: white;
-		width: 50%;
-		margin: 60% 20% 0% 20%;
-		height: 500px;
-		text-align: center;
-		background-color: black;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute;
-		opacity: 0.7;
+	.git-button {
+		margin-top: 14.5%;
+		margin-left: 25.45%;
 	}
 
-	#micaCaption {
+	.portfolio-button {
+		font-size: 1em;
+		height: 29px;
+		margin-top: 14.5%;
+	}
 
+	.portfolio-button > a {
+		font-size: 1em;
+		height: 29px;		
+		padding: 3px 10px 2px 10px;		
+	}
+
+	.portfolio-button > ul > li > a {
+		font-size: 1em;
+		line-height: 1.9em;
+		left: -15%;
+	}
+
+	.linkedin-button {
+		margin-top: 14.5%;
+		margin-left: 3.5%;
 	}
 
 	.skype-button {
-		margin: 21.85% 0% 0% 0%; 
+		margin: 28.45% 0% 0% 0%; 
 		font-size: 1.3em;
-		width: 92.1%;
 	}
 
+	#synerginFixedPicMobile {
+		height: 351px;
+	}
 
+	#elevatorDiv {
+		margin: 251% 0% 0% 0%;		
+	}
 
+	.elevator-title {
+		font-size: 1em;
+	}
+
+	.elevator-text {
+		font-size: 0.85em;
+	}
 }
 
-*/
+
 
 
 
@@ -2171,51 +1768,15 @@ p, div {
 
 
 
-																				/* 568px */
+																				/* 568 x 320 */
 
-@media screen and (max-width: 641px) {
-
-	#toolsTrigger {
-		display: none;
-	}
-
-	#iconTrigger1 {
-		display: none;
-	}
-																										/* 568px */
-	#synerginTrigger {
-		display: none;
-	}
-
-	#galleryDivMarginTrigger {
-		display: none;
-	}
-
-	#elevatorTriggerHeight{
-		display: none;
-	}
-																										/* 568px */
-	#elevatorTriggerContent{
-		display: none;
-	}
-
-	#changeIndesignTrigger {
-		display: none;
-	}
-
-	#changeFixedpicTrigger {
-		display: none;
-	}
-																										/* 568px */
-	
+@media screen and (max-width: 569px) and (max-height: 320px) {
 
 
 	.landing-div {
-	/*	width: 100%;
-		display: block;
-		background-color: white; */
+		height: 278px;
 	}
-																										/* 568px */
+
 	.mw-name {
 
 	}
@@ -2231,9 +1792,8 @@ p, div {
 	}
 
 	#javascriptLogo {
-		background-image: url('../mediaFolder/indexRemakeMedia/javascriptLogo110.png');
-		height: 65px;
 		width: 10.6%;
+		height: 64px;
 		display: inline-block;
 		margin: 0% 1% 0% 33%;	
 		float: left;
@@ -2241,8 +1801,6 @@ p, div {
 	}
 																										/* 568px */
 	#htmlLogo {
-		background-image: url('../mediaFolder/indexRemakeMedia/htmlLogo110.png');
-		height: 65px;
 		display: inline-block;
 		width: 9.5%;
 		float: left;
@@ -2251,29 +1809,16 @@ p, div {
 	}
 
 	#cssLogo {
-		background-image: url('../mediaFolder/indexRemakeMedia/cssLogo110.png');
 		display: inline-block;
-		height: 65px;
 		width: 9.5%;
 		float: left;
 		opacity: 1;
 		margin: 0% 24% 0% 1.5%;
 	}
 																										/* 568px */
-	.mw-intro {
-	}
-
-	.button-container {
-
-	/*	display: block;
-		width: 60%;
-		margin: 0% 20% 0% 20%;
-		padding-bottom: 0% 0% 0% 0%; */
-	}
-
 	.git-button {
 		width: 19%;
-		margin-left: 16.1%;
+		margin-left: 10.95%;
 		margin-top: 4.1%;
 	/*	display: block;
 		width: 100%;
@@ -2360,62 +1905,26 @@ p, div {
 		margin: 0% 0% 1.55% 0%; */
 	}
 
+	#synerginFixedPicMobile {
+		height: 311px;
+	}
+
 	#elevatorDiv { 
 		height: 299px;
-		margin: 205% 0% 0% 0%;
+		margin: 251% 0% 0% 0%;
 	/*	background-color: white;
 		position: relative;
 		width: 100%; 
 		margin: 300% 0% 0% 0%;
 		height: 100%; */
 	}
+
+	.elevator-third {
+		width: 32.5%;
+	}
 																										/* 568px */
-	.elevator-div { 
-		height: auto;
-	/*	background-color: white;
-		width: 100%; 
-		margin: 0% 0% 0% 0%;
-		height: 100%;
-		padding: 0% 0% 0% 0%; */
-	}
-
-	.elevatorPitch {
-	/*	display: inline-block;
-		margin: 0%;
-		padding: 0%;
-		width: 100%;
-		height: auto; */
-	}
-
-	.br {
-		display: block;
-	}
-
-	.elevator-third {	
-		width: 32.85%;
-	}
-
 	.elevator-pic {
-	/*	border-style: none;
-		display: block;
-	    width: 70%;
-	    margin: 2% 15% 2% 15%;
-		background-color:#cccccc; */
-	}
-
-	.ep-photoshop {
-		background-image: url('../mediaFolder/indexRemakeMedia/photoshop_mica568.png');
-		height: 74px;
-	}
-																										/* 568px */
-	.ep-prezi {
-		background-image: url('../mediaFolder/indexRemakeMedia/cube_prezi568.png');
-		height: 74px;	
-	}
-
-	#indesignBrochure {
-		display: block;
-		height: 74px;
+		height: 83px;
 	}
 
 	.elevator-title {
@@ -2425,27 +1934,6 @@ p, div {
 		padding: 0% auto 0% auto;
 		font-size: 1em;
 		width: 100%;
-	}
-	 																									/* 568px */        
-	.elevator-text {
-		text-align: justify;
-	    font-size: 0.75em;
-	    display: block;
-	    width: 80%;
-	    height: auto;
-	    margin: 0% 0% 7% 0%;
-	    padding: 0% 10% 0% 10%;
-	}
-
-	#portfolioDiv {
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		width: 100%;
-		background-color: black;
-	}
-
-	#ptdiv {
-
 	}
 
 	#portfoliotitle {
@@ -2460,80 +1948,24 @@ p, div {
 		margin: 0% 0% 0% 0%;
 	}
 																										/* 568px */
-	.prezi-div {
-		display: block;
-		width: 100%;
-		height: 100%;
-		background-image: url('../mediaFolder/indexRemakeMedia/big-fish-in-the-blue-ocean568.jpg');
-		padding: 0%;
-		margin-top: 0%;	
-	}
-
 	.embedded-prezi {
 		display: block;
 		width: 70%;
-		height: 140px;
+		height: 220px;
 		padding: 3% 15% 3% 15%;
 		margin: 0% 0% 0% 0%;
 	}
 
-	.ep-trello {
-		margin-top: 5%;
-		background-image: url('../mediaFolder/indexRemakeMedia/trello568.png');
-		height: 74px;	
-	}
-
-	.ep-mica-gamma {
-		height: 74px;
-	}
-																										/* 568px */
-	.ep-html-wordpress {
-		background-image: url('../mediaFolder/indexRemakeMedia/drawcircles.png');
-		height: 74px;
-	}
-
 	.skype-button {
-		width: 91.1%;
-		margin-top: 1%;
-	/*	margin: 51.85% 0% 0% 0%; */
+		width: 100%;
+		margin: 26.85% 0% 0% 0%;
 	}
 
 	.skype-button > a {
 		font-size: 0.83em;
 	}
 
-	.skype-button > ul {
-	}
-
-	.skype-button > ul > li {
-	
-	}
-
-	#wowslider-container1 {
-	/*	width: 568px;
-		height: 227px; */
-	}
-
-
-
-/*
-	#synerginFixedPic {
-		display: block;
-		width: 100%;
-		z-index: -1;
-		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;
-		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
-		 background-image: url('../mediaFolder/indexRemakeMedia/teamusa568.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%; 
-	}*/
-
-																										/* 568px */   
+																						/* 568px */   
 
 	
 
@@ -2545,7 +1977,6 @@ p, div {
 	/* added  to see if it works better this way */
 
 	#synerginFixedPic {
-
 		display: block;
 		color: white;
 		margin: 0% 0% 0% 0%;
@@ -2557,20 +1988,6 @@ p, div {
 		opacity: 1;	
 		background-size: 0%;
 		background-image: none;
-
-	/*	height: 320px;
-		padding-top: 10%;
-		display: block;
-		width: 100%;
-		height: 100%; 
-		z-index: -1;
-		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;
-		background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
 	}
 
 	#teamCaption {
@@ -2681,109 +2098,6 @@ p, div {
 
 @media screen and (max-width: 499px) {
 
-	#toolsTrigger {
-		display: none;
-	}
-
-	#iconTrigger1 {
-		display: none;
-	}
-																										/* 480px */
-	#synerginTrigger {
-		display: none;
-	}
-
-	#galleryDivMarginTrigger {
-		display: none;
-	}
-
-	#elevatorTriggerHeight{
-		display: none;
-	}
-
-	#elevatorTriggerContent{
-		display: none;
-	}
-	#changeIndesignTrigger {
-		display: none;
-	}
-
-	#changeFixedpicTrigger {
-		display: none;
-	}
-																											/* 480px */
-	#synerginFixedPic {
-	/*	display: block;
-		width: 100%;
-		height: 100%; 
-		z-index: -1;
-		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa480.jpg');
-		background-repeat: no-repeat; */
-	}
-
-	#teamCaption {
-	/*	display: none;
-		color: white;
-		margin: 0% 0% 0% 0%;
-		width: 100%;	
-		height: auto;
-		text-align: center;
-		background-color: black;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute;
-		opacity: 1; */
-	}
-
-	#micaCaption {
-	/*	display: none;
-		float: right;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 70%;
-		color: white;
-		width: 100%;
-		height: auto;
-		background-color: black;
-		opacity: 1;
-		font-size: 2em;
-		z-index: -1;
-		position: absolute; */
-	}
-
-	.syn-caption {
-	/*	display: none;
-		display: block;
-		color: white;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		width: 100%;	
-		text-align: center;
-		background-color: black;
-		font-size: 1.6em;
-		z-index: -1;
-		opacity: 1;	 */
-	}
-						/* not sure why having both pics with display block shows correctly..		480px */
-	.mobile-syn-pic {
-	/*	display: none;
-		display: block;
-		width: 100%;
-		height: 100%; 
-		z-index: -1;
-		overflow-x: hidden;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;
-		background-image: url('../mediaFolder/indexRemakeMedia/teamusa480.jpg');
-		background-repeat: no-repeat;
-		background-size: 100%; */
-	}
 
 	.landing-div {
 	/*	width: 100%;
@@ -2792,73 +2106,23 @@ p, div {
 	}
 
 	.mw-name {
+		font-size: 3em;
 	/*	display: block;
 		font-family: 'Alegreya Sans', sans-serif;
 		color: black;
 		text-align: center;
 		width: 100%;
-		font-size: 2.2em;
 		padding: 4% 0% 0% 0%;
 		margin: 0% 0% 0% 0%; */
 	}
-																										/* 480px */
-	.job-title {
-	/*	font-style: italic;
-		font-family: 'Alegreya Sans', sans-serif;
-		display: block;
-		text-align: center;
-		font-size: 0.8em;
-		margin: 5px 23% 15px 23%; */
-	}
 
 	#javascriptLogo {
-		background-image: url('../mediaFolder/indexRemakeMedia/javascriptLogo110.png');
-	/*	height: 65px;
-		width: 10.6%;
-		display: inline-block;
-		margin: 0% 1% 1% 33%;	
-		float: left;
-		opacity: 1; */
-	}
-
-	#htmlLogo {
-		background-image: url('../mediaFolder/indexRemakeMedia/htmlLogo110.png');
-	/*	height: 65px;
-		display: inline-block;
-		width: 9.5%;
-		float: left;
-		opacity: 1;
-		margin: 0% 1% 1% 1%; */
-	}
-																										/* 480px */
-	#cssLogo {
-		background-image: url('../mediaFolder/indexRemakeMedia/cssLogo110.png');
-	/*	display: inline-block;
-		height: 65px;
-		width: 9.5%;
-		float: left;
-		opacity: 1;
-		margin: 0% 24% 1% 1.5%; */
-	}
-
-	.mw-intro {
-	/*	display: block;
-		width: 80%;
-		font-size: 1.15em;
-		margin: 0.6% 10% 3% 10%;
-		padding: 0% 0% 0% 0%;
-		text-align: center; */
-	}
-																										/* 480px */
-	.button-container {
-	/*	display: block;
-		width: 60%;
-		margin: 0% 20% 0% 20%;
-		padding-bottom: 0% 0% 0% 0%; */
+		height: 52px;
 	}
 
 	.git-button {
 		margin-top: 3%;
+		margin-left: 10.1%;
 	/*	display: block;
 		width: 100%;
 		margin: 0% 0% 0% 0%;
@@ -2905,8 +2169,7 @@ p, div {
 	}
 
 	.tools-header {
-	
-		font-size: 1.2em;	
+		font-size: 1.75em;	
 	}
 																										/* 480px */
 	.tools-list {
@@ -2916,17 +2179,15 @@ p, div {
 	}
 
 	.tools-list > a {
-		font-size: 0.4em;
+		font-size: 0.65em;
 	}
 
 	#leftIcons {
 		height: 100%;
-		max-height: 100%;
 	}
 
 	#rightIcons {
 		height: 100%;
-		max-height: 100%;
 	}
 
 	#ngwp {
@@ -2943,7 +2204,19 @@ p, div {
 		font-style: italic; 
 		margin: 0% 0% 1.55% 0%;	*/
 	}
+
+	#synerginFixedPicMobile {
+		height: 263px;
+	}
+				
 																										/* 480px */
+	.skype-button > ul > li {
+		font-size: 1em;
+		background-color: rgba(0,0,0,0.8);
+
+	}
+
+
 	#elevatorDiv { 
 		height: auto;
 	/*	background-color: white;
@@ -2988,7 +2261,7 @@ p, div {
 	    margin: 2% 15% 2% 15%;
 		background-color:#cccccc;	*/
 	}
-																										/* 480px */
+
 	.elevator-title {
 		width: 100%;
 		font-size: 1.84em;
@@ -3023,14 +2296,6 @@ p, div {
 
 	#ptdiv {
 		height: 90px;
-	}
-																										/* 480px */
-	#galleryDiv {
-	/*	display: inline-block;
-		background-color: black;
-		width: 100%;
-		padding: 0% 0% 0% 0%;	
-		margin: 0% 0% 0% 0%;	*/
 	}
 
 	.prezi-div {
@@ -3067,9 +2332,7 @@ p, div {
 	}
 
 	.skype-button {
-		width: 89.74%;
-		margin-top: 6.2%;
-	/*	margin: 51.85% 0% 0% 0%; */
+		margin-top: 34.2%;
 	}
 
 	.skype-button > a {
@@ -3216,123 +2479,11 @@ p, div {
 		display: none;
 	}
 
-	#toolsTrigger {
-		display: none;
-	}
-
-	#iconTrigger1 {
-		display: none;
-	}
-																										/* 320px */
-	#synerginTrigger {
-		display: none;
-	}
-
-	#galleryDivMarginTrigger {
-		display: none;
-	}
-
-	#elevatorTriggerHeight{
-		display: none;
-	}
-																										/* 320px */
-	#elevatorTriggerContent{
-		display: none;
-	}
-
-	#changeIndesignTrigger {
-		display: none;
-	}
-
-	#changeFixedpicTrigger {
-		display: none;
-	}
 	
-	#synerginFixedPic {
-		background-image: none;
-		/*
-		
-		padding-top: 10%;
-	/*	display: block;
-		width: 100%;
-		height: 100%; 
-		z-index: -1;
-		overflow-x: hidden;
-		top: 0px;
-		left: 0px;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed;
-		background-image: url('http://162.243.103.157/assets/mica-assets/teamusa.jpg'); */
-	}
-
-	#teamCaption {
-	
-	}
-
-	#micaCaption {
-	}
-
-	.syn-caption {
-		width: 90%;
-		height: auto;
-		margin-top: 0%;
-		top: 0%; 
-		margin: 50% 0% 0% 0%;
-		padding: 2% 5% 2% 5%;
-		font-size: 1em;
-	/*	width: 100%;
-		font-size: 1.4em;
-		display: block;
-	/*	height: 480px; 
-		background-color: black;
-		padding-top: 20%;
-	/*	display: block;
-		color: white;
-		margin: 50% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		width: 100%;	
-		text-align: center;
-		background-color: black;
-		font-size: 1.6em;
-		z-index: -1;
-		opacity: 1;	*/
-	}
-
-	.mobile-syn-pic {
-		background-color: #000000;
-	/*	margin-top: 0%;
-		background-color: green; 
-		background-image: url('../mediaFolder/indexRemakeMedia/micaArubaSFW.jpg');
-		display: block;
-	/*	width: 100%;
-		height: 100%; 
-		z-index: -1;
-		overflow-x: hidden;
-		margin: 0% 0% 0% 0%;
-		padding: 0%;
-		position: fixed; */
-	}
-																										/* 320px */
-
-	.landing-div {
-		background-image: url('../mediaFolder/indexRemakeMedia/blurred_colors.jpg');
-	/*	width: 100%;
-		display: block;
-		background-color: white; */
-	}
 
 	.mw-name {
 		font-size: 2.6em;
 		padding-top: 7%;
-	/*	display: block;
-		font-family: 'Alegreya Sans', sans-serif;
-		color: black;
-		text-align: center;
-		width: 100%;
-		font-size: 2.2em;
-		padding: 4% 0% 0% 0%;
-		margin: 0% 0% 0% 0%;	*/
 	}
 																										/* 320px */
 	.job-title {
@@ -3345,6 +2496,9 @@ p, div {
 	}
 
 	#javascriptLogo {
+		width: 12%;
+		height: 43px;
+		margin: 2% 1.2% 2% 31.75%;
 	/*	height: 50px;
 		width: 10.6%;
 		display: inline-block;
@@ -3354,6 +2508,9 @@ p, div {
 	}
 
 	#htmlLogo {
+		width: 12%;
+		margin-top: 2%;
+		margin-bottom: 2%;
 	/*	height: 50px;
 		display: inline-block;
 		width: 9.5%;
@@ -3363,6 +2520,9 @@ p, div {
 	}
 																										/* 320px */
 	#cssLogo {
+		width: 12%;
+		margin-top: 2%;
+		margin-bottom: 2%;
 	/*	display: inline-block;
 		background-size: 100%;
 		height: 50px;
@@ -3455,12 +2615,11 @@ p, div {
 	}
 																										/* 320px */
 	.tools-list > a {
-		font-size: 0.355em;
+		font-size: 0.555em;
 	}
 
 	#leftIcons {
 		height: 100%;
-		max-height: 100%;
 	/*	width: 33%;
 		height: 85%;
 		max-height: 85%; 
@@ -3476,7 +2635,6 @@ p, div {
 
 	#rightIcons {
 		height: 100%;
-		max-height: 100%;
 	/*	width: 32%;
 		margin: 0% 1% 0% 0%;
 		padding: 0% 0% 0% 0%;
@@ -3488,22 +2646,20 @@ p, div {
 		height: 85%; /* 758px; 
 		max-height: 85%;	*/
 	}
-
-	#ngwp {
-	/*	margin: 0% 0% 0% 0%; 
-		-webkit-margin-after: 0.02%;
-		font-size: 0.9em;	*/
-	}
-
 	#ngwpsub {
 	/*	font-size: 0.5em; 
 		font-style: italic; 
 		margin: 0% 0% 1.55% 0%;	*/
 	}
+
+	#synerginFixedPicMobile {
+		height: 175px;
+		padding-top: 20%;
+	}
 																										/* 320px */
 	#elevatorDiv { 
 		height: 1250px;
-		margin-top: 246%;
+		margin-top: 300%;
 		background-color: white;
 	/*	position: relative;
 		width: 100%; 
@@ -3540,25 +2696,6 @@ p, div {
 	    width: 70%;
 	    margin: 2% 15% 2% 15%;
 		background-color:#cccccc;	*/
-	}
-
-	.ep-photoshop {
-	/*	height: 127px;
-		margin-top: 5%;	*/
-	}
-
-	.ep-prezi {
-	/*	height: 140px;	*/
-	}
-																										/* 320px */
-	#indesignBrochure {
-		height: 146px;
-	/*	width: 70%;
-		background-size: 100% 100%;
-		height: 100px;
-		min-width: 100px;
-		max-height: 120px;
-		display: block;	*/
 	}
 
 	.elevator-title {
@@ -3634,19 +2771,21 @@ p, div {
 	}
 
 	.skype-button {
-		width: 84.1%;
-		margin-top: 0%;
-	/*	margin: 51.85% 0% 0% 0%; */
 	}
 
 	.skype-button > a {
+		margin: 40.85% 0% 0% 0%; 
+		padding-top: 1.5%;
+		padding-bottom: 4.5%;
 	}
 
 	.skype-button > ul {
 	}
 
 	.skype-button > ul > li {
-	
+		font-size: 1em;
+		background-color: rgba(0,0,0,1);
+
 	}
 
 	#wowslider-container1 {
