@@ -1349,7 +1349,7 @@ p, div {
 	.git-button {
 		font-size: 1em;
 		height: 29px;
-		margin-left: 28.45%;
+		margin-left: 27%;
 		padding: 3px 10px 2px 10px;
 	}
 
@@ -1369,6 +1369,7 @@ p, div {
 		font-size: 1em;
 		height: 29px;
 		padding: 3px 10px 2px 10px;
+		margin-left: 2%;
 	}
 
 	#scrollArrow {
@@ -1564,6 +1565,9 @@ p, div {
 		margin: 58% 0% 0% 0%;
 	}
 
+	.git-button {
+		margin-left: 26%;
+	}
 
 	.tools-proficiencies {
 		width: 100%;
@@ -1656,7 +1660,11 @@ p, div {
 }
 
 
+/* =================================================================================================================*/
+																				
+																				/* 667 x 375	iPhone 6 Plus Landscape */
 
+@media screen and (max-width: 667px) and (max-height: 375px) {
 
 
 
@@ -1665,7 +1673,7 @@ p, div {
 
 
 
-/*]
+/*
 
 																640 x 360	HTC One X Landscape
 																640 x 360	HTC EVO LTE/3D Landscape
