@@ -1367,7 +1367,7 @@ p, div {
 	.landing-div {
 		height: 502px;
 	}
-																										/* 1024px */
+
 	.mw-name {
 		font-size: 3.4em;
 	}
@@ -1375,7 +1375,7 @@ p, div {
 	.job-title {
 		font-size: 0.9em
 	}
-																										/* 1024px */
+
 	#javascriptLogo {
 		opacity: 1;
 	}
@@ -1477,7 +1477,7 @@ p, div {
 		height: 65%;
 		max-height: 65%; 
 	}
-																										/* 1024px */
+
 	#ngwp {
 
 	}
@@ -1538,18 +1538,6 @@ p, div {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* =================================================================================================================*/
 
 																			/* 966 x 604 	Google Nexus 7 Landscape */ 																			/* 960 x 600 	Google Nexus 7.2 Landscape */ 
@@ -1572,20 +1560,14 @@ p, div {
 	.skype-button > a {
 		font-size: 0.9em;
 	}
-}
-																			/* 966 x 604 	Google Nexus 7 Landscape */ 																			/* 960 x 600 	Google Nexus 7.2 Landscape */ 
-																			/* 960 x 600 	Google Nexus 7.2 Landscape */ 
-																			/* 960 x 540 	Samsung Note 3 Landscape */
-
 
 
 /* =================================================================================================================*/
 
-																				/* 768px */
+																										/* 768px */
 
 @media screen and (max-width: 768px) {
 
-																										/* 768px */
 	#synerginFixedPicMobile {
 		height: 421px;
 	}
@@ -1616,7 +1598,7 @@ p, div {
 	}
 
 	.linkedin-button {
-		margin: 5% 0% 0% 10%;
+		margin: 5% 0% 0% 12%;
 	/*	font-size: 1em;
 		height: 29px;
 		padding: 3px 10px 2px 10px;
@@ -1714,7 +1696,9 @@ p, div {
 
 @media screen and (max-width: 667px) and (max-height: 375px) {
 
-
+	.landing-div {
+		height: 327px;
+	}
 
 }
 
@@ -1723,8 +1707,7 @@ p, div {
 
 
 
-/*
-
+																/*
 																640 x 360	HTC One X Landscape
 																640 x 360	HTC EVO LTE/3D Landscape
 																640 x 360	HTC Sensation Landscape
@@ -1808,17 +1791,6 @@ p, div {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* =================================================================================================================*/
 
 
@@ -1826,7 +1798,7 @@ p, div {
 
 																										/* 568 x 320 */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 568px) {
 
 
 	.landing-div {
@@ -1835,7 +1807,7 @@ p, div {
 	}
 
 	.mw-name {
-
+		padding: 4% 0% 0% 0%;
 	}
 
 	.job-title {
@@ -1867,12 +1839,12 @@ p, div {
 
 	.git-button {
 		width: 19%;
-		margin: 4.1% 5% 0% 10.95%;
+		margin: 2.5% 5% 0% 10.95%;
 	}
 
 	.portfolio-button {
 		width: 19%;
-		margin: 4.1% 0% 0% 0%;
+		margin: 2.5% 0% 0% 0%;
 	/*	display: block;
 		width: 100%;
 		margin-top: 4.1%;
@@ -1894,11 +1866,7 @@ p, div {
 
 	.linkedin-button {
 		width: 19%;
-		margin: 4.1% 0% 0% 10%;
-	/*	display: block;
-		width: 100%;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%; */
+		margin: 2.5% 0% 0% 8.8%;
 	}
 																										/* 568px */
 	#scrollArrow {
@@ -1964,13 +1932,6 @@ p, div {
 		font-size: 2em;
 	}
 
-	#galleryDiv {
-		display: inline-block;
-		background-color: black;
-		width: 100%;
-		padding: 0% 0% 0% 0%;
-		margin: 0% 0% 0% 0%;
-	}
 	.embedded-prezi {
 		display: block;
 		width: 70%;
@@ -1981,7 +1942,7 @@ p, div {
 
 	.skype-button {
 		width: 100%;
-		margin: 26.85% 0% 0% 0%;
+		margin: 23.85% 0% 0% 0%;
 	}
 
 	.skype-button > a {
@@ -1992,6 +1953,24 @@ p, div {
 
 
 
+
+/* =================================================================================================================*/
+
+
+
+
+																										/* 540 x 966 Samsung Note 3 Portrait */
+
+@media screen and (max-width: 540px) {
+
+	.landing-div {
+		height: 265px;
+	}
+}
+
+
+
+
 /* =================================================================================================================*/
 
 
@@ -1999,7 +1978,7 @@ p, div {
 
 																											/* 480px */
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 480px) {
 
 
 	.landing-div {
@@ -2026,25 +2005,10 @@ p, div {
 		margin: 7% 0% 7% 0%;
 		padding: 0% 0% 0% 0%;	*/
 	}
-
-	.button-container > span {
-	/*	width: 100%; */
-	}
-
-	.button-container > span > a {
-	/*	width: 100%;
-		max-width: 100%;
-		min-width: 100%;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%; */
-	}
 																										/* 480px */
 	.linkedin-button {
-		margin: 3% 0% 0% 10%;
-	/*	display: block;
-		width: 100%;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%; */
+		width: 19%;
+		margin: 2.5% 0% 0% 8.8%;
 	}
 
 	.tools-proficiencies {
@@ -2073,7 +2037,6 @@ p, div {
 	/*	margin: 0% 0% 0% 0%; 
 		-webkit-margin-after: 0.02%;
 		font-size: 0.9em;	*/
-
 	}
 
 	#ngwpsub {
@@ -2082,14 +2045,15 @@ p, div {
 
 	#synerginFixedPicMobile {
 		height: 263px;
+		margin: 0%;
+		padding: 0%;
+		top: 0%;
 	}
-				
-																										/* 480px */
+																										/* 480px 
 	.skype-button > ul > li {
 		font-size: 1em;
 		background-color: rgba(0,0,0,0.8);
-	}
-
+	}*/
 
 	#elevatorDiv { 
 		height: auto;
@@ -2127,12 +2091,6 @@ p, div {
 		width: 90%;
 		margin: 0% 0% 5% 0%;
 		padding: 0% 5%;
-	/*  font-size: 1.2em;
-	    display: block;
-	    width: 80%;
-	    height: auto;
-	    margin: 0% 0% 7% 0%;
-	    padding: 0% 10% 0% 10%;	*/
 	}
 
 	#portfolioDiv {
@@ -2147,20 +2105,10 @@ p, div {
 	}
 
 	.prezi-div {
-	/*	display: block;
-		width: 100%;
-		height: 100%;
-		background-image: url('../mediaFolder/indexRemakeMedia/big-fish-in-the-blue-ocean480.jpg');
-		padding: 0%;
-		margin-top: 0%;		*/
+
 	}
 
 	.embedded-prezi {
-	/*	display: block;
-		width: 70%;
-		height: 140px;
-		padding: 3% 15% 3% 15%;
-		margin: 0% 0% 0% 0%;	*/
 	}
 																										/* 480px */
 	.ep-trello {
@@ -2172,10 +2120,9 @@ p, div {
 		height: 187px;
 	/*	height: 220px;	*/
 	}
-																										/* 480px */
+
 	.ep-html-wordpress {
 		height: 217px;
-		background-image: url('../mediaFolder/indexRemakeMedia/drawcircles.png');
 	/*	height: 201px;*/
 	}
 
