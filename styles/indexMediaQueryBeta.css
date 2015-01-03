@@ -1701,7 +1701,7 @@ p, div {
 																				
 																				/* 736 x 414	iPhone 6 Plus Landscape */
 
-@media screen and (max-width: 736px) and (max-height: 414px) {
+@media screen and (max-width: 736px) {
 
 	.landing-div {
 
@@ -1721,7 +1721,7 @@ p, div {
 																				
 																				/* 667 x 375	iPhone 6 Landscape */
 
-@media screen and (max-width: 667px) and (max-height: 375px) {
+@media screen and (max-width: 667px) {
 
 	.landing-div {
 		height: 327px;
@@ -2200,6 +2200,75 @@ p, div {
 
 
 
+/* =================================================================================================================*/
+
+
+
+
+																											/* 360 x 640	Samsung Note 3 Portrait */
+
+@media screen and (max-width: 365px) and (max-height: 640px) {
+
+	
+	.landing-div {
+		height: 176px;
+	}
+
+	.button-container {
+		display: block;
+		width: 60%;
+		margin: 20% 20% 0% 20%;
+		padding-bottom: 0% 0% 0% 0%;
+	}
+	.git-button {
+		display: block;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+	}
+
+	.portfolio-button {
+		display: block;
+		width: 100%;
+		margin: 7% 0% 7% 0%;
+		padding: 0% 0% 0% 0%;	
+	}
+
+	.button-container > span {
+		width: 100%;
+	}
+
+	.button-container > span > a {
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+	}
+
+	.linkedin-button {
+		display: block;
+		width: 100%;
+		margin: 0% 0% 0% 0%;
+		padding: 0% 0% 0% 0%;
+	}
+
+	.skype-button {
+		margin-top: 20.2%;
+		height: 80px;
+	}
+
+	.skype-button > a {
+		font-size: 0.68em;
+	}
+
+	.skype-button > ul {
+	}
+
+	.skype-button > ul > li {
+	
+	}
+}
 
 
 
@@ -2224,7 +2293,7 @@ p, div {
 
 																				/* 320px */
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 345px) {
 
 
 	.ScrollScreenIndicators {
@@ -2255,12 +2324,7 @@ p, div {
 	}
 																										/* 320px */
 	.job-title {
-	/*	font-style: italic;
-		font-family: 'Alegreya Sans', sans-serif;
-		display: block;
-		text-align: center;
-		font-size: 0.8em;
-		margin: 5px 23% 15px 23%; */
+
 	}
 
 	#javascriptLogo {
@@ -2369,16 +2433,6 @@ p, div {
 
 	.tools-header {
 		font-size: 1.9em;
-	/*	text-align: center; 
-		width: 100%; 
-		margin: 1% 0% 0% 0%; 
-		font-size: 1.2em;	*/
-	}
-
-	.tools-list {
-	/*	width: 30%;
-		display: inline-block;
-		padding-top: 7%; */
 	}
 																										/* 320px */
 	.tools-list > a {
