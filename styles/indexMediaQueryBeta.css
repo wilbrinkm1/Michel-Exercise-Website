@@ -1597,17 +1597,11 @@ p, div {
 	}
 
 	.portfolio-button > a {
-	/*	font-size: 1em;
-		height: 29px;		
-		padding: 3px 10px 2px 10px; */
+	
 	}
 
 	.linkedin-button {
 		margin: 19% 0% 0% 8%;
-	/*	font-size: 1em;
-		height: 29px;
-		padding: 3px 10px 2px 10px;
-		margin-left: 2%; */
 	}
 
 
@@ -1704,7 +1698,7 @@ p, div {
 @media screen and (max-width: 736px) {
 
 	.landing-div {
-
+		height: 361px;
 	}
 
 	.git-button {
@@ -1754,8 +1748,8 @@ p, div {
 	}
 
 	.skype-button {
-		width: 100%;
-		margin: 29.35% 0% 0% 0%; 
+	/*	width: 100%;
+		margin: 29.35% 0% 0% 0%;  */
 		font-size: 1.3em;
 	}
 }
@@ -1906,18 +1900,6 @@ p, div {
 		margin: 2.5% 0% 0% 0%;
 	}
 
-	.button-container > span {
-	/*	width: 100%; */
-	}
-
-	.button-container > span > a {
-	/*	width: 100%;
-		max-width: 100%;
-		min-width: 100%;
-		margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%; */
-	}
-
 	.linkedin-button {
 		width: 19%;
 		margin: 2.5% 0% 0% 8.8%;
@@ -1951,11 +1933,6 @@ p, div {
 	#elevatorDiv { 
 		height: 299px;
 		margin: 251% 0% 0% 0%;
-	/*	background-color: white;
-		position: relative;
-		width: 100%; 
-		margin: 300% 0% 0% 0%;
-		height: 100%; */
 	}
 
 	.elevator-third {
@@ -1987,8 +1964,8 @@ p, div {
 	}
 
 	.skype-button {
-		width: 100%;
-		margin: 23.85% 0% 0% 0%;
+/*		width: 100%;
+		margin: 23.85% 0% 0% 0%; */
 	}
 
 	.skype-button > a {
@@ -2045,10 +2022,6 @@ p, div {
 
 	.portfolio-button {
 		margin: 3% 0% 0% 0%;
-	/*	display: block;
-		width: 100%;
-		margin: 7% 0% 7% 0%;
-		padding: 0% 0% 0% 0%;	*/
 	}
 																										/* 480px */
 	.linkedin-button {
@@ -2075,13 +2048,6 @@ p, div {
 
 	#rightIcons {
 		height: 100%;
-	}
-
-	#ngwp {
-		font-size: 0.5em;
-	/*	margin: 0% 0% 0% 0%; 
-		-webkit-margin-after: 0.02%;
-		font-size: 0.9em;	*/
 	}
 
 	#ngwpsub {
@@ -2115,19 +2081,13 @@ p, div {
 
 	.elevator-pic {
 		width: 80%;
-		height: 228px;
+		height: 188px;
 		margin: 2% 10% 1% 10%;
 	}
 
 	.elevator-title {
 		width: 100%;
 		font-size: 1.84em;
-	/*	text-align: center;
-		display: block;
-		margin: 1% 0% 2% 0%;
-		padding: 0% auto 0% auto;
-		font-size: 1.4em;
-		width: 100%;	*/
 	}
 	         
 	.elevator-text {
@@ -2139,10 +2099,7 @@ p, div {
 	}
 
 	#portfolioDiv {
-	/*	margin: 0% 0% 0% 0%;
-		padding: 0% 0% 0% 0%;
-		width: 100%;
-		background-color: black;	*/
+
 	}
 
 	#ptdiv {
@@ -2160,19 +2117,18 @@ p, div {
 		background-image: url('../mediaFolder/indexRemakeMedia/trello480.png');
 		height: 217px;	
 	}
-
+/*
 	.ep-mica-gamma {
 		height: 187px;
-	/*	height: 220px;	*/
 	}
 
 	.ep-html-wordpress {
 		height: 217px;
-	/*	height: 201px;*/
-	}
+		height: 201px;
+	} */
 
 	.skype-button {
-		margin-top: 34.2%;
+/*		margin-top: 34.2%; */
 	}
 
 	.skype-button > a {
@@ -2211,7 +2167,11 @@ p, div {
 
 	
 	.landing-div {
-		height: 176px;
+		height: 550px;
+	}
+
+	#javascriptLogo {
+		height: 37px;
 	}
 
 	.button-container {
@@ -2254,22 +2214,39 @@ p, div {
 	}
 
 	.skype-button {
-		margin-top: 20.2%;
-		height: 80px;
+/*		margin-top: 30%; */
 	}
 
 	.skype-button > a {
 		font-size: 0.68em;
 	}
-
+/*
 	.skype-button > ul {
+		margin-bottom: 0%;
 	}
 
 	.skype-button > ul > li {
-	
+		margin-bottom: 0%;	
+	}
+*/
+	#elevatorDiv {
+		margin: 287% 0% 0% 0%;
+	}
+
+	.elevator-pic {
+		height: 141px;
+	}
+
+	.prezi-div {
+		height: 280px;
+	}
+
+	.embedded-prezi {
+		width: 80%;
+		height: 60%;
+		padding: 15% 10%;
 	}
 }
-
 
 
 
@@ -2331,37 +2308,18 @@ p, div {
 		width: 12.8%;
 		height: 47px;
 		margin: 2% 1.2% 2% 31.75%;
-	/*	height: 50px;
-		width: 10.6%;
-		display: inline-block;
-		margin: 0% 1% 1% 33%;	
-		float: left;
-		opacity: 1; */
 	}
 
 	#htmlLogo {
 		width: 12%;
 		margin-top: 2%;
 		margin-bottom: 2%;
-	/*	height: 50px;
-		display: inline-block;
-		width: 9.5%;
-		float: left;
-		opacity: 1;
-		margin: 0% 1% 1% 1%; */
 	}
-																										/* 320px */
+
 	#cssLogo {
 		width: 12%;
 		margin-top: 2%;
 		margin-bottom: 2%;
-	/*	display: inline-block;
-		background-size: 100%;
-		height: 50px;
-		width: 9.5%;
-		float: left;
-		opacity: 1;
-		margin: 0% 24% 1% 1.5%;	*/
 	}
 
 
@@ -2406,8 +2364,8 @@ p, div {
 	}
 
 	.skype-button {
-		margin-top: 20.2%;
-		height: 80px;
+/*		margin-top: 20.2%;
+		height: 80px; */
 	}
 
 	.skype-button > a {
@@ -2462,7 +2420,7 @@ p, div {
 	}
 
 	#elevatorDiv { 
-		height: 1250px;
+		height: 1065px;
 		margin-top: 300%;
 		background-color: white;
 	}
@@ -2492,31 +2450,29 @@ p, div {
 	}
 
 	.prezi-div {
-
+		height: 170px;
 	}
 
 	.embedded-prezi {
-
+		height: 90%;
 	}
 
-	.ep-trello {
+/*	.ep-trello {
 		height: 161px;	
 	}
 
 	.ep-html-wordpress {
 		height: 155px;
-		border-style: none;
-		border-color: #000099;
 	}
-
+*/
 	.skype-button {
 
 	}
 
 	.skype-button > a {
-		margin: 40.85% 0% 0% 0%; 
+/*		margin: 40.85% 0% 0% 0%; 
 		padding-top: 1.5%;
-		padding-bottom: 4.5%;
+		padding-bottom: 4.5%; */
 	}
 
 	.skype-button > ul {
