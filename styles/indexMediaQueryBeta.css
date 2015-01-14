@@ -20,6 +20,11 @@ p, div {
 
 }
 
+.trigger-class {
+	z-index: -33;
+	
+}
+
 
 /* =================================================================================================================*/
 
@@ -86,7 +91,6 @@ p, div {
 
 	.trigger-class {
 		position: absolute;
-		z-index: 5;
 		width: 60px;
 		height: 20px;
 		font-size: 6px;
