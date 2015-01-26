@@ -91,6 +91,7 @@ $(document).ready(function($) {
 	function myFunction() {
 	TweenLite.to($("#loading"), 0.2, {display:"none"})
 	if (widthcheck > 1024) {
+		TweenMax.to(".mw-name", 3.2, {text:"Michel Wilbrink", ease:Linear.easeNone})
 	    TweenMax.staggerFromTo([htmlLogo, cssLogo, javascriptLogo], 3,  {scale:1.6, opacity:0}, {scale: 1, opacity: 1}, 1.0);        
 	}
 }	
@@ -322,7 +323,7 @@ $(document).ready(function($) {
 		.add (
 			TweenLite.from(preziDiv, 0.5, {visibility:"none", opacity: 0, scale: 0.7})
 		)
-	var scene = new ScrollScene({triggerElement: "#elevatorTriggerHeight"})
+	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
 		.setTween(tween)
 		.addTo(controller);	
 	} else {
