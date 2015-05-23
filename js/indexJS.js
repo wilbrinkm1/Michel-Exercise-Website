@@ -29,7 +29,7 @@ var tl = new TimelineLite();
 	if (widthcheck > 1025) {
 	$(document).on("mouseenter","#skypeDiv",function(){
 		tl.reversed(false);
-		tl.to("#skypeDiv", 1.2, {height: "30%", yPercent: "-65%"})		
+		tl.to("#skypeDiv", 1.2, {height: "30%"})		
 		.to(".skypeinfo", 0.2, {display: "block"})
 		.to(".skypeinfo", 0.5, {opacity:1});
 	});
@@ -91,7 +91,7 @@ $(document).ready(function($) {
 	function myFunction() {
 	TweenLite.to($("#loading"), 0.2, {display:"none"})
 	if (widthcheck > 1024) {
-		TweenMax.to(".mw-name", 3.2, {text:"Michel Wilbrink", ease:Linear.easeNone})
+		TweenMax.to(".mw-name", 1, {text:"Michel Wilbrink", ease:Linear.easeNone})
 	    TweenMax.staggerFromTo([htmlLogo, cssLogo, javascriptLogo], 3,  {scale:1.6, opacity:0}, {scale: 1, opacity: 1}, 1.0);        
 	}
 }	
@@ -223,7 +223,7 @@ $(document).ready(function($) {
 });	 
 */
 
-/* original synerginTrigger function */
+/* original synerginTrigger function 
 $(document).ready(function($) {
 	if (widthcheck > 1024) {
 	// build tween
@@ -251,7 +251,7 @@ $(document).ready(function($) {
 		console.log("under 1024");
 	}
 });	
-
+*/
 $(document).ready(function($) {
 	if (widthcheck > 1024) {
 	// build tween
