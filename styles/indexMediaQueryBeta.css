@@ -180,7 +180,7 @@ p, div {
 		text-align: center;
 		font-family: 'Alegreya Sans', sans-serif;
 		color: white;
-		text-shadow: 2px 2px 2px #000000;
+		text-shadow: 3px 3px 3px #000000;
 	}
 
 	.job-title {
@@ -561,18 +561,22 @@ p, div {
 
 	.ws_title {
 		font-size: 3.9em;
+		color: yellow;
 	}
 
 	.ws-title-wrapper {
 		font-size: 3.9em;
+		color: yellow;
 	}
 
 	.ws_title > span {
 		font-size: 3.9em;
+		color: yellow;
 	}
 
 	.ws_title > div {
 		font-size: 3.9em;
+		color: yellow;
 	}
 
 }

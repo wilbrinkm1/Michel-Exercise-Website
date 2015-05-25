@@ -83,6 +83,7 @@ $(document).ready(function($) {
 	controller = new ScrollMagic();
 });
 
+/*
 $(document).ready(function($) {
     htmlLogo = document.getElementById("htmlLogo");
     cssLogo = document.getElementById("cssLogo");
@@ -95,7 +96,7 @@ $(document).ready(function($) {
 	    TweenMax.staggerFromTo([htmlLogo, cssLogo, javascriptLogo], 3,  {scale:1.6, opacity:0}, {scale: 1, opacity: 1}, 1.0);        
 	}
 }	
-});
+});*/
 
 /*
 $(document).ready(function($) {
