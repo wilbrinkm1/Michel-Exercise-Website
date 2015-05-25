@@ -252,7 +252,8 @@ $(document).ready(function($) {
 		console.log("under 1024");
 	}
 });	
-*/
+
+
 $(document).ready(function($) {
 	if (widthcheck > 1024) {
 	// build tween

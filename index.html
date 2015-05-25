@@ -83,7 +83,37 @@ background-image: linear-gradient(to bottom, #004182 22%, #000000 100%);
 	color: yellow;
 }
 
+#landingMobile {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	#landingVid {
+		display: none;
+	}
+
+	#landingMobile {
+		display: block;
+		width: 100%;
+	}	
+
+
+}
+
+
 </style>
+
+<script>
+
+function loadVideo1() {
+ var videoEl = document.getElementsByTagName('video')[0];
+ var sourceEl = videoEl.getElementsByTagName('source')[0];
+ sourceEl.src = 'mediaFolder/indexRemakeMedia/Screencapture34.mp4';
+ videoEl.load();
+}
+
+</script>
+
 </head>
 <body style="background-color: #004182;">
 
@@ -111,7 +141,9 @@ background-image: linear-gradient(to bottom, #004182 22%, #000000 100%);
 poster="mediaFolder/indexRemakeMedia/prezi_poster.png"
 -->
 
-<video autoplay loop style="width:100%; margin: 0%; padding: 0%;">
+<img src="mediaFolder/indexRemakeMedia/prezi_poster.png" id="landingMobile" onclick="loadVideo1()" value="Load Video 1" />
+
+<video autoplay loop style="width:100%; margin: 0%; padding: 0%;" id="landingVid">
   <source src="mediaFolder/indexRemakeMedia/Screencapture34.mp4">
   Your browser does not support the video tag.
 </video> 
@@ -119,7 +151,7 @@ poster="mediaFolder/indexRemakeMedia/prezi_poster.png"
 <div class="blue-grad">
 	<h1 style="margin-top:0%; padding-top: 3%; font-size: 4em;" class="mw-name">Michel Wilbrink</h1>
 	<div style="height: 10.2em;" class="button-container">
-	   	<a href="https://github.com/wilbrinkm1" class="button glow git-button">My Github</a>
+	   	<a href="https://github.com/wilbrinkm1" class="button glow git-button">Github</a>
 		<span style="display: inline-block;" class="button-dropdown glow portfolio-button" data-buttons="dropdown">
 		   <a href="#" class="button glow">Portfolio</a>
 		   <ul class="button-dropdown-menu-below" style="display: none;">
