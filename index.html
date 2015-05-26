@@ -95,22 +95,16 @@ background-image: linear-gradient(to bottom, #004182 22%, #000000 100%);
 		width: 100%;
 	}	
 
+	#landingVid {
+		display: none;
+	}
+
 
 }
 
 
 </style>
 
-<script>
-
-function loadVideo1() {
- var videoEl = document.getElementsByTagName('video')[0];
- var sourceEl = videoEl.getElementsByTagName('source')[0];
- sourceEl.src = 'mediaFolder/indexRemakeMedia/Screencapture34.mp4';
- videoEl.load();
-}
-
-</script>
 
 </head>
 <body style="background-color: #004182;">
@@ -139,7 +133,7 @@ function loadVideo1() {
 poster="mediaFolder/indexRemakeMedia/prezi_poster.png"
 -->
 
-<img src="mediaFolder/indexRemakeMedia/prezi_poster.png" id="landingMobile" onclick="loadVideo1()" value="Load Video 1" />
+<a href="https://youtu.be/XzkAKPStONY" ><img src="mediaFolder/indexRemakeMedia/prezi_poster.png" id="landingMobile"/></a>
 
 <video autoplay loop style="width:100%; margin: 0%; padding: 0%;" id="landingVid">
   <source src="mediaFolder/indexRemakeMedia/Screencapture34.mp4">
