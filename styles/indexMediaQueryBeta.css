@@ -1407,7 +1407,7 @@ p, div {
 		opacity: 1;
 	}	
 
-	
+
 
 	.git-button {
 		font-size: 1em;
@@ -1609,17 +1609,14 @@ p, div {
 	.git-button {
 		margin: 19% 5% 0% 26%;
 	}
-
+	/*
 	.portfolio-button {
 		font-size: 1em;
 		height: 29px;
 		margin: 19% 0% 0% 0%;
 
 	}
-
-	.portfolio-button > a {
-	
-	}
+	*/
 
 	.linkedin-button {
 		margin: 19% 0% 0% 8%;
@@ -1721,10 +1718,11 @@ p, div {
 	.landing-div {
 		height: 361px;
 	}
-
+/*
 	.git-button {
 		margin: 19% 5% 0% 22.6%;
 	}
+*/
 
 }
 
@@ -1749,7 +1747,7 @@ p, div {
 	.portfolio-button {
 		font-size: 1em;
 		height: 29px;
-		margin: 16% 0% 0% 0%;
+		/*margin: 16% 0% 0% 0%; */
 	}
 
 	.portfolio-button > a {
@@ -1758,11 +1756,11 @@ p, div {
 		padding: 3px 10px 2px 10px;		
 	}
 
-	.portfolio-button > ul > li > a {
+	/*.portfolio-button > ul > li > a {
 		font-size: 1em;
 		line-height: 1.9em;
 		left: -15%;
-	}
+	}*/
 
 	.linkedin-button {
 		margin: 16% 0% 0% 8%;
