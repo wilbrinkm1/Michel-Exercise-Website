@@ -1,3 +1,31 @@
+/* Hide when saving */
+
+
+function getPW() {
+var userName=document.getElementById("username").value;
+if (userName= "mica") {
+  document.getElementById("pw").innerHTML = "Your password tonight is " + userName + "0901" + " Patio open between 1 - 3am, see you then " + userName +".";
+  document.getElementById("note").innerHTML = "Patio open between 1 - 3am, see you then, " + userName +".";
+} else {
+  document.getElementById("pw").innerHTML = "Kindly provide your reservation";
+}
+
+<script type="text/javascript">
+function getPW() {
+var uName = document.getElementById("username").value;
+if (uName == "mica") {
+  document.getElementById("pw").innerHTML = "Your password tonight is " + uName + " 0901";
+  document.getElementById("note").innerHTML = "Patio open between 1 - 3am, see you then, " + uName +".";
+} else {
+  document.getElementById("pw").innerHTML = "Kindly provide your reservation";
+}
+</script>
+
+ $(document).ready(function(){
+    $("button").click(function(){
+        $("#test").hide();
+    });
+});
 
 
 
