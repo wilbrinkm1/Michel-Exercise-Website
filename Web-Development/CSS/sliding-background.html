@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width">
+
+<style>
+.wrapper {
+  overflow: hidden;
+}
+
+.sliding-background {
+  background: url("http://www.micawilbrink.com/wp-content/uploads/20150728_2031271-e1439950173477.jpg") repeat-x;
+  background-size: 100% 100%;
+  height: 1000px;
+  width: 3000px;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1000px, 0, 0);
+  }
+}
+</style>
+
+<body>
+
+<div class="wrapper">
+  <div class="sliding-background"></div>
+</div>
+
+
+</body>
+
+</html>
