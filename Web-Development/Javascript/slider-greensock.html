@@ -1,0 +1,1280 @@
+<!doctype html>
+<html>
+<head>
+<!--
+Hand coded slider made with Greensock JS framework
+-->
+<meta name="viewport" content="width=device-width">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/GreenSock/src/minified/jquery.gsap.min.js"></script>
+<script type="text/javascript" src="../resources/GreenSock/src/minified/TweenMax.min.js"></script>
+<script type="text/javascript" src="../resources/GreenSock/src/minified/TweenLite.min.js"></script>
+<script type="text/javascript" src="../resources/GreenSock/src/minified/TimelineMax.min.js"></script>
+<script type="text/javascript" src="../resources/GreenSock/src/minified/plugins/ScrambleTextPlugin.min.js"></script>
+<script type="text/javascript" src="../resources/GreenSock/src/minified/plugins/TextPlugin.min.js"></script>
+<script type="text/javascript" src="../resources/GreenSock/src/minified/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="../resources/GreenSock/src/minified/plugins/AttrPlugin.min.js"></script>
+
+<script type="text/javascript" src="../resources/ScrollMagic/js/_dependent/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/ScrollMagic/js/_dependent/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="../resources/ScrollMagic/js/_dependent/greensock/TweenLite.min.js"></script>
+<script type="text/javascript" src="../resources/ScrollMagic/js/_dependent/greensock/TimelineMax.min.js"></script>
+<script type="text/javascript" src="../resources/ScrollMagic/js/jquery.scrollmagic.min.js"></script>
+
+<style>
+
+#slideContainer {
+	width: 100%;
+	height: 1650px;
+	position: relative;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: #003366;
+	webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+#slideTitle {
+	width: 100%;
+	display: block;
+	text-align: center;
+	line-height: 2em;
+	background-color: #003366;
+	color: #ffffff;
+}
+
+#buttonContainer {
+	height: 5%;
+	margin: 0.5% 0% 0.5% 15.2%;
+	border: none;
+}
+
+.button-rounded {
+	font-size: 50px;
+	padding: 1% 5%;
+	float: left;
+}
+
+.button-dropdown {
+	width: 20%;
+	padding: 0% 5%;
+	margin: 0% 7.05% 0% 2.5%;
+	float: left;
+}
+
+.button-dropdown ul {
+	margin-left: 13%;
+}
+
+#buttonContainer > span > a {
+	width: 100%; 
+	padding: 4.99% 23%;
+	font-size: 50px;
+	text-align: center;
+}
+
+#buttonContainer > span > ul > li > a {
+	font-size: 45px;
+	line-height: 2.5em;
+	text-align: center;
+}
+
+#prevIndustry {
+	width: 9%;
+}
+
+#nextIndustry {
+	width: 9%;
+	margin-left: 5%;
+}
+
+#slideA {
+	width: 100%;
+	height: 1296px;
+	position: absolute;
+	float: left;
+	display: block;
+	background-color: #003366;
+}
+
+#leftPicA {
+	width: 50%;
+	height: 1296px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	display: inline-block;
+	background-color: #003366;
+}
+
+#rightsideA {
+	width: 50%;
+	height: 1296px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	display: inline-block;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+#industryTitleA {
+	margin-top: 5%;
+	text-align: center;
+	color: #003366;
+	text-shadow: #BABABA 3px 3px 3px;
+}
+
+.learn-more {
+	width: 20%;
+	display: none;
+    opacity: 0;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    margin: 1.5% 0% 0% 38.2%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background: #4ab1ff; background: -webkit-gradient(linear, left top, left bottom, from(#4ab1ff), to(#003366)); background: -moz-linear-gradient(top, #4ab1ff, #003366);background: linear-gradient(to bottom, #4ab1ff, #003366);
+	    text-shadow: #000000 1px 1px 1px;
+	    font: normal normal normal arial;
+	    color: #ffffff;
+	    text-decoration: none;
+}
+.learn-more:hover,
+.learn-more:focus {
+    background: #59d4ff; background: -webkit-gradient(linear, left top, left bottom, from(#59d4ff), to(#003d7a)); background: -moz-linear-gradient(top, #59d4ff, #003d7a); background: linear-gradient(to bottom, #59d4ff, #003d7a); color: #ffffff;
+    text-decoration: none;
+}
+.learn-more:active {
+	    background: #2c6a99; background: -webkit-gradient(linear, left top, left bottom, from(#2c6a99), to(#003366)); background: -moz-linear-gradient(top, #2c6a99, #003366); background: linear-gradient(to bottom, #2c6a99, #003366);
+}
+.btncolor {
+    background: #4ab1ff; background: -webkit-gradient(linear, left top, left bottom, from(#4ab1ff), to(#003366)); background: -moz-linear-gradient(top, #4ab1ff, #003366);background: linear-gradient(to bottom, #4ab1ff, #003366);
+    text-shadow: #000000 1px 1px 1px;
+    color: #ffffff;
+    border: 1px solid #000000;
+}
+.btncolor:hover {
+	background: #59d4ff; background: -webkit-gradient(linear, left top, left bottom, from(#59d4ff), to(#003d7a)); background: -moz-linear-gradient(top, #59d4ff, #003d7a); background: linear-gradient(to bottom, #59d4ff, #003d7a); color: #ffffff;
+	text-decoration: none;
+}
+.btncolor:active {
+    background: #2c6a99; background: -webkit-gradient(linear, left top, left bottom, from(#2c6a99), to(#003366)); background: -moz-linear-gradient(top, #2c6a99, #003366); background: linear-gradient(to bottom, #2c6a99, #003366);
+}
+
+.industryText {
+	width: 80%;
+	margin: 4% 10% 4% 10%;
+	text-align: justify;
+}
+
+#slideB {
+	width: 100%;
+	height: 1296px;
+	position: absolute;
+	float: left;
+	display: block;
+	background-color: #003366;
+	border: none;    
+}
+
+#leftPicB {
+	width: 50%;
+	height: 1296px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	display: inline-block;
+	background-color: #003366;
+}
+
+#rightsideB {
+	width: 50%;
+	height: 1296px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	display: inline-block;
+	background-color: #ffffff;
+	overflow-y: hidden;
+}  
+
+#industryTitleB {
+	margin-top: 5%;
+	text-align: center;
+	color: #003366;
+	text-shadow: #BABABA 3px 3px 3px;
+}
+
+
+</style>
+
+<body>
+
+<div id="slideContainer">
+	<h1 id="slideTitle">INDUSTRIES WE SERVE</h1>
+	<div id="buttonContainer">
+		<a href="#slideHold" id="prevIndustry" class="scroll-link button button-rounded btncolor">Previous</a>
+		<span class="button-dropdown" data-buttons="dropdown">
+			<a id="selectIndustry" class="btncolor button button-rounded">Select an Industry</a>
+		  	<ul>
+				<li><a href="#slideHold" id="industry1" class="scroll-link">Title Agencies</a></li>
+				<li><a href="#slideHold" id="industry2" class="scroll-link">Real Estate Professionals</a></li>
+				<li><a href="#slideHold" id="industry3" class="scroll-link">Banks & Mortgage Lenders</a></li>
+				<li><a href="#slideHold" id="industry4" class="scroll-link">Engineers & Surveyors</a></li>
+				<li><a href="#slideHold" id="industry5" class="scroll-link">Appraisers</a></li>
+				<li><a href="#slideHold" id="industry6" class="scroll-link">Attorneys</a></li>
+				<li><a href="#slideHold" id="industry7" class="scroll-link">Home Inspectors</a></li>
+				<li><a href="#slideHold" id="industry8" class="scroll-link">Municipalities & Government</a></li>
+				<li><a href="#slideHold" id="industry9" class="scroll-link">Builders &amp; Construction</a></li>
+		  	</ul>
+		</span>
+		<a href="#slideHold" id="nextIndustry" class="scroll-link button button-rounded btncolor">Next</a>
+	</div>
+	<div id="slideA">
+		<img src="" id="leftPicA"/>
+		<div id="rightsideA">
+			<h2 id="industryTitleA"></h2>
+			<p id="industryTextA1" class="industryText"></p>
+			<p id="industryTextA2" class="industryText"></p>
+			<p id="industryTextA3" class="industryText"></p>
+			<a class="learn-more" href="#">Learn More</a>
+		</div>
+	</div>
+	<div id="slideB">
+		<img src="" id="leftPicB"/>
+		<div id="rightsideB">
+			<h2 id="industryTitleB"></h2>
+			<p id="industryTextB1" class="industryText"></p>
+			<p id="industryTextB2" class="industryText"></p>
+			<p id="industryTextB3" class="industryText"></p>
+			<a class="learn-more" href="#">Learn More</a>
+		</div>
+	</div>
+	
+</div>
+
+
+
+<script>
+
+
+// INDUSTRY CODE
+
+
+
+//	Objects
+
+var general = [
+																				//	BOOKFLAP ARRAYS
+	// 	0 	
+	{
+		num0: "FLOOD RESOURCE CENTER",
+		num1: "\"Defining industry \'best-practices\' when it comes to reports, information, training, customer services, and consulting related to Flood & Tidelands.\"",
+		num2: "Staffed by Certified Floodplain Managers with Local Knowledge and Extensive Experience.",
+		num3: "We are Your Flood Resource."
+	},
+	//	1
+	{
+		num0: "NJFLOOD",
+		num1: "Know your true flood status.  NJFlood.com is for home buyers, property owners, and non-subscribing professionals who need information on Flood, Tidelands, Tax data, and property information.  Powered by the WTG Flood Resource Center, the site can help answer key questions the public may have about their property.",
+		num2: "As a WTG or NJPropertyFax client you can link to NJFlood.com from your homepage; offering your clients access to our high quality reports and resources.  This link is also a lead generator and great promotional outlet for your business.",
+		num3: "Confirm, Challenge, Know Your True Flood Status, NJFlood.com"
+	},
+	//	2
+	{
+		num0: "NJ PROPERY FAX",
+		num1: "The market is changing, buyers and sellers are more tech-savvy and want the best information.  They want to be more involved and informed than ever before.  They don't want surprises.",
+		num2: "NJ Property Fax, a Division of Western Technologies Group, provides New Jersey Realtors, engineers, attorneys, appraisers, surveyors, and other professionals access to in-depth property information and maps, specialized reports (Flood Determination, Tidelands Report, Property Peek Report), Tax maps and data, LOMA application services, educational and training programs, business development tools, and the best customer service in the industry.",
+		num3: ""
+		//num3: "This subscription-based service is a 'must-have' for professionals who create or service the real estate transaction."
+	},
+																				//	LANDING PAGE ROTATING IMAGES SRC'S
+	//	3
+	{
+		num0: "media/landing/landing_pic00.png",
+		num1: "media/landing/landing_pic01.png",
+		num2: "media/landing/landing_pic02.png",
+		num3: "media/landing/landing_pic03.png"
+	},	
+	//	4 																			GENERAL INFO
+	{
+		num0: "CLOSE LOG IN BOX",
+		num1: "LOG IN",
+		num2: "",
+		num3: ""
+	}	
+
+]
+
+
+var info = [
+	//	0 	Industry Slider
+	{
+		num0: "media/landing/industry/WTG-Solar-System_line_artFLAT.png",
+		num1: "INDUSTRIES",
+		num2: "The real estate transaction is a complex process that brings together a number of specialists, industries, and services. The process includes searching for a clear title, obtaining property valuations, securing financing, inspections and insuring the property.  All this while negotiating and closing the deal between interested parties.",
+		num3: "Professionals who drive this process need accurate information to conduct due diligence, insure regulatory compliance, and advocate for the needs of their client.  This is important for professionals on both the buyers and sellers side of the transaction.  It is imperative to get out in front of potential property related issues that could affect your client's potential investment.",
+		num4: "Western Technologies is at the center of this world. Helping professionals make the right decisions that best serve the client and the market as a whole."
+	},
+	// 1 	Title Agencies 		
+	{
+		num0: "media/landing/industry/title_agents.png",
+		num1: "TITLE AGENCIES",
+		num2: "Our Title clients are at the very core of our success at Western Technologies.  In New Jersey, Tidelands searches are required in all but four counties (Warren, Hunterdon, Sussex and Morris).  Knowing if the State has a riparian claim on a property is key to clearing title for transfer.",
+		num3: "As we developed this market, we built our Tidelands Report around the needs of the Title industry; providing the most accurate, useful and timely information available.",
+		num4: "Recently, Title Agencies are running an increasing number of Flood Determinations for Realtors and Attorneys; helping them support their clients in the home buying decisions."
+	},
+	//	2 	Realtor Industry 	
+	{
+		num0: "media/landing/real_estate_professionals.png",
+		num1: "REALTORS",
+		num2: "The real estate market is changing... Buyers and Sellers are increasingly tech savvy; they want more involvement and information. They don't want surprises when it comes to finalizing the transaction. Western Technologies Reports and products help Realtors  to meet this new market expectation.",
+		num3: "WTG provides reports, data, support, and training to real estate professionals who want more.  Our accurate reports provide the facts and our knowledgeable staff help support our clients moving forward.",
+		num4: "Too often people are not made aware of flood related issues until the very end of a real estate transaction.  This can cause last minute issues, sometimes at the closing table.  To insure the stability of your deal we recommend running a WTG Certified Flood Determination on every listing. We believe this will become the new industry norm and expected by Buyers, Sellers and their respective Agents.",
+		num5: "management.html"
+	},
+	// 	3 	Banks & Mortgage Lenders 	
+	{
+		num0: "media/landing/mortgage_banks.png",
+		num1: "BANKS & MORTGAGE LENDERS",
+		num2: "Accurate information on flood status is the key to managing risk for your loan portfolio. The WTG Flood Determination sets the industry standard for accuracy and excellence in reporting. Our insured reports include the FEMA  Standard Flood Hazard Determination Form (SFHDF), Visual Verification and Advisory/Preliminary maps if available. The reports are customizable to best suit your needs and format. Our Life-of-Loan program provides real-time notification as new FIRM Panels are released.",
+		num3: "We offer the best there is and our customer service sets a whole new standard for the industry.  At WTG we are dedicated to personal interaction with our clients to insure that all questions and issues are dealt with in a timely fashion.  There is always a real person to answer the phone here at WTG and immediately address any concerns with your reports.  We are also integrated with both the Encompass and Calyx loan origination platforms, which will make including WTG Flood Determinations into your current process easy and seamless.",
+		num4: "WTG is also available to conduct a Flood Audit on your current portfolio to ensure accuracy and address compliance issues."
+
+	},
+	// 4 	Engineers & Surveyors 
+	{
+		num0: "media/landing/engineers_surveyors.png",
+		num1: "ENGINEERS & SURVEYORS",
+		num2: "Productivity drives profits. New Jersey Engineers and Surveyors have relied on WTGs property information including access to GIS, tax maps, and property data for many years. Our client base includes both large and small engineering firms, and many independent surveyors.",
+		num3: "Whether you are looking for a great source for accurate tax maps or a full suite of GIS tools, WTG is the right partner. Even if you have an in-house GIS Department, with WTG you can quickly access  important information that will keep your projects on budget and on schedule.",
+		num4: "Some of our product features include: tax maps, FIRM maps, 200 notification with mailing function, monuments with USGS data, category-1 water with buffers, Highlands, Pinelands, and CAFRA data; historical aerials back to 1930; Flood Determination (insured); Tidelands Riparian Report (insured); topographical contours, and more than 20 additional GIS layers."
+
+	},
+	//	5 	APPRAISERS
+	{
+		num0: "media/landing/industry/appraiser.png",
+		num1: "APPRAISERS",
+		num2: "Real Estate Appraisers need access to reliable property information to get the job done accurately and efficiently. Western Technologies Group provides both commercial and residential appraisers the tools to maximize productivity and get the job done right.",
+		num3: "Offering immediate access to tax maps, square footage, owner information, historical sales data, and much more WTG maintains an exceptional map-based system for the industry.  The system also allows users to search and analyze listings using robust criteria."	
+	},
+	//	6 	ATTORNEY
+	{
+		num0: "media/landing/industry/attorneys.png",
+		num1: "ATTORNEYS",
+		num2: "Due diligence is key to successful outcomes. Western Technologies Group LLC provides real estate attorneys with exceptional tools and reports to easily and confidently get the job done. Our attorney clients practice in various parts of the law, including general Real Estate, Tax Appeal, Land Use, Construction Law, Municipal Consulting, and Variance/Zoning. The data we provide can be crucial to the success of a transaction or a case.",
+		num3: "We offer an exceptional Flood Determination and Tidelands (riparian) Report; and our easily accessed GIS data including historical aerials, tax maps, zoning data, wetlands, special management zones (CAFRA, Highlands, Pinelands), Category-1 water sources (with buffers), DEP-reported contaminated sites, preserved and open spaces, and much more.",
+		num4: "Our Flood Resource Center offers information and professional support on flood, tideland and other property specific issues.. Our flood center specialists can also apply for a Letter of Map Amendment (LOMA) on your client's behalf.  A LOMA can essentially remove the affected structure from the High Risk Flood Zone.  A relationship with WTG can go a long way to help an attorney be highly productive and most successful in this technology-centered market."
+	},
+	//	7 	HOME INSPECTORS
+	{
+		num0: "media/landing/industry/home_inspector.png",
+		num1: "HOME INSPECTORS",
+		num2: "The Home Inspector in an integral player in the due diligence phase of the home buying process.  Their report provides the Buyer (and increasingly the Seller) key information regarding condition and value.   More and more home inspectors are augmenting their Home Inspection Report with the Property PEEK Report and WTG Flood Determination.",
+		num3: "In a changing market that demands more information and transparency, incorporating WTG property reports into the Home Inspector's service adds value for the client and provides a unique business development opportunity for the inspector."
+	},
+	//	8 	MUNICIPALITIES & GOVT
+	{
+		num0: "media/landing/industry/municipalities.png",
+		num1: "MUNICIPALITIES & GOVERNMENT",
+		num2: "Western Technologies Group has been proud to have New Jersey Municipalities (and Counties and State Agencies) among their valued clients.  The Company serves various departments and officials including Municipal Engineers, Tax Assessors, Floodplain Managers, Mayor's Offices, to name a few..  These clients rely on our tax and GIS information, as well as our Flood Determination, Tidelands Report, and Property PEEK Report.",
+		num3: "Since the launch of NJFlood.com, more and more municipalities are linking their Municipal website to NJFlood in order to provide easy access for their residents to tax maps, Flood Determinations, and additional property data.",
+		num4: "This unique partnership ensures town residents have quick access to important reports and information, while reducing cost and workload for budget-constrained and overworked local officials."
+	},
+	//	9 	BUILDING & CONSTRUCTION 
+	{
+		num0: "media/landing/industry/building_construction.jpg",
+		num1: "BUILDERS & CONSTRUCTION",
+		num2: "Efficiency is key to profitability with every building project. Identifying potential problems early on - from wetlands or Category-1 water to high-risk flood zones and riparian claims is extremely valuable.  Our custom reports can be a valuable first step to investigating potential building sites.",
+		num3: "The building and construction trades rely on Western Technologies Group to provide quick and easy access to reliable information. From site selection to the day of occupancy, WTG is a trusted resource for builders and developers who need to know more."
+	},
+		// 10 
+
+	 {
+
+	  num0: "ZONE AO",
+
+	  num1: "High Risk Zone.  Flood Depths of 1 to 3 feet (usually sheet flow on sloping terrain)",
+
+	  num2: "Average depths determined. For areas of alluvial fan flooding, velocities also determined."
+
+	 },
+
+	 //  11
+
+	 {
+
+	  num0: "ZONE AR",
+
+	  num1: "High Risk Zone formerly protected from the 1% annual chance flood by a flood control system that was subsequently decertified.",
+
+	  num2: "Zone AR indicates that the former flood control system is being restored to provide protection from the 1% annual chance or greater flood."
+
+	 },
+
+	 // 12
+
+	 {
+
+	  num0: "ZONE AE",
+	  num1: "High Risk Zone, mandatory purchase of flood insurance IS required.  Areas subject to inundation by the 100yr (1%annual chance) flood event determined by detailed methods. Base Flood Elevations (BFEs) derived from detailed hydraulic analyses are shown.",
+	  num2: "NOTE:  AE zones replaced A zones that appeared on older map formats where the Base Flood Elevation was included as part of the zone designation (ie: A5, A12, A15)."
+	 },
+
+	 //  13
+
+	 {
+
+	  num0: "ZONE A",
+	  num1: "High Risk Zone, mandatory purchase of flood insurance IS required and floodplain management standards apply.  Zone A includes areas subject to inundation by the 100yr (1%annual chance) flood event generally determined using approximate methodologies.",
+	  num2: "Because detailed hydraulic analyses have not been performed, NO Base Flood Elevations (BFEs) or flood depths are shown."
+	 },
+
+	 // 14
+
+	 {
+
+	  num0: "ZONE X 0.2%",
+	  num1: "Moderate Risk Zone, mandatory purchase of flood insurance IS NOT required by FEMA. These are areas within the 500yr(0.2% annual chance) floodplain; areas of 100yr(1% annual chance) flood with average depths of less than 1 foot or with drainage areas less than 1 square mile; and areas protected by levees from 100yr(1% annual chance) flood.",
+	  num2: "Low to Moderate risk zones generally begin with the letter X, High risk zones generally begin with the letters A or V."
+	 },
+
+	 // 15
+
+	 {
+
+	  num0: "ZONE X",
+	  num1: "Low Risk Zone, mandatory purchase of flood insurance IS NOT required by FEMA.  These areas are determined to be outside the 0.2% annual chance floodplain.  The 0.2% annual chance floodplain is also known as the 500yr floodplain.  They are one and the same.",
+	  num2: "Low to moderate risk zones generally begin with the letter X, High risk zones generally begin with the letters A or V."
+	 },
+
+	 // 16
+
+	 {
+
+	  num0: "ZONE D",
+
+	  num1: "Areas in which flood hazards are undetermined, but possible."
+
+	 },
+	
+	//	17 	Flood Zone Legend (when this subsection is loaded, this is the first data that is set in the DOM)
+	{
+		num0: "FLOOD ZONE LEGEND",
+		num1: "Every property in a community that participates in the National Flood Insurance Program (NFIP) exists in a flood zone. Under the FEMA designation, there are three general types of zones : low, moderate, and high risk zones.  Low and Moderate risk zones are shown as green buttons below.  High risk zones are also known as Special Flood Hazard Areas (SFHAs) and are shown as red buttons below.",
+		num2: "Low to moderate risk zones generally begin with the letter X, high risk zones generally begin with the letters A or V."	
+	},
+	//	18 	ZONE AH 
+	{
+		num0: "ZONE AH",
+		num1: "Flood depths of 1 to 3 feet (usually areas of ponding)",
+		num2: "Base Flood Elevations determined.",
+		num3: "media/landing/zoneAE.jpg"
+	},
+	//	19 	Flood links src attr 
+	{
+		num0: "https://www.njflood.com/njpft/order",
+		num1: "https://www.floodsmart.gov/floodsmart/pages/flooding_flood_risks/map_update_schedule.jsp",
+		num2: "https://www.floodsmart.gov/floodsmart/pages/commercial_coverage/cc_overview.jsp",
+		num3: "http://www.state.nj.us/dca/divisions/sandyrecovery/",
+		num4: "http://www.njhousing.gov/dca/hmfa/homeownership/sandy/",
+		num5: "http://en.wikipedia.org/wiki/Hurricane_Sandy",
+		num6: "http://www.nasa.gov/mission_pages/hurricanes/archives/2012/h2012_Sandy.html",
+		num7: "http://sandynjrelieffund.org/"
+	}
+	,
+	 // 20
+
+	 {
+
+	  num0: "ZONE VE",
+	  num1: "High Risk Zone, mandatory purchase of flood insurance IS required and floodplain management standards apply.  Zone VE includes areas subject to inundation by the 100yr (1%annual chance) flood event with additional hazards due to storm-induced velocity wave action of 3' or greater. Base Flood Elevations (BFEs) derived from detailed hydraulic analyses are shown.",
+	  num2: "NOTE:  VE zones replaced V zones that appeared on older map formats where the Base Flood Elevation was included as part of the zone designation (ie: V5, V12, V15)."
+	 },
+	  // 21
+	 {
+	  num0: "ZONE AO",
+	  num1: "High Risk Zone, mandatory purchase of flood insurance IS required and floodplain management standards apply.  Zone AO includes areas subject to inundation by 1% annual chance shallow flooding (usually sheet flow on sloping terrain) where average depths are between one and three feet.",
+	  num2: "Average flood depths derived from detailed hydraulic analyses are shown in this zone."
+	 },
+	// 22
+	 {
+
+	  num0: "ZONE AH",
+	  num1: "High Risk Zone, mandatory purchase of flood insurance IS required and floodplain management standards apply.  Zone AH includes areas subject to inundation by 1-percent-annual-chance shallow flooding (usually areas of ponding) where average depths are between one and three feet.",
+	  num2: "Base Flood Elevations (BFEs) derived from detailed hydraulic analyses are shown in this zone."
+	 },
+	 	// 23
+	 {
+
+	  num0: "ZONE D",
+	  num1: "Undetermined Risk Zone, mandatory purchase of flood insurance IS NOT required.  Zone D includes areas where there are possible but undetermined flood hazards, as no analysis of flood hazards has been conducted.",
+	  num2: "The designation of Zone D is also used when a community incorporates portions of another community's area where no map has been prepared.  Flood insurance purchased in these areas is often at an increased rate due to the unknown risk factor."
+	 }
+]
+
+
+//	Object containing answers to each question in each individual sections (Flood Determination, Tidelands, Property Peek)
+
+var faq = [
+	//	0	 																	FLOOD DETERMINATION FAQ ANSWERS
+	{
+		num0: "A Flood Determination is a document that provides information and confirms the flood status of a specific property. The WTG Flood Determination includes (i) the FEMA Standard Flood Hazard Determination Form that identities the zone and states whether flood insurance is required under the NFIP rules (ii) Visual verification maps that present imagery our experts use in their analysis (iii) Flood Zone legend (iv) Advisory/Preliminary maps (when available) so the property owner can have a 'heads up' to possible future changes in their flood zone.",
+		num1: "Yes.  In some cases the report can be used to challenge your current status. There are many properties that have been previously misidentified, where the owner was told they were in a high risk flood zone when in fact they never were. The WTG Flood Determination can be used to challenge these incorrect determinations.",
+		num2: "If your property was misidentified (see previous FAQ) and is not in a high risk flood zone, then our report can be used to lower (or remove) your flood insurance premiums. In some cases where there is conflicting information (i.e. you were previously told you were in a SFHA and our reports shows you are not), then the insurer may require an elevation certificate to resolve the issue. We can help guide you with these steps.",
+		num3: "Yes. This report is insured for errors and omission to $2,000,000.00 per event.",
+		num4: "Under the National Flood Insurance Program (NFIP) rules, you would not be in a high risk zone. If your structure is completely within an X or X0.2% zone, you are considered low to moderate risk and do not require flood insurance. However, our suggestion is that you get flood insurance for the added protection. The premium would be very low.",
+		num5: "While there are other reputable companies out there doing flood determinations, our experience is that we have a particularly exceptional and accurate report. The systems we have in place to identify the property and conduct an accurate analysis is the best the industry has to offer. In addition, we offer visual verification and tax maps, so the user can see the data we used in the analysis. Also, the report is insured.",
+		num6: "The idea of 'new maps' vs. 'old maps' is a misconception. There are current maps (called effective maps) that we use for the Determination. The 'new maps' that came out after Sandy are Advisory and/or preliminary and cannot be used as the basis for a Flood Determination.  Eventually these advisory/preliminary maps will be made 'effective'. At that time we will use them as the basis for our Determination.",
+		num7: "Our clients include Mortgage Companies, Title Companies, Banks, and Insurance Companies. Using these companies ensure that the conclusion of our reports will be honored. If your lender or insurance company does not use the WTG Flood Determination, there could be a situation where our report's conclusion is different from theirs. In those cases a few things could happen. Sometimes out data is so convincing that they change their position based on our report alone. In cases where they don't just accept our conclusion; the next step is often to hire a surveyor to do an Elevation Certificate to resolve the issue.",
+		num8: "Yes. Buyers like accurate information about a property they are purchasing. Realtors will often run our Food Determination and have a copy attached to the MLS Listing. This can make your property more attractive in a town that has a reputation for flooding IF the structure is not in a high risk flood zone. Realtors can use our report to increase buyer interest/activity and to fully disclose to interested parties any flood related issues.",
+	},
+	//	1 																		TIDELANDS FAQ ANSWERS
+	{
+		num0: "Tidelands, also known as riparian lands, are all lands that are currently and formerly flowed by the mean high tide of a natural waterway. Barnegat Bay, a naturally tidal body of water, is an example of tidelands. However, New Creek, a tiny tidal stream that flowed through the city of Newark a century ago but has since been filled in and built over, is also an example of tidelands. New Jersey contains an extensive network of tidelands, both big and small.",
+		num1: "The State of New Jersey claims ownership of these tidelands and holds them in trust for the people of the state. All tidelands are overseen by the Tidelands Resource Council, a board of twelve Governor-appointed volunteers, along with DEP staff at the Bureau of Tidelands Management.",
+		num2: "Since tidelands are public lands, you must obtain written permission from the state and pay a fee in order to use these lands. Common uses of tidelands include docks, mooring piles, bulkheads and other fill materials. Some (formerly flowed) tidelands may be sold in the form of a Riparian Grant while others (currently flowed) may only be rented through either a Tidelands License or Lease.",
+		num3: "The WTG Tidelands Report is a search for the presence of a State tideland claim on a specific property; including a search for any instruments (Grants, Leases, and Licenses) associated with that claim.",
+		num4: "",
+		num5: "",
+		num6: "Yes. Tidelands claims include current and formerly flowed tidal waters. Some of these claims go back more than 100 years. Every county in New Jersey - with the exception of Hunterdon, Warren, Sussex, and Morris - have tideland claims. Some of these claims extend many miles from the ocean.",
+		num7: "",
+		num8: "",
+		num9: "A State Tidelands Claim is a cloud on a property owners title regardless of whether or not that property owner is aware of the claim at the time of purchase. When a property is being sold, the Title Company will run a riparian (Tidelands) report. If a claim is found the Title company may require monies be held in escrow to cover the claim, or that the claim be released prior to sale.",
+		num10: "In addition, securing a mortgage will be difficult or impossible until the issues are resolved. If there is a need to petition the Tidelands Bureau for a resolution, that process can take months or even years for final resolution.",
+		num11: "",
+		num12: "A Tidelands lease, license, and grant are instruments issues by the State of New Jersey.",
+		num13: "A Tidelands Lease is a long term rental agreement from the State of New Jersey for the use of its tidelands. Leases are generally issued for projects involving long term financing issues such as houses that have been constructed over currently flowed tidelands or large scale development projects. A Tidelands License is a short term rental agreement from the State of New Jersey for the use of its tidelands. Licenses may be issued for fixed structures, such as docks, piers, mooring piles, floating docks, boat lifts, riprap, and bulkheads.",
+		num14: "A Tidelands Grant is a deed from the State of New Jersey for the sale of its tidelands. A grant releases all rights of the state to the current upland owner and relinquishes the rights of the State to that land. In general, the State of New Jersey will only issue a grant for formerly flowed claims.",
+		num15: "A Statement of No Interest is an official document issued by the State of New Jersey attesting to the fact that a particular property or area is free from all State tidelands claims, or that the claim is so small or insignificant, the State has no interest in pursuing the claim.",
+		num16: "",
+		num17: "",
+		num18: "Yes. We regularly see situations where a Title Company runs a Tidelands Report on a property being sold and an unknown claim is discovered.",
+		num19: "",
+		num20: "",
+		num21: "Yes. The WTG Tidelands Report is insured for errors and omission to $2,000,000.00 per event.",
+		num22: "",
+		num23: ""
+	},
+	//	2 																		PROPERTY PEEK FAQ ANSWERS	
+	{
+		num0: "The Property PEEK is a 25-page comprehensive report that presents a wealth of information about a property and its immediate surroundings.",
+		num1: "The report includes lot data and tax maps, 20-year historical tax assessments, and GIS maps depicting wetlands, category-1 water (with buffers), topography, preserved & open spaces, sewer service areas, CAFRA, Highlands, Pinelands Management, current and historical aerials (1974,1930), DEP-reported contaminated sites, soils data, and other information.",
+		num2: "",
+		num3: "The more you know about your property... the more you know about your world.",
+		num4: "Everyone who owns a home or business in New Jersey should order a Property PEEK. Anyone who is buying or renting a home should order a Property PEEK. Anyone who is interested in a particular property for whatever reason should order a Property PEEK. Professionals involved in the real estate transaction should order a Property PEEK. Packed full of information to inform, educate, promote and wow!",
+		num5: "",
+		num6: "New Jersey Realtors are using the Property PEEK Reports every day. The report helps them provide important information to their Buyers, helps them secure more business by strengthening their listing presentation, and helps them brand and promote their services to the market.",
+		num7: "",
+		num8: "",
+		num9: "Builders use the Property PEEK Report for preliminary information about a specific lot prior to investing time and money in engineering and permits. Coupled with our Flood Determination and research tools at NJPropertyFax.com, the WTG Property PEEK report allows builders  to be more productive and profitable.",
+		num10: "",
+		num11: "",
+		num12: "No, the Property PEEK Report is not insured. The report is an aggregation of information from public sources (i.e. NJ State DEP). We do not provide verification or analysis of the data; we simply pass it along as a heads up for the current or potential property owner. The report is for informational purposes only and should not be used on its own for any decisions related to construction or purchase without additional research and due diligence.",
+		num13: "For example, wetlands data is presented based on information and maps provided by the DEP. A true wetlands analysis can only be completed by a trained and licensed professional who actually walks the property and collects and analyzes data. Our wetlands map can be the first step in a process, but needs to be followed by additional steps.",
+		num14: "",
+		num15: "",
+		num16: "",
+		num17: "",
+		num18: "",
+		num19: "",
+		num20: "",
+		num21: "",
+		num22: "",
+		num23: ""
+	},
+	//	
+	{
+		num0: "",
+		num1: ""
+	},
+	//	
+	{
+		num0: "",
+		num1: ""
+	},
+
+]
+
+var controller;
+
+$(document).ready(function($) {
+	// init controller
+	controller = new ScrollMagic();
+});
+
+var widthcheck = $( window ).width();
+	console.log(widthcheck);
+
+var slideIn = 0;
+
+var countIndustry = 0;
+
+//	TITLE AGENCIES
+
+$(document).ready(function(){
+	$("#industry1").click(function(){
+		countIndustry = 1;
+		slideIn = slideIn + 1;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[1].num0);
+			$("#industryTitleB").text(info[1].num1);
+			$("#industryTextB1").text(info[1].num2);
+			$("#industryTextB2").text(info[1].num3);
+			$("#industryTextB3").text(info[1].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.75, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[1].num0);
+			$("#industryTitleA").text(info[1].num1);
+			$("#industryTextA1").text(info[1].num2);
+			$("#industryTextA2").text(info[1].num3);
+			$("#industryTextA3").text(info[1].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.75, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+		console.log("countIndustry" + countIndustry)
+  	});
+});
+
+
+//	REAL ESTATE AGENTS 								We still need to take out Learn More buttons
+
+$(document).ready(function(){
+	$("#industry2").click(function(){
+		countIndustry = 2;
+		slideIn = slideIn + 1;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[2].num0);
+			$("#industryTitleB").text(info[2].num1);
+			$('.learn-more').attr('href', 'management.html');
+			$("#industryTextB1").text(info[2].num2);
+			$("#industryTextB2").text(info[2].num3);
+			$("#industryTextB3").text(info[2].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.75, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[2].num0);
+			$("#industryTitleA").text(info[2].num1);
+			$("#industryTextA1").text(info[2].num2);
+			$("#industryTextA2").text(info[2].num3);
+			$("#industryTextA3").text(info[2].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.75, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+  	});
+});
+
+
+//	BANKS & MORTGAGE LENDERS
+
+$(document).ready(function(){
+	$("#industry3").click(function(){
+		slideIn = slideIn + 1;
+		countIndustry = 3;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[3].num0);
+			$("#industryTitleB").text(info[3].num1);
+			$("#industryTextB1").text(info[3].num2);
+			$("#industryTextB2").text(info[3].num3);
+			$("#industryTextB3").text(info[3].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.75, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			  if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[3].num0);
+			$("#industryTitleA").text(info[3].num1);
+			$("#industryTextA1").text(info[3].num2);
+			$("#industryTextA2").text(info[3].num3);
+			$("#industryTextA3").text(info[3].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.75, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+  	});
+});
+
+
+//	ENGINEERS & SURVEYORS
+
+$(document).ready(function(){
+	$("#industry4").click(function(){
+		slideIn = slideIn + 1;
+		countIndustry = 4;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[4].num0);
+			$("#industryTitleB").text(info[4].num1);
+			$("#industryTextB1").text(info[4].num2);
+			$("#industryTextB2").text(info[4].num3);
+			$("#industryTextB3").text(info[4].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[4].num0);
+			$("#industryTitleA").text(info[4].num1);
+			$("#industryTextA1").text(info[4].num2);
+			$("#industryTextA2").text(info[4].num3);
+			$("#industryTextA3").text(info[4].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+		    if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+  	});
+});
+
+
+//	APPRAISERS
+
+$(document).ready(function(){
+	$("#industry5").click(function(){
+		slideIn = slideIn + 1;
+		countIndustry = 5;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[5].num0);
+			$("#industryTitleB").text(info[5].num1);
+			$("#industryTextB1").text(info[5].num2);
+			$("#industryTextB2").text(info[5].num3);
+			$("#industryTextB3").text(info[5].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[5].num0);
+			$("#industryTitleA").text(info[5].num1);
+			$("#industryTextA1").text(info[5].num2);
+			$("#industryTextA2").text(info[5].num3);
+			$("#industryTextA3").text(info[5].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+  	});
+});
+
+
+//	ATTORNEYS
+
+$(document).ready(function(){
+	$("#industry6").click(function(){
+		slideIn = slideIn + 1;
+		countIndustry = 6;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[6].num0);
+			$("#industryTitleB").text(info[6].num1);
+			$("#industryTextB1").text(info[6].num2);
+			$("#industryTextB2").text(info[6].num3);
+			$("#industryTextB3").text(info[6].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[6].num0);
+			$("#industryTitleA").text(info[6].num1);
+			$("#industryTextA1").text(info[6].num2);
+			$("#industryTextA2").text(info[6].num3);
+			$("#industryTextA3").text(info[6].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+  	});
+});
+
+
+//	HOME INSPECTORS
+
+$(document).ready(function(){
+	$("#industry7").click(function(){
+		slideIn = slideIn + 1;
+		countIndustry = 7;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[7].num0);
+			$("#industryTitleB").text(info[7].num1);
+			$("#industryTextB1").text(info[7].num2);
+			$("#industryTextB2").text(info[7].num3);
+			$("#industryTextB3").text(info[7].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[7].num0);
+			$("#industryTitleA").text(info[7].num1);
+			$("#industryTextA1").text(info[7].num2);
+			$("#industryTextA2").text(info[7].num3);
+			$("#industryTextA3").text(info[7].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+  	});
+});
+
+
+//	MUNICIPALITIES & GOVERNMENT
+
+$(document).ready(function(){
+	$("#industry8").click(function(){
+		slideIn = slideIn + 1;
+		countIndustry = 8;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[8].num0);
+			$("#industryTitleB").text(info[8].num1);
+			$("#industryTextB1").text(info[8].num2);
+			$("#industryTextB2").text(info[8].num3);
+			$("#industryTextB3").text(info[8].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[8].num0);
+			$("#industryTitleA").text(info[8].num1);
+			$("#industryTextA1").text(info[8].num2);
+			$("#industryTextA2").text(info[8].num3);
+			$("#industryTextA3").text(info[8].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}	
+		}
+  	});
+});
+
+$(document).ready(function(){
+	$("#industry9").click(function(){
+		slideIn = slideIn + 1;
+		countIndustry = 9;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[9].num0);
+			$("#industryTitleB").text(info[9].num1);
+			$("#industryTextB1").text(info[9].num2);
+			$("#industryTextB2").text(info[9].num3);
+			$("#industryTextB3").text(info[9].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[9].num0);
+			$("#industryTitleA").text(info[9].num1);
+			$("#industryTextA1").text(info[9].num2);
+			$("#industryTextA2").text(info[9].num3);
+			$("#industryTextA3").text(info[9].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+  	});
+});
+
+
+
+// Next Industry Button
+
+
+$(document).ready(function(){
+	$("#nextIndustry").click(function(){
+		countIndustry++;
+		if (countIndustry === 10) {
+			countIndustry = 1;
+		}
+		i = countIndustry;
+		console.log(countIndustry);
+		slideIn = slideIn + 1;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[i].num0);
+			$("#industryTitleB").text(info[i].num1);
+			$("#industryTextB1").text(info[i].num2);
+			$("#industryTextB2").text(info[i].num3);
+			$("#industryTextB3").text(info[i].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[i].num0);
+			$("#industryTitleA").text(info[i].num1);
+			$("#industryTextA1").text(info[i].num2);
+			$("#industryTextA2").text(info[i].num3);
+			$("#industryTextA3").text(info[i].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+			TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+
+		/* $("#leftPicB").attr("src", info[i].num0);
+		$("#industryTitleB").text(info[i].num1);
+		$("#industryTextB1").text(info[i].num2);
+		$("#industryTextB2").text(info[i].num3);
+		$("#industryTextB3").text(info[i].num4);
+		TweenLite.defaultEase = Power3.easeInOut;
+		var tl = new TimelineMax()
+		tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+		  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+		  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});*/
+  	});
+});
+
+
+//	Previous Industry button
+$(document).ready(function(){
+	$("#prevIndustry").click(function(){
+		countIndustry--;
+		if (countIndustry < 1) {
+			countIndustry = 9;
+		}
+		var i = countIndustry;
+		console.log(countIndustry);
+		i = countIndustry;
+		console.log(countIndustry);
+		slideIn = slideIn + 1;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[i].num0);
+			$("#industryTitleB").text(info[i].num1);
+			$("#industryTextB1").text(info[i].num2);
+			$("#industryTextB2").text(info[i].num3);
+			$("#industryTextB3").text(info[i].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[i].num0);
+			$("#industryTitleA").text(info[i].num1);
+			$("#industryTextA1").text(info[i].num2);
+			$("#industryTextA2").text(info[i].num3);
+			$("#industryTextA3").text(info[i].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
+  	});
+});
+
+
+
+
+
+
+
+//	Scroll-to-section
+
+
+jQuery(document).ready(function($) {
+
+    $(".nav-link").click(function(event) {
+        event.preventDefault(); 
+
+        var defaultAnchorOffset = 0;
+        
+        var $anchor = $('#' + this.hash.substring(1));
+                
+        var anchorOffset = $anchor.data('anchor-offset');
+        if (!anchorOffset) // for when anchor doesn't have the offset attribute like Section 4
+            anchorOffset = defaultAnchorOffset; 
+
+        $('html,body').animate({ 
+            scrollTop: $anchor.offset().top - anchorOffset
+        }, 500);        
+    });
+});
+
+jQuery(document).ready(function($) {
+
+    $(".scroll-link").click(function(event) {
+        event.preventDefault(); 
+
+        var defaultAnchorOffset = 0;
+        
+        var $anchor = $('#' + this.hash.substring(1));
+                
+        var anchorOffset = $anchor.data('anchor-offset');
+        if (!anchorOffset) // for when anchor doesn't have the offset attribute like Section 4
+            anchorOffset = defaultAnchorOffset; 
+
+        $('html,body').animate({ 
+            scrollTop: $anchor.offset().top - anchorOffset
+        }, 500);        
+    });
+});
+
+
+
+
+//	Nav-link hover
+
+$(document).ready(function(){
+  $(".nav-link").hover(function(){
+    TweenLite.to($(this), 0.5, {backgroundColor: "#003366"})
+    TweenLite.to($(this), 0.5, {color: "#ffffff"});
+  });
+}); 
+
+$(document).ready(function(){
+  $(".nav-link").mouseleave(function(){
+    TweenLite.to($(this), 0.5, {backgroundColor: "#ffffff"})
+    TweenLite.to($(this), 0.5, {color: "#6A6A6A"});
+  });
+}); 
+
+//	.nav-linkright hover
+
+
+$(document).ready(function(){
+  $(".nav-linkright").hover(function(){
+    TweenLite.to($(this), 0.5, {backgroundColor: "#003366"})
+    TweenLite.to($(this), 0.5, {color: "#ffffff"});
+  });
+}); 
+
+$(document).ready(function(){
+  $(".nav-linkright").mouseleave(function(){
+    TweenLite.to($(this), 0.5, {backgroundColor: "#ffffff"})
+    TweenLite.to($(this), 0.5, {color: "#6A6A6A"});
+  });
+}); 
+
+
+
+</script>
+
+</body>
+
+</html>
